@@ -31,6 +31,11 @@
     "optionVectorSvgs": {"type":"array","minItems":4,"maxItems":4,"items":{"type":"string"},"description":"Four safe inline SVGs; raster images and scripts are forbidden."},
     "sourceVectorSvgs": {"type":"array","items":{"type":"string"}},
     "visualType": {"type":"string"},
-    "reviewNotes": {"type":"string"}
+    "reviewNotes": {"type":"string"},
+    "visualRequirement": {"enum":["none","supplementary","essential"]},
+    "visualTypes": {"type":"array","items":{"type":"string"}},
+    "textFallbackQuality": {"enum":["complete","partial","insufficient"]},
+    "aiVisualCaptureRequired": {"type":"boolean"},
+    "semanticVisualDescription": {"type":["string","null"]}
   }
 }

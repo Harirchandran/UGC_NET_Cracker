@@ -2,8 +2,8 @@
 
 ## Grok versus Groq
 
-- **xAI Grok** (`xai`): Models by xAI (e.g. Grok 4.5). API at `https://api.x.ai/v1`.
-- **GroqCloud** (`groq`): Cloud inference provider offering open-weight models (Llama, GPT-OSS). API at `https://api.groq.com/openai/v1`.
+- **xAI Grok** (`xai`): Models by xAI (e.g. Grok 4.5). API at `https://api.x.ai/v1`. Supports text and multimodal image input.
+- **GroqCloud** (`groq`): Cloud inference provider offering open-weight models (Llama, GPT-OSS, Qwen Vision). API at `https://api.groq.com/openai/v1`.
 
 These are separate providers in the selector.
 
@@ -13,7 +13,7 @@ File: `data/ai-model-catalog.js`
 
 Contains:
 
-- `catalogVersion` — Semver for the catalog
+- `catalogVersion` — Semver for the catalog (`1.1.0`)
 - `officiallyCheckedDate` — Last verification date: `2026-07-23`
 - `providers` — Array of provider objects
 
@@ -36,22 +36,49 @@ Each model object has:
 |-------|-------------|
 | `id` | Technical model ID |
 | `label` | Human-readable name |
-| `tier` | Quality/cost tier |
+| `tier` | Quality/cost/vision tier |
 | `recommended` | Boolean, exactly one per provider |
 | `stability` | `stable`, `alias`, or `preview` |
 | `description` | Student-facing description |
 | `taskTags` | Recommended task types |
 | `reasoningOptions` | Supported reasoning levels (xAI only) |
+| `inputModalities` | Supported input modalities (`["text"]` or `["text", "image"]`) |
+| `outputModalities` | Supported output modalities (`["text"]`) |
+| `visionSupport` | Vision support status (`verified`, `unsupported`, `unknown`) |
+| `visualQuestionSupport` | Boolean indicating capability for diagram analysis |
+| `supportedImageTypes` | Array of MIME types (`["image/png", "image/jpeg"]`) |
+| `maxImages` | Maximum allowed image inputs (e.g. 5 for Qwen) |
+| `maxImageBytes` | Maximum image size in bytes (e.g. 20MB for Qwen) |
+| `capabilitySource` | Source of capability proof (`curated-official`, `provider-discovery`, `student-tested`, `custom-declared`, `unknown`) |
 
-## Provider endpoints
+## Curated visual capability overview
 
-| Provider | Base URL | Auth |
-|----------|----------|------|
-| Google Gemini | `https://generativelanguage.googleapis.com/v1beta` | `x-goog-api-key` header |
-| OpenAI | `https://api.openai.com/v1` | `Authorization: Bearer <key>` |
-| xAI Grok | `https://api.x.ai/v1` | `Authorization: Bearer <key>` |
-| GroqCloud | `https://api.groq.com/openai/v1` | `Authorization: Bearer <key>` |
-| Custom | User-configured | `Authorization: Bearer <key>` |
+| Provider | Model | Vision Support | Max Images | Note |
+|----------|-------|----------------|------------|------|
+| Google Gemini | `gemini-3.6-flash` | Verified | Unlimited | Recommended default |
+| Google Gemini | `gemini-3.5-flash` | Verified | Unlimited | High quality |
+| Google Gemini | `gemini-3.5-flash-lite` | Verified | Unlimited | Economy vision |
+| OpenAI | `gpt-5.6-terra` | Verified | Unlimited | Recommended default |
+| OpenAI | `gpt-5.6-sol` | Verified | Unlimited | Maximum quality |
+| OpenAI | `gpt-5.6-luna` | Verified | Unlimited | Fast economy |
+| xAI Grok | `grok-4.5` | Verified | Unlimited | Recommended default |
+| xAI Grok | `grok-4.5-latest` | Verified | Unlimited | Rolling alias |
+| GroqCloud | `llama-3.3-70b-versatile` | Unsupported | 0 | Text-only default |
+| GroqCloud | `qwen/qwen3.6-27b` | Verified | 5 | Preview Vision Model |
+| GroqCloud | `openai/gpt-oss-120b` | Unsupported | 0 | Text-only |
+| GroqCloud | `openai/gpt-oss-20b` | Unsupported | 0 | Text-only |
+| GroqCloud | `llama-3.1-8b-instant` | Unsupported | 0 | Text-only |
+| Custom | User-configured | Unknown / Custom | Configurable | Requires validation / declaration |
+
+## Provider endpoints & multimodal formats
+
+| Provider | Base URL | Auth | Multimodal Format |
+|----------|----------|------|-------------------|
+| Google Gemini | `https://generativelanguage.googleapis.com/v1beta` | `x-goog-api-key` header | `inlineData` parts in `generateContent` |
+| OpenAI | `https://api.openai.com/v1` | `Authorization: Bearer <key>` | `image_url` items in `chat/completions` |
+| xAI Grok | `https://api.x.ai/v1` | `Authorization: Bearer <key>` | `image_url` items in `chat/completions` with `store: false` |
+| GroqCloud | `https://api.groq.com/openai/v1` | `Authorization: Bearer <key>` | `image_url` items in `chat/completions` for vision models |
+| Custom | User-configured | `Authorization: Bearer <key>` | Configured (`openai-chat` or `openai-responses`) |
 
 ## Dynamic model discovery
 
@@ -65,18 +92,21 @@ Each provider's discovery endpoint:
 - GroqCloud: `GET /openai/v1/models` (excludes Whisper, embedding, guard, speech, image, moderation models)
 - Custom: `{baseUrl}/models` (no filtering)
 
-The Gemini `models/` prefix is stripped from returned IDs.
+Model capabilities for discovered models are checked in this order:
+1. Exact curated catalog match
+2. Provider response explicit modality metadata (`input_modalities`, `supportedGenerationMethods`)
+3. Previously successful local capability test
+4. Provider-specific known mapping
+5. Unknown (`visionSupport: "unknown"`)
 
-## Custom model IDs
-
-Select "Custom model ID…" from the model dropdown to enter any model ID manually. This is always available for the Custom OpenAI-compatible provider. For other providers, it is available when the saved model is not in the curated list.
+Name strings containing "vision" or "image" are used only as UI hints, never as authoritative capability proof.
 
 ## Key storage
 
 - Keys are stored in `sessionStorage` by default (cleared when browser tab closes).
 - Check "Remember key on this device" to persist in `localStorage`.
 - Click "Forget key" to clear both.
-- Keys are never included in backup exports or error messages.
+- Keys are never included in backup exports, question sheet images, or error messages.
 - Keys are never placed in URLs (Gemini uses the `x-goog-api-key` header, not query parameter).
 
 ## Offline limitations
@@ -84,30 +114,7 @@ Select "Custom model ID…" from the model dropdown to enter any model ID manual
 When offline:
 
 - Provider and model selectors work from the cached catalog.
-- AI remains locked (no validation possible).
+- AI request execution is disabled with clear user notice: "AI analysis requires internet access. The question, diagram and all offline study tools remain available."
+- Question sheet rendering and sheet preview remain operational locally.
 - All question-bank, syllabus, practice, mock, revision, and analytics features remain functional.
 - No repeated failing network requests occur.
-- The app displays: "AI requires internet and a valid provider API key."
-
-## CORS limitations
-
-Browser CORS restrictions may prevent model discovery from some custom endpoints or from xAI endpoints when the page is served from `file://`. For best results, serve the app via `localhost` or HTTPS.
-
-## Model availability
-
-Curated models may not be available to every API key. Model discovery checks each provider's models endpoint to determine which curated models are currently accessible. Models not returned by the discovery endpoint are marked as "Not available to this key."
-
-## Updating the curated catalog
-
-To add or update models:
-
-1. Edit `data/ai-model-catalog.js`
-2. Update `officiallyCheckedDate` to the current date
-3. Bump `catalogVersion` if the structure changes
-4. Ensure exactly one `recommended: true` per non-custom provider
-5. Run `node tests/ai_model_tests.js` to validate
-6. Run `node tests/runtime_smoke.js` and `python tests/validate.py` for regression
-
-## Why prices are not hardcoded
-
-Provider pricing changes frequently. Hardcoding prices would require constant catalog updates and risk showing stale information. The tier field (`Economy`, `Balanced`, `Quality`, `Fast`) provides relative guidance without specific prices.

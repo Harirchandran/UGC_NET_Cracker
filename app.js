@@ -53,7 +53,7 @@ const defaultState=()=>({
  mistakes:[],
  chats:[],
  notes:{},
-  settings:{theme:'system',notifications:false,aiProvider:'gemini',aiModel:'gemini-3.6-flash',aiModelPerProvider:{},aiCustomModelId:'',aiBaseUrl:'',rememberKey:false,aiValidated:false,aiReasoningMode:'auto',questionOrder:'mixed'},
+  settings:{theme:'system',notifications:false,aiProvider:'gemini',aiModel:'gemini-3.6-flash',aiModelPerProvider:{},aiCustomModelId:'',aiBaseUrl:'',rememberKey:false,aiValidated:false,aiReasoningMode:'auto',questionOrder:'mixed',aiVisualConsent:{},aiModelCapabilities:{},customModelVisionSupport:false,customModelImageFormat:'openai-chat'},
  meta:{createdAt:new Date().toISOString(),lastOpened:new Date().toISOString(),streak:0,lastStudyDate:null,totalMinutes:0}
 });
 let state=loadState();
@@ -71,6 +71,10 @@ function migrateState(s){
   if(oldModel&&oldModel!=='gemini-2.0-flash'&&s.settings.aiProvider&&!s.settings.aiModelPerProvider[s.settings.aiProvider]){s.settings.aiModelPerProvider[s.settings.aiProvider]=oldModel}
   if(s.settings.aiReasoningMode===undefined)s.settings.aiReasoningMode='auto';
   if(s.settings.aiCustomModelId===undefined)s.settings.aiCustomModelId='';
+  if(!s.settings.aiVisualConsent)s.settings.aiVisualConsent={};
+  if(!s.settings.aiModelCapabilities)s.settings.aiModelCapabilities={};
+  if(s.settings.customModelVisionSupport===undefined)s.settings.customModelVisionSupport=false;
+  if(s.settings.customModelImageFormat===undefined)s.settings.customModelImageFormat='openai-chat';
   return s;
 }
 function loadState(){
@@ -240,7 +244,7 @@ function renderTestEngine(){
 }
 function submitTest(auto=false){if(!testSession||testSession.submitted)return;clearInterval(timerHandle);const qs=testSession.questions;let correct=0;const wrong=[];for(const q of qs){const a=testSession.answers[q.id];if(isCorrect(q,a))correct++;else wrong.push({questionId:q.id,selected:a,correct:correctIndexes(q),date:new Date().toISOString(),type:a===undefined?'unattempted':'conceptual/recall'})}const score=correct*2,maxScore=qs.length*2,accuracy=correct/qs.length*100;testSession.result={correct,wrong,score,maxScore,accuracy,auto};testSession.submitted=true;const att={id:crypto.randomUUID?.()||String(Date.now()),type:testSession.type,date:new Date().toISOString(),score,maxScore,accuracy,correct,total:qs.length,durationUsed:testSession.duration?testSession.duration-testSession.remaining:null,paper1Score:qs.filter(q=>q.paper===1&&isCorrect(q,testSession.answers[q.id])).length*2,paper2Score:qs.filter(q=>q.paper===2&&isCorrect(q,testSession.answers[q.id])).length*2};state.attempts.push(att);for(const q of qs){const tid=findTopicForQuestion(q);if(tid)updateProgress(tid,isCorrect(q,testSession.answers[q.id])?2:-1)}for(const w of wrong){const q=DATA.questions.find(x=>x.id===w.questionId);if(q&&!state.mistakes.some(m=>m.questionId===q.id&&!m.resolved))state.mistakes.push({...w,resolved:false,paper:q.paper,unit:q.unit,topic:q.topic,year:q.year||null})}updateStreak();saveState();render()}
 function findTopicForQuestion(q){const p=DATA.syllabus.papers[q.paper-1],u=p?.units.find(x=>x.number===q.unit);if(!u)return null;const s=(q.topic||'').toLowerCase();return (u.topics.find(t=>t.name.toLowerCase().includes(s)||s.includes(t.name.toLowerCase().split(' ')[0]))||u.topics[0])?.id}
-function renderTestResult(){const r=testSession.result,pct=Math.round(r.accuracy),wrongQs=r.wrong.slice(0,12).map(w=>({q:DATA.questions.find(q=>q.id===w.questionId),w})).filter(x=>x.q);return `<section class="page">${pageHead('Test analysis','Every error has been added to the local mistake notebook and weak concepts have been reprioritised.',`<button class="button" data-action="finish-test">Finish</button>`)}<div class="grid cols-3"><div class="card"><div class="result-ring" style="--pct:${pct}%"><strong>${r.score}/${r.maxScore}</strong></div></div><div class="card metric"><div class="label">Accuracy</div><strong>${pct}%</strong><small>${r.correct} correct · ${r.wrong.length} incorrect/unattempted</small></div><div class="card metric"><div class="label">Recoverable marks</div><strong>${r.wrong.length*2}</strong><small>Maximum marks represented by the reviewed errors</small></div></div><div class="card" style="margin-top:16px"><h2>Error review</h2>${wrongQs.length?wrongQs.map(({q,w})=>`<div class="mistake" style="margin-top:10px">${questionMetaHTML(q,true)}<div class="question-body review-question">${questionDisplay(q)}</div><div class="answer"><strong>Your choice:</strong> ${w.selected===undefined?'Unattempted':esc(optionLabel(q,w.selected))}<br><strong>Correct:</strong> ${esc(correctText(q))}</div><p>${esc(q.explanation)}</p><div style="margin-top:8px"><button class="button ghost compact" data-action="ask-question-ai" data-id="${q.id}" data-selected="${w.selected!==undefined?w.selected:''}">✦ Ask AI to Explain &amp; Visualize</button></div></div>`).join(''):'<div class="alert success">Perfect score. Schedule delayed recall to confirm retention.</div>'}</div></section>`}
+function renderTestResult(){const r=testSession.result,pct=Math.round(r.accuracy),wrongQs=r.wrong.slice(0,12).map(w=>({q:DATA.questions.find(q=>q.id===w.questionId),w})).filter(x=>x.q);return `<section class="page">${pageHead('Test analysis','Every error has been added to the local mistake notebook and weak concepts have been reprioritised.',`<button class="button" data-action="finish-test">Finish</button>`)}<div class="grid cols-3"><div class="card"><div class="result-ring" style="--pct:${pct}%"><strong>${r.score}/${r.maxScore}</strong></div></div><div class="card metric"><div class="label">Accuracy</div><strong>${pct}%</strong><small>${r.correct} correct · ${r.wrong.length} incorrect/unattempted</small></div><div class="card metric"><div class="label">Recoverable marks</div><strong>${r.wrong.length*2}</strong><small>Maximum marks represented by the reviewed errors</small></div></div><div class="card" style="margin-top:16px"><h2>Error review</h2>${wrongQs.length?wrongQs.map(({q,w})=>`<div class="mistake" style="margin-top:10px">${questionMetaHTML(q,true)}<div class="question-body review-question">${questionDisplay(q)}</div><div class="answer"><strong>Your choice:</strong> ${w.selected===undefined?'Unattempted':esc(optionLabel(q,w.selected))}<br><strong>Correct:</strong> ${esc(correctText(q))}</div><p>${esc(q.explanation)}</p><div style="margin-top:8px">${askAIButtonHTML(q, { selected: w.selected!==undefined?w.selected:'' })}</div></div>`).join(''):'<div class="alert success">Perfect score. Schedule delayed recall to confirm retention.</div>'}</div></section>`}
 
 function renderRevision(){const due=dueTopics();const unresolved=state.mistakes.filter(m=>!m.resolved);const cards=[...due.map(t=>({kind:'topic',title:t.name,prompt:t.description,answer:t.offlineNote,id:t.id})),...unresolved.slice(0,20).map(m=>{const q=DATA.questions.find(x=>x.id===m.questionId);return q?{kind:'mistake',title:q.topic||`Paper ${q.paper} Unit ${q.unit}`,prompt:q.question,answer:`${correctText(q)} — ${q.explanation}`,id:m.questionId}:null}).filter(Boolean)];const card=cards.length?cards[revisionIndex%cards.length]:null;return `<section class="page">${pageHead('Revision and memory','Due concepts and past mistakes are converted into active-recall cards. Review intervals adapt to mastery.')}
  <div class="grid cols-3"><div class="card metric"><div class="label">Due concepts</div><strong>${due.length}</strong><small>Based on locally scheduled review dates</small></div><div class="card metric"><div class="label">Unresolved mistakes</div><strong>${unresolved.length}</strong><small>Questions requiring remediation</small></div><div class="card metric"><div class="label">Next interval</div><strong style="font-size:23px">1 · 3 · 7 · 21 days</strong><small>Adjusted according to performance</small></div></div>
@@ -248,7 +252,7 @@ function renderRevision(){const due=dueTopics();const unresolved=state.mistakes.
 function rateRevision(kind,id,rating){if(kind==='topic'){updateProgress(id,rating==='easy'?9:rating==='good'?6:2,rating==='easy'?90:rating==='good'?70:40)}else{const m=state.mistakes.find(x=>x.questionId===id&&!x.resolved);if(m&&rating!=='hard')m.resolved=true;saveState()}revisionIndex++;render()}
 
 function renderMistakes(){const ms=state.mistakes.slice().reverse();return `<section class="page">${pageHead('Mistake intelligence','Wrong answers are retained locally, classified and converted into remediation and revision actions.',`<button class="button ghost" data-action="clear-resolved">Remove resolved</button>`)}<div class="grid cols-3"><div class="card metric"><div class="label">Total logged</div><strong>${ms.length}</strong></div><div class="card metric"><div class="label">Unresolved</div><strong>${ms.filter(m=>!m.resolved).length}</strong></div><div class="card metric"><div class="label">Marks represented</div><strong>${ms.filter(m=>!m.resolved).length*2}</strong></div></div><div class="stack" style="margin-top:16px">${ms.length?ms.map(m=>mistakeHTML(m)).join(''):'<div class="empty">Your mistake notebook is empty. Practice answers will appear here.</div>'}</div></section>`}
-function mistakeHTML(m){const q=DATA.questions.find(x=>x.id===m.questionId);if(!q)return '';return `<div class="card mistake ${m.resolved?'muted':''}"><div class="row between wrap"><div class="tags"><span class="tag">Paper ${q.paper}</span><span class="tag">Unit ${q.unit}</span><span class="tag">${esc(m.type)}</span></div><span class="pill">${m.resolved?'Resolved':'Needs work'}</span></div>${questionMetaHTML(q,true)}<div class="question-body review-question">${questionDisplay(q)}</div><div class="answer"><strong>Your answer:</strong> ${m.selected===undefined?'Unattempted':esc(optionLabel(q,m.selected))}<br><strong>Correct:</strong> ${esc(correctText(q))}</div><p>${esc(q.explanation)}</p><div class="row wrap" style="margin-top:8px"><button class="button ${m.resolved?'ghost':'secondary'} compact" data-action="toggle-mistake" data-id="${q.id}">${m.resolved?'Reopen':'Mark resolved'}</button><button class="button ghost compact" data-action="ask-question-ai" data-id="${q.id}" data-selected="${m.selected!==undefined?m.selected:''}">✦ Ask AI to Explain &amp; Visualize</button></div></div>`}
+function mistakeHTML(m){const q=DATA.questions.find(x=>x.id===m.questionId);if(!q)return '';return `<div class="card mistake ${m.resolved?'muted':''}"><div class="row between wrap"><div class="tags"><span class="tag">Paper ${q.paper}</span><span class="tag">Unit ${q.unit}</span><span class="tag">${esc(m.type)}</span></div><span class="pill">${m.resolved?'Resolved':'Needs work'}</span></div>${questionMetaHTML(q,true)}<div class="question-body review-question">${questionDisplay(q)}</div><div class="answer"><strong>Your answer:</strong> ${m.selected===undefined?'Unattempted':esc(optionLabel(q,m.selected))}<br><strong>Correct:</strong> ${esc(correctText(q))}</div><p>${esc(q.explanation)}</p><div class="row wrap" style="margin-top:8px"><button class="button ${m.resolved?'ghost':'secondary'} compact" data-action="toggle-mistake" data-id="${q.id}">${m.resolved?'Reopen':'Mark resolved'}</button>${askAIButtonHTML(q, { selected: m.selected!==undefined?m.selected:'' })}</div></div>`}
 
 function renderAnalytics(){
  const pred=predictedScore(),units=[];for(const p of DATA.syllabus.papers)for(const u of p.units){const avg=Math.round(u.topics.reduce((a,t)=>a+mastery(t.id),0)/u.topics.length);units.push({name:`P${p.code==='00'?1:2} U${u.number}`,full:u.name,value:avg})}
@@ -261,6 +265,682 @@ function renderAnalytics(){
 }
 function lostMarksHTML(){const counts={};state.mistakes.filter(m=>!m.resolved).forEach(m=>{const k=`P${m.paper} U${m.unit}`;counts[k]=(counts[k]||0)+2});const es=Object.entries(counts).sort((a,b)=>b[1]-a[1]).slice(0,10);return es.length?`<div class="bar-list">${es.map(([k,v])=>`<div class="bar-row"><span>${k}</span><div class="bar-track"><i style="width:${Math.min(100,v*5)}%"></i></div><b>${v}</b></div>`).join('')}</div>`:'<div class="empty">No unresolved errors.</div>'}
 function feasibilityHTML(){const rem=estimateHours(),days=examDays(),weekly=state.profile.hoursPerDay*state.profile.daysPerWeek,available=days===null?null:Math.round(days/7*weekly);if(available===null)return '<div class="alert warning">Set an exam date to calculate available study time.</div>';const status=available>=rem?'Achievable at current capacity':'Capacity gap';return `<div class="alert ${available>=rem?'success':'danger'}"><strong>${status}</strong><p>Estimated required: ${rem} h<br>Estimated available: ${available} h<br>Difference: ${available-rem} h</p></div><p class="small muted">This estimate is based on mapped topic effort and mastery, not a promise of qualification.</p>`}
+
+
+function getModelCapability(providerId, modelId) {
+  providerId = providerId || state.settings.aiProvider;
+  modelId = modelId || getEffectiveModelId();
+
+  if (providerId === 'custom') {
+    const isVision = Boolean(state.settings.customModelVisionSupport);
+    return {
+      visionSupport: isVision ? 'verified' : 'unknown',
+      visualQuestionSupport: isVision,
+      inputModalities: isVision ? ['text', 'image'] : ['text'],
+      outputModalities: ['text'],
+      supportedImageTypes: ['image/png', 'image/jpeg'],
+      maxImages: null,
+      maxImageBytes: null,
+      capabilitySource: isVision ? 'custom-declared' : 'unknown',
+      imageFormat: state.settings.customModelImageFormat || 'openai-chat'
+    };
+  }
+
+  const cacheKey = `${providerId}:${modelId}`;
+  if (state.settings.aiModelCapabilities?.[cacheKey]) {
+    return state.settings.aiModelCapabilities[cacheKey];
+  }
+
+  const curatedModels = getProviderModels(providerId);
+  const curated = curatedModels.find(m => m.id === modelId);
+  if (curated) {
+    return {
+      visionSupport: curated.visionSupport || 'unsupported',
+      visualQuestionSupport: Boolean(curated.visualQuestionSupport),
+      inputModalities: curated.inputModalities || ['text'],
+      outputModalities: curated.outputModalities || ['text'],
+      supportedImageTypes: curated.supportedImageTypes || [],
+      maxImages: curated.maxImages || null,
+      maxImageBytes: curated.maxImageBytes || null,
+      capabilitySource: curated.capabilitySource || 'curated-official',
+      stability: curated.stability || 'stable'
+    };
+  }
+
+  const discovered = window.NETCRACKER_DISCOVERED_MODELS?.[providerId] || [];
+  const disc = discovered.find(d => d.id === modelId);
+  if (disc && disc.visionSupport) {
+    return disc;
+  }
+
+  return {
+    visionSupport: 'unknown',
+    visualQuestionSupport: false,
+    inputModalities: ['text'],
+    outputModalities: ['text'],
+    supportedImageTypes: ['image/png', 'image/jpeg'],
+    maxImages: null,
+    maxImageBytes: null,
+    capabilitySource: 'unknown'
+  };
+}
+
+function getCompatibleVisionModels() {
+  const list = [];
+  const currentProvider = state.settings.aiProvider;
+  for (const p of AI_CATALOG.providers) {
+    for (const m of p.models || []) {
+      if (m.visionSupport === 'verified') {
+        list.push({
+          providerId: p.providerId,
+          providerLabel: p.label,
+          modelId: m.id,
+          modelLabel: m.label,
+          tier: m.tier,
+          recommended: m.recommended,
+          stability: m.stability,
+          isCurrentProvider: p.providerId === currentProvider
+        });
+      }
+    }
+  }
+  return list;
+}
+
+function decideVisualAIRequest(question, selectedProviderId = null, selectedModelId = null, userIntent = 'auto') {
+  const providerId = selectedProviderId || state?.settings?.aiProvider || 'gemini';
+  const modelId = selectedModelId || (typeof getEffectiveModelId === 'function' ? getEffectiveModelId() : 'gemini-3.6-flash');
+  const vMeta = window.classifyVisualQuestion ? window.classifyVisualQuestion(question) : { visualRequirement: 'none', textFallbackQuality: 'complete' };
+  const cap = getModelCapability(providerId, modelId);
+  const hasConsent = Boolean(state.settings.aiVisualConsent?.[providerId]);
+
+  if (vMeta.visualRequirement === 'none') {
+    return {
+      action: 'send-text-only',
+      reason: 'text-only-question',
+      requiresConsent: false,
+      canProceed: true,
+      recommendedModels: []
+    };
+  }
+
+  if (vMeta.visualRequirement === 'supplementary') {
+    if (cap.visionSupport === 'verified') {
+      if (userIntent === 'text') {
+        return {
+          action: 'send-text-only',
+          reason: 'supplementary-visual-text-intent',
+          requiresConsent: false,
+          canProceed: true,
+          recommendedModels: []
+        };
+      }
+      return {
+        action: 'send-text-and-image',
+        reason: 'supplementary-visual-verified-vision',
+        requiresConsent: !hasConsent,
+        canProceed: true,
+        recommendedModels: []
+      };
+    }
+    if (cap.visionSupport === 'unsupported') {
+      return {
+        action: 'offer-text-fallback',
+        reason: 'supplementary-visual-unsupported-model',
+        requiresConsent: false,
+        canProceed: true,
+        recommendedModels: getCompatibleVisionModels()
+      };
+    }
+    return {
+      action: 'require-capability-test',
+      reason: 'supplementary-visual-unknown-model',
+      requiresConsent: true,
+      canProceed: false,
+      recommendedModels: getCompatibleVisionModels()
+    };
+  }
+
+  // Essential visual
+  if (cap.visionSupport === 'verified') {
+    return {
+      action: 'send-text-and-image',
+      reason: 'essential-visual-verified-vision',
+      requiresConsent: !hasConsent,
+      canProceed: true,
+      recommendedModels: []
+    };
+  }
+
+  if (cap.visionSupport === 'unsupported') {
+    if (vMeta.textFallbackQuality === 'complete') {
+      return {
+        action: 'offer-text-fallback',
+        reason: 'essential-visual-complete-fallback-unsupported-model',
+        requiresConsent: false,
+        canProceed: true,
+        recommendedModels: getCompatibleVisionModels()
+      };
+    }
+    return {
+      action: 'require-model-switch',
+      reason: 'essential-visual-insufficient-fallback-unsupported-model',
+      requiresConsent: false,
+      canProceed: false,
+      recommendedModels: getCompatibleVisionModels()
+    };
+  }
+
+  return {
+    action: 'require-capability-test',
+    reason: 'essential-visual-unknown-model',
+    requiresConsent: true,
+    canProceed: false,
+    recommendedModels: getCompatibleVisionModels()
+  };
+}
+
+async function renderQuestionSheetToPNG(q) {
+  if (!q) throw new Error('No question provided to renderer');
+
+  const passage = q.passage ? `<div style="background:#f8fafc; border-left:4px solid #3b82f6; padding:12px; margin-bottom:14px; border-radius:6px; font-size:14px; color:#334155;"><strong>Shared Passage / Context:</strong><br>${esc(q.passage)}</div>` : '';
+  const questionText = q.question ? `<div style="font-size:16px; font-weight:700; color:#0f172a; margin-bottom:14px; line-height:1.5;">${esc(q.question)}</div>` : '';
+  const stemSvg = q.stemVectorSvg ? `<div style="margin-bottom:14px; text-align:center;">${safeVector(q.stemVectorSvg)}</div>` : '';
+  const sourceVectors = (String(q.transcriptionStatus || '').includes('vector-primary') && Array.isArray(q.sourceVectorSvgs)) ? q.sourceVectorSvgs.map(safeVector).filter(Boolean).map(s => `<div style="margin-bottom:14px; text-align:center;">${s}</div>`).join('') : '';
+
+  const optionsHTML = (q.options || []).map((o, i) => {
+    const label = String.fromCharCode(65 + i);
+    const svg = Array.isArray(q.optionVectorSvgs) ? safeVector(q.optionVectorSvgs[i]) : '';
+    const alt = Array.isArray(q.optionAlt) ? q.optionAlt[i] : '';
+    const text = optionTextValid(o) ? String(o) : (alt || `Option ${label}`);
+    return `
+      <div style="display:flex; align-items:flex-start; gap:12px; background:#f1f5f9; border:1px solid #cbd5e1; border-radius:8px; padding:12px 14px;">
+        <div style="font-weight:800; font-size:14px; color:#1e293b; background:#e2e8f0; width:28px; height:28px; border-radius:6px; display:flex; align-items:center; justify-content:center; flex-shrink:0;">${label}</div>
+        <div style="font-size:15px; color:#0f172a; flex:1; line-height:1.4;">
+          <div>${esc(text)}</div>
+          ${svg ? `<div style="margin-top:8px;">${svg}</div>` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  const header = `
+    <div style="border-bottom:2px solid #e2e8f0; padding-bottom:12px; margin-bottom:16px; display:flex; justify-content:space-between; align-items:center;">
+      <div>
+        <div style="font-size:12px; font-weight:800; letter-spacing:0.05em; color:#64748b; text-transform:uppercase;">
+          UGC-NET ${q.year || ''} ${q.paper ? '· Paper ' + q.paper : ''} ${q.unit ? '· Unit ' + q.unit : ''}
+        </div>
+        <div style="font-size:18px; font-weight:800; color:#0f172a; margin-top:2px;">
+          Question ${q.questionNumber || '—'} <span style="font-size:12px; font-weight:400; color:#64748b;">(ID: ${esc(q.questionId || q.id)})</span>
+        </div>
+      </div>
+      <div style="font-size:11px; color:#94a3b8; font-weight:600;">NETCracker AI Visual Sheet</div>
+    </div>
+  `;
+
+  const content = `
+    <div xmlns="http://www.w3.org/1999/xhtml" style="background:#ffffff; color:#0f172a; font-family:system-ui, -apple-system, sans-serif; padding:24px; box-sizing:border-box; width:800px; max-width:800px; border-radius:12px;">
+      ${header}
+      ${passage}
+      ${questionText}
+      ${stemSvg}
+      ${sourceVectors}
+      <div style="display:flex; flex-direction:column; gap:10px; margin-top:14px;">
+        ${optionsHTML}
+      </div>
+    </div>
+  `;
+
+  let height = 800;
+  if (typeof document !== 'undefined' && document.body && typeof document.body.appendChild === 'function') {
+    const container = document.createElement('div');
+    container.style.position = 'absolute';
+    container.style.left = '-9999px';
+    container.style.top = '-9999px';
+    container.style.width = '800px';
+    container.innerHTML = content;
+    document.body.appendChild(container);
+    height = Math.max(300, Math.min(4000, container.offsetHeight || 800));
+    document.body.removeChild(container);
+  }
+
+  const svgString = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="${height}">
+    <foreignObject width="100%" height="100%">
+      ${content}
+    </foreignObject>
+  </svg>`;
+
+  if (typeof Image === 'undefined' || typeof document === 'undefined') {
+    const base64 = Buffer.from(svgString).toString('base64');
+    return {
+      dataUrl: `data:image/svg+xml;base64,${base64}`,
+      base64,
+      width: 800,
+      height,
+      byteSize: svgString.length,
+      mimeType: 'image/svg+xml'
+    };
+  }
+
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+    const url = URL.createObjectURL(svgBlob);
+
+    img.onload = () => {
+      try {
+        const canvas = document.createElement('canvas');
+        canvas.width = 800;
+        canvas.height = height;
+        let ctx = null;
+        try { ctx = canvas.getContext('2d'); } catch (ce) {}
+        if (!ctx) {
+          URL.revokeObjectURL(url);
+          const base64 = typeof Buffer !== 'undefined' ? Buffer.from(svgString).toString('base64') : (typeof btoa !== 'undefined' ? btoa(svgString) : '');
+          resolve({
+            dataUrl: `data:image/svg+xml;base64,${base64}`,
+            base64,
+            width: 800,
+            height,
+            byteSize: svgString.length,
+            mimeType: 'image/svg+xml'
+          });
+          return;
+        }
+        ctx.fillStyle = '#ffffff';
+        ctx.fillRect(0, 0, 800, height);
+        ctx.drawImage(img, 0, 0);
+
+        URL.revokeObjectURL(url);
+        const dataUrl = canvas.toDataURL('image/png');
+        const base64 = dataUrl.split(',')[1];
+        const byteSize = Math.round((base64.length * 3) / 4);
+
+        resolve({
+          dataUrl,
+          base64,
+          width: 800,
+          height,
+          byteSize,
+          mimeType: 'image/png'
+        });
+      } catch (e) {
+        URL.revokeObjectURL(url);
+        reject(new Error('Question-sheet rendering failed: ' + e.message));
+      }
+    };
+
+    img.onerror = () => {
+      URL.revokeObjectURL(url);
+      reject(new Error('Question-sheet rendering failed during image load'));
+    };
+
+    img.src = url;
+  });
+}
+
+function buildAskAIVisualPrompt(q, assistanceMode = 'explain-official', selectedChoice = null, isAttachedImage = false, isStructuredFallback = false) {
+  const optionsText = (q.options || []).map((o, i) => `${String.fromCharCode(65 + i)}) ${optionLabel(q, i)}`).join('\n');
+  const userChoiceText = selectedChoice !== null && selectedChoice !== undefined && selectedChoice !== '' ? `\nStudent selected answer: ${String.fromCharCode(65 + Number(selectedChoice))}) ${optionLabel(q, Number(selectedChoice))}` : '';
+
+  let prompt = `You are analysing a UGC-NET Paper ${q.paper} (Unit ${q.unit}: ${q.topic || 'Syllabus topic'}) multiple-choice question.\n\nQuestion ID: ${q.questionId || q.id}\nQuestion Number: ${q.questionNumber || '—'}\nYear: ${q.year || ''}\nQuestion text: ${q.question || 'See attached visual diagram'}\nOptions:\n${optionsText}${userChoiceText}\n`;
+
+  if (isAttachedImage) {
+    prompt += `\n[AN ATTACHED IMAGE IS PROVIDED: An exact PNG question sheet containing the stem diagram, text, and option diagrams is attached with this request.]\nThe option labels A, B, C and D in the attached image are authoritative.\n`;
+  } else if (isStructuredFallback) {
+    const vMeta = window.classifyVisualQuestion ? window.classifyVisualQuestion(q) : {};
+    prompt += `\n[STRUCTURED DESCRIPTION FALLBACK USED: The model selected is text-only. High-fidelity structured description: ${vMeta.semanticVisualDescription || q.explanation || 'Refer to text breakdown'}]\n`;
+  }
+
+  if (assistanceMode === 'hint') {
+    prompt += `\nAssistance Mode: HINT ONLY.\nProvide a helpful conceptual hint without revealing the correct option key (A, B, C or D). Direct the student's thinking toward the core concept.`;
+  } else if (assistanceMode === 'concept') {
+    prompt += `\nAssistance Mode: CONCEPT EXPLANATION.\nExplain the underlying core concept tested by this question in detail. Do not state the final answer option unless required for conceptual clarity.`;
+  } else if (assistanceMode === 'why-wrong') {
+    const correctLabel = correctIndexes(q).map(i => `${String.fromCharCode(65 + i)}) ${optionLabel(q, i)}`).join(' or ');
+    prompt += `\nAssistance Mode: WHY MY ANSWER WAS WRONG.\nOfficial correct answer: ${correctLabel}.\nExplain why the student's choice was incorrect and how it differs conceptually from the correct option.`;
+  } else if (assistanceMode === 'solve-independent') {
+    prompt += `\nAssistance Mode: INDEPENDENT SOLUTION.\nSolve this question step by step independently. Conclude with your recommended answer option (A, B, C or D).`;
+  } else {
+    // explain-official
+    const correctLabel = correctIndexes(q).map(i => `${String.fromCharCode(65 + i)}) ${optionLabel(q, i)}`).join(' or ');
+    prompt += `\nAssistance Mode: EXPLAIN OFFICIAL ANSWER.\nOfficial correct answer: ${correctLabel}.\nBasic explanation: ${q.explanation || 'None'}\n\nPlease provide:\n1. Step-by-step conceptual breakdown\n2. Option-by-option analysis (why correct option is right and incorrect options are wrong)\n3. Key formula, diagram summary or memory tip for the exam.`;
+  }
+
+  return prompt;
+}
+
+async function runVisualCapabilityTest(providerId, modelId) {
+  let dataUrl, base64;
+  if (typeof document !== 'undefined' && document.createElement) {
+    const canvas = document.createElement('canvas');
+    canvas.width = 120;
+    canvas.height = 40;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, 120, 40);
+    ctx.fillStyle = '#000000';
+    ctx.font = 'bold 16px sans-serif';
+    ctx.fillText('NET A B C D', 10, 26);
+    dataUrl = canvas.toDataURL('image/png');
+    base64 = dataUrl.split(',')[1];
+  } else {
+    base64 = Buffer.from('NET A B C D').toString('base64');
+    dataUrl = `data:image/png;base64,${base64}`;
+  }
+
+  const imagePayload = { dataUrl, base64, mimeType: 'image/png' };
+  const testPrompt = 'Read the four letters shown in the image and reply exactly:\nA B C D';
+  const answer = await callAI(testPrompt, false, imagePayload);
+
+  if (answer && answer.toUpperCase().includes('A B C D')) {
+    if (!state.settings.aiModelCapabilities) state.settings.aiModelCapabilities = {};
+    state.settings.aiModelCapabilities[`${providerId}:${modelId}`] = {
+      visionSupport: 'verified',
+      visualQuestionSupport: true,
+      inputModalities: ['text', 'image'],
+      outputModalities: ['text'],
+      supportedImageTypes: ['image/png', 'image/jpeg'],
+      capabilitySource: 'student-tested',
+      testedDate: new Date().toISOString()
+    };
+    saveState();
+    return true;
+  }
+  throw new Error(`Capability test failed. Model responded: "${answer.slice(0, 100)}", expected "A B C D".`);
+}
+
+function showVisualConsentModal(providerId, onConsent) {
+  const cfg = getProviderConfig(providerId);
+  const providerLabel = cfg ? cfg.label : providerId;
+  $('#modalRoot').innerHTML = `
+    <div class="modal-backdrop" id="visualConsentModal">
+      <div class="modal">
+        <div class="row between">
+          <h2>Visual AI Privacy Consent</h2>
+          <button class="icon-button" data-action="close-modal">×</button>
+        </div>
+        <p>NETCracker will generate a temporary in-memory image containing this question, its diagram and its options.</p>
+        <p>The image and structured question text will be sent directly to: <strong>${esc(providerLabel)}</strong>.</p>
+        <div class="alert warning small" style="margin-top:10px">
+          The image is generated dynamically in memory and is not added to your backups, offline question archive, or device storage.
+        </div>
+        <div class="row wrap" style="margin-top:18px">
+          <button class="button" id="trustProviderBtn">Trust ${esc(providerLabel)} for future visual questions</button>
+          <button class="button secondary" id="onceConsentBtn">Continue once</button>
+          <button class="button ghost" data-action="close-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  `;
+  bindView();
+  $('#trustProviderBtn').onclick = () => {
+    if (!state.settings.aiVisualConsent) state.settings.aiVisualConsent = {};
+    state.settings.aiVisualConsent[providerId] = true;
+    saveState();
+    $('#modalRoot').innerHTML = '';
+    onConsent();
+  };
+  $('#onceConsentBtn').onclick = () => {
+    $('#modalRoot').innerHTML = '';
+    onConsent();
+  };
+}
+
+function showModelSwitchModal(q, selectedChoice, assistanceMode) {
+  const models = getCompatibleVisionModels();
+  const optionsHTML = models.map(m => `
+    <div class="card flat" style="border:1px solid var(--border); padding:12px; margin-top:8px;">
+      <div class="row between wrap">
+        <div>
+          <strong>${esc(m.providerLabel)} — ${esc(m.modelLabel)}</strong>
+          <div class="small muted">${esc(m.tier)} · Verified Vision</div>
+        </div>
+        <button class="button compact" data-action="switch-and-ask" data-provider="${esc(m.providerId)}" data-model="${esc(m.modelId)}">Switch &amp; Ask</button>
+      </div>
+    </div>
+  `).join('');
+
+  $('#modalRoot').innerHTML = `
+    <div class="modal-backdrop" id="modelSwitchModal">
+      <div class="modal">
+        <div class="row between">
+          <h2>Vision-Capable Model Required</h2>
+          <button class="icon-button" data-action="close-modal">×</button>
+        </div>
+        <div class="alert danger small" style="margin-top:10px">
+          This question contains essential visual content and cannot be analysed reliably with the selected text-only model.
+        </div>
+        <p style="margin-top:12px">Select a verified vision-capable model below:</p>
+        <div style="max-height:50vh; overflow:auto;">
+          ${optionsHTML}
+        </div>
+        <div class="row wrap" style="margin-top:16px">
+          <button class="button ghost" data-action="close-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  `;
+  bindView();
+  $$('[data-action="switch-and-ask"]').forEach(btn => {
+    btn.onclick = () => {
+      const p = btn.dataset.provider;
+      const m = btn.dataset.model;
+      state.settings.aiProvider = p;
+      saveCurrentModelForProvider(p, m);
+      state.settings.aiModel = m;
+      saveState();
+      $('#modalRoot').innerHTML = '';
+      askQuestionAI(q.id, selectedChoice, assistanceMode, 'visual');
+    };
+  });
+}
+
+function showCapabilityTestModal(providerId, modelId, q, selectedChoice, assistanceMode) {
+  $('#modalRoot').innerHTML = `
+    <div class="modal-backdrop" id="capabilityTestModal">
+      <div class="modal">
+        <div class="row between">
+          <h2>Vision Support Unverified</h2>
+          <button class="icon-button" data-action="close-modal">×</button>
+        </div>
+        <div class="alert warning small" style="margin-top:10px">
+          Vision support for <strong>${esc(modelId)}</strong> has not been verified.
+        </div>
+        <p>Run a quick capability test to verify whether this model can read image inputs.</p>
+        <div class="row wrap" style="margin-top:18px">
+          <button class="button" id="runTestBtn">Test visual support</button>
+          <button class="button secondary" id="switchModelBtn">Switch model</button>
+          <button class="button ghost" data-action="close-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  `;
+  bindView();
+  $('#runTestBtn').onclick = async () => {
+    const btn = $('#runTestBtn');
+    btn.disabled = true;
+    btn.textContent = 'Testing…';
+    try {
+      await runVisualCapabilityTest(providerId, modelId);
+      toast('Visual support verified!');
+      $('#modalRoot').innerHTML = '';
+      askQuestionAI(q.id, selectedChoice, assistanceMode, 'visual');
+    } catch (e) {
+      toast(`Capability test failed: ${e.message}`);
+      btn.disabled = false;
+      btn.textContent = 'Test visual support';
+    }
+  };
+  $('#switchModelBtn').onclick = () => {
+    $('#modalRoot').innerHTML = '';
+    showModelSwitchModal(q, selectedChoice, assistanceMode);
+  };
+}
+
+function showStructuredFallbackOfferModal(q, selectedChoice, assistanceMode) {
+  $('#modalRoot').innerHTML = `
+    <div class="modal-backdrop" id="fallbackOfferModal">
+      <div class="modal">
+        <div class="row between">
+          <h2>Essential Visual Content Notice</h2>
+          <button class="icon-button" data-action="close-modal">×</button>
+        </div>
+        <p>This question contains essential visual content.</p>
+        <p>The selected model does not support images. A reviewed structured description is available.</p>
+        <div class="row wrap" style="margin-top:18px">
+          <button class="button" id="useDescriptionBtn">Ask using structured description</button>
+          <button class="button secondary" id="switchVisionModelBtn">Switch to a vision model</button>
+          <button class="button ghost" data-action="close-modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  `;
+  bindView();
+  $('#useDescriptionBtn').onclick = () => {
+    $('#modalRoot').innerHTML = '';
+    executeAskAIVisual(q, selectedChoice, assistanceMode, false);
+  };
+  $('#switchVisionModelBtn').onclick = () => {
+    $('#modalRoot').innerHTML = '';
+    showModelSwitchModal(q, selectedChoice, assistanceMode);
+  };
+}
+
+function showQuestionSheetPreviewModal(q) {
+  toast('Rendering AI question sheet preview…');
+  renderQuestionSheetToPNG(q).then(sheet => {
+    $('#modalRoot').innerHTML = `
+      <div class="modal-backdrop" id="sheetPreviewModal">
+        <div class="modal wide">
+          <div class="row between">
+            <h2>AI Question Sheet Preview</h2>
+            <button class="icon-button" data-action="close-modal">×</button>
+          </div>
+          <div class="tags" style="margin:10px 0;">
+            <span class="tag success">${sheet.width} × ${sheet.height} px</span>
+            <span class="tag">${Math.round(sheet.byteSize / 1024)} KB</span>
+            <span class="tag">PNG format</span>
+            <span class="tag">In-memory only</span>
+          </div>
+          <div style="max-height:60vh; overflow:auto; border:1px solid var(--border); border-radius:12px; background:#fff; text-align:center; padding:12px;">
+            <img src="${sheet.dataUrl}" style="max-width:100%; height:auto; display:block; margin:0 auto;" alt="AI question sheet preview">
+          </div>
+          <p class="small muted" style="margin-top:10px;">This exact high-contrast PNG is sent in memory to vision-capable models with option labels A, B, C, D rendered into the image.</p>
+          <div class="row wrap" style="margin-top:14px;">
+            <button class="button" data-action="close-modal">Close preview</button>
+          </div>
+        </div>
+      </div>
+    `;
+    bindView();
+  }).catch(e => {
+    toast(`Preview failed: ${e.message}`);
+  });
+}
+
+async function executeAskAIVisual(q, selectedChoice = null, assistanceMode = 'explain-official', useImage = false) {
+  if (!navigator.onLine) {
+    toast('AI analysis requires internet access. The question, diagram and all offline study tools remain available.');
+    return;
+  }
+
+  const pLabel = () => { const c = getProviderConfig(state.settings.aiProvider); return c ? c.label : state.settings.aiProvider; };
+  const modelId = getEffectiveModelId();
+
+  toast(`Sending request to ${pLabel()} (${modelId})…`);
+  routeTo('tutor');
+
+  const log = $('#chatLog');
+  if (log) {
+    log.insertAdjacentHTML('beforeend', `<div class="message ai" id="typingMsg">Rendering question sheet and generating AI analysis…</div>`);
+    log.scrollTop = log.scrollHeight;
+  }
+
+  try {
+    let sheet = null;
+    if (useImage) {
+      sheet = await renderQuestionSheetToPNG(q);
+    }
+    const isFallback = !useImage && window.classifyVisualQuestion && window.classifyVisualQuestion(q).visualRequirement !== 'none';
+    const prompt = buildAskAIVisualPrompt(q, assistanceMode, selectedChoice, useImage, isFallback);
+
+    let answer = await callAI(prompt, false, sheet);
+
+    if (assistanceMode === 'solve-independent') {
+      const match = answer.match(/\b([A-D])\b/i);
+      const official = correctText(q);
+      const isMatch = match && official.toUpperCase().includes(match[1].toUpperCase());
+      const statusNote = isMatch ? `\n\n✓ AI answer agrees with official key (${official})` : `\n\n⚠ AI answer differs from official key (Official: ${official})`;
+      answer += statusNote;
+    }
+
+    state.chats.push({ role: 'user', content: `[Ask AI for Question ${q.questionNumber || q.id}] Mode: ${assistanceMode}`, date: new Date().toISOString() });
+    state.chats.push({ role: 'assistant', content: answer, date: new Date().toISOString() });
+    saveState();
+    render();
+  } catch (e) {
+    const errorMsg = `Visual AI request failed: ${e.message}. Your test timer, answers and local progress are completely safe.`;
+    state.chats.push({ role: 'assistant', content: errorMsg, date: new Date().toISOString() });
+    saveState();
+    render();
+    toast(e.message);
+  }
+}
+
+function askAIButtonHTML(q, options = {}) {
+  const { selected = '', mode = 'explain-official' } = options;
+  const vMeta = window.classifyVisualQuestion ? window.classifyVisualQuestion(q) : { visualRequirement: 'none', textFallbackQuality: 'complete' };
+  const decision = decideVisualAIRequest(q);
+
+  let label = '✦ Ask AI';
+  let btnClass = 'button ghost compact';
+  let badgeHTML = '';
+
+  if (vMeta.visualRequirement !== 'none') {
+    badgeHTML += `<span class="tag warning">Visual (${esc(vMeta.visualRequirement)})</span>`;
+    if (decision.action === 'send-text-and-image') {
+      label = '✦ Ask AI with visual';
+      btnClass = 'button secondary compact';
+      badgeHTML += `<span class="tag success">Vision ready</span>`;
+    } else if (decision.action === 'offer-text-fallback') {
+      label = '✦ Ask AI using description';
+      badgeHTML += `<span class="tag">Structured fallback</span>`;
+    } else if (decision.action === 'require-model-switch') {
+      label = '✦ Switch model to ask AI';
+      btnClass = 'button danger compact';
+      badgeHTML += `<span class="tag danger">Vision model required</span>`;
+    } else if (decision.action === 'require-capability-test') {
+      label = '✦ Verify visual support';
+      badgeHTML += `<span class="tag warning">Vision unverified</span>`;
+    }
+  } else {
+    const cap = getModelCapability(state.settings.aiProvider, getEffectiveModelId());
+    if (cap.visionSupport === 'verified') {
+      badgeHTML += `<span class="tag success">Vision model</span>`;
+    } else if (cap.visionSupport === 'unsupported') {
+      badgeHTML += `<span class="tag">Text-only model</span>`;
+    }
+  }
+
+  return `
+    <div class="row wrap" style="align-items:center; gap:6px;">
+      <button class="${btnClass}" data-action="ask-question-ai" data-id="${esc(q.id)}" data-selected="${selected !== null && selected !== undefined ? esc(selected) : ''}" data-mode="${esc(mode)}">${esc(label)}</button>
+      ${vMeta.visualRequirement !== 'none' ? `<button class="button ghost compact" data-action="preview-question-sheet" data-id="${esc(q.id)}" title="Preview AI question sheet">👁 Sheet preview</button>` : ''}
+      ${badgeHTML}
+    </div>
+  `;
+}
+
+
+window.getModelCapability = getModelCapability;
+window.getCompatibleVisionModels = getCompatibleVisionModels;
+window.decideVisualAIRequest = decideVisualAIRequest;
+window.renderQuestionSheetToPNG = renderQuestionSheetToPNG;
+window.buildAskAIVisualPrompt = buildAskAIVisualPrompt;
+window.askAIButtonHTML = askAIButtonHTML;
+window.askQuestionAI = askQuestionAI;
+window.callAI = callAI;
 
 function getProviderConfig(providerId){return AI_CATALOG.providers.find(p=>p.providerId===providerId)}
 function getProviderModels(providerId){const cfg=getProviderConfig(providerId);return cfg?cfg.models:[]}
@@ -279,8 +959,8 @@ function renderTutor(){
 }
 async function sendChat(text){if(!text.trim())return;state.chats.push({role:'user',content:text.trim(),date:new Date().toISOString()});saveState();render();const log=$('#chatLog');if(log){log.insertAdjacentHTML('beforeend','<div class="message ai" id="typingMsg">Thinking…</div>');log.scrollTop=log.scrollHeight}try{const answer=await callAI(buildTutorPrompt(text));state.chats.push({role:'assistant',content:answer,date:new Date().toISOString()});saveState();render()}catch(e){state.chats.push({role:'assistant',content:`AI request failed: ${e.message}. Your offline data and study features are unaffected.`,date:new Date().toISOString()});saveState();render()}}
 function buildTutorPrompt(userText){const weak=priorityTopics().slice(0,5).map(t=>`${t.paperName}, Unit ${t.unit} ${t.name}: mastery ${mastery(t.id)}%`).join('; ');const recent=state.mistakes.filter(m=>!m.resolved).slice(-5).map(m=>{const q=DATA.questions.find(x=>x.id===m.questionId);return q?.topic}).filter(Boolean).join(', ');return `You are NETCracker AI, a precise UGC-NET tutor for Paper 1 and Computer Science & Applications Code 87. Stay within the official syllabus. The student target is ${state.profile.goal}, ${state.profile.targetTotal}/300, category ${state.profile.category}, target date ${state.profile.examDate||'not set'}. Weak priorities: ${weak}. Recent mistake topics: ${recent||'none'}. Explain uncertainty. Never claim guaranteed qualification. Use concise structured teaching, then a recall check when appropriate. Student request: ${userText}`}
-async function callAI(prompt,validation=false){const key=getAIKey();if(!key)throw new Error('No API key is available');const provider=state.settings.aiProvider;const model=getEffectiveModelId();if(!model&&provider!=='custom')throw new Error('No model selected');const cfg=getProviderConfig(provider);if(provider==='gemini'){if(!cfg)throw new Error('Unknown provider');const url=cfg.baseUrl+'/models/'+encodeURIComponent(model)+':generateContent';const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':key},body:JSON.stringify({contents:[{parts:[{text:validation?'Reply with exactly KEY_OK':prompt}]}],generationConfig:{temperature:validation?0:0.35,maxOutputTokens:validation?20:1200}})});if(!r.ok)throw new Error(await providerError(r));const d=await r.json();return d.candidates?.[0]?.content?.parts?.map(x=>x.text).join('')||'No response text returned.'}
- const base=provider==='custom'?((state.settings.aiBaseUrl||'').replace(/\/+$/,'')):(cfg?cfg.baseUrl:'');if(!base)throw new Error('Custom base URL is required');const r=await fetch(base+'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},body:JSON.stringify({model,messages:[{role:'system',content:'You are a reliable examination tutor.'},{role:'user',content:validation?'Reply with exactly KEY_OK':prompt}],temperature:validation?0:0.35,max_tokens:validation?20:1200})});if(!r.ok)throw new Error(await providerError(r));const d=await r.json();return d.choices?.[0]?.message?.content||'No response text returned.'}
+async function callAI(prompt,validation=false,imagePayload=null){const key=getAIKey();if(!key)throw new Error('No API key is available');const provider=state.settings.aiProvider;const model=getEffectiveModelId();if(!model&&provider!=='custom')throw new Error('No model selected');const cfg=getProviderConfig(provider);if(provider==='gemini'){if(!cfg)throw new Error('Unknown provider');const url=cfg.baseUrl+'/models/'+encodeURIComponent(model)+':generateContent';const parts=[{text:validation?'Reply with exactly KEY_OK':prompt}];if(imagePayload&&!validation){parts.push({inlineData:{mimeType:imagePayload.mimeType||'image/png',data:imagePayload.base64}})}const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':key},body:JSON.stringify({contents:[{parts}],generationConfig:{temperature:validation?0:0.35,maxOutputTokens:validation?20:1200}})});if(!r.ok)throw new Error(await providerError(r));const d=await r.json();return d.candidates?.[0]?.content?.parts?.map(x=>x.text).join('')||'No response text returned.'}
+ const base=provider==='custom'?((state.settings.aiBaseUrl||'').replace(/\/+$/,'')):(cfg?cfg.baseUrl:'');if(!base)throw new Error('Custom base URL is required');const cap=getModelCapability(provider,model);let userContent=validation?'Reply with exactly KEY_OK':prompt;if(imagePayload&&!validation){if(provider==='groq'&&cap.visionSupport!=='verified'){throw new Error(`The selected Groq model (${model}) is text-only. Choose Qwen 3.6 27B Vision or another verified vision model to analyse this diagram.`)}if(cap.visionSupport==='unsupported'&&provider!=='custom'){throw new Error(`The selected model (${model}) does not accept image inputs.`)}userContent=[{type:'text',text:prompt},{type:'image_url',image_url:{url:imagePayload.dataUrl||`data:image/png;base64,${imagePayload.base64}`}}]}const reqBody={model,messages:[{role:'system',content:'You are a reliable examination tutor.'},{role:'user',content:userContent}],temperature:validation?0:0.35,max_tokens:validation?20:1200};if(provider==='xai')reqBody.store=false;const r=await fetch(base+'/chat/completions',{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},body:JSON.stringify(reqBody)});if(!r.ok)throw new Error(await providerError(r));const d=await r.json();return d.choices?.[0]?.message?.content||'No response text returned.'}
 async function providerError(r){let txt='';try{const d=await r.json();txt=d.error?.message||JSON.stringify(d)}catch{txt=await r.text()}return `${r.status}: ${txt.slice(0,300)}`}
 function getAIKey(){return sessionStorage.getItem(AI_KEY_SESSION)||localStorage.getItem(AI_KEY_SESSION)||''}
 async function discoverModelsForProvider(providerId,key){
@@ -343,7 +1023,7 @@ function renderQuestionBrowser(){
  const controls=`<div class="question-filters"><div class="field"><label for="qbYear">Year</label><select id="qbYear">${years.map(y=>`<option value="${y}" ${questionBrowser.year===y?'selected':''}>${y}</option>`).join('')}</select></div><div class="field"><label for="qbPaper">Paper</label><select id="qbPaper"><option value="all">All papers</option><option value="1" ${questionBrowser.paper==='1'?'selected':''}>Paper 1</option><option value="2" ${questionBrowser.paper==='2'?'selected':''}>Paper 2 · Computer Science</option></select></div><div class="field"><label for="qbStatus">Publishing status</label><select id="qbStatus"><option value="scoreable" ${questionBrowser.status==='scoreable'?'selected':''}>Scoreable</option><option value="all" ${questionBrowser.status==='all'?'selected':''}>All, including dropped</option><option value="dropped" ${questionBrowser.status==='dropped'?'selected':''}>Officially dropped</option><option value="review" ${questionBrowser.status==='review'?'selected':''}>Vector/advisory</option></select></div><div class="field"><label for="qbVisual">Presentation</label><select id="qbVisual"><option value="all">Text and diagrams</option><option value="visual" ${questionBrowser.visual==='visual'?'selected':''}>Has diagram/vector</option><option value="text" ${questionBrowser.visual==='text'?'selected':''}>Text only</option></select></div><div class="field qb-search"><label for="qbQuery">Search question, option or number</label><input id="qbQuery" value="${esc(questionBrowser.query)}" placeholder="e.g. deadlock, 59, HTML table"></div></div>`;
  if(!q)return `<section class="page">${pageHead('Question bank','Browse every archived item by exact year, paper, question number and content status.')}<div class="card">${controls}<div class="empty">No questions match these filters.</div></div></section>`;
  const answer=questionBrowser.reveal?`<div class="answer-panel"><strong>Accepted answer:</strong> ${esc(correctText(q))}<p>${esc(q.explanation||'No explanation is bundled.')}</p></div>`:'';
- return `<section class="page">${pageHead('Question bank',`${PYQ_INDEX.mappedTotal} archived records. Questions remain local and are loaded one year at a time.`,`<button class="button secondary" data-action="start-browser-year">Test this filtered set</button>`)}<div class="card">${controls}<div class="row between wrap qb-position"><strong>${pool.length} matching questions</strong><span>Result ${questionBrowser.index+1} of ${pool.length}</span></div></div><div class="card question-browser-card">${questionMetaHTML(q)}<div class="row between wrap" style="margin-top:14px"><div class="tags">${sourceBadge(q)}</div><span class="q-number">Archive position ${questionBrowser.index+1}/${pool.length}</span></div><div class="question-body">${questionDisplay(q)}</div><div class="options browser-options">${q.options.map((o,i)=>`<div class="option static ${questionBrowser.reveal&&correctIndexes(q).includes(i)?'correct':''}"><span class="option-index">${String.fromCharCode(65+i)}</span>${optionDisplay(q,o,i)}</div>`).join('')}</div>${answer}<div class="row between wrap" style="margin-top:18px"><button class="button ghost" data-action="qb-prev" ${questionBrowser.index===0?'disabled':''}>Previous</button><button class="button secondary" data-action="qb-reveal">${questionBrowser.reveal?'Hide answer':'Show answer'}</button><button class="button" data-action="qb-next" ${questionBrowser.index===pool.length-1?'disabled':''}>Next</button></div></div></section>`;
+ return `<section class="page">${pageHead('Question bank',`${PYQ_INDEX.mappedTotal} archived records. Questions remain local and are loaded one year at a time.`,`<button class="button secondary" data-action="start-browser-year">Test this filtered set</button>`)}<div class="card">${controls}<div class="row between wrap qb-position"><strong>${pool.length} matching questions</strong><span>Result ${questionBrowser.index+1} of ${pool.length}</span></div></div><div class="card question-browser-card">${questionMetaHTML(q)}<div class="row between wrap" style="margin-top:14px"><div class="tags">${sourceBadge(q)}</div><span class="q-number">Archive position ${questionBrowser.index+1}/${pool.length}</span></div><div class="question-body">${questionDisplay(q)}</div><div class="options browser-options">${q.options.map((o,i)=>`<div class="option static ${questionBrowser.reveal&&correctIndexes(q).includes(i)?'correct':''}"><span class="option-index">${String.fromCharCode(65+i)}</span>${optionDisplay(q,o,i)}</div>`).join('')}</div>${answer}<div style="margin-top:12px">${askAIButtonHTML(q)}</div><div class="row between wrap" style="margin-top:18px"><button class="button ghost" data-action="qb-prev" ${questionBrowser.index===0?'disabled':''}>Previous</button><button class="button secondary" data-action="qb-reveal">${questionBrowser.reveal?'Hide answer':'Show answer'}</button><button class="button" data-action="qb-next" ${questionBrowser.index===pool.length-1?'disabled':''}>Next</button></div></div></section>`;
 }
 
 function renderPapers(){
@@ -363,7 +1043,7 @@ function renderSources(){return `<section class="page">${pageHead('Official sour
 
 function renderSettings(){return `<section class="page">${pageHead('Settings and local data','Configure targets, AI provider, appearance, backup and installation.')}
  <div class="grid cols-2"><div class="card"><h2>Student and target</h2>${profileFormHTML()}<button class="button" style="margin-top:14px" data-action="save-profile">Save target and replan</button></div>
- <div class="card"><h2>Bring your own AI key</h2><div class="alert warning small">Browser apps cannot hide a client-side key from the device owner. By default, the key is kept only for this browser session. AI requires internet; every non-AI feature works offline.</div><div class="form-grid" style="margin-top:14px"><div class="field"><label for="aiProvider">Provider</label><select id="aiProvider">${buildProviderOptions()}</select></div><div class="field"><label for="aiModel">Model</label><select id="aiModel">${buildModelOptionsForProvider(state.settings.aiProvider,state.settings.aiCustomModelId)}</select></div><div class="field full" id="customModelField"${state.settings.aiProvider!=='custom'&&state.settings.aiModel!=='__custom__'?' style="display:none"':''}><label for="aiCustomModelId">Custom model ID</label><input id="aiCustomModelId" value="${esc(state.settings.aiCustomModelId)}" placeholder="e.g. gpt-4o-mini"></div><div class="field full" id="aiBaseUrlField"${state.settings.aiProvider!=='custom'?' style="display:none"':''}><label for="aiBaseUrl">Custom base URL</label><input id="aiBaseUrl" value="${esc(state.settings.aiBaseUrl)}" placeholder="https://example.com/v1"></div><div class="field full"><label for="apiKey">API key</label><input id="apiKey" type="password" autocomplete="off" placeholder="Paste your key"></div><label class="row small" for="rememberKey"><input id="rememberKey" type="checkbox" ${state.settings.rememberKey?'checked':''}> Remember key on this device (less secure)</label></div><div class="row wrap" style="margin-top:14px"><button class="button" data-action="validate-ai">Validate key and load available models</button><button class="button secondary" data-action="discover-models">Discover models from key</button><button class="button ghost" data-action="forget-ai">Forget key</button><span class="pill">${state.settings.aiValidated?'Validated':'Locked'}</span></div>${aiCatalogCheckedNote()}</div></div>
+ <div class="card"><h2>Bring your own AI key</h2><div class="alert warning small">Browser apps cannot hide a client-side key from the device owner. By default, the key is kept only for this browser session. AI requires internet; every non-AI feature works offline.</div><div class="form-grid" style="margin-top:14px"><div class="field"><label for="aiProvider">Provider</label><select id="aiProvider">${buildProviderOptions()}</select></div><div class="field"><label for="aiModel">Model</label><select id="aiModel">${buildModelOptionsForProvider(state.settings.aiProvider,state.settings.aiCustomModelId)}</select></div><div class="field full" id="customModelField"${state.settings.aiProvider!=='custom'&&state.settings.aiModel!=='__custom__'?' style="display:none"':''}><label for="aiCustomModelId">Custom model ID</label><input id="aiCustomModelId" value="${esc(state.settings.aiCustomModelId)}" placeholder="e.g. gpt-4o-mini"></div><div class="field full" id="aiBaseUrlField"${state.settings.aiProvider!=='custom'?' style="display:none"':''}><label for="aiBaseUrl">Custom base URL</label><input id="aiBaseUrl" value="${esc(state.settings.aiBaseUrl)}" placeholder="https://example.com/v1"></div><div class="field full" id="customVisionSettings"${state.settings.aiProvider!=='custom'?' style="display:none"':''}><label class="row small"><input id="customModelVisionSupport" type="checkbox" ${state.settings.customModelVisionSupport?'checked':''}> This custom model supports image input</label><div class="field" style="margin-top:6px;"><label for="customModelImageFormat">Image request format</label><select id="customModelImageFormat"><option value="openai-chat" ${state.settings.customModelImageFormat==='openai-chat'?'selected':''}>OpenAI-compatible Chat Completions</option><option value="openai-responses" ${state.settings.customModelImageFormat==='openai-responses'?'selected':''}>OpenAI-compatible Responses</option><option value="unknown" ${state.settings.customModelImageFormat==='unknown'?'selected':''}>Unknown / text only</option></select></div></div><div class="field full"><label for="apiKey">API key</label><input id="apiKey" type="password" autocomplete="off" placeholder="Paste your key"></div><label class="row small" for="rememberKey"><input id="rememberKey" type="checkbox" ${state.settings.rememberKey?'checked':''}> Remember key on this device (less secure)</label></div><div class="row wrap" style="margin-top:14px"><button class="button" data-action="validate-ai">Validate key and load available models</button><button class="button secondary" data-action="discover-models">Discover models from key</button><button class="button ghost" data-action="forget-ai">Forget key</button><span class="pill">${state.settings.aiValidated?'Validated':'Locked'}</span></div>${aiCatalogCheckedNote()}</div></div>
  <div class="grid cols-2" style="margin-top:16px"><div class="card"><h2>Backup and portability</h2><p>Export all profile, mastery, plans, attempts, mistakes, notes and chats as one JSON file.</p><div class="row wrap"><button class="button secondary" data-action="export-data">Export backup</button><label class="button ghost">Import backup<input id="importFile" type="file" accept="application/json" hidden aria-label="Import backup file"></label></div></div><div class="card"><h2>Appearance and reset</h2><div class="field"><label for="themeSelect">Theme</label><select id="themeSelect"><option value="system" ${state.settings.theme==='system'?'selected':''}>System</option><option value="light" ${state.settings.theme==='light'?'selected':''}>Light</option><option value="dark" ${state.settings.theme==='dark'?'selected':''}>Dark</option></select></div><div class="row wrap" style="margin-top:14px"><button class="button ghost" data-action="install-app">Install app</button><button class="button danger" data-action="reset-data">Erase all local data</button></div></div></div>
  <div class="card" style="margin-top:16px"><h2>Advanced AI settings</h2><details><summary class="small muted" style="cursor:pointer">Expand advanced configuration</summary><div class="form-grid" style="margin-top:14px"><div class="field"><label for="aiReasoningMode">AI response mode</label><select id="aiReasoningMode"><option value="auto" ${state.settings.aiReasoningMode==='auto'?'selected':''}>Automatic (provider default)</option><option value="fast" ${state.settings.aiReasoningMode==='fast'?'selected':''}>Fast</option><option value="balanced" ${state.settings.aiReasoningMode==='balanced'?'selected':''}>Balanced</option><option value="deep" ${state.settings.aiReasoningMode==='deep'?'selected':''}>Deep</option></select></div><div class="field" style="grid-column:1/-1"><label>Active model ID</label><div class="small" style="padding:7px 0">${esc(getEffectiveModelId())}</div></div></div></details></div>
  <div class="card" style="margin-top:16px"><h2>Task-based recommendations</h2><p class="small muted">Guidance only. Your selected model will not be changed automatically.</p><div class="grid cols-2" style="margin-top:10px;gap:10px"><div><strong>Teach a difficult concept</strong><br><span class="small">Quality or Balanced</span></div><div><strong>Analyse why an answer was wrong</strong><br><span class="small">Quality</span></div><div><strong>Generate flashcards</strong><br><span class="small">Economy</span></div><div><strong>Generate short quizzes</strong><br><span class="small">Economy or Balanced</span></div><div><strong>Create a revision plan</strong><br><span class="small">Balanced</span></div><div><strong>Analyse mock-test weaknesses</strong><br><span class="small">Quality</span></div><div><strong>Motivation or general study chat</strong><br><span class="small">Economy</span></div></div></div>
@@ -373,22 +1053,47 @@ function saveProfileFromForm(){const total=Number($('#targetTotal').value),p1=Nu
 function showOnboarding(){if($('#onboardModal'))return;$('#modalRoot').innerHTML=`<div class="modal-backdrop" id="onboardModal"><div class="modal"><div class="brand"><div class="brand-mark">N</div><div><strong>Set up NETCracker AI</strong><small>Single-student local profile</small></div></div><h2 style="margin-top:20px">Build your preparation contract</h2><p>The examination date below is your editable planning target—not an assertion of an official future exam date.</p>${profileFormHTML()}<div class="alert warning small" style="margin-top:14px">Start with JRF 210/300 as a safe personal preparation target, then change it at any time. Historical cutoffs are references, not guarantees.</div><button class="button" style="width:100%;margin-top:16px" data-action="finish-onboarding">Create my plan</button></div></div>`;bindView()}
 function showTargetModal(){if($('#targetModal'))return;$('#modalRoot').innerHTML=`<div class="modal-backdrop" id="targetModal"><div class="modal"><div class="row between"><h2>Edit target</h2><button class="icon-button" data-action="close-modal">×</button></div>${profileFormHTML()}<div id="targetImpact" class="alert" style="margin-top:14px">Change values to preview impact. The planner will preserve your progress and rebuild future tasks.</div><button class="button" style="width:100%;margin-top:16px" data-action="save-target-modal">Apply and replan</button></div></div>`;bindView()}
 
-function askQuestionAI(qId, selected = null){
- const q=DATA.questions.find(x=>x.id===qId);if(!q)return;
- if(!state.settings.aiValidated){
-  toast('Validate an API key in Settings to use the AI Question Explainer.');
-  routeTo('settings');
-  return;
- }
- const opts=q.options.map((o,i)=>`${String.fromCharCode(65+i)}) ${o}`).join('\n');
- const userChoice=selected!==null&&selected!==undefined&&selected!==''?`\nMy choice was: ${String.fromCharCode(65+Number(selected))}) ${q.options[Number(selected)]}`:'';
- const prompt=`Explain this UGC-NET Paper ${q.paper} (Unit ${q.unit}: ${q.topic||'Syllabus topic'}) question in detail:\n\nQuestion: ${q.question}\nOptions:\n${opts}\nCorrect Answer: ${correctIndexes(q).map(index=>`${String.fromCharCode(65+index)}) ${q.options[index]}`).join(' or ')}${userChoice}\nBasic Explanation: ${q.explanation}\n\nPlease provide:\n1. Step-by-step conceptual breakdown\n2. Textual / ASCII / Mermaid diagram or visual representation\n3. Why each incorrect option is wrong\n4. A memory tip or key formula to solve similar questions fast in the exam.`;
- sendChat(prompt);
+function askQuestionAI(qId, selected = null, assistanceMode = 'explain-official', userIntent = 'auto') {
+  const q = DATA.questions.find(x => x.id === qId) || (ALL_YEAR_MAP[questionBrowser?.year]?.find(x => x.id === qId));
+  if (!q) return;
+  if (!state.settings.aiValidated) {
+    toast('Validate an API key in Settings to use the AI Question Explainer.');
+    routeTo('settings');
+    return;
+  }
+  if (!navigator.onLine) {
+    toast('AI analysis requires internet access. The question, diagram and all offline study tools remain available.');
+    return;
+  }
+  const decision = decideVisualAIRequest(q, null, userIntent);
+  if (decision.action === 'require-model-switch') {
+    showModelSwitchModal(q, selected, assistanceMode);
+    return;
+  }
+  if (decision.action === 'require-capability-test') {
+    showCapabilityTestModal(state.settings.aiProvider, getEffectiveModelId(), q, selected, assistanceMode);
+    return;
+  }
+  if (decision.action === 'offer-text-fallback') {
+    showStructuredFallbackOfferModal(q, selected, assistanceMode);
+    return;
+  }
+  if (decision.action === 'send-text-and-image') {
+    if (decision.requiresConsent) {
+      showVisualConsentModal(state.settings.aiProvider, () => {
+        executeAskAIVisual(q, selected, assistanceMode, true);
+      });
+    } else {
+      executeAskAIVisual(q, selected, assistanceMode, true);
+    }
+    return;
+  }
+  executeAskAIVisual(q, selected, assistanceMode, false);
 }
 
 function bindView(){
  $$('[data-route]').forEach(el=>el.onclick=()=>routeTo(el.dataset.route));
- $$('[data-action]').forEach(el=>{const a=el.dataset.action;if(a==='toggle-task')el.onclick=()=>completeTask(el.dataset.id);if(a==='edit-target')el.onclick=showTargetModal;if(a==='close-modal')el.onclick=()=>$('#modalRoot').innerHTML='';if(a==='finish-onboarding')el.onclick=()=>{if(saveProfileFromForm()){$('#modalRoot').innerHTML='';render()}};if(a==='save-target-modal')el.onclick=()=>{if(saveProfileFromForm()){$('#modalRoot').innerHTML='';render()}};if(a==='toggle-unit')el.onclick=()=>el.closest('.unit').classList.toggle('open');if(a==='open-topic')el.onclick=()=>{location.hash=`learn?topic=${el.dataset.id}`};if(a==='prev-topic'||a==='next-topic')el.onclick=()=>navigateTopic(el.dataset.id,a==='next-topic'?1:-1);if(a==='save-topic')el.onclick=()=>{state.notes[el.dataset.id]=$('#topicNotes').value;updateProgress(el.dataset.id,12,Number($('#confidenceRange').value));toast('Saved, mastery updated and review scheduled.');render()};if(a==='topic-practice')el.onclick=()=>{const t=topicById(el.dataset.id);startPractice(`${t.paperCode==='00'?1:2}-${t.unit}`,10,1.2,'all');location.hash='practice'};if(a==='ask-topic-ai')el.onclick=()=>{const t=topicById(el.dataset.id);if(!state.settings.aiValidated){toast('Validate an API key in Settings first.');routeTo('settings')}else{state.chats.push({role:'user',content:`Teach me ${t.name} from Unit ${t.unit} (${t.unitName}) from zero, within the official syllabus. Use examples and finish with three recall questions.`,date:new Date().toISOString()});saveState();routeTo('tutor')}};if(a==='ask-question-ai')el.onclick=()=>askQuestionAI(el.dataset.id,el.dataset.selected);if(a==='qb-prev')el.onclick=()=>{questionBrowser.index=Math.max(0,questionBrowser.index-1);questionBrowser.reveal=false;render()};if(a==='qb-next')el.onclick=()=>{questionBrowser.index=Math.min(browserPool().length-1,questionBrowser.index+1);questionBrowser.reveal=false;render()};if(a==='qb-reveal')el.onclick=()=>{questionBrowser.reveal=!questionBrowser.reveal;render()};if(a==='browse-year')el.onclick=async()=>{questionBrowser.year=Number(el.dataset.year);questionBrowser.index=0;questionBrowser.reveal=false;await ensureBrowserYear();routeTo('questions')};if(a==='start-browser-year')el.onclick=()=>{const pool=browserPool().filter(q=>q.scored!==false&&!q.dropped);if(!pool.length){toast('No scoreable questions match these filters.');return}startTest('official-pyq',pool,Math.round(pool.length*72));routeTo('practice')};if(a==='start-practice')el.onclick=()=>startPractice($('#practiceScope').value,Number($('#practiceCount').value),Number($('#practiceTime').value),$('#practiceDifficulty').value);if(a==='start-mock')el.onclick=async()=>{try{toast('Loading the offline mock bank…');startTest('mock',await buildFullMock(),180*60)}catch(e){toast(e.message)}};if(a==='answer')el.onclick=()=>{const q=testSession.questions[testSession.index];testSession.answers[q.id]=Number(el.dataset.value);render()};if(a==='test-prev')el.onclick=()=>{testSession.index=Math.max(0,testSession.index-1);render()};if(a==='test-next')el.onclick=()=>{testSession.index=Math.min(testSession.questions.length-1,testSession.index+1);render()};if(a==='jump-question')el.onclick=()=>{testSession.index=Number(el.dataset.index);render()};if(a==='toggle-review')el.onclick=()=>{const id=testSession.questions[testSession.index].id;testSession.review.has(id)?testSession.review.delete(id):testSession.review.add(id);render()};if(a==='submit-test')el.onclick=()=>{if(confirm(`Submit now? ${Object.keys(testSession.answers).length}/${testSession.questions.length} answered.`))submitTest(false)};if(a==='exit-test')el.onclick=()=>{if(confirm('Exit this test? Current answers will be discarded.')){clearInterval(timerHandle);testSession=null;render()}};if(a==='finish-test')el.onclick=()=>{testSession=null;routeTo('analytics')};if(a==='show-revision-answer')el.onclick=()=>{$('#revisionAnswer').hidden=false};if(a==='rate-revision')el.onclick=()=>rateRevision(el.dataset.kind,el.dataset.id,el.dataset.rating);if(a==='toggle-mistake')el.onclick=()=>{const m=state.mistakes.find(x=>x.questionId===el.dataset.id);if(m)m.resolved=!m.resolved;saveState();render()};if(a==='clear-resolved')el.onclick=()=>{state.mistakes=state.mistakes.filter(m=>!m.resolved);saveState();render()};if(a==='regenerate-plan')el.onclick=()=>{delete state.tasks[taskKey()];saveState();toast('Today’s plan regenerated.');render()};if(a==='mark-missed')el.onclick=()=>{state.profile.hoursPerDay=Math.max(.5,state.profile.hoursPerDay-.5);delete state.tasks[taskKey()];saveState();toast('Capacity reduced by 30 minutes/day and plan recalculated.');render()};if(a==='send-chat')el.onclick=()=>sendChat($('#chatInput').value);if(a==='clear-chat')el.onclick=()=>{state.chats=[];saveState();render()};if(a==='voice-input')el.onclick=startVoiceInput;if(a==='validate-ai')el.onclick=validateAIKey;if(a==='forget-ai')el.onclick=forgetAI;if(a==='save-profile')el.onclick=()=>{if(saveProfileFromForm())render()};if(a==='export-data')el.onclick=exportData;if(a==='install-app')el.onclick=installApp;if(a==='reset-data')el.onclick=resetData;if(a==='discover-models')el.onclick=async()=>{const key=getAIKey()||$('#apiKey')?.value?.trim();if(!key){toast('Enter an API key first.');return}const p=$('#aiProvider').value;const btn=el;btn.disabled=true;btn.textContent='Discovering…';try{const d=await discoverModelsForProvider(p,key);await saveDiscoveredModels(p,d);toast('Discovered '+d.length+' available models.');render()}catch(e){toast('Discovery failed: '+e.message);btn.disabled=false;btn.textContent='Discover models'}}});
+ $$('[data-action]').forEach(el=>{const a=el.dataset.action;if(a==='toggle-task')el.onclick=()=>completeTask(el.dataset.id);if(a==='edit-target')el.onclick=showTargetModal;if(a==='close-modal')el.onclick=()=>$('#modalRoot').innerHTML='';if(a==='finish-onboarding')el.onclick=()=>{if(saveProfileFromForm()){$('#modalRoot').innerHTML='';render()}};if(a==='save-target-modal')el.onclick=()=>{if(saveProfileFromForm()){$('#modalRoot').innerHTML='';render()}};if(a==='toggle-unit')el.onclick=()=>el.closest('.unit').classList.toggle('open');if(a==='open-topic')el.onclick=()=>{location.hash=`learn?topic=${el.dataset.id}`};if(a==='prev-topic'||a==='next-topic')el.onclick=()=>navigateTopic(el.dataset.id,a==='next-topic'?1:-1);if(a==='save-topic')el.onclick=()=>{state.notes[el.dataset.id]=$('#topicNotes').value;updateProgress(el.dataset.id,12,Number($('#confidenceRange').value));toast('Saved, mastery updated and review scheduled.');render()};if(a==='topic-practice')el.onclick=()=>{const t=topicById(el.dataset.id);startPractice(`${t.paperCode==='00'?1:2}-${t.unit}`,10,1.2,'all');location.hash='practice'};if(a==='ask-topic-ai')el.onclick=()=>{const t=topicById(el.dataset.id);if(!state.settings.aiValidated){toast('Validate an API key in Settings first.');routeTo('settings')}else{state.chats.push({role:'user',content:`Teach me ${t.name} from Unit ${t.unit} (${t.unitName}) from zero, within the official syllabus. Use examples and finish with three recall questions.`,date:new Date().toISOString()});saveState();routeTo('tutor')}};if(a==='ask-question-ai')el.onclick=()=>askQuestionAI(el.dataset.id,el.dataset.selected,el.dataset.mode||'explain-official');if(a==='preview-question-sheet')el.onclick=()=>{const q=DATA.questions.find(x=>x.id===el.dataset.id)||(ALL_YEAR_MAP[questionBrowser?.year]?.find(x=>x.id===el.dataset.id));if(q)showQuestionSheetPreviewModal(q)};if(a==='qb-prev')el.onclick=()=>{questionBrowser.index=Math.max(0,questionBrowser.index-1);questionBrowser.reveal=false;render()};if(a==='qb-next')el.onclick=()=>{questionBrowser.index=Math.min(browserPool().length-1,questionBrowser.index+1);questionBrowser.reveal=false;render()};if(a==='qb-reveal')el.onclick=()=>{questionBrowser.reveal=!questionBrowser.reveal;render()};if(a==='browse-year')el.onclick=async()=>{questionBrowser.year=Number(el.dataset.year);questionBrowser.index=0;questionBrowser.reveal=false;await ensureBrowserYear();routeTo('questions')};if(a==='start-browser-year')el.onclick=()=>{const pool=browserPool().filter(q=>q.scored!==false&&!q.dropped);if(!pool.length){toast('No scoreable questions match these filters.');return}startTest('official-pyq',pool,Math.round(pool.length*72));routeTo('practice')};if(a==='start-practice')el.onclick=()=>startPractice($('#practiceScope').value,Number($('#practiceCount').value),Number($('#practiceTime').value),$('#practiceDifficulty').value);if(a==='start-mock')el.onclick=async()=>{try{toast('Loading the offline mock bank…');startTest('mock',await buildFullMock(),180*60)}catch(e){toast(e.message)}};if(a==='answer')el.onclick=()=>{const q=testSession.questions[testSession.index];testSession.answers[q.id]=Number(el.dataset.value);render()};if(a==='test-prev')el.onclick=()=>{testSession.index=Math.max(0,testSession.index-1);render()};if(a==='test-next')el.onclick=()=>{testSession.index=Math.min(testSession.questions.length-1,testSession.index+1);render()};if(a==='jump-question')el.onclick=()=>{testSession.index=Number(el.dataset.index);render()};if(a==='toggle-review')el.onclick=()=>{const id=testSession.questions[testSession.index].id;testSession.review.has(id)?testSession.review.delete(id):testSession.review.add(id);render()};if(a==='submit-test')el.onclick=()=>{if(confirm(`Submit now? ${Object.keys(testSession.answers).length}/${testSession.questions.length} answered.`))submitTest(false)};if(a==='exit-test')el.onclick=()=>{if(confirm('Exit this test? Current answers will be discarded.')){clearInterval(timerHandle);testSession=null;render()}};if(a==='finish-test')el.onclick=()=>{testSession=null;routeTo('analytics')};if(a==='show-revision-answer')el.onclick=()=>{$('#revisionAnswer').hidden=false};if(a==='rate-revision')el.onclick=()=>rateRevision(el.dataset.kind,el.dataset.id,el.dataset.rating);if(a==='toggle-mistake')el.onclick=()=>{const m=state.mistakes.find(x=>x.questionId===el.dataset.id);if(m)m.resolved=!m.resolved;saveState();render()};if(a==='clear-resolved')el.onclick=()=>{state.mistakes=state.mistakes.filter(m=>!m.resolved);saveState();render()};if(a==='regenerate-plan')el.onclick=()=>{delete state.tasks[taskKey()];saveState();toast('Today’s plan regenerated.');render()};if(a==='mark-missed')el.onclick=()=>{state.profile.hoursPerDay=Math.max(.5,state.profile.hoursPerDay-.5);delete state.tasks[taskKey()];saveState();toast('Capacity reduced by 30 minutes/day and plan recalculated.');render()};if(a==='send-chat')el.onclick=()=>sendChat($('#chatInput').value);if(a==='clear-chat')el.onclick=()=>{state.chats=[];saveState();render()};if(a==='voice-input')el.onclick=startVoiceInput;if(a==='validate-ai')el.onclick=validateAIKey;if(a==='forget-ai')el.onclick=forgetAI;if(a==='save-profile')el.onclick=()=>{if(saveProfileFromForm())render()};if(a==='export-data')el.onclick=exportData;if(a==='install-app')el.onclick=installApp;if(a==='reset-data')el.onclick=resetData;if(a==='discover-models')el.onclick=async()=>{const key=getAIKey()||$('#apiKey')?.value?.trim();if(!key){toast('Enter an API key first.');return}const p=$('#aiProvider').value;const btn=el;btn.disabled=true;btn.textContent='Discovering…';try{const d=await discoverModelsForProvider(p,key);await saveDiscoveredModels(p,d);toast('Discovered '+d.length+' available models.');render()}catch(e){toast('Discovery failed: '+e.message);btn.disabled=false;btn.textContent='Discover models'}}});
  $$('[data-prompt]').forEach(b=>b.onclick=()=>{const i=$('#chatInput');i.value=b.dataset.prompt;i.focus()});
  const qbYear=$('#qbYear');if(qbYear)qbYear.onchange=async()=>{questionBrowser.year=Number(qbYear.value);questionBrowser.index=0;questionBrowser.reveal=false;await ensureBrowserYear();render()};
  const qbPaper=$('#qbPaper');if(qbPaper)qbPaper.onchange=()=>{questionBrowser.paper=qbPaper.value;questionBrowser.index=0;questionBrowser.reveal=false;render()};
@@ -400,10 +1105,12 @@ function bindView(){
  const theme=$('#themeSelect');if(theme)theme.onchange=()=>{state.settings.theme=theme.value;saveState();render()};
  const chat=$('#chatInput');if(chat)chat.onkeydown=e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendChat(chat.value)}};
  const log=$('#chatLog');if(log)log.scrollTop=log.scrollHeight;
- const aiProvider=$('#aiProvider');if(aiProvider){const curP=aiProvider.value;aiProvider.onchange=()=>{const np=aiProvider.value;if(np!==curP){const om=state.settings.aiModel;if(om&&!state.settings.aiModelPerProvider[curP])saveCurrentModelForProvider(curP,om);state.settings.aiProvider=np;const sm=getCurrentModelForProvider(np)||getProviderDefaultModel(np);state.settings.aiModel=sm;const cf=$('#customModelField');const bf=$('#aiBaseUrlField');if(cf)cf.style.display=(np==='custom')?'':'none';if(bf)bf.style.display=(np==='custom')?'':'none';saveState();render()}}}
+ const aiProvider=$('#aiProvider');if(aiProvider){const curP=aiProvider.value;aiProvider.onchange=()=>{const np=aiProvider.value;if(np!==curP){const om=state.settings.aiModel;if(om&&!state.settings.aiModelPerProvider[curP])saveCurrentModelForProvider(curP,om);state.settings.aiProvider=np;const sm=getCurrentModelForProvider(np)||getProviderDefaultModel(np);state.settings.aiModel=sm;const cf=$('#customModelField');const bf=$('#aiBaseUrlField');if(cf)cf.style.display=(np==='custom')?'':'none';if(bf)bf.style.display=(np==='custom')?'':'none';const cvf=$('#customVisionSettings');if(cvf)cvf.style.display=(np==='custom')?'':'none';saveState();render()}}}
  const aiModel=$('#aiModel');if(aiModel)aiModel.onchange=()=>{const val=aiModel.value;const p=$('#aiProvider').value;const cf=$('#customModelField');if(val==='__custom__'){if(cf)cf.style.display=''}else{if(cf)cf.style.display='none';saveCurrentModelForProvider(p,val);state.settings.aiModel=val}saveState();render()}
  const aiCC=$('#aiCustomModelId');if(aiCC)aiCC.oninput=()=>{state.settings.aiCustomModelId=aiCC.value.trim();const p=$('#aiProvider').value;if(p==='custom')state.settings.aiModel=aiCC.value.trim();saveState()}
  const aiBU=$('#aiBaseUrl');if(aiBU)aiBU.oninput=()=>{state.settings.aiBaseUrl=aiBU.value.trim();saveState()}
+  const customVis=$('#customModelVisionSupport');if(customVis)customVis.onchange=()=>{state.settings.customModelVisionSupport=customVis.checked;saveState();render()}
+  const customFmt=$('#customModelImageFormat');if(customFmt)customFmt.onchange=()=>{state.settings.customModelImageFormat=customFmt.value;saveState()}
  const aiRM=$('#aiReasoningMode');if(aiRM)aiRM.onchange=()=>{state.settings.aiReasoningMode=aiRM.value;saveState()}
 }
 function navigateTopic(id,dir){const ts=allTopics(),i=ts.findIndex(t=>t.id===id),n=ts[(i+dir+ts.length)%ts.length];location.hash=`learn?topic=${n.id}`}

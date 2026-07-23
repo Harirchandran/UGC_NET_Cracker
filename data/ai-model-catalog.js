@@ -1,5 +1,5 @@
 window.NETCRACKER_AI_MODEL_CATALOG = {
-  catalogVersion: '1.0.0',
+  catalogVersion: '1.1.0',
   officiallyCheckedDate: '2026-07-23',
   providers: [
     {
@@ -23,8 +23,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Balanced',
           recommended: true,
           stability: 'stable',
-          description: 'Recommended for tutoring, explanations and mock analysis.',
-          taskTags: ['teach', 'doubt', 'revision', 'analysis']
+          description: 'Recommended for tutoring, explanations and visual questions.',
+          taskTags: ['teach', 'doubt', 'revision', 'analysis', 'vision'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'gemini-3.5-flash',
@@ -32,8 +40,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Quality',
           recommended: false,
           stability: 'stable',
-          description: 'Higher-quality explanations and complex reasoning.',
-          taskTags: ['teach', 'analysis']
+          description: 'Higher-quality explanations, complex reasoning and diagram analysis.',
+          taskTags: ['teach', 'analysis', 'vision'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'gemini-3.5-flash-lite',
@@ -41,8 +57,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Economy',
           recommended: false,
           stability: 'stable',
-          description: 'Fast, cost-efficient quizzes, summaries and flashcards.',
-          taskTags: ['quiz', 'summary', 'flashcard']
+          description: 'Fast, cost-efficient quizzes, summaries, flashcards and light vision.',
+          taskTags: ['quiz', 'summary', 'flashcard', 'vision'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         }
       ]
     },
@@ -66,8 +90,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Balanced',
           recommended: true,
           stability: 'stable',
-          description: 'Balanced intelligence and cost for regular study sessions.',
-          taskTags: ['teach', 'doubt', 'revision', 'analysis']
+          description: 'Balanced intelligence, cost and full visual question support.',
+          taskTags: ['teach', 'doubt', 'revision', 'analysis', 'vision'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'gpt-5.6-sol',
@@ -75,8 +107,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Maximum quality',
           recommended: false,
           stability: 'stable',
-          description: 'Difficult concepts, deep reasoning and detailed analysis.',
-          taskTags: ['teach', 'analysis']
+          description: 'Difficult concepts, deep reasoning and complex visual diagrams.',
+          taskTags: ['teach', 'analysis', 'vision'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'gpt-5.6-luna',
@@ -84,8 +124,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Economy',
           recommended: false,
           stability: 'stable',
-          description: 'Fast, cost-sensitive quizzes, summaries and flashcards.',
-          taskTags: ['quiz', 'summary', 'flashcard']
+          description: 'Fast, cost-sensitive quizzes, summaries and multimodal analysis.',
+          taskTags: ['quiz', 'summary', 'flashcard', 'vision'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         }
       ]
     },
@@ -109,9 +157,17 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Quality',
           recommended: true,
           stability: 'stable',
-          description: 'General tutoring, reasoning and technical explanations.',
-          taskTags: ['teach', 'doubt', 'revision', 'analysis'],
-          reasoningOptions: ['low', 'medium', 'high']
+          description: 'General tutoring, reasoning and multimodal visual questions.',
+          taskTags: ['teach', 'doubt', 'revision', 'analysis', 'vision'],
+          reasoningOptions: ['low', 'medium', 'high'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'grok-4.5-latest',
@@ -119,9 +175,17 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Rolling alias',
           recommended: false,
           stability: 'alias',
-          description: 'Tracks the latest Grok 4.5 revision; behaviour may change.',
-          taskTags: ['teach', 'analysis'],
-          reasoningOptions: ['low', 'medium', 'high']
+          description: 'Tracks the latest Grok 4.5 revision with full vision support.',
+          taskTags: ['teach', 'analysis', 'vision'],
+          reasoningOptions: ['low', 'medium', 'high'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         }
       ]
     },
@@ -145,8 +209,33 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Balanced',
           recommended: true,
           stability: 'stable',
-          description: 'Fast, capable general tutoring.',
-          taskTags: ['teach', 'doubt', 'revision', 'analysis']
+          description: 'Fast, capable general text tutoring.',
+          taskTags: ['teach', 'doubt', 'revision', 'analysis'],
+          inputModalities: ['text'],
+          outputModalities: ['text'],
+          visionSupport: 'unsupported',
+          visualQuestionSupport: false,
+          supportedImageTypes: [],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
+        },
+        {
+          id: 'qwen/qwen3.6-27b',
+          label: 'Qwen 3.6 27B Vision',
+          tier: 'Vision / Quality',
+          recommended: false,
+          stability: 'preview',
+          description: 'Vision-capable Groq model for diagrams, tables and visual questions.',
+          taskTags: ['teach', 'doubt', 'revision', 'analysis', 'vision'],
+          inputModalities: ['text', 'image'],
+          outputModalities: ['text'],
+          visionSupport: 'verified',
+          visualQuestionSupport: true,
+          supportedImageTypes: ['image/png', 'image/jpeg'],
+          maxImages: 5,
+          maxImageBytes: 20971520,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'openai/gpt-oss-120b',
@@ -154,8 +243,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Quality',
           recommended: false,
           stability: 'stable',
-          description: 'Strong reasoning and detailed explanations.',
-          taskTags: ['teach', 'analysis']
+          description: 'Strong reasoning and detailed text explanations.',
+          taskTags: ['teach', 'analysis'],
+          inputModalities: ['text'],
+          outputModalities: ['text'],
+          visionSupport: 'unsupported',
+          visualQuestionSupport: false,
+          supportedImageTypes: [],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'openai/gpt-oss-20b',
@@ -163,8 +260,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Economy',
           recommended: false,
           stability: 'stable',
-          description: 'Cost-efficient study assistance.',
-          taskTags: ['quiz', 'summary', 'flashcard']
+          description: 'Cost-efficient text study assistance.',
+          taskTags: ['quiz', 'summary', 'flashcard'],
+          inputModalities: ['text'],
+          outputModalities: ['text'],
+          visionSupport: 'unsupported',
+          visualQuestionSupport: false,
+          supportedImageTypes: [],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         },
         {
           id: 'llama-3.1-8b-instant',
@@ -172,8 +277,16 @@ window.NETCRACKER_AI_MODEL_CATALOG = {
           tier: 'Fast',
           recommended: false,
           stability: 'stable',
-          description: 'Very fast lightweight quizzes and summaries.',
-          taskTags: ['quiz', 'summary']
+          description: 'Very fast lightweight text quizzes and summaries.',
+          taskTags: ['quiz', 'summary'],
+          inputModalities: ['text'],
+          outputModalities: ['text'],
+          visionSupport: 'unsupported',
+          visualQuestionSupport: false,
+          supportedImageTypes: [],
+          maxImages: null,
+          maxImageBytes: null,
+          capabilitySource: 'curated-official'
         }
       ]
     },

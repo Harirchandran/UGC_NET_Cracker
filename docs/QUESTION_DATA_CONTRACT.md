@@ -62,6 +62,21 @@ Recommended publication statuses:
 
 A mapped answer does not by itself make a transcription verified.
 
+## Visual AI Metadata Contract
+
+Every question resolves to visual AI metadata defined in `data/ai-visual-question-overrides.js` and `data/question-schema.json`:
+
+- `visualRequirement`: `"none"` | `"supplementary"` | `"essential"`
+- `visualTypes`: array of visual categories (`stem-svg`, `option-svg`, `source-vector`, `html-table`, `shared-diagram`, `formula-layout`, `graph`, `tree`, `automaton`, `circuit`, `gantt`, `database-diagram`, `other`)
+- `textFallbackQuality`: `"complete"` | `"partial"` | `"insufficient"`
+- `aiVisualCaptureRequired`: boolean
+- `semanticVisualDescription`: string or null
+
+CLASSIFICATION CRITERIA:
+1. **Text-only questions**: `visualRequirement: "none"`, `textFallbackQuality: "complete"`.
+2. **Supplementary visual questions**: Native text and options are complete independently. Visual provides source fidelity. `visualRequirement: "supplementary"`, `textFallbackQuality: "complete"`.
+3. **Essential visual questions**: Stem depends on diagram/table, option SVGs exist, or source vector is vector-primary. `visualRequirement: "essential"`. `textFallbackQuality` is `complete` only when reviewed semantic transcription fully captures visual meaning; otherwise `partial` or `insufficient`.
+
 ## SVG safety
 
 The validator rejects:

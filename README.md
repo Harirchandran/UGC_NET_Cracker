@@ -10,6 +10,9 @@ The optional AI tutor is the only online feature. It remains locked until the st
 
 The built-in model catalog (`data/ai-model-catalog.js`, last verified 23 July 2026) provides curated model presets per provider. The settings screen dynamically populates provider-specific model dropdowns and supports live model discovery after key validation. Custom model IDs are also supported.
 
+### Visual Question AI
+The application features a capability-aware Ask AI subsystem (`docs/VISUAL_QUESTION_AI.md`) for text-only, stem-SVG, option-SVG, source-vector, and table questions. Visual questions are rendered locally into high-contrast PNG question sheets in memory for vision-capable models (e.g. Gemini 3.6 Flash, GPT-5.6 Terra, Grok 4.5, Qwen 3.6 27B Vision). Text-only models receive reviewed structured fallbacks with student consent or trigger model-switch guidance, preventing silent omission of essential visual content.
+
 ## Question bank
 
 - 1,595 mapped historical records
