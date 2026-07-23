@@ -1,0 +1,108 @@
+{
+  "version": "4.0",
+  "schemaVersion": "1.0",
+  "years": {
+    "2015": {
+      "file": "data/interactive-pyqs-2015.js",
+      "total": 185,
+      "scoreable": 185,
+      "paper1": 60,
+      "paper2": 125,
+      "vectors": 11,
+      "advisory": 11,
+      "legacy": true
+    },
+    "2016": {
+      "file": "data/interactive-pyqs-2016.js",
+      "total": 185,
+      "scoreable": 185,
+      "paper1": 60,
+      "paper2": 125,
+      "vectors": 4,
+      "advisory": 4,
+      "legacy": true
+    },
+    "2017": {
+      "file": "data/interactive-pyqs-2017.js",
+      "total": 175,
+      "scoreable": 175,
+      "paper1": 50,
+      "paper2": 125,
+      "vectors": 4,
+      "advisory": 4,
+      "legacy": true
+    },
+    "2018": {
+      "file": "data/interactive-pyqs-2018.js",
+      "total": 150,
+      "scoreable": 150,
+      "paper1": 50,
+      "paper2": 100,
+      "vectors": 6,
+      "advisory": 6,
+      "legacy": false
+    },
+    "2019": {
+      "file": "data/interactive-pyqs-2019.js",
+      "total": 150,
+      "scoreable": 149,
+      "paper1": 50,
+      "paper2": 100,
+      "vectors": 150,
+      "advisory": 150,
+      "legacy": false
+    },
+    "2020": {
+      "file": "data/interactive-pyqs-2020.js",
+      "total": 150,
+      "scoreable": 146,
+      "paper1": 50,
+      "paper2": 100,
+      "vectors": 0,
+      "advisory": 0,
+      "legacy": false
+    },
+    "2021": {
+      "file": "data/interactive-pyqs-2021.js",
+      "total": 150,
+      "scoreable": 143,
+      "paper1": 50,
+      "paper2": 100,
+      "vectors": 33,
+      "advisory": 33,
+      "legacy": false
+    },
+    "2022": {
+      "file": "data/interactive-pyqs-2022.js",
+      "total": 150,
+      "scoreable": 149,
+      "paper1": 50,
+      "paper2": 100,
+      "vectors": 150,
+      "advisory": 150,
+      "legacy": false
+    },
+    "2023": {
+      "file": "data/interactive-pyqs-2023.js",
+      "total": 150,
+      "scoreable": 145,
+      "paper1": 50,
+      "paper2": 100,
+      "vectors": 150,
+      "advisory": 150,
+      "legacy": false
+    },
+    "2024": {
+      "file": "data/interactive-pyqs-2024.js",
+      "total": 150,
+      "scoreable": 145,
+      "paper1": 50,
+      "paper2": 100,
+      "vectors": 150,
+      "advisory": 150,
+      "legacy": false
+    }
+  },
+  "mappedTotal": 1595,
+  "scoreableTotal": 1572
+}

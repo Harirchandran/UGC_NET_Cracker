@@ -1,34 +1,45 @@
-# NETCracker AI validation report
+# Validation report
 
-Validation date: 22 July 2026
+## Automated results
 
-## Passed checks
+- Question-bank contract validation: passed
+- Static corpus validation: passed
+- JavaScript syntax checks: passed
+- Node DOM/runtime smoke: passed
+- Static HTTP serving check: passed
 
-- `index.html`, manifest, stylesheet, scripts and icons exist.
-- Manifest parses as valid JSON and references existing 192 px and 512 px icons.
-- Service-worker pre-cache list references existing files.
-- `app.js`, `sw.js`, bundled data and lesson scripts pass `node --check`.
-- A lightweight JavaScript DOM runtime loads the application, initialises state and renders the dashboard without an exception.
-- Syllabus JSON contains two papers and ten units in each paper.
-- Syllabus contains 137 trackable topic nodes.
-- Question bank contains exactly 150 unique original MCQs.
-- Question split is exactly 50 Paper 1 and 100 Paper 2, matching one complete local mock.
-- Every question has four options, a valid correct-answer index and a non-empty explanation.
-- Historical unreserved JRF cutoff snapshot validates as 192 for December 2025.
-- A temporary local HTTP server returned all critical PWA assets successfully.
-- Complete `tests/validate.py` result: **PASS**.
+## Validated invariants
 
-## Browser limitation of this build environment
+- 1,595 mapped records for 2015–2024
+- 1,572 scoreable records
+- 23 official dropped/cancelled records excluded from scoring
+- 658 SVG-backed records
+- zero structurally quarantined records
+- exactly four ordered options for every record
+- valid answer index/list for every scoreable record
+- answer verification separated from content verification
+- 2015–2017 historical Papers II/III normalized with legacy identity retained
+- 2020 Paper 1 Q35 restored and corrupt binary metadata removed
+- 2021 normalized to 50 Paper 1 and 100 Paper 2 records
+- 2021: 143 scoreable, 7 dropped, 2 multi-correct
+- repaired semantic-SVG regressions for 2015 P3 Q21, 2016 P3 Q74, 2017 P3 Q39 and 2018 P2 Q59
+- 2021 Question ID 2393 formula options and final-key mapping regression covered
+- no local PDF, page screenshot or raster-bearing SVG
+- no unsafe SVG script, event handler, external image or `foreignObject`
+- lazy year loading on dashboard startup
+- question browser provenance, SVG rendering and filtered-test behavior exercised by runtime smoke
+- JS and JSON archive indexes remain identical
+- service worker discovers future year files through the generated JSON index
 
-The available container Chromium process did not terminate reliably in headless mode, even for `about:blank`, so an automated visual Chromium screenshot was not treated as valid evidence. JavaScript syntax, application initialisation, dataset integrity, service-worker asset integrity and HTTP delivery were tested independently.
+## Browser-test limitation
 
-## User acceptance checks recommended after extraction
+System Chromium was located, but HTTP and file navigation were blocked by the container administrator. A completed Playwright navigation test is therefore not claimed. Browser behavior was exercised through the Node DOM/runtime smoke and static HTTP checks.
 
-1. Complete onboarding and change the target score/date.
-2. Mark a daily task complete and reload the page.
-3. Run a 5-question practice test and inspect the mistake notebook.
-4. Start and submit a full mock.
-5. Export and re-import a backup.
-6. Serve from HTTPS or localhost and confirm the browser offers installation.
-7. Validate an API key for the chosen provider and ask one tutor question.
-8. Turn off connectivity and confirm dashboard, lessons, practice, mock and analytics remain available.
+Run locally:
+
+```bash
+python tools/validate_question_bank.py
+python tests/validate.py
+node tests/runtime_smoke.js
+python tests/http_smoke.py
+```

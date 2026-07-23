@@ -1,0 +1,1780 @@
+{
+  "exam": "UGC-NET",
+  "subject": "Computer Science and Applications",
+  "subjectCode": "87",
+  "version": "Official UGC syllabus applicable from June 2019 onwards; verified against NTA June 2026 bulletin",
+  "verifiedOn": "2026-07-22",
+  "officialSources": [
+    {
+      "title": "Official UGC updated syllabi page",
+      "url": "https://ugcnet.nta.ac.in/"
+    },
+    {
+      "title": "Official Paper 1 syllabus PDF",
+      "url": "https://www.ugcnetonline.in/syllabus-new.php"
+    },
+    {
+      "title": "Official Computer Science syllabus PDF",
+      "url": "https://www.ugcnetonline.in/syllabus-new.php"
+    },
+    {
+      "title": "NTA UGC-NET June 2026 Information Bulletin",
+      "url": "https://ugcnet.nta.ac.in/"
+    }
+  ],
+  "examPattern": {
+    "paper1Questions": 50,
+    "paper1Marks": 100,
+    "paper2Questions": 100,
+    "paper2Marks": 200,
+    "durationMinutes": 180,
+    "marksPerCorrect": 2,
+    "negativeMarks": 0
+  },
+  "papers": [
+    {
+      "code": "00",
+      "name": "Paper 1: Teaching and Research Aptitude",
+      "units": [
+        {
+          "id": "p00-u1",
+          "number": 1,
+          "name": "Teaching Aptitude",
+          "topics": [
+            {
+              "id": "p00-u1-t1",
+              "name": "Teaching: concept, objectives and levels",
+              "description": "Meaning and objectives of teaching; memory, understanding and reflective levels; characteristics and basic requirements.",
+              "estimatedMinutes": 95,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Teaching: concept, objectives and levels. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u1-t2",
+              "name": "Learner characteristics",
+              "description": "Academic, social, emotional and cognitive characteristics of adolescent and adult learners; individual differences.",
+              "estimatedMinutes": 92,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u1-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Learner characteristics. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u1-t3",
+              "name": "Factors affecting teaching",
+              "description": "Teacher, learner, support material, instructional facilities, learning environment and institution.",
+              "estimatedMinutes": 84,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u1-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Factors affecting teaching. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u1-t4",
+              "name": "Methods of teaching",
+              "description": "Teacher-centred and learner-centred methods; offline and online methods including SWAYAM, SWAYAM Prabha and MOOCs.",
+              "estimatedMinutes": 92,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u1-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Methods of teaching. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u1-t5",
+              "name": "Teaching support systems",
+              "description": "Traditional, modern and ICT-based teaching support systems.",
+              "estimatedMinutes": 64,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u1-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Teaching support systems. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u1-t6",
+              "name": "Evaluation systems",
+              "description": "Elements and types of evaluation, CBCS evaluation, computer-based testing and innovations in evaluation.",
+              "estimatedMinutes": 87,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u1-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Evaluation systems. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u2",
+          "number": 2,
+          "name": "Research Aptitude",
+          "topics": [
+            {
+              "id": "p00-u2-t1",
+              "name": "Research meaning and approaches",
+              "description": "Meaning, types and characteristics of research; positivism and post-positivistic approach.",
+              "estimatedMinutes": 80,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Research meaning and approaches. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u2-t2",
+              "name": "Methods of research",
+              "description": "Experimental, descriptive, historical, qualitative and quantitative methods.",
+              "estimatedMinutes": 73,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u2-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Methods of research. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u2-t3",
+              "name": "Steps of research",
+              "description": "Problem identification, literature review, objectives, design, data, analysis, interpretation and reporting.",
+              "estimatedMinutes": 89,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u2-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Steps of research. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u2-t4",
+              "name": "Thesis and article writing",
+              "description": "Academic structure, format and referencing styles.",
+              "estimatedMinutes": 60,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u2-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Thesis and article writing. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u2-t5",
+              "name": "ICT in research",
+              "description": "Digital discovery, data collection, analysis, collaboration and dissemination.",
+              "estimatedMinutes": 74,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u2-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for ICT in research. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u2-t6",
+              "name": "Research ethics",
+              "description": "Integrity, consent, attribution, conflicts, fabrication, falsification and plagiarism.",
+              "estimatedMinutes": 78,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u2-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Research ethics. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u3",
+          "number": 3,
+          "name": "Comprehension",
+          "topics": [
+            {
+              "id": "p00-u3-t1",
+              "name": "Reading comprehension",
+              "description": "Read a passage, identify claims, inference, tone, structure, assumptions and evidence, and answer only from the passage.",
+              "estimatedMinutes": 95,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Reading comprehension. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u4",
+          "number": 4,
+          "name": "Communication",
+          "topics": [
+            {
+              "id": "p00-u4-t1",
+              "name": "Communication fundamentals",
+              "description": "Meaning, types and characteristics of communication.",
+              "estimatedMinutes": 61,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Communication fundamentals. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u4-t2",
+              "name": "Effective communication",
+              "description": "Verbal, non-verbal, intercultural, group and classroom communication.",
+              "estimatedMinutes": 69,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u4-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Effective communication. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u4-t3",
+              "name": "Communication barriers",
+              "description": "Physical, semantic, psychological, organisational and cultural barriers.",
+              "estimatedMinutes": 71,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u4-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Communication barriers. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u4-t4",
+              "name": "Mass media and society",
+              "description": "Functions, reach, effects and social responsibilities of mass media.",
+              "estimatedMinutes": 69,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u4-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Mass media and society. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u5",
+          "number": 5,
+          "name": "Mathematical Reasoning and Aptitude",
+          "topics": [
+            {
+              "id": "p00-u5-t1",
+              "name": "Types of reasoning",
+              "description": "Common reasoning patterns used in aptitude questions.",
+              "estimatedMinutes": 61,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Types of reasoning. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u5-t2",
+              "name": "Series, codes and relationships",
+              "description": "Number series, letter series, coding and relationship problems.",
+              "estimatedMinutes": 66,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u5-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Series, codes and relationships. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u5-t3",
+              "name": "Arithmetic aptitude",
+              "description": "Fractions, time and distance, ratio, proportion, percentages, profit and loss, interest, discounting and averages.",
+              "estimatedMinutes": 92,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u5-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Arithmetic aptitude. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u6",
+          "number": 6,
+          "name": "Logical Reasoning",
+          "topics": [
+            {
+              "id": "p00-u6-t1",
+              "name": "Arguments and propositions",
+              "description": "Argument forms, categorical propositions, mood and figure, formal and informal fallacies.",
+              "estimatedMinutes": 79,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Arguments and propositions. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u6-t2",
+              "name": "Language and opposition",
+              "description": "Uses of language, connotation, denotation and the classical square of opposition.",
+              "estimatedMinutes": 75,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u6-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Language and opposition. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u6-t3",
+              "name": "Deductive and inductive reasoning",
+              "description": "Validity, soundness, strength and evaluation of reasoning.",
+              "estimatedMinutes": 64,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u6-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Deductive and inductive reasoning. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u6-t4",
+              "name": "Analogies and Venn diagrams",
+              "description": "Analogy and single or multiple Venn diagrams for testing validity.",
+              "estimatedMinutes": 68,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u6-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Analogies and Venn diagrams. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u6-t5",
+              "name": "Indian logic and Pramanas",
+              "description": "Pratyaksha, Anumana, Upamana, Shabda, Arthapatti and Anupalabdhi.",
+              "estimatedMinutes": 67,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u6-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Indian logic and Pramanas. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u6-t6",
+              "name": "Anumana and fallacies",
+              "description": "Kinds of inference, Vyapti and Hetvabhasas.",
+              "estimatedMinutes": 56,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u6-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Anumana and fallacies. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u7",
+          "number": 7,
+          "name": "Data Interpretation",
+          "topics": [
+            {
+              "id": "p00-u7-t1",
+              "name": "Data sources and classification",
+              "description": "Sources, acquisition, classification, quantitative and qualitative data.",
+              "estimatedMinutes": 71,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data sources and classification. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u7-t2",
+              "name": "Graphical representation",
+              "description": "Bar charts, histograms, pie charts, tables, line charts and mapping.",
+              "estimatedMinutes": 69,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u7-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Graphical representation. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u7-t3",
+              "name": "Data interpretation",
+              "description": "Ratios, percentage change, comparison, aggregation and inference from data.",
+              "estimatedMinutes": 72,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u7-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data interpretation. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u7-t4",
+              "name": "Data and governance",
+              "description": "Use of data in public administration, transparency and decision-making.",
+              "estimatedMinutes": 70,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u7-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data and governance. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u8",
+          "number": 8,
+          "name": "Information and Communication Technology (ICT)",
+          "topics": [
+            {
+              "id": "p00-u8-t1",
+              "name": "ICT terminology",
+              "description": "General ICT abbreviations and terminology.",
+              "estimatedMinutes": 56,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for ICT terminology. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u8-t2",
+              "name": "Internet and communication tools",
+              "description": "Internet, intranet, email, audio conferencing and video conferencing.",
+              "estimatedMinutes": 69,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u8-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Internet and communication tools. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u8-t3",
+              "name": "Digital initiatives in higher education",
+              "description": "Digital learning and academic platforms used in Indian higher education.",
+              "estimatedMinutes": 71,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u8-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Digital initiatives in higher education. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u8-t4",
+              "name": "ICT and governance",
+              "description": "Digital public services, transparency, participation and administration.",
+              "estimatedMinutes": 71,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u8-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for ICT and governance. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u9",
+          "number": 9,
+          "name": "People, Development and Environment",
+          "topics": [
+            {
+              "id": "p00-u9-t1",
+              "name": "Development and environment",
+              "description": "Millennium Development Goals and Sustainable Development Goals.",
+              "estimatedMinutes": 66,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Development and environment. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u9-t2",
+              "name": "Human–environment interaction",
+              "description": "Anthropogenic activities and environmental impacts.",
+              "estimatedMinutes": 60,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u9-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Human–environment interaction. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u9-t3",
+              "name": "Environmental issues",
+              "description": "Local, regional and global pollution, waste and climate-change dimensions.",
+              "estimatedMinutes": 72,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u9-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Environmental issues. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u9-t4",
+              "name": "Health impacts",
+              "description": "Effects of pollutants on human health.",
+              "estimatedMinutes": 54,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u9-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Health impacts. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u9-t5",
+              "name": "Natural and energy resources",
+              "description": "Solar, wind, soil, hydro, geothermal, biomass, nuclear and forests.",
+              "estimatedMinutes": 68,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u9-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Natural and energy resources. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u9-t6",
+              "name": "Hazards and mitigation",
+              "description": "Natural hazards, disasters and mitigation strategies.",
+              "estimatedMinutes": 61,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u9-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Hazards and mitigation. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u9-t7",
+              "name": "Environmental law and agreements",
+              "description": "Environment Protection Act 1986, NAPCC, Montreal Protocol, Rio Summit, CBD, Kyoto Protocol, Paris Agreement and International Solar Alliance.",
+              "estimatedMinutes": 105,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u9-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Environmental law and agreements. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p00-u10",
+          "number": 10,
+          "name": "Higher Education System",
+          "topics": [
+            {
+              "id": "p00-u10-t1",
+              "name": "Ancient Indian education",
+              "description": "Institutions of higher learning and education in ancient India.",
+              "estimatedMinutes": 66,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Ancient Indian education. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u10-t2",
+              "name": "Post-independence development",
+              "description": "Evolution of higher learning and research after independence.",
+              "estimatedMinutes": 65,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u10-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Post-independence development. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u10-t3",
+              "name": "Learning programmes",
+              "description": "Oriental, conventional and non-conventional learning programmes.",
+              "estimatedMinutes": 67,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u10-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Learning programmes. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u10-t4",
+              "name": "Professional and skill education",
+              "description": "Professional, technical and skill-based education.",
+              "estimatedMinutes": 60,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p00-u10-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Professional and skill education. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u10-t5",
+              "name": "Value and environmental education",
+              "description": "Value education and environmental education.",
+              "estimatedMinutes": 57,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p00-u10-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Value and environmental education. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p00-u10-t6",
+              "name": "Policies and governance",
+              "description": "Policies, governance and administration of higher education.",
+              "estimatedMinutes": 65,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p00-u10-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Policies and governance. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "code": "87",
+      "name": "Paper 2: Computer Science and Applications",
+      "units": [
+        {
+          "id": "p87-u1",
+          "number": 1,
+          "name": "Discrete Structures and Optimization",
+          "topics": [
+            {
+              "id": "p87-u1-t1",
+              "name": "Mathematical Logic",
+              "description": "Propositional and predicate logic, equivalences, normal forms, predicates, quantifiers, nested quantifiers and rules of inference.",
+              "estimatedMinutes": 100,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Mathematical Logic. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u1-t2",
+              "name": "Sets and Relations",
+              "description": "Set operations, representation and properties of relations, equivalence relations and partial ordering.",
+              "estimatedMinutes": 86,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u1-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Sets and Relations. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u1-t3",
+              "name": "Counting, Induction and Discrete Probability",
+              "description": "Counting, pigeonhole principle, permutations, combinations, inclusion–exclusion, mathematical induction, probability and Bayes theorem.",
+              "estimatedMinutes": 102,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u1-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Counting, Induction and Discrete Probability. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u1-t4",
+              "name": "Group Theory",
+              "description": "Groups, subgroups, semigroups, products and quotients, isomorphism, homomorphism, automorphism, rings, integral domains, fields and applications.",
+              "estimatedMinutes": 107,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u1-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Group Theory. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u1-t5",
+              "name": "Graph Theory",
+              "description": "Simple, multi and weighted graphs; paths, circuits, shortest paths, Eulerian and Hamiltonian structures, planar graphs, colouring, bipartite graphs, trees, codes, traversals, spanning trees and cut sets.",
+              "estimatedMinutes": 136,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u1-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Graph Theory. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u1-t6",
+              "name": "Boolean Algebra",
+              "description": "Boolean functions, representation and simplification.",
+              "estimatedMinutes": 61,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u1-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Boolean Algebra. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u1-t7",
+              "name": "Optimization",
+              "description": "Linear programming, graphical and simplex methods, sensitivity, integer programming, transportation, assignment, PERT–CPM, resource levelling and cost considerations.",
+              "estimatedMinutes": 118,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u1-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Optimization. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u2",
+          "number": 2,
+          "name": "Computer System Architecture",
+          "topics": [
+            {
+              "id": "p87-u2-t1",
+              "name": "Digital Logic Circuits and Components",
+              "description": "Digital computers, gates, Boolean algebra, map simplification, combinational and sequential circuits, flip-flops, ICs, decoders, multiplexers, registers, counters and memory.",
+              "estimatedMinutes": 122,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Digital Logic Circuits and Components. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t2",
+              "name": "Data Representation and Arithmetic",
+              "description": "Data types, number systems, complements, fixed/floating point, error detection and arithmetic algorithms.",
+              "estimatedMinutes": 87,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u2-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data Representation and Arithmetic. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t3",
+              "name": "Register Transfer and Microoperations",
+              "description": "RTL, bus and memory transfers, arithmetic, logic and shift microoperations.",
+              "estimatedMinutes": 72,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u2-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Register Transfer and Microoperations. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t4",
+              "name": "Basic Computer Organization",
+              "description": "Stored-program organisation, instruction codes, registers, timing, control, instruction cycle, I/O and interrupts.",
+              "estimatedMinutes": 92,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u2-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Basic Computer Organization. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t5",
+              "name": "Programming the Basic Computer",
+              "description": "Machine language, assembly, assembler, loops, subroutines and I/O programming.",
+              "estimatedMinutes": 74,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u2-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Programming the Basic Computer. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t6",
+              "name": "Microprogrammed Control",
+              "description": "Control memory, address sequencing and control-unit design.",
+              "estimatedMinutes": 64,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u2-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Microprogrammed Control. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t7",
+              "name": "Central Processing Unit",
+              "description": "Register and stack organisation, instruction formats, addressing modes, RISC and CISC.",
+              "estimatedMinutes": 78,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u2-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Central Processing Unit. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t8",
+              "name": "Pipeline and Vector Processing",
+              "description": "Parallelism, arithmetic and instruction pipelines, vector processing and array processors.",
+              "estimatedMinutes": 80,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u2-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Pipeline and Vector Processing. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t9",
+              "name": "Input–Output Organization",
+              "description": "Devices, interfaces, asynchronous transfer, transfer modes, priority interrupts, DMA and serial communication.",
+              "estimatedMinutes": 90,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u2-t8"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Input–Output Organization. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t10",
+              "name": "Memory Hierarchy",
+              "description": "Main, auxiliary, associative, cache and virtual memory; memory-management hardware.",
+              "estimatedMinutes": 76,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u2-t9"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Memory Hierarchy. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u2-t11",
+              "name": "Multiprocessors",
+              "description": "Characteristics, interconnection, arbitration, communication, synchronisation, cache coherence and multicore processors.",
+              "estimatedMinutes": 95,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u2-t10"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Multiprocessors. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u3",
+          "number": 3,
+          "name": "Programming Languages and Computer Graphics",
+          "topics": [
+            {
+              "id": "p87-u3-t1",
+              "name": "Language Design and Translation",
+              "description": "Language concepts, paradigms, environments, virtual computers, binding times, syntax, translation stages and formal transition models.",
+              "estimatedMinutes": 102,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Language Design and Translation. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t2",
+              "name": "Data Types",
+              "description": "Properties of types and objects; scalar and composite data types.",
+              "estimatedMinutes": 67,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u3-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data Types. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t3",
+              "name": "Programming in C",
+              "description": "Tokens, identifiers, data types, control, arrays, structures, unions, strings, pointers, functions, files, command-line arguments and preprocessors.",
+              "estimatedMinutes": 109,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u3-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Programming in C. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t4",
+              "name": "Object-Oriented Programming",
+              "description": "Class, object, instantiation, inheritance, encapsulation, abstract class and polymorphism.",
+              "estimatedMinutes": 80,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u3-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Object-Oriented Programming. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t5",
+              "name": "Programming in C++",
+              "description": "Tokens, variables, types, operators, control, parameter passing, virtual functions, classes, constructors, destructors, overloading, inheritance, templates, exceptions, events, streams and files.",
+              "estimatedMinutes": 132,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u3-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Programming in C++. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t6",
+              "name": "Web Programming",
+              "description": "HTML, DHTML, XML, scripting, Java, servlets and applets.",
+              "estimatedMinutes": 63,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u3-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Web Programming. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t7",
+              "name": "Graphics Devices and Primitives",
+              "description": "Display devices, raster/random scan, monitors, input, points, lines, drawing algorithms and filling.",
+              "estimatedMinutes": 85,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u3-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Graphics Devices and Primitives. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t8",
+              "name": "2-D Transformations and Viewing",
+              "description": "Translation, scaling, rotation, reflection, shear, homogeneous coordinates, composite transforms, viewing pipeline and clipping.",
+              "estimatedMinutes": 99,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u3-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for 2-D Transformations and Viewing. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u3-t9",
+              "name": "3-D Representation and Viewing",
+              "description": "Polygon and quadric surfaces, splines, Bézier and B-spline curves/surfaces, illumination, rendering, projections and clipping.",
+              "estimatedMinutes": 98,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u3-t8"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for 3-D Representation and Viewing. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u4",
+          "number": 4,
+          "name": "Database Management Systems",
+          "topics": [
+            {
+              "id": "p87-u4-t1",
+              "name": "Database Concepts and Architecture",
+              "description": "Models, schemas, instances, three-schema architecture, data independence, languages, interfaces and centralised/client-server DBMS.",
+              "estimatedMinutes": 100,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Database Concepts and Architecture. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u4-t2",
+              "name": "Data Modeling",
+              "description": "ER model, relational model, constraints, schemas, updates, relational algebra/calculus and Codd rules.",
+              "estimatedMinutes": 86,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u4-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data Modeling. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u4-t3",
+              "name": "SQL",
+              "description": "DDL, types, constraints, queries, DML, views, procedures, functions, triggers and SQL injection.",
+              "estimatedMinutes": 83,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u4-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for SQL. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u4-t4",
+              "name": "Normalization and Transactions",
+              "description": "Functional dependencies, normalisation, query processing/optimisation, transaction processing, concurrency, recovery, security and authorisation.",
+              "estimatedMinutes": 107,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u4-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Normalization and Transactions. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u4-t5",
+              "name": "Enhanced Data Models",
+              "description": "Temporal, multimedia, deductive, XML, internet, mobile, GIS, genome and distributed databases.",
+              "estimatedMinutes": 82,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u4-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Enhanced Data Models. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u4-t6",
+              "name": "Data Warehousing and Mining",
+              "description": "Warehouse modelling, concept hierarchy, OLAP/OLTP, association, classification, clustering, regression, SVM, KNN, HMM, summarisation, dependency, link, sequence and social-network analysis.",
+              "estimatedMinutes": 129,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u4-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data Warehousing and Mining. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u4-t7",
+              "name": "Big Data Systems",
+              "description": "Big-data characteristics, types, architecture, MapReduce, Hadoop and HDFS.",
+              "estimatedMinutes": 72,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u4-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Big Data Systems. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u4-t8",
+              "name": "NoSQL",
+              "description": "NoSQL, query optimisation, products, querying, management, indexing, ordering and cloud use.",
+              "estimatedMinutes": 81,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u4-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for NoSQL. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u5",
+          "number": 5,
+          "name": "System Software and Operating System",
+          "topics": [
+            {
+              "id": "p87-u5-t1",
+              "name": "System Software",
+              "description": "Machine, assembly and high-level languages; compilers, interpreters, loading, linking, relocation, macros and debuggers.",
+              "estimatedMinutes": 95,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for System Software. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t2",
+              "name": "Operating System Basics",
+              "description": "Structure, operations, services, system calls, design, implementation and boot.",
+              "estimatedMinutes": 74,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u5-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Operating System Basics. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t3",
+              "name": "Process Management",
+              "description": "Scheduling, operations, IPC, client-server communication, synchronisation, critical section, Peterson solution and semaphores.",
+              "estimatedMinutes": 98,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u5-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Process Management. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t4",
+              "name": "Threads",
+              "description": "Multicore programming, threading models, libraries, implicit threading and issues.",
+              "estimatedMinutes": 76,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u5-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Threads. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t5",
+              "name": "CPU Scheduling",
+              "description": "Criteria, algorithms, thread, multiprocessor and real-time scheduling.",
+              "estimatedMinutes": 70,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u5-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for CPU Scheduling. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t6",
+              "name": "Deadlocks",
+              "description": "Characterisation, prevention, avoidance, detection and recovery.",
+              "estimatedMinutes": 67,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u5-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Deadlocks. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t7",
+              "name": "Memory Management",
+              "description": "Contiguous allocation, swapping, paging, segmentation, demand paging, replacement, frames, thrashing and memory-mapped files.",
+              "estimatedMinutes": 97,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u5-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Memory Management. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t8",
+              "name": "Storage Management",
+              "description": "Mass storage, disks, scheduling, management and RAID.",
+              "estimatedMinutes": 61,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u5-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Storage Management. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t9",
+              "name": "File and I/O Systems",
+              "description": "Access, directories, mounting, sharing, implementation, allocation, free space, performance, recovery and I/O stack.",
+              "estimatedMinutes": 93,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u5-t8"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for File and I/O Systems. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t10",
+              "name": "Security",
+              "description": "Protection, access matrices, access control, revocation, threats, cryptography, authentication and defences.",
+              "estimatedMinutes": 89,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u5-t9"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Security. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t11",
+              "name": "Virtual Machines",
+              "description": "Virtual-machine types, implementations and virtualisation.",
+              "estimatedMinutes": 64,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u5-t10"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Virtual Machines. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t12",
+              "name": "Linux and Windows",
+              "description": "Design principles, components, process, scheduling, memory, file systems, I/O, IPC and networking.",
+              "estimatedMinutes": 84,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u5-t11"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Linux and Windows. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u5-t13",
+              "name": "Distributed Systems",
+              "description": "Network operating systems, structures, protocols, robustness, design and distributed file systems.",
+              "estimatedMinutes": 84,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u5-t12"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Distributed Systems. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u6",
+          "number": 6,
+          "name": "Software Engineering",
+          "topics": [
+            {
+              "id": "p87-u6-t1",
+              "name": "Software Process Models",
+              "description": "Generic process, lifecycle, prescriptive models, management, component/aspect-oriented development, formal methods, agile models, XP, ASD, Scrum, DSDM, FDD, Crystal and web engineering.",
+              "estimatedMinutes": 127,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Software Process Models. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u6-t2",
+              "name": "Software Requirements",
+              "description": "Functional/non-functional requirements, elicitation, use cases, analysis, modelling, review and SRS.",
+              "estimatedMinutes": 85,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u6-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Software Requirements. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u6-t3",
+              "name": "Software Design",
+              "description": "Abstraction, architecture, patterns, separation of concerns, modularity, information hiding, cohesion, coupling, OO/data/architectural/UI/component design.",
+              "estimatedMinutes": 112,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u6-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Software Design. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u6-t4",
+              "name": "Software Quality",
+              "description": "McCall, ISO 9126, quality control/assurance, risk management and reliability.",
+              "estimatedMinutes": 73,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u6-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Software Quality. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u6-t5",
+              "name": "Estimation and Scheduling",
+              "description": "LOC, function points, cost/effort models, COCOMO, scheduling, staffing and timeline charts.",
+              "estimatedMinutes": 80,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u6-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Estimation and Scheduling. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u6-t6",
+              "name": "Software Testing",
+              "description": "Verification, validation, errors/faults/bugs/failures, unit/integration, white/black box, basis path, control structure, alpha/beta, regression, performance and stress testing.",
+              "estimatedMinutes": 123,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u6-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Software Testing. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u6-t7",
+              "name": "Configuration and Evolution",
+              "description": "Change/version control, reuse, re-engineering and reverse engineering.",
+              "estimatedMinutes": 70,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u6-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Configuration and Evolution. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u7",
+          "number": 7,
+          "name": "Data Structures and Algorithms",
+          "topics": [
+            {
+              "id": "p87-u7-t1",
+              "name": "Data Structures",
+              "description": "Arrays, sparse matrices, stacks, queues, priority queues, linked lists, trees, forests, binary/threaded/BST/AVL/B/B+/B* trees, sets, graphs, sorting, searching and hashing.",
+              "estimatedMinutes": 121,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data Structures. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u7-t2",
+              "name": "Performance Analysis",
+              "description": "Time and space complexity, asymptotic notation and recurrences.",
+              "estimatedMinutes": 66,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u7-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Performance Analysis. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u7-t3",
+              "name": "Design Techniques",
+              "description": "Divide and conquer, dynamic programming, greedy algorithms, backtracking and branch and bound.",
+              "estimatedMinutes": 82,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u7-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Design Techniques. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u7-t4",
+              "name": "Lower Bound Theory",
+              "description": "Comparison trees and lower bounds through reductions.",
+              "estimatedMinutes": 61,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u7-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Lower Bound Theory. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u7-t5",
+              "name": "Graph Algorithms",
+              "description": "BFS, DFS, shortest paths, maximum flow and minimum spanning trees.",
+              "estimatedMinutes": 68,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u7-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Graph Algorithms. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u7-t6",
+              "name": "Complexity Theory",
+              "description": "P, NP, NP-completeness and reducibility.",
+              "estimatedMinutes": 55,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u7-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Complexity Theory. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u7-t7",
+              "name": "Selected Algorithms",
+              "description": "Number theoretic algorithms, polynomial arithmetic, FFT and string matching.",
+              "estimatedMinutes": 73,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u7-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Selected Algorithms. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u7-t8",
+              "name": "Advanced Algorithms",
+              "description": "Parallel sorting/searching/merging, approximation and randomised algorithms.",
+              "estimatedMinutes": 73,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u7-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Advanced Algorithms. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u8",
+          "number": 8,
+          "name": "Theory of Computation and Compilers",
+          "topics": [
+            {
+              "id": "p87-u8-t1",
+              "name": "Regular Language Models",
+              "description": "DFA, NFA, equivalence, regular languages/grammars/expressions, properties, pumping lemma, non-regular languages and lexical analysis.",
+              "estimatedMinutes": 101,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Regular Language Models. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t2",
+              "name": "Context-Free Languages",
+              "description": "PDA/NPDA, CFG, CNF, GNF, ambiguity, parse trees, PDA–CFG equivalence and properties.",
+              "estimatedMinutes": 77,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u8-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Context-Free Languages. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t3",
+              "name": "Turing Machines",
+              "description": "Standard and variant TMs, universal TM, Church–Turing thesis, recursive/RE languages, context-sensitive languages, unrestricted grammars, Chomsky hierarchy and constructions.",
+              "estimatedMinutes": 122,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u8-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Turing Machines. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t4",
+              "name": "Unsolvability and Complexity",
+              "description": "Halting, PCP, undecidability for CFLs, measurement/classification, tractability and intractability.",
+              "estimatedMinutes": 84,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u8-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Unsolvability and Complexity. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t5",
+              "name": "Syntax Analysis",
+              "description": "Associativity, precedence, grammar transformations, top-down, recursive descent, predictive, LL(1), bottom-up, LR and LALR(1).",
+              "estimatedMinutes": 98,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u8-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Syntax Analysis. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t6",
+              "name": "Semantic Analysis",
+              "description": "Attribute grammars, syntax-directed definitions, inherited/synthesised attributes, dependency graphs, evaluation order, S/L-attributed definitions and type checking.",
+              "estimatedMinutes": 117,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u8-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Semantic Analysis. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t7",
+              "name": "Runtime Systems",
+              "description": "Storage organisation, activation tree/record, stack allocation, parameter passing and symbol table.",
+              "estimatedMinutes": 84,
+              "difficulty": 1,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u8-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Runtime Systems. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t8",
+              "name": "Intermediate Code",
+              "description": "Representations and translation of declarations, assignments, control flow, Boolean expressions and calls.",
+              "estimatedMinutes": 88,
+              "difficulty": 2,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u8-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Intermediate Code. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u8-t9",
+              "name": "Code Generation and Optimization",
+              "description": "Control/data flow, local/global/loop/peephole optimisation and instruction scheduling.",
+              "estimatedMinutes": 78,
+              "difficulty": 3,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u8-t8"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Code Generation and Optimization. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u9",
+          "number": 9,
+          "name": "Data Communication and Computer Networks",
+          "topics": [
+            {
+              "id": "p87-u9-t1",
+              "name": "Data Communication",
+              "description": "Components, simplex/half/full duplex, analog/digital signals, noisy/noiseless channels, bandwidth, throughput, latency, transmission, encoding, modulation, multiplexing, media and error handling.",
+              "estimatedMinutes": 132,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Data Communication. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t2",
+              "name": "Computer Networks",
+              "description": "Topologies, LAN, MAN, WAN, wireless networks and internet.",
+              "estimatedMinutes": 64,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u9-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Computer Networks. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t3",
+              "name": "Network Models",
+              "description": "Layered architecture, OSI, TCP/IP, address types and switching.",
+              "estimatedMinutes": 66,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u9-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Network Models. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t4",
+              "name": "Link and Access Functions",
+              "description": "Framing, error detection/correction, flow/error control, sliding window, HDLC, CSMA/CD, CSMA/CA, reservation, polling, token passing, FDMA, CDMA, TDMA, devices, backbones and VLANs.",
+              "estimatedMinutes": 125,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u9-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Link and Access Functions. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t5",
+              "name": "Internet Protocols",
+              "description": "IPv4/IPv6, addressing, datagrams, fragmentation, checksum, ARP, delivery, routing, TCP, UDP, SCTP and congestion control.",
+              "estimatedMinutes": 95,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u9-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Internet Protocols. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t6",
+              "name": "Application Services",
+              "description": "WWW, URL, DNS, email architecture, SMTP, POP, IMAP, TELNET and FTP.",
+              "estimatedMinutes": 68,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u9-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Application Services. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t7",
+              "name": "Network Security",
+              "description": "Malware, cryptography, steganography, secret/public key, digital signatures, VPN and firewalls.",
+              "estimatedMinutes": 82,
+              "difficulty": 2,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u9-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Network Security. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t8",
+              "name": "Mobile Technology",
+              "description": "GSM, CDMA, mobile computing, middleware, gateways, Mobile IP, satellites, ad hoc/wireless LANs, geolocation, GPRS and SMS.",
+              "estimatedMinutes": 96,
+              "difficulty": 3,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u9-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Mobile Technology. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u9-t9",
+              "name": "Cloud Computing and IoT",
+              "description": "SaaS/PaaS/IaaS, public/private cloud, virtualisation, servers, storage, resource management, SLA and IoT basics.",
+              "estimatedMinutes": 91,
+              "difficulty": 1,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u9-t8"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Cloud Computing and IoT. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        },
+        {
+          "id": "p87-u10",
+          "number": 10,
+          "name": "Artificial Intelligence (AI)",
+          "topics": [
+            {
+              "id": "p87-u10-t1",
+              "name": "Approaches and Search",
+              "description": "Turing test, rational agents, state spaces, heuristic search, game playing, minimax and alpha-beta pruning.",
+              "estimatedMinutes": 88,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Approaches and Search. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u10-t2",
+              "name": "Knowledge Representation",
+              "description": "Logic, semantic networks, frames, rules, scripts, conceptual dependency, ontologies, expert systems and uncertainty.",
+              "estimatedMinutes": 93,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u10-t1"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Knowledge Representation. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u10-t3",
+              "name": "Planning",
+              "description": "Planning components, linear/non-linear, goal stack, hierarchical, STRIPS and partial-order planning.",
+              "estimatedMinutes": 85,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u10-t2"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Planning. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u10-t4",
+              "name": "Natural Language Processing",
+              "description": "Grammar, language, parsing, semantic analysis and pragmatics.",
+              "estimatedMinutes": 65,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u10-t3"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Natural Language Processing. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u10-t5",
+              "name": "Multi-Agent Systems",
+              "description": "Agents, objects, expert systems, structures, semantic web, communication, ontology-based sharing and tools.",
+              "estimatedMinutes": 88,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u10-t4"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Multi-Agent Systems. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u10-t6",
+              "name": "Fuzzy Sets",
+              "description": "Fuzziness, membership, fuzzification/defuzzification, operations, functions, linguistic variables, relations, rules, inference and control.",
+              "estimatedMinutes": 104,
+              "difficulty": 2,
+              "importance": 5,
+              "prerequisites": [
+                "p87-u10-t5"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Fuzzy Sets. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u10-t7",
+              "name": "Genetic Algorithms",
+              "description": "Encoding, operators, fitness functions, GA cycle and problem solving.",
+              "estimatedMinutes": 69,
+              "difficulty": 3,
+              "importance": 3,
+              "prerequisites": [
+                "p87-u10-t6"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Genetic Algorithms. After reading the official scope, practise recall first and then timed MCQs."
+            },
+            {
+              "id": "p87-u10-t8",
+              "name": "Artificial Neural Networks",
+              "description": "Supervised, unsupervised and reinforcement learning; perceptron, MLP, SOM and Hopfield networks.",
+              "estimatedMinutes": 83,
+              "difficulty": 1,
+              "importance": 4,
+              "prerequisites": [
+                "p87-u10-t7"
+              ],
+              "offlineNote": "Focus on the definition, distinguishing features, standard examples and common exam traps for Artificial Neural Networks. After reading the official scope, practise recall first and then timed MCQs."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

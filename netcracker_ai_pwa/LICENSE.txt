@@ -1,3 +1,0 @@
-NETCracker AI personal-use build
-
-The application code and original practice content in this package may be used and modified for personal educational use. Official examination names, syllabus descriptions, source links and cutoff data remain attributable to their respective public authorities. No affiliation with or endorsement by UGC or NTA is claimed.

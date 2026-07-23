@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "version": "2025.reviewed.1",
+  "year": 2025,
+  "questions": [
+    {
+      "id": "official-2025-1",
+      "year": 2025,
+      "examCycle": "UGC-NET 2025 - replace with exact cycle/shift",
+      "paper": 1,
+      "questionNumber": 1,
+      "questionId": "official-provider-question-id-when-available",
+      "question": "Reviewed question text",
+      "options": ["Option A","Option B","Option C","Option D"],
+      "answer": 0,
+      "dropped": false,
+      "scored": true,
+      "source": "Official UGC-NET paper",
+      "sourceUrl": "official source URL",
+      "sourcePage": 1,
+      "answerVerification": "Official final answer key, question/option ID matched",
+      "answerKeyMapped": true,
+      "transcriptionStatus": "verified-text",
+      "transcriptionConfidence": 1.0,
+      "contentVerification": "human-reviewed-against-official-source",
+      "reviewNotes": "Name/date of reviewer or review batch"
+    }
+  ]
+}
