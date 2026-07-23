@@ -7,6 +7,32 @@ ROOT=Path(__file__).resolve().parents[1]
 YEAR_RE=re.compile(r'interactive-pyqs-(\d{4})\.js$')
 FORBIDDEN_SVG=re.compile(r'<\/?(?:script|image|foreignObject)\b|\son\w+\s*=|javascript:|data:image',re.I)
 
+RASTER_TAG_WITH_SRC_RE=re.compile(r'<(?:img|picture|source|object|embed|iframe)\b[^>]*(?:src|srcset|href|data)\s*=\s*["\'][^"\']*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
+DATA_IMAGE_RE=re.compile(r'data:image/',re.I)
+CSS_URL_RASTER_RE=re.compile(r'url\s*\(\s*["\']?[^"\')]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
+RASTER_EXT_HREF_RE=re.compile(r'(?:src|srcset|href)\s*=\s*["\']?[^"\'>\s]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
+LOCAL_RASTER_PATH_RE=re.compile(r'["\']?[^"\'>\s]*[/\\][^"\'>\s]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
+
+TEXT_ONLY_FIELDS=('question','passage','explanation','sharedContext','topic','reviewNotes','source','answerVerification','importMethod','contentVerification')
+
+def _strip_svg_tags(text:str)->str:
+    text=re.sub(r'<svg[\s\S]*?</svg>','',text,flags=re.I)
+    text=re.sub(r'<table[\s\S]*?</table>','',text,flags=re.I)
+    return text
+
+def _contains_raster_asset_reference(raw_text:str)->list[str]:
+    stripped=_strip_svg_tags(raw_text)
+    errors=[]
+    if RASTER_TAG_WITH_SRC_RE.search(stripped):
+        errors.append('contains HTML element tag with raster/PDF file reference')
+    if DATA_IMAGE_RE.search(stripped):
+        errors.append('contains embedded raster data URL (data:image/)')
+    if CSS_URL_RASTER_RE.search(stripped):
+        errors.append('contains CSS url() referencing raster/PDF asset')
+    if RASTER_EXT_HREF_RE.search(stripped):
+        errors.append('contains src/href attribute referencing raster or PDF file')
+    return errors
+
 def parse_assignment(path:Path):
     raw=path.read_text(encoding='utf-8').strip(); pos=raw.find('=')
     if pos<0: raise ValueError(f'No JavaScript assignment in {path}')
@@ -48,9 +74,27 @@ def validate_question(q:dict,expected_year:int|None=None):
     if q.get('optionVectorSvgs'):
         if not isinstance(q['optionVectorSvgs'],list) or len(q['optionVectorSvgs'])!=4: errors.append(f'{qid}: optionVectorSvgs must contain four entries')
         if 'semantic-svg' in str(q.get('transcriptionStatus','')) and (not isinstance(q.get('optionAlt'),list) or len(q['optionAlt'])!=4 or any(not str(x).strip() for x in q['optionAlt'])): errors.append(f'{qid}: semantic diagram options require four non-empty optionAlt descriptions')
+    st=str(q.get('transcriptionStatus',''))
+    if st=='vector-primary' and not svg_values(q):
+        errors.append(f'{qid}: transcriptionStatus is vector-primary but no SVG content is present')
+    if st=='vector-primary' and q.get('contentVerification','')=='clean-native-text':
+        errors.append(f'{qid}: transcriptionStatus is vector-primary but contentVerification indicates clean native text (incompatible)')
     raw=json.dumps(q,ensure_ascii=False).lower()
-    for bad in ('question-images/','.pdf','sourceimage','refer to source image','open source page'):
+    for bad in ('question-images/','sourceimage','refer to source image','open source page'):
         if bad in raw: errors.append(f'{qid}: forbidden runtime dependency/text: {bad}')
+    for field in TEXT_ONLY_FIELDS:
+        val=q.get(field,'')
+        if isinstance(val,str) and val:
+            refs=_contains_raster_asset_reference(val)
+            for r in refs:
+                errors.append(f'{qid}: field "{field}" {r}')
+    for i,opt in enumerate(q.get('options',[])):
+        if isinstance(opt,str):
+            refs=_contains_raster_asset_reference(opt)
+            for r in refs:
+                errors.append(f'{qid}: option[{i}] {r}')
+            if '-o0o-' in opt:
+                errors.append(f'{qid}: option[{i}] contains extraction delimiter "-o0o-"')
     return errors
 
 def archives(root:Path=ROOT):

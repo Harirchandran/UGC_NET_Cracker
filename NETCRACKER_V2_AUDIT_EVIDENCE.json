@@ -1,0 +1,207 @@
+{
+  "audit_version": "1.0",
+  "application": "NETCracker AI v2.0",
+  "timestamp": "2026-07-23T13:45:00+05:30",
+  "environment": {
+    "cwd": "C:\\Users\\harir\\Downloads\\NETCracker_AI_UGC_NET_Offline_PWA_v1.0 (2)",
+    "os": "Windows 11 / Windows Server 2025 (x64)",
+    "python_version": "Python 3.13.11",
+    "node_version": "v24.13.0",
+    "browser_executables": [
+      "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+      "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe"
+    ],
+    "browser_testing_tools": [
+      "Chrome DevTools MCP Server",
+      "Chrome DevTools Protocol (CDP)",
+      "Node.js static server"
+    ]
+  },
+  "starting_state": {
+    "is_git_repository": true,
+    "current_branch": "main",
+    "head_commit": "ad4ed35d0f8c5dacbe5645f06100df24503eedf7",
+    "git_status_short": "",
+    "git_diff_check": "",
+    "git_diff_cached_check": "",
+    "git_diff_name_only": ""
+  },
+  "corpus_statistics": {
+    "total_pyq_records": 1595,
+    "total_practice_records": 201,
+    "total_combined_records": 1796,
+    "total_scoreable_pyq_records": 1572,
+    "total_dropped_cancelled_records": 23,
+    "total_paper_1_records": 520,
+    "total_paper_2_records": 1075,
+    "total_visual_questions": 658,
+    "total_text_only_questions": 937,
+    "records_with_official_question_ids": 900,
+    "records_with_archive_only_ids": 695,
+    "records_with_source_page_metadata": 1444,
+    "records_with_answer_verification": 1595,
+    "records_with_content_verification": 1595,
+    "total_multi_correct_records": 4,
+    "total_records_with_no_accepted_answer": 23
+  },
+  "year_statistics": [
+    { "year": "2015", "total": 185, "scoreable": 185, "paper1": 60, "paper2": 125, "legacy_p1": 60, "legacy_p2": 50, "legacy_p3": 75, "vectors": 11 },
+    { "year": "2016", "total": 185, "scoreable": 185, "paper1": 60, "paper2": 125, "legacy_p1": 60, "legacy_p2": 50, "legacy_p3": 75, "vectors": 4 },
+    { "year": "2017", "total": 175, "scoreable": 175, "paper1": 50, "paper2": 125, "legacy_p1": 50, "legacy_p2": 50, "legacy_p3": 75, "vectors": 4 },
+    { "year": "2018", "total": 150, "scoreable": 150, "paper1": 50, "paper2": 100, "legacy_p1": 0, "legacy_p2": 100, "legacy_p3": 0, "vectors": 6 },
+    { "year": "2019", "total": 150, "scoreable": 149, "paper1": 50, "paper2": 100, "legacy_p1": 0, "legacy_p2": 0, "legacy_p3": 0, "vectors": 150 },
+    { "year": "2020", "total": 150, "scoreable": 146, "paper1": 50, "paper2": 100, "legacy_p1": 0, "legacy_p2": 0, "legacy_p3": 0, "vectors": 0 },
+    { "year": "2021", "total": 150, "scoreable": 143, "paper1": 50, "paper2": 100, "legacy_p1": 0, "legacy_p2": 0, "legacy_p3": 0, "vectors": 33 },
+    { "year": "2022", "total": 150, "scoreable": 149, "paper1": 50, "paper2": 100, "legacy_p1": 0, "legacy_p2": 0, "legacy_p3": 0, "vectors": 150 },
+    { "year": "2023", "total": 150, "scoreable": 145, "paper1": 50, "paper2": 100, "legacy_p1": 0, "legacy_p2": 0, "legacy_p3": 0, "vectors": 150 },
+    { "year": "2024", "total": 150, "scoreable": 145, "paper1": 50, "paper2": 100, "legacy_p1": 0, "legacy_p2": 0, "legacy_p3": 0, "vectors": 150 }
+  ],
+  "visual_statistics": {
+    "total_stem_svg": 183,
+    "total_option_svgs": 156,
+    "total_html_tables": 1,
+    "total_source_vector_sheet": 471,
+    "external_raster_references": 0,
+    "unsafe_svg_injections": 0,
+    "xml_parse_errors": 0
+  },
+  "answer_statistics": {
+    "option_a_total": 204,
+    "option_b_total": 216,
+    "option_c_total": 218,
+    "option_d_total": 209,
+    "other_or_dropped": 28,
+    "abnormal_collapses": 0
+  },
+  "offline_results": {
+    "shell_precached": true,
+    "manifest_valid": true,
+    "service_worker_registered": true,
+    "offline_navigation_pass": true,
+    "offline_data_persistence_pass": true,
+    "total_archive_size_bytes": 28984920,
+    "initial_shell_size_bytes": 268682
+  },
+  "browser_results": [
+    {
+      "test_id": "SCENARIO-A",
+      "name": "Fresh Launch",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-B",
+      "name": "Question Bank Browser & Metadata",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-C",
+      "name": "Visual Question Rendering",
+      "viewport": "1440x900 / 390x844 / 320x568",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-D",
+      "name": "Officially Dropped Question Handling",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-E",
+      "name": "Filtered Test, Scoring, and Mistake Creation",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-F",
+      "name": "Offline Navigation & Service Worker Cache",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-G",
+      "name": "Data Persistence Across Reload & Reopen",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-H",
+      "name": "PWA Manifest & Installability Criteria",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    },
+    {
+      "test_id": "SCENARIO-I",
+      "name": "Console, Network Security & Secret Audit",
+      "viewport": "1440x900",
+      "status": "PASS",
+      "console_errors": 0,
+      "network_failures": 0
+    }
+  ],
+  "findings": [
+    {
+      "id": "FINDING-01",
+      "severity": "High",
+      "affected_files": ["tools/question_bank_lib.py"],
+      "reproduction_steps": "Run validate_question() on a question payload containing <img src='diagram.png'> in stem or option text.",
+      "expected_result": "Validator rejects question payload with an explicit error regarding raster image tag.",
+      "actual_result": "Validator allows <img src='diagram.png'> in text to pass without error.",
+      "user_impact": "Developer import pipeline could allow future year additions containing raster image references.",
+      "recommended_correction": "Add regex validation in validate_question() to check stem, options, and explanation text for <img>, data:image, .png, .jpg, .gif, .webp, .pdf.",
+      "confidence": "High"
+    },
+    {
+      "id": "FINDING-02",
+      "severity": "Medium",
+      "affected_files": ["data/interactive-pyqs-2015.js"],
+      "affected_question_ids": ["official-2015-p3-75"],
+      "reproduction_steps": "Inspect option 3 of official-2015-p3-75.",
+      "expected_result": "Clean option text '<TITLE>'.",
+      "actual_result": "Option text contains extraction artifact suffix '<TITLE> -o0o-'.",
+      "user_impact": "Visual text clutter on option 3.",
+      "recommended_correction": "Clean raw PDF extraction delimiter '-o0o-' from option text.",
+      "confidence": "High"
+    },
+    {
+      "id": "FINDING-03",
+      "severity": "Medium",
+      "affected_files": ["index.html", "app.js"],
+      "reproduction_steps": "Run accessibility tree audit or inspect console issue warnings.",
+      "expected_result": "All form inputs have explicit for/id label associations, and mobile meta tag uses modern standard.",
+      "actual_result": "10 form fields lack explicit label bindings, and apple-mobile-web-app-capable generates deprecation warning.",
+      "user_impact": "Screen reader users may not hear input field descriptions.",
+      "recommended_correction": "Add explicit for/id label bindings and aria-labels across form fields, and update meta tag.",
+      "confidence": "High"
+    },
+    {
+      "id": "FINDING-04",
+      "severity": "Low",
+      "affected_files": ["data/interactive-pyqs-2018.js"],
+      "reproduction_steps": "Inspect 2018 PYQs with sourceVectorSvgs.",
+      "expected_result": "transcriptionStatus set to vector-primary.",
+      "actual_result": "transcriptionStatus is verified-text despite having vector SVGs.",
+      "user_impact": "Minor metadata labeling inconsistency.",
+      "recommended_correction": "Update transcriptionStatus to vector-primary for 2018 vector items.",
+      "confidence": "High"
+    }
+  ],
+  "final_verdict": "PASS WITH LIMITATIONS"
+}

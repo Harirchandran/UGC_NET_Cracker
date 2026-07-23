@@ -1,0 +1,167 @@
+{
+  "correction_version": "1.0",
+  "application": "NETCracker AI v2.0",
+  "timestamp": "2026-07-23",
+  "starting_state": {
+    "branch": "main",
+    "head": "ad4ed35d0f8c5dacbe5645f06100df24503eedf7",
+    "remote": "https://github.com/Harirchandran/UGC_NET_Cracker.git"
+  },
+  "files_changed": [
+    "tools/question_bank_lib.py",
+    "data/interactive-pyqs-2015.js",
+    "data/interactive-pyqs-2017.js",
+    "data/interactive-pyqs-2018.js",
+    "app.js",
+    "index.html",
+    "docs/QUESTION_DATA_CONTRACT.md",
+    "docs/ADDING_QUESTIONS.md",
+    "tests/audit_correction_tests.py"
+  ],
+  "corrections": {
+    "C1_import_validator": {
+      "finding": "FINDING-01",
+      "severity": "High",
+      "status": "PASS",
+      "description": "Hardened validate_question() to reject raster/external content dependencies in text fields and options",
+      "rejection_patterns_added": [
+        "HTML element tags with raster/PDF file references",
+        "data:image/ embedded raster URLs",
+        "CSS url() referencing raster/PDF assets",
+        "src/href/srcset attributes referencing raster/PDF files",
+        "Extraction delimiter -o0o- in option text"
+      ],
+      "false_positive_prevention": "Educational text mentioning file formats (PNG, JPEG, PDF) is correctly permitted",
+      "tests_passed": 16
+    },
+    "C2_2015_artefact": {
+      "finding": "FINDING-02",
+      "severity": "Medium",
+      "status": "PASS",
+      "description": "Removed -o0o- extraction delimiter from 6 option texts across 3 year archives",
+      "records_fixed": [
+        {"id": "official-2015-p1-60", "year": 2015, "option_index": 3, "old": "West Bengal -o0o-", "new": "West Bengal"},
+        {"id": "official-2015-p2-50", "year": 2015, "option_index": 3, "old": "C-Banking -o0o-", "new": "C-Banking"},
+        {"id": "official-2015-p3-75", "year": 2015, "option_index": 3, "old": "<TITLE> -o0o-", "new": "<TITLE>"},
+        {"id": "official-2017-p1-50", "year": 2017, "option_index": 3, "old": "(a), (b), (c) and (d) -o0o-", "new": "(a), (b), (c) and (d)"},
+        {"id": "official-2017-p2-50", "year": 2017, "option_index": 3, "old": "50 -o0o-", "new": "50"},
+        {"id": "official-2018-p2-100", "year": 2018, "option_index": 3, "old": "Load A with data from input device with address 8000H and display it on the output device with address 8001H -o0o-", "new": "Load A with data from input device with address 8000H and display it on the output device with address 8001H"}
+      ],
+      "regression_assertion": "Validator now rejects any option containing -o0o-"
+    },
+    "C3_accessibility": {
+      "finding": "FINDING-03",
+      "severity": "Medium",
+      "status": "PASS",
+      "description": "Added explicit for/id label associations and aria-label attributes",
+      "label_for_associations": [
+        "practiceScope", "practiceCount", "practiceTime", "practiceDifficulty",
+        "qbYear", "qbPaper", "qbStatus", "qbVisual", "qbQuery",
+        "aiProvider", "aiModel", "aiBaseUrl", "apiKey", "rememberKey", "themeSelect",
+        "profileName", "examDate", "category", "goal",
+        "targetTotal", "targetP1", "targetP2", "hoursPerDay", "daysPerWeek", "risk",
+        "confidenceRange", "topicNotes"
+      ],
+      "aria_labels_added": ["chatInput", "importFile"],
+      "mobile_metadata": {
+        "added": "mobile-web-app-capable",
+        "retained": "apple-mobile-web-app-capable"
+      }
+    },
+    "C4_transcription_status": {
+      "finding": "FINDING-04",
+      "severity": "Low",
+      "status": "NO CHANGE REQUIRED",
+      "description": "2018 records with sourceVectorSvgs correctly have transcriptionStatus verified-text",
+      "records_inspected": 5,
+      "determination": "Native text is independently complete; sourceVectorSvgs are supplementary visual evidence",
+      "new_validator_rules": [
+        "vector-primary status without SVG content → error",
+        "vector-primary status with clean-native-text content verification → error"
+      ]
+    }
+  },
+  "corpus_statistics": {
+    "total_records": 1595,
+    "scoreable_records": 1572,
+    "dropped_records": 23,
+    "single_answer_scoreable": 1568,
+    "multi_correct_scoreable": 4,
+    "single_answer_distribution": {"A": 387, "B": 377, "C": 421, "D": 383},
+    "multi_correct_questions": [
+      {"id": "official-2020-128", "answers": [0, 2]},
+      {"id": "official-2021-2356", "answers": [1, 2]},
+      {"id": "official-2021-2423", "answers": [1, 2]},
+      {"id": "official-2023-187050", "answers": [0, 2]}
+    ],
+    "identity_verification": "1568 + 4 + 23 = 1595 ✓"
+  },
+  "visual_statistics": {
+    "total_visual_records": 658,
+    "mutually_exclusive_primary": {
+      "stem_svg_primary": 183,
+      "option_svg_primary": 4,
+      "source_vector_primary": 471,
+      "other_visual_primary": 0,
+      "sum": 658
+    },
+    "overlapping_features": {
+      "stem_svg": 183,
+      "option_svgs": 156,
+      "source_vector_sheets": 471,
+      "multiple_feature_types": 153
+    },
+    "previous_audit_discrepancy": "811 was sum of overlapping features; 658 is correct unique visual count"
+  },
+  "scoring_fixture": [
+    {"test": "correct_answer", "qid": "official-2015-p1-1", "selected": 3, "expected": 2, "actual": 2, "pass": true},
+    {"test": "wrong_answer", "qid": "official-2015-p1-1", "selected": 0, "expected": 0, "actual": 0, "pass": true},
+    {"test": "unanswered", "qid": "official-2015-p1-1", "selected": null, "expected": 0, "actual": 0, "pass": true},
+    {"test": "dropped", "qid": "official-2019-64635021814", "selected": 0, "expected": 0, "actual": 0, "pass": true},
+    {"test": "multi_correct_accepted", "qid": "official-2020-128", "selected": 0, "expected": 2, "actual": 2, "pass": true},
+    {"test": "multi_correct_rejected", "qid": "official-2020-128", "selected": 1, "expected": 0, "actual": 0, "pass": true}
+  ],
+  "future_year_import": {
+    "synthetic_year": 2099,
+    "questions_imported": 2,
+    "import_pipeline": "PASS",
+    "rejection_tests": {
+      "duplicate_id": "REJECTED",
+      "missing_option": "REJECTED",
+      "invalid_answer": "REJECTED",
+      "raster_img": "REJECTED"
+    },
+    "cleanup": "PASS"
+  },
+  "test_results": {
+    "validate_question_bank": "PASS",
+    "tests_validate": "PASS",
+    "runtime_smoke": "PASS",
+    "http_smoke": "PASS",
+    "audit_correction_tests": "PASS",
+    "archive_validation": "PASS"
+  },
+  "ai_verification": {
+    "locked_state": "PASS",
+    "invalid_key_failure": "PASS",
+    "custom_endpoint_flow": "PASS",
+    "keys_not_in_urls": "PASS",
+    "session_only_behavior": "PASS",
+    "remembered_key_deletion": "PASS",
+    "non_ai_survives": "PASS",
+    "live_gemini": "NOT TESTED",
+    "live_openai": "NOT TESTED",
+    "live_groq": "NOT TESTED"
+  },
+  "browser_verification": {
+    "manifest_link": "PASS (href=manifest.webmanifest)",
+    "dashboard_rendered": "PASS (Welcome displayed)",
+    "console_errors": "PASS (0 errors)",
+    "settings_rendered": "PASS",
+    "accessibility_labels": "PASS (26 valid bindings, 0 invalid)",
+    "viewport_320_no_overflow": "PASS",
+    "no_raster_images": "PASS",
+    "ai_locked_state": "PASS (locked)"
+  },
+  "final_verdict": "ALL FINDINGS CORRECTED OR VERIFIED"
+}
