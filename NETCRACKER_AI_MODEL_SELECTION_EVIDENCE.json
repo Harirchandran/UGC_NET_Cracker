@@ -1,7 +1,7 @@
 {
   "report": "NETCRACKER_AI_MODEL_SELECTION_REPORT.md",
   "starting_head": "68cb01ee2d00ab8b73b537646bf27acfc0d3a4fd",
-  "current_head": null,
+  "current_head": "23e8765c210eef1ec61490bc653e27f1123ef8e4",
   "providers": [
     {
       "providerId": "gemini",
@@ -87,7 +87,28 @@
     "runtime_smoke": "PASS",
     "validate_py": "PASS",
     "http_smoke": "PASS",
-    "audit_correction": "PASS"
+    "audit_correction": "PASS",
+    "ai_model_browser_simulation": "PASS"
+  },
+  "browser_simulation_tests": {
+    "title": "AI Model Browser Simulation (Node.js vm sandbox)",
+    "total": 12,
+    "passed": 12,
+    "failed": 0,
+    "results": [
+      {"test":1,"name":"Provider selector has correct values","result":"all 5 options present","status":"PASS"},
+      {"test":2,"name":"OpenAI defaults to gpt-5.6-terra","result":"openai default is gpt-5.6-terra","status":"PASS"},
+      {"test":3,"name":"xAI defaults to grok-4.5","result":"xai default is grok-4.5","status":"PASS"},
+      {"test":4,"name":"Groq defaults to llama-3.3-70b-versatile","result":"groq default is llama-3.3-70b-versatile","status":"PASS"},
+      {"test":5,"name":"Custom provider supports custom model ID","result":"custom supportsCustomModelId is true","status":"PASS"},
+      {"test":6,"name":"Catalog has officiallyCheckedDate","result":"Date: 2026-07-23","status":"PASS"},
+      {"test":7,"name":"Model metadata available","result":"Gemini 3.6 Flash: Balanced","status":"PASS"},
+      {"test":8,"name":"xAI and GroqCloud are separate providers","result":"xAI: xAI Grok, Groq: GroqCloud","status":"PASS"},
+      {"test":9,"name":"Catalog version exists","result":"1.0.0","status":"PASS"},
+      {"test":10,"name":"Settings shows catalog verified note","result":"catalog date note found","status":"PASS"},
+      {"test":11,"name":"All non-custom providers have base URLs","result":"all non-custom providers have baseUrl","status":"PASS"},
+      {"test":12,"name":"xAI models have reasoningOptions","result":"xAI reasoning options OK","status":"PASS"}
+    ]
   },
   "browser": {
     "desktop_1440x900": "NOT TESTED",
