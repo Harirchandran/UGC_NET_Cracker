@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment & OS temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# IDE & Editor files
+.vscode/
+.idea/
+.gemini/

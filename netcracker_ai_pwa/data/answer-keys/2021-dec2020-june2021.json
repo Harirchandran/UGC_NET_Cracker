@@ -1,0 +1,2237 @@
+{
+  "metadata": {
+    "authority": "National Testing Agency",
+    "examCycle": "UGC-NET December 2020 & June 2021",
+    "subject": "087 - Computer Science & Applications",
+    "officialSource": "https://ugcnet.nta.nic.in/document/national-testing-agency-ugc-net-december-2020-june-2021-final-answer-keys/",
+    "keyFile": "ugc-net-dec2020-june2021-final-key.pdf"
+  },
+  "mapping": {
+    "2331": {
+      "questionOptionIds": [
+        "9321",
+        "9322",
+        "9323",
+        "9324"
+      ],
+      "correctOptionIds": [
+        "9324"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2332": {
+      "questionOptionIds": [
+        "9325",
+        "9326",
+        "9327",
+        "9328"
+      ],
+      "correctOptionIds": [
+        "9326"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2333": {
+      "questionOptionIds": [
+        "9329",
+        "9330",
+        "9331",
+        "9332"
+      ],
+      "correctOptionIds": [
+        "9332"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2334": {
+      "questionOptionIds": [
+        "9333",
+        "9334",
+        "9335",
+        "9336"
+      ],
+      "correctOptionIds": [
+        "9333"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2335": {
+      "questionOptionIds": [
+        "9337",
+        "9338",
+        "9339",
+        "9340"
+      ],
+      "correctOptionIds": [
+        "9337"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2336": {
+      "questionOptionIds": [
+        "9341",
+        "9342",
+        "9343",
+        "9344"
+      ],
+      "correctOptionIds": [
+        "9342"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2337": {
+      "questionOptionIds": [
+        "9345",
+        "9346",
+        "9347",
+        "9348"
+      ],
+      "correctOptionIds": [
+        "9348"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2338": {
+      "questionOptionIds": [
+        "9349",
+        "9350",
+        "9351",
+        "9352"
+      ],
+      "correctOptionIds": [
+        "9349"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2339": {
+      "questionOptionIds": [
+        "9353",
+        "9354",
+        "9355",
+        "9356"
+      ],
+      "correctOptionIds": [
+        "9353"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2340": {
+      "questionOptionIds": [
+        "9357",
+        "9358",
+        "9359",
+        "9360"
+      ],
+      "correctOptionIds": [
+        "9360"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2341": {
+      "questionOptionIds": [
+        "9361",
+        "9362",
+        "9363",
+        "9364"
+      ],
+      "correctOptionIds": [
+        "9362"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2342": {
+      "questionOptionIds": [
+        "9365",
+        "9366",
+        "9367",
+        "9368"
+      ],
+      "correctOptionIds": [
+        "9365"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2343": {
+      "questionOptionIds": [
+        "9369",
+        "9370",
+        "9371",
+        "9372"
+      ],
+      "correctOptionIds": [
+        "9371"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2344": {
+      "questionOptionIds": [
+        "9373",
+        "9374",
+        "9375",
+        "9376"
+      ],
+      "correctOptionIds": [
+        "9375"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2345": {
+      "questionOptionIds": [
+        "9377",
+        "9378",
+        "9379",
+        "9380"
+      ],
+      "correctOptionIds": [
+        "9377"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2346": {
+      "questionOptionIds": [
+        "9381",
+        "9382",
+        "9383",
+        "9384"
+      ],
+      "correctOptionIds": [
+        "9381"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2347": {
+      "questionOptionIds": [
+        "9385",
+        "9386",
+        "9387",
+        "9388"
+      ],
+      "correctOptionIds": [
+        "9388"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2348": {
+      "questionOptionIds": [
+        "9389",
+        "9390",
+        "9391",
+        "9392"
+      ],
+      "correctOptionIds": [
+        "9392"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2349": {
+      "questionOptionIds": [
+        "9393",
+        "9394",
+        "9395",
+        "9396"
+      ],
+      "correctOptionIds": [
+        "9395"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2350": {
+      "questionOptionIds": [
+        "9397",
+        "9398",
+        "9399",
+        "9400"
+      ],
+      "correctOptionIds": [
+        "9397"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2351": {
+      "questionOptionIds": [
+        "9401",
+        "9402",
+        "9403",
+        "9404"
+      ],
+      "correctOptionIds": [
+        "9401"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2352": {
+      "questionOptionIds": [
+        "9405",
+        "9406",
+        "9407",
+        "9408"
+      ],
+      "correctOptionIds": [
+        "9407"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2353": {
+      "questionOptionIds": [
+        "9409",
+        "9410",
+        "9411",
+        "9412"
+      ],
+      "correctOptionIds": [
+        "9411"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2354": {
+      "questionOptionIds": [
+        "9413",
+        "9414",
+        "9415",
+        "9416"
+      ],
+      "correctOptionIds": [
+        "9416"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2355": {
+      "questionOptionIds": [
+        "9417",
+        "9418",
+        "9419",
+        "9420"
+      ],
+      "correctOptionIds": [
+        "9420"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2356": {
+      "questionOptionIds": [
+        "9421",
+        "9422",
+        "9423",
+        "9424"
+      ],
+      "correctOptionIds": [
+        "9422",
+        "9423"
+      ],
+      "correctOptionIndexes": [
+        1,
+        2
+      ],
+      "dropped": false
+    },
+    "2357": {
+      "questionOptionIds": [
+        "9425",
+        "9426",
+        "9427",
+        "9428"
+      ],
+      "correctOptionIds": [
+        "9425"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2358": {
+      "questionOptionIds": [
+        "9429",
+        "9430",
+        "9431",
+        "9432"
+      ],
+      "correctOptionIds": [
+        "9431"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2359": {
+      "questionOptionIds": [
+        "9433",
+        "9434",
+        "9435",
+        "9436"
+      ],
+      "correctOptionIds": [
+        "9436"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2360": {
+      "questionOptionIds": [
+        "9437",
+        "9438",
+        "9439",
+        "9440"
+      ],
+      "correctOptionIds": [
+        "9439"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2361": {
+      "questionOptionIds": [
+        "9441",
+        "9442",
+        "9443",
+        "9444"
+      ],
+      "correctOptionIds": [
+        "9444"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2362": {
+      "questionOptionIds": [
+        "9445",
+        "9446",
+        "9447",
+        "9448"
+      ],
+      "correctOptionIds": [
+        "9448"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2363": {
+      "questionOptionIds": [
+        "9449",
+        "9450",
+        "9451",
+        "9452"
+      ],
+      "correctOptionIds": [
+        "9449"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2364": {
+      "questionOptionIds": [
+        "9453",
+        "9454",
+        "9455",
+        "9456"
+      ],
+      "correctOptionIds": [
+        "9453"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2365": {
+      "questionOptionIds": [
+        "9457",
+        "9458",
+        "9459",
+        "9460"
+      ],
+      "correctOptionIds": [
+        "9459"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2366": {
+      "questionOptionIds": [
+        "9461",
+        "9462",
+        "9463",
+        "9464"
+      ],
+      "correctOptionIds": null,
+      "correctOptionIndexes": [],
+      "dropped": true
+    },
+    "2367": {
+      "questionOptionIds": [
+        "9465",
+        "9466",
+        "9467",
+        "9468"
+      ],
+      "correctOptionIds": [
+        "9468"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2368": {
+      "questionOptionIds": [
+        "9469",
+        "9470",
+        "9471",
+        "9472"
+      ],
+      "correctOptionIds": null,
+      "correctOptionIndexes": [],
+      "dropped": true
+    },
+    "2369": {
+      "questionOptionIds": [
+        "9473",
+        "9474",
+        "9475",
+        "9476"
+      ],
+      "correctOptionIds": [
+        "9476"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2370": {
+      "questionOptionIds": [
+        "9477",
+        "9478",
+        "9479",
+        "9480"
+      ],
+      "correctOptionIds": [
+        "9478"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2371": {
+      "questionOptionIds": [
+        "9481",
+        "9482",
+        "9483",
+        "9484"
+      ],
+      "correctOptionIds": [
+        "9483"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2372": {
+      "questionOptionIds": [
+        "9485",
+        "9486",
+        "9487",
+        "9488"
+      ],
+      "correctOptionIds": [
+        "9486"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2373": {
+      "questionOptionIds": [
+        "9489",
+        "9490",
+        "9491",
+        "9492"
+      ],
+      "correctOptionIds": [
+        "9490"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2374": {
+      "questionOptionIds": [
+        "9493",
+        "9494",
+        "9495",
+        "9496"
+      ],
+      "correctOptionIds": [
+        "9494"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2375": {
+      "questionOptionIds": [
+        "9497",
+        "9498",
+        "9499",
+        "9500"
+      ],
+      "correctOptionIds": [
+        "9500"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2376": {
+      "questionOptionIds": [
+        "9501",
+        "9502",
+        "9503",
+        "9504"
+      ],
+      "correctOptionIds": [
+        "9501"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2377": {
+      "questionOptionIds": [
+        "9505",
+        "9506",
+        "9507",
+        "9508"
+      ],
+      "correctOptionIds": [
+        "9505"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2378": {
+      "questionOptionIds": [
+        "9509",
+        "9510",
+        "9511",
+        "9512"
+      ],
+      "correctOptionIds": [
+        "9509"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2379": {
+      "questionOptionIds": [
+        "9513",
+        "9514",
+        "9515",
+        "9516"
+      ],
+      "correctOptionIds": [
+        "9515"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2380": {
+      "questionOptionIds": [
+        "9517",
+        "9518",
+        "9519",
+        "9520"
+      ],
+      "correctOptionIds": [
+        "9517"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2381": {
+      "questionOptionIds": [
+        "9521",
+        "9522",
+        "9523",
+        "9524"
+      ],
+      "correctOptionIds": [
+        "9521"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2382": {
+      "questionOptionIds": [
+        "9525",
+        "9526",
+        "9527",
+        "9528"
+      ],
+      "correctOptionIds": [
+        "9525"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2383": {
+      "questionOptionIds": [
+        "9529",
+        "9530",
+        "9531",
+        "9532"
+      ],
+      "correctOptionIds": [
+        "9530"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2384": {
+      "questionOptionIds": [
+        "9533",
+        "9534",
+        "9535",
+        "9536"
+      ],
+      "correctOptionIds": [
+        "9535"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2385": {
+      "questionOptionIds": [
+        "9537",
+        "9538",
+        "9539",
+        "9540"
+      ],
+      "correctOptionIds": [
+        "9537"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2386": {
+      "questionOptionIds": [
+        "9541",
+        "9542",
+        "9543",
+        "9544"
+      ],
+      "correctOptionIds": [
+        "9541"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2387": {
+      "questionOptionIds": [
+        "9545",
+        "9546",
+        "9547",
+        "9548"
+      ],
+      "correctOptionIds": null,
+      "correctOptionIndexes": [],
+      "dropped": true
+    },
+    "2388": {
+      "questionOptionIds": [
+        "9549",
+        "9550",
+        "9551",
+        "9552"
+      ],
+      "correctOptionIds": null,
+      "correctOptionIndexes": [],
+      "dropped": true
+    },
+    "2389": {
+      "questionOptionIds": [
+        "9553",
+        "9554",
+        "9555",
+        "9556"
+      ],
+      "correctOptionIds": null,
+      "correctOptionIndexes": [],
+      "dropped": true
+    },
+    "2390": {
+      "questionOptionIds": [
+        "9557",
+        "9558",
+        "9559",
+        "9560"
+      ],
+      "correctOptionIds": null,
+      "correctOptionIndexes": [],
+      "dropped": true
+    },
+    "2391": {
+      "questionOptionIds": [
+        "9561",
+        "9562",
+        "9563",
+        "9564"
+      ],
+      "correctOptionIds": [
+        "9564"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2392": {
+      "questionOptionIds": [
+        "9565",
+        "9566",
+        "9567",
+        "9568"
+      ],
+      "correctOptionIds": [
+        "9565"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2393": {
+      "questionOptionIds": [
+        "9569",
+        "9570",
+        "9571",
+        "9572"
+      ],
+      "correctOptionIds": [
+        "9572"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2394": {
+      "questionOptionIds": [
+        "9573",
+        "9574",
+        "9575",
+        "9576"
+      ],
+      "correctOptionIds": [
+        "9573"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2395": {
+      "questionOptionIds": [
+        "9577",
+        "9578",
+        "9579",
+        "9580"
+      ],
+      "correctOptionIds": [
+        "9577"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2396": {
+      "questionOptionIds": [
+        "9581",
+        "9582",
+        "9583",
+        "9584"
+      ],
+      "correctOptionIds": [
+        "9581"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2397": {
+      "questionOptionIds": [
+        "9585",
+        "9586",
+        "9587",
+        "9588"
+      ],
+      "correctOptionIds": [
+        "9587"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2398": {
+      "questionOptionIds": [
+        "9589",
+        "9590",
+        "9591",
+        "9592"
+      ],
+      "correctOptionIds": [
+        "9589"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2399": {
+      "questionOptionIds": [
+        "9593",
+        "9594",
+        "9595",
+        "9596"
+      ],
+      "correctOptionIds": [
+        "9594"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2400": {
+      "questionOptionIds": [
+        "9597",
+        "9598",
+        "9599",
+        "9600"
+      ],
+      "correctOptionIds": [
+        "9598"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2401": {
+      "questionOptionIds": [
+        "9601",
+        "9602",
+        "9603",
+        "9604"
+      ],
+      "correctOptionIds": [
+        "9601"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2402": {
+      "questionOptionIds": [
+        "9605",
+        "9606",
+        "9607",
+        "9608"
+      ],
+      "correctOptionIds": [
+        "9606"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2403": {
+      "questionOptionIds": [
+        "9609",
+        "9610",
+        "9611",
+        "9612"
+      ],
+      "correctOptionIds": [
+        "9610"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2404": {
+      "questionOptionIds": [
+        "9613",
+        "9614",
+        "9615",
+        "9616"
+      ],
+      "correctOptionIds": [
+        "9614"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2405": {
+      "questionOptionIds": [
+        "9617",
+        "9618",
+        "9619",
+        "9620"
+      ],
+      "correctOptionIds": [
+        "9619"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2406": {
+      "questionOptionIds": [
+        "9621",
+        "9622",
+        "9623",
+        "9624"
+      ],
+      "correctOptionIds": [
+        "9621"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2407": {
+      "questionOptionIds": [
+        "9625",
+        "9626",
+        "9627",
+        "9628"
+      ],
+      "correctOptionIds": [
+        "9626"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2408": {
+      "questionOptionIds": [
+        "9629",
+        "9630",
+        "9631",
+        "9632"
+      ],
+      "correctOptionIds": [
+        "9630"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2409": {
+      "questionOptionIds": [
+        "9633",
+        "9634",
+        "9635",
+        "9636"
+      ],
+      "correctOptionIds": [
+        "9633"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2410": {
+      "questionOptionIds": [
+        "9637",
+        "9638",
+        "9639",
+        "9640"
+      ],
+      "correctOptionIds": [
+        "9640"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2411": {
+      "questionOptionIds": [
+        "9641",
+        "9642",
+        "9643",
+        "9644"
+      ],
+      "correctOptionIds": [
+        "9642"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2412": {
+      "questionOptionIds": [
+        "9645",
+        "9646",
+        "9647",
+        "9648"
+      ],
+      "correctOptionIds": [
+        "9645"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2413": {
+      "questionOptionIds": [
+        "9649",
+        "9650",
+        "9651",
+        "9652"
+      ],
+      "correctOptionIds": [
+        "9649"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2414": {
+      "questionOptionIds": [
+        "9653",
+        "9654",
+        "9655",
+        "9656"
+      ],
+      "correctOptionIds": [
+        "9656"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2415": {
+      "questionOptionIds": [
+        "9657",
+        "9658",
+        "9659",
+        "9660"
+      ],
+      "correctOptionIds": [
+        "9657"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2416": {
+      "questionOptionIds": [
+        "9661",
+        "9662",
+        "9663",
+        "9664"
+      ],
+      "correctOptionIds": [
+        "9664"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2417": {
+      "questionOptionIds": [
+        "9665",
+        "9666",
+        "9667",
+        "9668"
+      ],
+      "correctOptionIds": [
+        "9667"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2418": {
+      "questionOptionIds": [
+        "9669",
+        "9670",
+        "9671",
+        "9672"
+      ],
+      "correctOptionIds": [
+        "9670"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2419": {
+      "questionOptionIds": [
+        "9673",
+        "9674",
+        "9675",
+        "9676"
+      ],
+      "correctOptionIds": [
+        "9673"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2420": {
+      "questionOptionIds": [
+        "9677",
+        "9678",
+        "9679",
+        "9680"
+      ],
+      "correctOptionIds": [
+        "9678"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2421": {
+      "questionOptionIds": [
+        "9681",
+        "9682",
+        "9683",
+        "9684"
+      ],
+      "correctOptionIds": [
+        "9681"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2422": {
+      "questionOptionIds": [
+        "9685",
+        "9686",
+        "9687",
+        "9688"
+      ],
+      "correctOptionIds": [
+        "9685"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2423": {
+      "questionOptionIds": [
+        "9689",
+        "9690",
+        "9691",
+        "9692"
+      ],
+      "correctOptionIds": [
+        "9690",
+        "9691"
+      ],
+      "correctOptionIndexes": [
+        1,
+        2
+      ],
+      "dropped": false
+    },
+    "2424": {
+      "questionOptionIds": [
+        "9693",
+        "9694",
+        "9695",
+        "9696"
+      ],
+      "correctOptionIds": [
+        "9693"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2425": {
+      "questionOptionIds": [
+        "9697",
+        "9698",
+        "9699",
+        "9700"
+      ],
+      "correctOptionIds": [
+        "9700"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2426": {
+      "questionOptionIds": [
+        "9701",
+        "9702",
+        "9703",
+        "9704"
+      ],
+      "correctOptionIds": [
+        "9704"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2427": {
+      "questionOptionIds": [
+        "9705",
+        "9706",
+        "9707",
+        "9708"
+      ],
+      "correctOptionIds": [
+        "9705"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2428": {
+      "questionOptionIds": [
+        "9709",
+        "9710",
+        "9711",
+        "9712"
+      ],
+      "correctOptionIds": [
+        "9710"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2429": {
+      "questionOptionIds": [
+        "9713",
+        "9714",
+        "9715",
+        "9716"
+      ],
+      "correctOptionIds": [
+        "9713"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2430": {
+      "questionOptionIds": [
+        "9717",
+        "9718",
+        "9719",
+        "9720"
+      ],
+      "correctOptionIds": [
+        "9717"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2431": {
+      "questionOptionIds": [
+        "9721",
+        "9722",
+        "9723",
+        "9724"
+      ],
+      "correctOptionIds": [
+        "9723"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2432": {
+      "questionOptionIds": [
+        "9725",
+        "9726",
+        "9727",
+        "9728"
+      ],
+      "correctOptionIds": [
+        "9726"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2433": {
+      "questionOptionIds": [
+        "9729",
+        "9730",
+        "9731",
+        "9732"
+      ],
+      "correctOptionIds": [
+        "9730"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2434": {
+      "questionOptionIds": [
+        "9733",
+        "9734",
+        "9735",
+        "9736"
+      ],
+      "correctOptionIds": [
+        "9736"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2435": {
+      "questionOptionIds": [
+        "9737",
+        "9738",
+        "9739",
+        "9740"
+      ],
+      "correctOptionIds": [
+        "9737"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2436": {
+      "questionOptionIds": [
+        "9741",
+        "9742",
+        "9743",
+        "9744"
+      ],
+      "correctOptionIds": [
+        "9744"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2437": {
+      "questionOptionIds": [
+        "9745",
+        "9746",
+        "9747",
+        "9748"
+      ],
+      "correctOptionIds": [
+        "9747"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2438": {
+      "questionOptionIds": [
+        "9749",
+        "9750",
+        "9751",
+        "9752"
+      ],
+      "correctOptionIds": [
+        "9751"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2439": {
+      "questionOptionIds": [
+        "9753",
+        "9754",
+        "9755",
+        "9756"
+      ],
+      "correctOptionIds": [
+        "9753"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2440": {
+      "questionOptionIds": [
+        "9757",
+        "9758",
+        "9759",
+        "9760"
+      ],
+      "correctOptionIds": [
+        "9758"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2441": {
+      "questionOptionIds": [
+        "9761",
+        "9762",
+        "9763",
+        "9764"
+      ],
+      "correctOptionIds": [
+        "9764"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2442": {
+      "questionOptionIds": [
+        "9765",
+        "9766",
+        "9767",
+        "9768"
+      ],
+      "correctOptionIds": [
+        "9767"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2443": {
+      "questionOptionIds": [
+        "9769",
+        "9770",
+        "9771",
+        "9772"
+      ],
+      "correctOptionIds": [
+        "9771"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2444": {
+      "questionOptionIds": [
+        "9773",
+        "9774",
+        "9775",
+        "9776"
+      ],
+      "correctOptionIds": [
+        "9776"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2445": {
+      "questionOptionIds": [
+        "9777",
+        "9778",
+        "9779",
+        "9780"
+      ],
+      "correctOptionIds": [
+        "9777"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2446": {
+      "questionOptionIds": [
+        "9781",
+        "9782",
+        "9783",
+        "9784"
+      ],
+      "correctOptionIds": [
+        "9782"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2447": {
+      "questionOptionIds": [
+        "9785",
+        "9786",
+        "9787",
+        "9788"
+      ],
+      "correctOptionIds": [
+        "9788"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2448": {
+      "questionOptionIds": [
+        "9789",
+        "9790",
+        "9791",
+        "9792"
+      ],
+      "correctOptionIds": [
+        "9789"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2449": {
+      "questionOptionIds": [
+        "9793",
+        "9794",
+        "9795",
+        "9796"
+      ],
+      "correctOptionIds": [
+        "9795"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2450": {
+      "questionOptionIds": [
+        "9797",
+        "9798",
+        "9799",
+        "9800"
+      ],
+      "correctOptionIds": [
+        "9797"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2451": {
+      "questionOptionIds": [
+        "9801",
+        "9802",
+        "9803",
+        "9804"
+      ],
+      "correctOptionIds": [
+        "9804"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2452": {
+      "questionOptionIds": [
+        "9805",
+        "9806",
+        "9807",
+        "9808"
+      ],
+      "correctOptionIds": [
+        "9807"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2453": {
+      "questionOptionIds": [
+        "9809",
+        "9810",
+        "9811",
+        "9812"
+      ],
+      "correctOptionIds": [
+        "9809"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2454": {
+      "questionOptionIds": [
+        "9813",
+        "9814",
+        "9815",
+        "9816"
+      ],
+      "correctOptionIds": [
+        "9814"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2455": {
+      "questionOptionIds": [
+        "9817",
+        "9818",
+        "9819",
+        "9820"
+      ],
+      "correctOptionIds": [
+        "9819"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2456": {
+      "questionOptionIds": [
+        "9821",
+        "9822",
+        "9823",
+        "9824"
+      ],
+      "correctOptionIds": [
+        "9822"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2457": {
+      "questionOptionIds": [
+        "9825",
+        "9826",
+        "9827",
+        "9828"
+      ],
+      "correctOptionIds": [
+        "9828"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2458": {
+      "questionOptionIds": [
+        "9829",
+        "9830",
+        "9831",
+        "9832"
+      ],
+      "correctOptionIds": [
+        "9829"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2459": {
+      "questionOptionIds": [
+        "9833",
+        "9834",
+        "9835",
+        "9836"
+      ],
+      "correctOptionIds": [
+        "9835"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2460": {
+      "questionOptionIds": [
+        "9837",
+        "9838",
+        "9839",
+        "9840"
+      ],
+      "correctOptionIds": [
+        "9837"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2461": {
+      "questionOptionIds": [
+        "9841",
+        "9842",
+        "9843",
+        "9844"
+      ],
+      "correctOptionIds": [
+        "9844"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2462": {
+      "questionOptionIds": [
+        "9845",
+        "9846",
+        "9847",
+        "9848"
+      ],
+      "correctOptionIds": [
+        "9847"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2463": {
+      "questionOptionIds": [
+        "9849",
+        "9850",
+        "9851",
+        "9852"
+      ],
+      "correctOptionIds": [
+        "9849"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2464": {
+      "questionOptionIds": [
+        "9853",
+        "9854",
+        "9855",
+        "9856"
+      ],
+      "correctOptionIds": [
+        "9853"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2465": {
+      "questionOptionIds": [
+        "9857",
+        "9858",
+        "9859",
+        "9860"
+      ],
+      "correctOptionIds": [
+        "9857"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2466": {
+      "questionOptionIds": [
+        "9861",
+        "9862",
+        "9863",
+        "9864"
+      ],
+      "correctOptionIds": [
+        "9864"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2467": {
+      "questionOptionIds": [
+        "9865",
+        "9866",
+        "9867",
+        "9868"
+      ],
+      "correctOptionIds": [
+        "9867"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2468": {
+      "questionOptionIds": [
+        "9869",
+        "9870",
+        "9871",
+        "9872"
+      ],
+      "correctOptionIds": [
+        "9871"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2469": {
+      "questionOptionIds": [
+        "9873",
+        "9874",
+        "9875",
+        "9876"
+      ],
+      "correctOptionIds": [
+        "9874"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2470": {
+      "questionOptionIds": [
+        "9877",
+        "9878",
+        "9879",
+        "9880"
+      ],
+      "correctOptionIds": [
+        "9880"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2471": {
+      "questionOptionIds": [
+        "9881",
+        "9882",
+        "9883",
+        "9884"
+      ],
+      "correctOptionIds": [
+        "9881"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2472": {
+      "questionOptionIds": [
+        "9885",
+        "9886",
+        "9887",
+        "9888"
+      ],
+      "correctOptionIds": [
+        "9886"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2473": {
+      "questionOptionIds": [
+        "9889",
+        "9890",
+        "9891",
+        "9892"
+      ],
+      "correctOptionIds": [
+        "9892"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2474": {
+      "questionOptionIds": [
+        "9893",
+        "9894",
+        "9895",
+        "9896"
+      ],
+      "correctOptionIds": [
+        "9893"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2475": {
+      "questionOptionIds": [
+        "9897",
+        "9898",
+        "9899",
+        "9900"
+      ],
+      "correctOptionIds": [
+        "9899"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    },
+    "2476": {
+      "questionOptionIds": [
+        "9901",
+        "9902",
+        "9903",
+        "9904"
+      ],
+      "correctOptionIds": [
+        "9904"
+      ],
+      "correctOptionIndexes": [
+        3
+      ],
+      "dropped": false
+    },
+    "2477": {
+      "questionOptionIds": [
+        "9905",
+        "9906",
+        "9907",
+        "9908"
+      ],
+      "correctOptionIds": [
+        "9906"
+      ],
+      "correctOptionIndexes": [
+        1
+      ],
+      "dropped": false
+    },
+    "2478": {
+      "questionOptionIds": [
+        "9909",
+        "9910",
+        "9911",
+        "9912"
+      ],
+      "correctOptionIds": null,
+      "correctOptionIndexes": [],
+      "dropped": true
+    },
+    "2479": {
+      "questionOptionIds": [
+        "9913",
+        "9914",
+        "9915",
+        "9916"
+      ],
+      "correctOptionIds": [
+        "9913"
+      ],
+      "correctOptionIndexes": [
+        0
+      ],
+      "dropped": false
+    },
+    "2480": {
+      "questionOptionIds": [
+        "9917",
+        "9918",
+        "9919",
+        "9920"
+      ],
+      "correctOptionIds": [
+        "9919"
+      ],
+      "correctOptionIndexes": [
+        2
+      ],
+      "dropped": false
+    }
+  }
+}

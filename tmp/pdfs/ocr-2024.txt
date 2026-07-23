@@ -1,0 +1,4672 @@
+
+
+--- OCR PAGE 1 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+National Testing Agency
+Notations :
+1.Options shown in green color and with ¥ icon are correct.
+2.Options shown in red color and with * icon are incorrect.
+Question Paper Name : 87 Computer Science and Applications 23rd Aug 2024 Shift 1
+Subject Name : 87 Computer Science and Applications
+Creation Date : 2024-08-23 18:41:42
+Duration : 180
+Total Marks : 300
+Display Marks: Yes
+Change Font Color : No
+Change Background Color : No
+Change Theme : No
+Help Button : No
+Show Reports : No
+Show Progress Bar : No
+Computer Science and Applications and General Paper
+Group Number : 1
+Group Id: 53307223
+Group Maximum Duration : 0
+Group Minimum Duration : 180
+Show Attended Group? : No
+Edit Attended Group? : No
+Break time : 0
+Group Marks : 300
+General Paper
+Section Id: 53307251
+Section Number : 1
+Section type : Online
+Mandatory or Optional : Mandatory
+Number of Questions : 42
+Number of Questions to be attempted : 42
+Section Marks : 100
+Maximum Instruction Time : 0
+Sub-Section Number : 1
+Sub-Section Id : 533072149
+Question Shuffling Allowed : No
+Question Id : 5330723674 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+Questions : No Question Pattern Type : NonMatrix
+Question Numbers : (1 to 5)
+Question Label : Comprehension
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 1/101
+
+
+--- OCR PAGE 2 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+The following table shows the proportion of students passed in three different Graduation Streams,
+namely, Arts, Science and Commerce, from seven different cities A-G, along with the ratio of Males (M)
+to Females (F) for the three streams among the students. Based on the data in the table, answer the
+questions that follow.
+City-wise details of Graduating students
+| Proportion of passed Students
+TCC OM
+1d | 23:27
+[8 id as ae |
+57:43] 31:29
+a eS WE
+Sub questions
+Question Number : 1 Question Id : 5330723675 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+If the number of males who passed in Commerce from City-G is 244, then what is the number of
+students who passed in Arts from City-G ?
+(1) 3600
+(2) 4200
+(3) 4800
+(4) 3400
+Question Number : 2 Question Id : 5330723676 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+For City-A, if the total number of males who passed in Arts is 2480, then what is the difference
+between the number of students who passed in Commerce and that in Science ?
+(4) 600
+(2) 1o00
+(3) 1400
+(4) 1800
+Question Number : 3 Question Id : 5330723677 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+If the number of students who passed in Commerce from City-F is 3240, then the number of
+students who passed from City-F is “6 of the number of Science students who passed
+from City-F.
+(tf) 75
+(2) 150
+(3) 180
+(4) 225
+Question Number : 4 Question Id : 5330723678 Question Type : MCQ Option Shuffling : No
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 2/101
+
+
+--- OCR PAGE 3 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Correct Marks : 2 Wrong Marks : 0
+If the number of females who passed in Arts from City-C is 768, then the number of males who
+passed in Commerce from City-C is approximately % of the number of students who
+passed from City-C.
+(1) 14.76
+(2) 18.24
+(3) 27.8
+(4) 32.5
+Question Number : 5 Question Id : 5330723679 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+The number of males who passed in Commerce from City-F is approximately _ % more
+than the number of females who passed in Conumerce from City-F.
+(t) 31.25
+(2) 47.47
+(3) 45.45
+(4) 42.67
+Question Id : 5330723674 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+Questions : No Question Pattern Type : NonMatrix
+Question Numbers : (1 to 5)
+Question Label : Comprehension
+fa mice 4 are Ta-Tas et A-G 8 el, Paar ST eT a aT Sea Perea aT
+arya ain reel & ars ar erent Bq Yeu (My at fees (F) HAT a SIT See aT Eee A eT
+Brel SIM VT ar yes TO wea a Ter cif :
+eee fareterat er preva ferercor
+— Sl ferent ar rear faa —
+Tet een ; ar ; afte ral faa anfirea
+es ee
+31:14
+a a ee 2
+4:3:8 23:17 | 41:34 57:23
+16:11
+Sub questions
+Question Number : 1 Question Id : 5330723675 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 3/101
+
+
+--- OCR PAGE 4 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+ae Fe-G A ay A aes Ge at eT 2544 8, A e-G A wen A sal rene at seen fer BF?
+(1) 3600
+(2) 4200
+(3) 4800
+(4) 3400
+Question Number : 2 Question Id : 5330723676 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+WEA Bh FU, Bie ae A Te LS BA eT eT 2480s, a ey A sel Penta a en ain far
+4 sei frenfeeat a cen & ara a ates fret B?
+(1) 600
+(2) 1000
+(3) 1400
+(4) 1800
+Question Number : 3 Question Id : 5330723677 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+aie Wet A ony A ae frenbeiaT t Aen 3240 F, a eC a aa eA art freniial et eT
+Wek A sam Paar frends at Fen a % FI
+(1) 75
+(2) 150
+(3) 180
+(4) 225
+Question Number : 4 Question Id : 5330723678 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+af Tec Gen A Sa EM ae Hees AT AT 768 FB, A eC A aes A a Ged a eT
+wet-C Hy se} ferentefat et een aT ee % BI
+(1) 14.76
+(2) 18.24
+(3) 27.8
+(4) 32.5
+Question Number : 5 Question Id : 5330723679 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+TEE A re A Sa Te a eT Tee A aes aa FA oe Aiea al Fen Se TT
+% afer Fr
+(1) 31.25
+(2) 47.47
+(3) 45.45
+(4) 42.07
+Sub-Section Number : 2
+Sub-Section Id : 533072150
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 4/101
+
+
+--- OCR PAGE 5 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Shuffling Allowed : Yes
+Question Number : 6 Question Id : 5330723680 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What among the following can be correctly claimed in the light of ‘Assessment Rubrics’ 7
+(A) A tool used to interpret and grade students on the basis of some criterion.
+(6) A means to increase subjective evaluation by the evaluator.
+(C) Tt ensures transparency and fairness in the marking process.
+(D) It provides an opportunity to set orbitrary standards and guidelines for moderation.
+(EB) It is an innovative evaluation system.
+Choose the correct answer from the options given below :
+(1) (A) (C), and (D) only
+(2) (A), (B) and (C) only
+G)  (C), (D), and (E) only
+(4) (A), (C), and (E) only
+Question Number : 6 Question Id : 5330723680 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+‘aieaer sfaaa' 3h wer 8 fates Ya fea ern fen a eee?
+(A) Pea oes & ah Sen ee i Ss Se eH fee a A ae ST
+(B) Weta gro ans qe ae & fee ae
+(C) ae sa vies Of oneisie ote Peer afairaa area 2
+(D) fama & feu arghase are sie feats eenfte oer fea staat GEIR chee
+(E) (38 Wer Sarat Fees wore =
+ara fee ne fered HA ast arr a was aia
+(1) a (A), (C) aR (D)
+(2) Waet (A), (B) aI (C)
+(3) a1 (C), (D) HR (E)
+(4) Fe (A), (C) FRE)
+Question Number : 7 Question Id : 5330723681 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 5/101
+
+
+--- OCR PAGE 6 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Match List - I with List - I.
+List - I List - ll
+(Types of Teaching) (Description)
+(A) Macro teaching () A teaching technique especially used in teacher's
+pre-service education to train them systematically
+(B) Micro teaching (I) Anapproach where the educators divide the content
+among themselves and students sit with one educator
+before moving to the other
+(C) Station teaching. (I) A situation in a classroom where two teachers work on a
+class together
+(D) Cooperative teaching (IV) When a teacher provides instruction to the entire class at
+one time for.an extended period of time
+Choose the correct answer from the options given below :
+(1) (A)-(H), (B} (EL), (C}-(), (D)-(EV)
+(2) (A}IV), (BID, (C)-d1f, (D)-()
+(3) (AKIV), (BHD, (C(I), (DUD
+(4) (AMD, (BRU), (C(I), (D)-(1V)
+Question Number : 7 Question Id : 5330723681 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+qar-l a Ta sr Pe Hrs :
+at watt
+( fora & wari ) ( fererror )
+(A) manne fram () 0 Gat fren cede fee warn feats aa a fer HT Go—gal Taran A
+fara aan ¢ wits sat qevaters eo Bo offs fen or ae
+(B) as far (i) Ur teal vaya fae fees fara aoe = ace Wf feats ae cat
+St aa, Tat free ora ara Boye wep frere aa aaa FI
+(Cc) = Rem (UL) en a tel eer ret St freee arene ee en eet  oel oe
+#I
+(D) Fest Pert (IV) set ait frere faeite safe & fam oe aa at em & oes aT
+TET = |
+are feu ry fared 4 a wet See a aaa sitar
+(1) (AID, (B)-C1D, (©-(), (DAV)
+(2) (A}(IV), (B)-(IN), (C)-AI, (D)-(1)
+(3) (ATV), (B)-(D, (C(I), (D)-(LI)
+(4) (AAT), (BE), (C)-(I), (DIAIV)
+Question Number : 8 Question Id : 5330723682 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 6/101
+
+
+--- OCR PAGE 7 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+What among the following can be ascribed to learning styles ?
+(A) [tis a way ‘how’ the student leams
+(B) They are strengths and preferences of the learners for responding to the stimuli in the
+environment
+(C) tis What" the learner learns
+(D) ltis a behavioural pattern developed for any new learning
+Choose the correct answer from the options given below :
+(1) (A) and (B) only
+(2) (A) and (C) only
+(3) (A), (B), and (D) only
+(4) (By, (C). and (D) only
+Question Number : 8 Question Id : 5330723682 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Rabearad 44 es aT Aiea a fee Sea SETA SN AT BP
+(A) a faenei = Ares oa we ate FI
+(B) 4, Sie a aera Fe oinieen oa fer frente at oferat aie atraad FI
+(C) 4, Terarail gro ara 7 art F
+(D) ae feat ae after @ fare facnfaa fen en oer Bale ted ZI
+ara feu 1a fared a oat See a a aHlhaTE :
+(1) ere (A) 3H (B)
+(2) ae (A) aI (C)
+(3) tet (A), (By 2 (D)
+(4) Ae (B), (C) a (D)
+Question Number : 9 Question Id : 5330723683 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What can be conrectly inferred about the Traditional Teaching Method and Support System ?
+(A) Teacher is responsible to control the class and teach with the usage of blackboard
+(B) It is also known as ‘Back-to Basics’ System.
+(C) The student carries the responsibilities to use self-learning tools.
+(D) Virtual labs are used as one of the Teaching tools,
+(E) Charts, Maps and Textbooks are the prime resources and handouts are used by the teacher
+Choose the correct answer from the options given below :
+(1) (B) and (C) only
+(2) (A), (B) and (D) only
+(3) (D) and (E) only
+(4) (A), (B), and (E) only
+Question Number : 9 Question Id : 5330723683 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 7/101
+
+
+--- OCR PAGE 8 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+or fram vel sie err sone ano Prafated Fa fa wet da B arefaa fae on wae F?
+(A) fare, an at Patra er en SaaS HT TR TE Se feo SEE Er EI
+(B) aa 2 afew & eo 8 ht aT eT
+(C) faa ayaa a wa ae sal Poe eral a eet FI
+(D) aM wines (ada ces) ar aT oe Pern son a ea fae oT TI
+(E) a4, Wate ok Geren wpe dares etd & sin fares gr eeanse a aM fe oT FI
+ara fee ne fered 4 A aet ar ar was aia
+(1) art (B) aR (C)
+(2) Ae (A), (B) 3K (D)
+(3) Ft (D) 377 (E)
+(4) Fe (A), (B) AR (E)
+Question Number : 10 Question Id : 5330723684 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What among the following is incorrect about SWAY AM Prabha ?
+(1) lt was launched by Sri Abul Kalam Azad.
+(2) Satellite is used for telecasting the educational contents through DTH channels.
+(3) The web portal of SWAYAM Prabha is maintained by INFLIBNET, Gujarat.
+(4) The contents for SWAYAM Prabha are provided by NPTEL, IITs, UGC, CEC and IGNOU.
+Question Number : 10 Question Id : 5330723684 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Sr yen ae reafataa eran aes era B?
+(1) FRE eens al see Bea sere 4 ae ei
+() Sawa aac & rem 4 fren ges amt & war & fee Aone ar weary fara oe FI
+QO) ‘Sem ye & 4a gies ae ae a a, Fee eo fee ae
+(4) Sa St aes arn, wate, ara. aa, Sa. ai ory ge aoe
+ara art ti
+Question Number : 11 Question Id : 5330723685 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+A researcher decides to tell participants something false about a research session in order to mislead
+them. The researcher is using :
+(1) Naturalistic observation
+(2) Role playing
+(3) Active deception
+(4) Dehoaxing
+Question Number : 11 Question Id : 5330723685 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 8/101
+
+
+--- OCR PAGE 9 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Wee PSR WT Al Te aA a Se A Se PY a a A pes ey aera Fe Pee
+fre a a Pee wai az te F?
+(l) Tae SecA
+(2) ater Prete
+3) awa wa
+(4) Be seyret (Stet)
+Question Number : 12 Question Id : 5330723686 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following criteria in research relates mainly to the issue of causality ?
+(1) Transferability
+(2) Measurement validity
+(3) External validity
+(4) Internal validity
+Question Number : 12 Question Id : 5330723686 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+sie es A saa at seat tern saree Sh fas A aera HP
+(1) stair
+(2) 4a ae
+(3) te 2A
+(4) safer Ser
+Question Number : 13 Question Id : 5330723687 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the data sets with following pairs of mean (3) and standard derivation (7) in increasing
+order of their coefficient of variation.
+(A) 7 =8, c=17
+(B) 5 =11,¢=2.2
+(Cc) y =15, 7=3.6
+(D) x =16,0=3
+Choose the correct answer from the options given below :
+(1) (A). (B). (DY, (C)
+(2) (B). (Dy. (C). (AY
+(3) = (©), (B), (DY, (A)
+(4) (D). (By. (A), (C)
+Question Number : 13 Question Id : 5330723687 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 9/101
+
+
+--- OCR PAGE 10 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Set Hei area (5) a Bee fase (o) oe A a eee ee ie aed ae Safeer
+ara, :
+(A) 7 =8 e=17
+(B) y=11,q=22
+(C) x =15, o=3.6
+(D) x =16,7=3
+ar feo 0 feared 4 a wet ser a a ifr:
+(1) (A), (B). (Dy, (C)
+(2) (B). (D). (C), (A)
+(3) (C), (B), (Dy, (A)
+(4) (D). (B). (A), (C)
+Question Number : 14 Question Id : 5330723688 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+According to UGC regulations 2018 on plagiarism, which of the following similarities constitute
+Level - 1 plagiarism ?
+(A) 12%
+(B) 42%
+(c) 28%
+(D) 56%
+(E) 37%
+Choose the most appropriate answer from the options given below :
+(1) (A), (B) and (C) only
+(2) (8), (© and (D) only
+(3) (A), (C) and (E) only
+(4) (B). (C) and (E) only
+Question Number : 14 Question Id : 5330723688 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 10/101
+
+
+--- OCR PAGE 11 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+meters art Was 8 aoa. fare 2018 ara Fes 8 8 Sa St sere ee -1 a Ofer
+RL a Bret & ?
+
+(A) 12%
+(B) 42%
+(C) 28%
+(D) 56%
+(E) 37%
+ara feu 7 faecal fa wee argqed gat a ae afar
+(1) Serer (A), (B) Are (C)
+(2) 3a (B), (C) SR (D)
+(3) Fe (A), (C) HR (E)
+(4) ere (B), (C) h(E)
+Question Number : 15 Question Id : 5330723689 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - 11.
+List ~ I List - I
+(Type of variable) (Example)
+(A) Nominal (0) Satisfaction level
+(B) Ordinal (lt) Weight
+(Cy) Interval (I) Ethnicity
+(D) Ratio (IV) Year of death
+Choose the correct answer from the options given below :
+(1) (AD. (B) (I), (C)-(IIL), (D)-(IV)
+(2) (A), (BECID), (C+), (D)-(IV)
+(3) (A)(I1), (B){LV), (C)-(U), (D}-(1)
+(4) (APHID), (BD. (CRIN). (D)-(1)
+Question Number : 15 Question Id : 5330723689 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 11/101
+
+
+--- OCR PAGE 12 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Fall S-L  a Fifa
+Wat War
+(at GT WaT ) ( Saree )
+(A) ae (il) Fae ar
+(B) ae (i) WT
+(C) atewafa (UL) yarciteran
+(D) arya qv) Waa a
+ara feu a famed Y 4 met sat an as Sify
+(1) (A)-(1), (B} (IN), (C(I), (D)-(IV)
+(2) (AS-D, (BCID), (C}(L), (D)-(1V)
+(3) (A)-(ID, (B)-(IV), (C){11), (D}-(1)
+(4) (A)-(IID), (B)-(2), (CFV), (D)-(I1)
+Question Number : 16 Question Id : 5330723690 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which is the first newspaper published in India in modem times ?
+(1) Hickey's Bengal Gazzette
+(2) India Gazette
+(3) Samvad Kaumudi
+(4) Udant Martand
+Question Number : 16 Question Id : 5330723690 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+aha Harpe aaet F yeaa Vea AAA Ta aA-aT s ?
+(1) fear ae ae
+(2) Feats
+(3) Fare anet
+(4) Sart Aris
+Question Number : 17 Question Id : 5330723691 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following can not be treated as the folk tradition of communication in India 7
+(1) Cinema
+(2) Jatra
+(3) Ramleela
+(4) Kumbh Mela
+Question Number : 17 Question Id : 5330723691 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 12/101
+
+
+--- OCR PAGE 13 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+fea ee A ae eT ie TT Fel AAT aT Fe?
+(1) faa
+(2) =n
+(3) Tacit
+(4) gate
+Question Number : 18 Question Id : 5330723692 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the “3 Ws’ of communication in proper sequence :
+(A) Why
+(B) When
+(Cc) What
+(D) Who
+(E) Where
+Choose the correct answer from the options given below :
+( (C) (BD) (BE) (B) and (A)
+(2) (E), (D), (B), (Cy and (A)
+(3) (A) (B), (C), (D) and (E}
+(4) (B), (A), (C), (D) and (E)
+Question Number : 18 Question Id : 5330723692 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Wan ‘5 W' (5%") wl ahaa sepa 4 fea :
+(A) Why (Fi)
+(B) When (#4)
+(C) What (31)
+(D) Who (#1)
+(E) Where (et)
+are fen wo faepedi FS eet sear ar aes aia:
+(1) ©), (D), (E), (B) aR (A)
+(2) (E), (D), (B), (C) aR (A)
+(3) (A), (B), (C), (D) ARE)
+(4) (B), (A) (©), (D) AE)
+Question Number : 19 Question Id : 5330723693 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 13/101
+
+
+--- OCR PAGE 14 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Three major actions in the process of Communication are :
+(A) Receiving
+(B) Sending
+(C) Reviewing
+(D) Interpreting
+(E) Analysing
+Choose the correct answer from the options given below :
+(1) (), (BD) and (E) only
+(2) (A), (C) and (D) only
+(3) (A), (B) and (D) only
+(4) (A), (D) and (E) only
+Question Number : 19 Question Id : 5330723693 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Han a wien Ha wpe aa = :
+
+(A) SS a
+
+(8) Sit aT
+
+(C) Baier ear Cea aT)
+
+(D) Sars) aT
+
+(E) faery at
+
+ara fen ao fared Fa ast ser ar as aia:
+
+(1) Fe (C), (D) aA (B)
+
+(2) Ae (A), (C) af (D)
+
+(3) Fe (A), (B) Ft (D)
+
+(4) ae (A), (D) 37 (E)
+Question Number : 20 Question Id : 5330723694 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - [with List - IL.
+
+List - I List -
+(Applications) (Communication term)
+(A) Inberviews (} Group Communication
+(B) Newspaper (ll) Intrapersonal Communication
+(C) Classroom (HI) Interpersonal Communication
+(D) Meditation (IV) Mass Communication
+Choose the correct answer from the options given below :
+QQ) (AHD, (BCI), (C(I, (B)-(¥)
+(2) (AMID. (BEI), (C10, (DI-()
+(3) (AMEN), (B)-(1), (C(I). (D)-(ID)
+(4) (AHI). (BEV), (O-(1, (D)-(I)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 14/101
+
+
+--- OCR PAGE 15 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 20 Question Id : 5330723694 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Fat  S-L a PA ifs :
+bia wel
+( sera ) (Han @ wafer gre )
+(A) Waar () ayer aa
+(8B) Fara aa (lt) sarah var
+(C) =a (Ul) aereaforer ware
+(D) =m (Afeew) (IV) 3A aa
+ar feu 7m fared 4 a aa sat aa ae afar :
+(1) (AD, (BR CID). (C(I, (D)-(IV)
+(2) (A)-(Lf, (B)-(IV). (C)-(LLh, (D)-(1)
+(5) (ATV). (B)(E}. (CUE). (DIATE)
+(4) (A)-(UID), (B)-(1V), (C)-(0). (D-H)
+Question Number : 21 Question Id : 5330723695 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+A person sold an item ata loss of 7%. Had he sold the item ata gain of 7.5%, he would have
+received Rs, 87 more than his selling price. The cost price of the item is :
+(1) Rs. 500
+(2) Rs. 550
+(3) Rs. 600
+(4) Rs. 650
+Question Number : 21 Question Id : 5330723695 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Te Sf 7% Fal BA We We RY Sa) OP Ae 7.5% HM WE Sa SRY Sl PHT a Pa A A 87
+Safer Ws Era | A al TA ETE:
+(1) 500
+(2) F550
+(3) =% 600)
+(4) % 650
+Question Number : 22 Question Id : 5330723696 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+In a race of 500 m run, A beats B by 20 m and C by 80m. [f Band C are running another race of
+1M) m with exactly same speed as before, then by how many meters will B beat C ?
+Q) 100m
+(2) 85m
+G) 150m
+4) 125m
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 15/101
+
+
+--- OCR PAGE 16 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 22 Question Id : 5330723696 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+500 WF ae 4, A, Ba 2077 AR CE SOF, Aes! Be BSC 100. aI ae Sa aha a ea
+&, @ B far Wer a Ca eae F?
+(1) 10.0 Ft.
+(2) 8.5 Af.
+(3) 15.0 Ff.
+(4) 12.5 Hf.
+Question Number : 23 Question Id : 5330723697 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following fractions in increasing order :
+12
+a7
+13
+(8) 9
+ol
+©
+16
+iD) 3
+Choose the correct answer from the options given below :
+(1) (&). (D), (A). ()
+(2) (BY, (A), (Cp, (Dh
+(3) (D), (A), (B), (C)
+(4) (D). (By. (Cy. (A)
+Question Number : 23 Question Id : 5330723697 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 16/101
+
+
+--- OCR PAGE 17 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+fratatad fai a ae) ae eae TST |
+12
+‘A F
+13
+(B) 9
+. te)
+(c) Tl
+lo
+OS
+apa feu tm fae fa oe ser ara afar :
+(1) (B). (D). (Ay (C)
+(2) (By (A). (CL (DI
+(3) (D). (AD (B.C)
+(4) (D), (B), (C), (A)
+Question Number : 24 Question Id : 5330723698 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Identify the numbers that occur in the series 1, 7, 17, 31, 49, cusses
+(A) 74
+(B) 95
+(Cc) 97
+(D) 127
+(E) 161
+Choose the correct answer from the options given below :
+(1) (A) (Bh (C) only
+(2) (C), (D), (E) only
+(3) (BE), (B), (A) only
+(4) (©), (BD). (B) only
+Question Number : 24 Question Id : 5330723698 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 17/101
+
+
+--- OCR PAGE 18 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+PAT 1,7, 17, 31,49, 0 AA A Pea Fl UA Ars
+(A) 74
+(B) 95
+(Cc) 9?
+
+(D) 127
+(E) 161
+ara fea no fered Wo oat sat an aa Sift :
+(1) et (A), (B), (C)
+(2) Fra (C}, 0),
+(3) ret (E), (B), (A)
+(4) Fae (C), (D), (B)
+Question Number : 25 Question Id : 5330723699 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - 1 with List - I.
+List ~ I List -
+(Word) (Unique Code}
+(A) QUAKE () KTFUL
+(B) OFTEN (i) VHeDU
+(Cc) PEACH (I) LEYOU
+(D) DRIVE (iv) JUYWR
+Choose the correct answer from the options given below :
+(1) (AHD, (BRUIT, (CI), (DIV)
+(2) (AED, (BHIV), (C)-(), (D}-C)
+(3) (AMI), (BD). (Ch(IV), (B)-(1)
+(4) (AHIV), (BPC), (C)-(1), (D)-()
+Question Number : 25 Question Id : 5330723699 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Feat-1 a ASA A Pe BT ;
+Wat Watt-
+( 3req ) ( aifgita qe )
+(A) QUAKE () KTFUL
+(B)} OFTEN (i) VHOQDU
+(Cc) PEACH (i) LEYOU
+(D) DRIVE (Iv) JUYWERE
+a feo 1m fasredi 4 4 wet ser a a ia
+(1) (AAD), (BY(IL), (CHO), (D)-(1V)
+(2) (A)-(I), (B)-(1V), (C)-(IID, (D)-(1)
+(3) (ATI), (BD. (CHV), (DID)
+(4) (A}ALV), (B)-(U1), (C)-(0), (D)-(1)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 18/101
+
+
+--- OCR PAGE 19 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 26 Question Id : 5330723700 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Identify the pattem of the Argument in the following “Habits are like a cable. We weave a strand
+of it everyday and soon it cannot be broken.”
+(1) Causal Argument
+(2) Argument from Analogy
+(3) Argument from Authonty
+4) Argument from Definition
+Question Number : 26 Question Id : 5330723700 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+fratated 4 afer a Seq a Gea ee aed Hae | A Be FB Mises SoH OY Bad FI ea
+Sita ave) Tel a eae :
+(Ll) er apr
+(2) Brgeam a ala
+(3) Wear 4 qfaq
+(4) Ofna fad
+Question Number : 27 Question Id : 5330723701 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What in the following can be correctly inferred ? “You know how | know animals have souls ?
+Because on an average, the lowest animal is a lot nicer and kinder than most of the human beings
+that inhabit this Earth’.
+(A) Premise : The lowest animal is a lot nicer and kinder than most human beings that inhabit
+this Earth.
+(B) Premise : Animals have soul
+(C) [tis not an argument
+(D) Conclusion : The lowest animal is a lot nicer and kinder than most human beings that inhabit
+this Earth
+(E) Conclusion : Animals have soul
+Choose the correct answer from the options given below :
+(1) (B), (C) and (D) only
+(2) (A), (C) and (E) only
+(3) (A) and (E) only
+(4) (A). (D) and (E) only
+Question Number : 27 Question Id : 5330723701 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 19/101
+
+
+--- OCR PAGE 20 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+frafataa 4 fee are a SS Se eee 2 ape ae 2 fe OS eS Fa ae ae Pe
+Wai A aA er? safes stead ERT Wy] FS Yes Wes Sel alae Sees Bl GE A HT
+Te A Taney ere 1"
+(A) SAS aRRL : PA TL ES Yee Te a SATS eT Ge ET A ATT Te SA ATE] ETAT
+tl
+(B)  STSRarRT : Tal AF aa ee EI
+(C) We wR Alaa el FI
+(D) freed ; fea oy, va pet oe ted are afte et at gerd Fo aret stem Sik ear Ai ZI
+(E) end : 33ST A aren Erte
+apa feo ae farcai Ha wet sere a as aifare
+(1) ee (B), (C) 377 (D)
+(2) Fe (A), (C) ARB)
+(3) eet (A) a (E)
+(4) 3a (A), (D) aie (E)
+Question Number : 28 Question Id : 5330723702 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What can be inferred correctly from the following ? “No musicians are Greeks, All traders are
+Musicians. Therefore, no traders are Greeks”
+(A) It represents figure [I of the syllogistic argument
+(B) lkis an EAE mowxl
+(C) The term ‘Greeks’ is the major term.
+(D) The minor term of the conclusion is distributed
+(E) The middle term is undistributed
+Choose the correct answer from the options given below :
+(1) (A), (B) and (C) only
+(2) (B), (C) and (D) only
+(3) (D) and (E) only
+(4) (A). (C) and (E) only
+Question Number : 28 Question Id : 5330723702 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 20/101
+
+
+--- OCR PAGE 21 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Retehaa 4 fas ara al See A EP ST eee PS STR FAT el BT ST A
+8) vate ae A eae ast et 1"
+
+(A) 38 earria aaa oa sepia Ul er afar ae FI
+
+(B) 48 2.0.2, (EAE) faa &|
+
+(D) fread a stya 4s sara tt
+
+(E) Fa 3 ses FI
+
+ara feu 10 faved 4 a wat sar an aa alfa
+
+(1) Were (A), (B) a (C)
+
+(2) ae (B), (C) AR (D)
+
+(3) ae (D) 3 (E)
+
+(4) Fret (A), (C) A (E)
+Question Number : 29 Question Id : 5330723703 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Match List - I with List - IL
+
+List - I List - Ul
+(Forms of Non-existence) (Representation)
+
+(A) Anyonyabhiva ()) Hare's horn
+
+(B)  Atyantibhava (I) there is non-existence of the jar now
+(C) Prigabhava (I) This is not that
+
+(D) Pradhvamsibhava (IV) Temporary absence of a thing
+Choose the correct answer from the oplions given below :
+
+(1) (AID. (BV), (C1), (DID
+
+(2) (AY, (BPC), (C(I), (D)-(V)
+
+(3) (AMI), (B)-(), (C)-(1V), (D-(IN)
+
+(4) (AM IV). (B)-(ID. (C)-(l). (D)-(1m1)
+Question Number : 29 Question Id : 5330723703 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 21/101
+
+
+--- OCR PAGE 22 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Fall A S-LL  ea Fits :
+Wet qat-
+( sifeaee shee ett a erect ) ( Frevmur )
+(A) 23am () Wea eM (aor FT)
+(8) serra (Ul) 3a ar an feral ae te
+(Cy) Serer (Il) ‘ae ae ae’
+(D) 3a (IV) Patt aay a acer fe ae 4 Et
+ara feu 1m fasreai A a wet sat aa aa aia
+(1) (A)-(I0), (B)-(1V), (C)-(), (D)-(UIL)
+(2) (Ad(1), (BCE), (C(I), (D)-(IV)
+(3) (AID), (B)-(1). (CIV), (D}-(ID)
+(4) (ATV), (BRED, (C)-(1), (D)-(1)
+Question Number : 30 Question Id : 5330723704 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Among the following which is correct in the context of Sabda Pramina ?
+(1) For Simkhya, a word signifies universal
+(2) For, Jainas, a word signifies a particular
+(3) For old Nyaya, a word symbolizes universal only
+(4) For Vedantins, a word primarily means the class character of individuals
+Question Number : 30 Question Id : 5330723704 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Bea TA & ees A Prateraa WA a a eB?
+(1) Olen fet yee A FI
+(2) SH gata ah feta see fasts Sr ee
+(3) Woes sara 2p fea sree are a aT aT
+(4) Serie Sy fer) vee am epee are fare & ora A
+Question Number : 31 Question Id : 5330723705 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+If (L),) represents a number L in base-M number system, then what will be the value of
+(107) 36+ (257) 467
+(1) (762) 15
+(2) (862),
+3) (96219
+(4) (662) 45
+Question Number : 31 Question Id : 5330723705 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 22/101
+
+
+--- OCR PAGE 23 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+afc aM ate Woe HT (L),, HEM L ae eae S, a (107), + (257),¢ FT A FT eT?
+(1) (762),9
+(2) (BO2)y9
+(3) (962)149
+(4) (62) i9
+Question Number : 32 Question Id : 5330723706 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+In computer networking, an IP version-6 is _ ___ times larger than an IP version-t address.
+i) 2
+(2) 4
+(3) 6
+(4) 8
+Question Number : 32 Question Id : 5330723706 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Rep Acasa WBE. W. AeA WSs Hl PA 4 Se. aio TA Tel Bra FI
+(1) 2
+(2) 4
+(3) 6
+(4) 8
+Question Number : 33 Question Id : 5330723707 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Identify the correct order of the following major technological changes A-D in the development of
+computers based on first to fourth generation of computers :
+(A) Transistors
+(6) Microprocessor
+(C) Vacuum tubes
+(D) Integrated circuits
+Choose the correct answer from the options given below :
+(1) (A) (€). (BD), (B)
+(2) (B), (A) (C), (D)
+(8) (D) (A), (C). (By
+(4) (C), (A). (DD. (B)
+Question Number : 33 Question Id : 5330723707 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 23/101
+
+
+--- OCR PAGE 24 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+arpa Si wen We a ae ae aH See fears Be pa wehinata vitae A-D & we
+aH At WEI Sher:
+(A) gifsrez
+(B) Wear
+(C) Pratt (eqn) aga
+(D) TarFA afte
+ara fea 1 fae HA et Set a aa ata :
+(LE) (A), (C). (D), (B)
+(2) (By, (A) (C), (D)
+(3) (D), (A). (C). (BD
+(4) (Cy (A). (D), (B)
+Question Number : 34 Question Id : 5330723708 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+To record voice narration for your Microsoft PowerPoint presentation, your computer must have :
+(A) Sound card
+(B) An internet connection
+(C) Speakers
+(D) An external video port
+(E) Microphone
+Choose the correct answer from the options given below :
+(1) (A) (C) and (E) only
+(2) (B) and (D) only
+(3) (A) and (E) only
+(4) (B), (©) and (D) only
+Question Number : 34 Question Id : 5330723708 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 24/101
+
+
+--- OCR PAGE 25 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+TPR WETaS Wat cage waqia a fem ae gaia a fears ah fem aga ager Fa cera EP
+aie :
+(A) "af (aes) are
+(B) 222 RA
+(Cc) faired
+(D) war are attest ae
+(E) FSET
+ara feu 10 faved 4 a oat sar an aaa alfa
+(1) Serer (A), (C) aie (E)
+(2) ae (B) aR (D)
+(3) ae (A) SR (E)
+(4) Beret (B), (C) Biz (D)
+Question Number : 35 Question Id : 5330723709 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - [with List - IL.
+List - I List - 0
+(Internet Term) (Description)
+(A) Blogs (0) Allows users to create and edit web pages using a browser
+(B) Podcasts (It) A type of bookmarking where a user “marks” a webpage
+or photo using text to describe its contents
+(C) Tagging (II) A series of digital media files
+(D) Wikis (IV) Personal internet journals
+Choose the correct answer from the options given below :
+(1) (AD. (BCI), (C(I), (D)-(EV)
+(2) (AHH), (BEV). (C)-(10, (DD)
+(3) (A)(EV), (B}-(LIN), (C)-(I1), (D)-(0)
+@) (AID, (B-(In, (C)-(1¥), (D)-()
+Question Number : 35 Question Id : 5330723709 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 25/101
+
+
+--- OCR PAGE 26 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Far A TAAL I PA Firs
+Fat Watt
+(ger we) ( fererror )
+fA) = (i) Fae arsor & ya a ae ai at Te es Sie oe eA ET
+#1
+(B)  Wemre (L) Wem Gere a eee fees fore wea te Sat ree eT aT Site,
+Al SU ae ae fora sae a eI eT a Pasa" eta Fi
+(Cc) afin (I) fefsea dite weet ah spaen
+(D) fata (IV) aah gece ata
+ata fen ae faacal 4 a eet See aa aaa aeifare
+(1) (AT) (BUT), (CEL), (D)-(TV)
+(2) (AIH), (BI), ()-(1). (DF)
+(3) (AIV), (B)-(IE), (C)-(0D. (Dy
+(4) (AID, (By), (C)-(1V), (D}-()
+Question Number : 36 Question Id : 5330723710 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+The amount of biomass produced by the plants through photosynthesis minus respiration losses in
+a given time period is known as :
+(1) Gross Primary Productivity
+(2) Net Primary Productivity
+(3) Gross Ecological Productivity
+(4) Net Secondary Productivity
+Question Number : 36 Question Id : 5330723710 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Se BRT Wea Bas A WRT Bee SPT Seva Ss AAT HF SA Be le Fer ea A
+FT Fel ARB?
+(1) Re Wai Sea
+(2) 72 weer Sea
+(3) Feet Oe aca
+(4) 72 feireee sere
+Question Number : 37 Question Id : 5330723711 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which among the following fuels produces least amount of soot particles during combustion ?
+(1) Petrol
+(2) Kerosene
+(3) Diesel
+(4) Compressed Natural Gas (CNG)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 26/101
+
+
+--- OCR PAGE 27 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 37 Question Id : 5330723711 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+SF a Sr ed a Se TB?
+(1) Wet
+(2) fred aa
+(3) Zhe
+(4) ifea oenfer fe (TAT)
+Question Number : 38 Question Id : 5330723712 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following states in ascending order according to their area under forest cover :
+(A) Arunachal Pradesh
+(B) Chhattisgarh
+(C) Maharastra
+(D) Odisha
+(E) Madhya Pradesh
+Choose the correct answer from the options given below :
+(TH) (A). (Cy. (DY. (By. (E)
+(2) (), (D), (B), (A). (E)
+(3) (BY). (A), (C), (E), (D)
+(4) (Dp (B). (A) (Eh ()
+Question Number : 38 Question Id : 5330723712 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Fr OPT el Ss Saeed aa a ANTE A A epaera eifaMT :
+(A) Sere Fez
+(8) @iRrTg
+(C) Ferre
+(D) ate
+(E) Fey] year
+ata fea a fares a wet Sere aa a4 aif
+(1) (A). (C), (Dp. (Bh (E)
+(2) (C), (D). (B). (A). (E)
+(3) (B). (A). (Cy, (BE), (D)
+(4) (D), (B) (A). (E) (C)
+Question Number : 39 Question Id : 5330723713 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 27/101
+
+
+--- OCR PAGE 28 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Eye irritation is the common phenomenon during smog, It is mostly caused by :
+(A) Formaldehyde
+(B) Per-oxy acetyl Nitrate
+(C) Ozone
+(D) Acrolin
+Choose the correct answer from the options given below :
+
+(1) (A), (By) and (C) only
+(2) (A), (B) and (D) only
+(3) (C), (D) and (A) only
+(4) (B), (©) and (D) only
+Question Number : 39 Question Id : 5330723713 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+SRel ah SR abel A Waa as ose e) afer ae A ee ee:
+(A) wrtedrers
+(B) Ware tea ede
+(Cc) @iiq
+(D) Uareia
+ara feu 7o faereai 0 a aet gar a aaa alfa ;
+(l) ae (A), (B) aC)
+(2) Fare (A), (B) Fe (D)
+(3) WA (C), (D) se (A)
+(4) Ae (B), (C) Hr (D)
+Question Number : 40 Question Id : 5330723714 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - IL.
+List - I List - 0
+(International Treaties) (Key Objectives)
+(A) Sendai Framework (I) Equality between men and women
+(B) Monterry Concensus (0) Our common future
+(C) Beijing Declaration (U0) Disaster Risk Reduction
+(D) Brundtland Report (IV) Financing for development
+Choose the correct answer from the options given below :
+(1) (A)-(HD), (BY{IV), (C)-(1), (DCD
+(2) (AM(EV), (B)<D, (CCN), (D)IIN)
+(3) (A}(, (BHI), ()-(IE), (D)-(1V)
+(4) (AID, (B)-(I0), (C)-(V), (D)-()
+Question Number : 40 Question Id : 5330723714 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 28/101
+
+
+--- OCR PAGE 29 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Fall B ASL Hl Pe Hits
+qa wet
+( sarteita afiray) ( mya Seva)
+(A) FS oa () yest a feat & athe wart
+(8) Ae west (ly) PART aren wiaey
+(Cc) aifsin ero (0) araer aie aie
+(D) wees fre (Vv) fara @q fade
+ara feo v0 fared 4 4 oat sat aa aera ifa :
+(1) (A){U), (B)-(IV), (C)(0), (D(H)
+(2) (AAV), (BYE), (C(I, (D)-(IIL)
+(3) (AD, (BHD, (C}{ I), (D)-(1V)
+(4) (A), (BI), (C-(1V), (D)-(1)
+Question Number : 41 Question Id : 5330723715 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following ancient Indian Institutes from East to West direction.
+(A) Takshashila
+(B) Nalanda
+(C) Vikramshila
+(D) Shardapeeth
+Choose the correct answer from the options given below :
+(1) (A) (DY. (C), (B)
+(2) (B), (C), (A) (D)
+(3) (D) (A), (BL (C)
+(4) (Cy. (BY, (DY, (A)
+Question Number : 41 Question Id : 5330723715 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Retatad Was aes Pe a ys a oes fee a A A eeeT |
+(A) aati
+(B) Aer
+(C)  feemnfaren
+(D) Wrera
+ara fen 10 fase 4a oet Sear a aa fer :
+(1) (A), (BD) (C) (B)
+(2) (B). (Ch. (A), (D)
+(5) (D), (A) (BY. (C)
+(4) (C), (8), (D). (A)
+Question Number : 42 Question Id : 5330723716 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 29/101
+
+
+--- OCR PAGE 30 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following universities were set up in 1916 ?
+(A) Osmania University
+(B) 5SN.DLT Women's University
+(C) Mysore University
+(D) Patna University
+(E) Benaras Hindu University
+Choose the correct answer from the options given below :
+(1) (A), (B) and (C) only
+(2) (B), (C) and (E) only
+(3) (B), (C) and (D) only
+(4) (A), (D) and (E) only
+Question Number : 42 Question Id : 5330723716 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Preatatad fea feratererere tat aA AY 1916 HBT aT eit?
+(A) Senn farvatarers
+(8) Wael. aieen favateerera
+(C) fap favafaeners
+(D) Feat fazefereneray
+(E) area fey favataenera
+apa feo am fared Ha wet Sere aa aera shifare :
+(1) ae (A), (B) ARC)
+(2) Fe (B,C aE)
+(3) Fe (B), (C) AR (D)
+(4) 7a (A), (D) Fr (E)
+Question Number : 43 Question Id : 5330723717 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - [with List - If.
+List - I List - I
+(Constitutional Provision of Education) (Article)
+(A) Women's Education (I) 28
+(B) Education of Minorities (i) 21-A
+(C) Secular Education (IM) 15 (Part-I)
+(D) Right to Education (IV) 29 (Part-I)
+Choose the correct answer from the options given below :
+(1) (AID), (BAT), (C-(IV), (DI)
+(2) (AMT (BRU, (CIV), (DIT)
+(3) (A)-(I1), (B)-(IV), (C)-(1), (D)-(I)
+4) (AAD. (Be (IV),. (CUD, (D)-(1I
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 30/101
+
+
+--- OCR PAGE 31 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 43 Question Id : 5330723717 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Fata Wal A ea ra;
+etl etn
+( foram aaieit deten fren -araert ) ( area )
+(A) Siect-fen () 28
+(B)  sereeeret st fren (I) 21-4
+(C) wei Freier fever (HN) 15 (AMM)
+(D) feat a7 afeeere (IV) 29 (MPEII
+ara feo 1a fared Fa wet sar an aaa afar
+(1) (A)4ID), (B40, (CHV), (D}-(I)
+(2) (Ad(D). (BCH), (C)-(1V), (D)-(I1L)
+(3) (A)-(ID), (B)-(IV), (C){(D, (D)-(I)
+(4) (AT), (BHIIV), (CCD, (D)-(IIL)
+Question Number : 44 Question Id : 5330723718 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following is known as “One Nation One Student ID" card ?
+(1) Aadhar card
+(2) Pan card
+(GG) APAAR card
+(4) Voter's ID card
+Question Number : 44 Question Id : 5330723718 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+frafatas a fra wor ee, we era SS" re SO a ae Fe?
+(l) 3a ae
+(2) trae
+(3) SR (Waar) are
+(4) AAEM GES a ae
+Question Number : 45 Question Id : 5330723719 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+According to National Credit Framework (CrP) the credit level earned after Doctoral degree
+(Ph.D.) will be :
+(mF
+(2) 8
+G) 9
+(a4) 610
+Question Number : 45 Question Id : 5330723719 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 31/101
+
+
+--- OCR PAGE 32 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Wary wle2 Fy Tal (WAST. ) a aR Sie TOY (TS. ST.) Wa ated EP aren wefee
+Sere (FA) BMT :
+(l) 7
+(2) 8
+(3) 9
+(4) 10
+Sub-Section Number : 3
+Sub-Section Id : 533072151
+Question Shuffling Allowed : No
+Question Id : 5330723720 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+Questions : No Question Pattern Type : NonMatrix
+Question Numbers : (46 to 50)
+Question Label : Comprehension
+Read the following passage and answer the questions that follow :
+
+Odisha has colourful fairs and festivals and are as numerous as the days of the year. The sacred
+journey of Lord Jagannath with brother Balabhadra and sister Subhadra from the Jagannath Temple to
+the divine shrine called the Gundicha Temple is known as the Car Festival or the Rath Yatra. On this
+eccasion, the deities adorn three chariots named Nandigosha, Taladhwaja and Darpadalana respectively,
+They stay in the divine shrine for nine days and then return to the Jagannath Temple. This journey is
+called Bahuda Jatra. This grand festival of Odisha is visited by lakhs of devotees from India and abroad
+who pull the sacred chariots from the Jagannath Temple to the Gundicha Temple and back on a broad
+road called Badadanda. The festival begins from the second day of Shukla Paksha (bright half) in the
+month of Ashadha (June-July) every year. This festival of Lord Jagannath, who is worshipped as the
+Lord of the Universe, is celebrated not only in Puri, but also in many other places in India and abroad.
+
+Sub questions
+Question Number : 46 Question Id : 5330723721 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Whereas the festival of Lord Jagannath is celebrated in many places in India and abroad, it is
+primarily associated with which city ?
+(1) Bhuvaneswar
+(2) Puri
+(3) Cuttack
+(4) Konark
+Question Number : 47 Question Id : 5330723722 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What are the names of the deities who accompany Lord Jagannath in the Rath Yatra ?
+(1) Subhadra and Balabhadra
+(2) Balabhadra and Shiva
+(3) Subhadra and Hidimba
+(4) Balabhadra and Hidimba
+Question Number : 48 Question Id : 5330723723 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 32/101
+
+
+--- OCR PAGE 33 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+The sacred journey of Lord Jagannath is traditionally undertaken onward to which divine shrine ?
+
+(1) Jagannath Temple
+
+(2) Subhadra Temple
+
+(3) Balabhadra Temple
+
+(4) Gundicha Temple
+
+Question Number : 49 Question Id : 5330723724 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+The Car Festival is conducted on a broad road that is called :
+
+(1) Darpadalana
+
+(2) Ashadha
+
+(3) Badadanda
+
+(4) Taladhwaja
+
+Question Number : 50 Question Id : 5330723725 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+What is the name assigned to the journey wherein the deities return to the Jagannath Temple after
+
+nine days ?
+
+(1) Rath Yatra
+
+(2) Wapsi Yatra
+
+(3) Maha Yatra
+
+(4) Bahuda Jatra
+
+Question Id : 5330723720 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+
+Questions : No Question Pattern Type : NonMatrix
+
+Question Numbers : (46 to 50)
+
+Question Label : Comprehension
+freafeahaa vers at ofan sie feu me wat sar afar
+
+afer 8 infat fe ain wer era Ste a ad A are fea ae a 2) We et We a a Ye
+
+SIA Saas at faa ar Sas Hes A fees Hee, [fee Aes cee ae & fs Ty es te aT eT
+Pl St #1 38 see a aet-gaen wae: aa a ey, ge eas, edeer oe fer ert 21 St fen ae
+fey Sies 9 ars eee F aie See are ag ST fee a ES A Sl SST IM ET IE Sse ha
+Fer aa 4 MRA a Tree A Cal Ve AT ta ES Pa Tar AM PSS aeea Hel BAT BV Stara Tel I
+rare Het a fsa ater wee ae areal at as A lat | ae Bier wise sae Ae (SA-Aers) A yaa Te
+ae at fa Saat treat Bera arta, fara genie nea ee A yore fer one & ar Pater Gat Tt
+4 St Fei era orn @ aie ara wel fen & see eal we it wae are
+
+Sub questions
+
+Question Number : 46 Question Id : 5330723721 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 33/101
+
+
+--- OCR PAGE 34 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+ETT TI SPAS Bl PAE ATT Ae PaSeT ah HS PIT We AAP SN 8, Fe Wale eo A fs aT a
+Hata F?
+
+(1) Tare
+(2) ya
+i)
+(4) MRR
+Question Number : 47 Question Id : 5330723722 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+74 OT 8 pra ST AT Ta Oe fe Salsa A eT FT?
+(1) ae ae aera
+(2) weve ar fra
+(3) aver ain fefeon
+(4) aeawe an fee
+Question Number : 48 Question Id : 5330723723 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+SSR STAY el lata Tal Gee Sy A faa Teed Hist Teh a &?
+(1) aaa afer
+(2) yer Hfex
+(3) Sem wiee
+(4) fear aie
+Question Number : 49 Question Id : 5330723724 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Ty Herera Wer Pe Ty Oe sara a Tea ara & faa ther ET EP
+(1) @aeer
+(2) Smeg
+(3) aga
+(4) Fee
+Question Number : 50 Question Id : 5330723725 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+ae Wh fas ae Sal-Bee aa Tae Tier aad % Sa ae a aT a?
+(1) tat
+(2) Sarva arr
+)
+(4) SET ar
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 34/101
+
+
+--- OCR PAGE 35 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Computer Science and Applications
+Section Id : 53307252
+Section Number : 2
+Section type : Online
+Mandatory or Optional : Mandatory
+Number of Questions : 92
+Number of Questions to be attempted : 92
+Section Marks : 200
+Maximum Instruction Time : 0
+Sub-Section Number : 1
+Sub-Section Id : 533072152
+Question Shuffling Allowed : Yes
+Question Number : 51 Question Id : 5330723726 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the Grammar :
+5 A
+A —» SBS id
+BB, AJA
+if 1,= CLOSURE (5 — .A]}) then, how many items be in the set for GOTO(Ly. >)
+(tl) 3
+4
+(3) 5
+(4) 6
+Question Number : 51 Question Id : 5330723726 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the Grammar :
+5 A
+A —» SBS id
+BB, AJA
+if 1,= CLOSURE (5 — .A]}) then, how many items be in the set for GOTO(Ly. >)
+(tl) 3
+4
+(3) 5
+(4) 6
+Question Number : 52 Question Id : 5330723727 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 35/101
+
+
+--- OCR PAGE 36 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider the Grammar -:
+T —) Or
+oO — RS
+Ryle
+S—zleé
+Here x, y, 2-are terminals and T, Q, R, S are non terminals.
+What will be the follow set of the non terminal R ?
+(1) fy]
+(2) yy 2]
+(3) fz x)
+(4) {e]
+Question Number : 52 Question Id : 5330723727 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the Grammar -:
+T —) Or
+oO — RS
+Ryle
+S—zleé
+Here x, y, 2-are terminals and T, Q, R, S are non terminals.
+What will be the follow set of the non terminal R ?
+(1) fy]
+(2) yy 2]
+(3) fz x)
+(4) {e]
+Question Number : 53 Question Id : 5330723728 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+If L, and L, are context free languages, which of the following is True about L,oL, ?
+(1) LoL, is context free
+(2) L,oL, is Regular
+(3) Lyn, is Recursively Enumerable
+(4) LoL, is Context Sensitive
+Question Number : 53 Question Id : 5330723728 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+If L, and L, are context free languages, which of the following is True about L,oL, ?
+(1) LoL, is context free
+(2) L,oL, is Regular
+(3) Lyn, is Recursively Enumerable
+(4) LoL, is Context Sensitive
+Question Number : 54 Question Id : 5330723729 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 36/101
+
+
+--- OCR PAGE 37 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+______ is. a Self Balancing binary search tree, where the path from the root to the furthest leaf
+is no more than twice as long as the path from the root to nearest leaf,
+
+(1) Expression tree
+(2) Game tree
+(3) Red-Black tree
+(4) Threaded tree
+Question Number : 54 Question Id : 5330723729 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+______ is. a Self Balancing binary search tree, where the path from the root to the furthest leaf
+is no more than twice as long as the path from the root to nearest leaf,
+(1) Expression tree
+(2) Game tree
+(3) Red-Black tree
+(4) Threaded tree
+Question Number : 55 Question Id : 5330723730 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+#include<stdio.h>
+void main()
+l
+int arr[ ]=[1, 2, 3, 4, 5);
+int «p= arr;
+printi("%d", «p++;
+printh(” %d", «(p+1)):
+|
+Find the output of the above code?
+() 2
+(2) 4
+@) 2.3
+(4) 14
+Question Number : 55 Question Id : 5330723730 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 37/101
+
+
+--- OCR PAGE 38 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+#include<stdio.h>
+void main()
+l
+int arr[ ]=[1, 2, 3, 4, 5);
+int «p= arr;
+printi("%d", «p++;
+printh(” %d", «(p+1)):
+|
+Find the output of the above code?
+it) 12
+(2) 13
+Q) 23
+(4) 1,4
+Question Number : 56 Question Id : 5330723731 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the following C code :
+#include<stdio.h>
+int temp = 0;
+int fun(int x, int yy)
+{
+int 2; temp;
+if (y==3) return(x+xex);
+else [
+#=fun(x, y/ 3):
+relurn(z¢ zz);
+|
+|
+int main{))
+{
+fun(4, 81);
+printi(*%d", temp);
+|
+What will be the output of the above code ?
+ql) 3
+@ 4
+®) 5
+(4) 6
+Question Number : 56 Question Id : 5330723731 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 38/101
+
+
+--- OCR PAGE 39 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider the following C code :
+#include<stdio.h>
+Int temp =O;
+int fun(int x, int yy)
+{
+int 2; temp++;
+if (y==3) return(xexex);
+else |
+z=fun(x, y/3);
+return(z+z*z);
+|
+|
+int main{))
+{
+fun(4, 81);
+printi(*%d", temp);
+|
+What will be the output of the above code ?
+(1) 3
+(2) 4
+@G) 5
+@) 6
+Question Number : 57 Question Id : 5330723732 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+#include<iostream.h>
+using namespace std;
+void swap(int &x, int &y)
+{
+int temp=x;
+x=y;
+y= temp;
+}
+int main)
+{
+int a=5, b= 10;
+swap(a,b);
+swap(a,b);
+coule<at<" "<<b;
+return 0;
+|
+What will be the output of above code ?
+(1) 5,10
+(2) 10,5
+(3) 5,5
+(4) 10, 10
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 39/101
+
+
+--- OCR PAGE 40 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 57 Question Id : 5330723732 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+#include<iostream.h>
+using namespace std;
+void swap(int &x, int &y)
+{
+int temp=x;
+.=y
+y= temp;
+}
+int main{)
+{
+int a=5, b=10;
+swap(a,b);
+swap(a,b);
+coul=<at<" "<<b;
+return 0);
+|
+What will be the output of above code ?
+QQ) 5,10
+(7) 10,5
+(4) 3.5
+(4) 10, 10
+Question Number : 58 Question Id : 5330723733 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the function in C code :
+Calla, b) |
+if (bE = 1) |
+if (al=1){
+printt(”=");
+Cal(a/ 2. b);
+I
+else [
+b= b-1;
+Cal(10, b);
+I
+ia
+How many times « is going to be printed, if the function is called with Cal(10, 10); ?
+(1) 25
+(2) 23
+(3) 24
+(4) 27
+Question Number : 58 Question Id : 5330723733 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 40/101
+
+
+--- OCR PAGE 41 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider the function in C code :
+Calla, b) |
+if (bE = 1} |
+if (al=1)[
+printi("=");
+Cal(a/ 2. b);
+1
+else [
+b= b-1;
+Cal(10, b);
+|
+ia
+How many times « is going to be printed, if the function is called with Cal(10, 10); ?
+(1) 25
+(2) 23
+(3) 24
+(4) 27
+Question Number : 59 Question Id : 5330723734 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+In Software configuration management, what is the primary purpose of version control ?
+(1) To control the changes made to software
+(2) To document user requirements
+(3) To estimate project cost
+(4) To design the software architecture
+Question Number : 59 Question Id : 5330723734 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+In Software configuration management, what is the primary purpose of version control ?
+(1) To control the changes made to software
+(2) To document user requirements
+(3) To estimate project cost
+(4) To design the software architecture
+Question Number : 60 Question Id : 5330723735 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+If a software project has 2000 lines of code (LOC) and the average productivity rate is 10 LOC per
+persen-hour, how many person-hours are required to complete the project ?
+(a) 100
+(2) 150
+3) 200
+(4) 250
+Question Number : 60 Question Id : 5330723735 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 41/101
+
+
+--- OCR PAGE 42 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+If a software project has 2000 lines of code (LOC) and the average productivity rate is 10 LOC per
+
+persen-hour, how many person-hours are required to complete the project ?
+
+qq) 100
+
+(2) +150
+
+(3) 200
+
+(a4) 250
+
+Question Number : 61 Question Id : 5330723736 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Given a project that uses the COCOMO model with an estimated effort of 2000 person-months
+
+and a productivity rate of 5 person-month per KLOC, what is the estimated size of the project in
+
+KLOC ?
+
+(1) = 200
+
+(2) 400
+
+(3) 100
+
+(4) 50
+
+Question Number : 61 Question Id : 5330723736 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Given a project that uses the COCOMO model with an estimated effort of 2000 person-months
+
+and a productivity rate of 5 person-month per KLOC, what is the estimated size of the project in
+
+KLOC ?
+
+(1) = 200
+
+(2) 400
+
+(3) 100
+
+(4) 50
+
+Question Number : 62 Question Id : 5330723737 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Given a project with an estimated effort of 1500 person-hours and a team of 5 people, how many
+
+days will it take to complete the project, if each person works 8 hours a day ?
+
+ql) 30
+
+(2) 47.5
+
+3) 40
+
+(4) 45.5
+
+Question Number : 62 Question Id : 5330723737 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Given a project with an estimated effort of 1500 person-hours and a team of 5 people, how many
+
+days will it take to complete the project, if each person works 8 hours a day ?
+
+ql) 30
+
+(2) 47.5
+
+3) 40
+
+(4) 45.5
+
+Question Number : 63 Question Id : 5330723738 Question Type : MCQ Option Shuffling : No
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 42/101
+
+
+--- OCR PAGE 43 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Correct Marks : 2 Wrong Marks : 0
+Consider the three way hand shaking process followed during TCP connection establishment
+between two hosts A and B. Let S and R be bvo random 32-bit starting sequence numbers chosen
+by A and B, respectively. Suppose A sends a TCP segment having SYN bit=1, SEQ number =5
+and ACK bit=0 and B accepts the connection request.
+Which one of the following choices represents the information present in the TCP segment header
+that is sent by Bio A?
+(1) SYN bit=1, SEQ number=5+1, ACK bit=0, ACK number=R, FiN bit=0
+(2) SYN bit=0, SEQ number=R, ACK bit=1, ACK number=5+ 1, FiN bit=0
+(3) SYN bit=1, SEQ number=R, ACK bit=1, ACK number=S+ 1, FiN bit=0
+(4) SYN bit=1, SEQ number=R, ACK bit=1, ACK number =5, FiN bit=0
+Question Number : 63 Question Id : 5330723738 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the three way hand shaking process followed during TCP connection establishment
+between two hosts A and B. Let S and R be bvo random 32-bit starting sequence numbers chosen
+by A and B, respectively. Suppose A sends a TCP segment having SYN bit=1, SEQ number =5
+and ACK bit=0 and B accepts the connection request.
+Which one of the following choices represents the information present in the TCP segment header
+that is sent by Bio A?
+(1) SYN bit=1, SEQ number=5+1, ACK bit=0, ACK number=R, FiN bit=0
+(2) SYN bit=0, SEQ number=R, ACK bit=1, ACK number=5+ 1, FiN bit=0
+(3) SYN bit=1, SEQ number=R, ACK bit=1, ACK number=S+ 1, FiN bit=0
+(4) SYN bit=1, SEQ number=R, ACK bit=1, ACK number =5, FiN bit=0
+Question Number : 64 Question Id : 5330723739 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Two computers A and B are configured as follows : A has [P address 203.197.2.53 and subnet
+mask 255.255.128.0, B has LP address 203.197.75.201 and subnet mask 255.255.192.0. What one of
+the following statement is true 7
+(1) A and B both assume they are on the same network
+(2) Bassumes, A is on same network, A assumes Bis on different network
+(3) A assumes, B is on same network, but B assumes, A is ona different network
+(4) A and B both assume they are on different network
+Question Number : 64 Question Id : 5330723739 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Two computers A and B are configured as follows : A has [P address 203.197.2.53 and subnet
+mask 255.255.128.0, B has LP address 203.197.75.201 and subnet mask 255.255.192.0. What one of
+the following statement is true 7
+(1) A and B both assume they are on the same network
+(2) Bassumes, A is on same network, A assumes Bis on different network
+(3) A assumes, B is on same network, but B assumes, A is ona different network
+(4) A and B both assume they are on different network
+Question Number : 65 Question Id : 5330723740 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 43/101
+
+
+--- OCR PAGE 44 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+A class B network on the Internet has a subnet mask of 255.255.248.0, what is the maximum
+number of hosts per subnet ?
+ql) 1022
+(2) 1023
+(3) 2046
+(4) 2047
+Question Number : 65 Question Id : 5330723740 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+A class B network on the Internet has a subnet mask of 255.255.248.0, what is the maximum
+number of hosts per subnet ?
+(1) 1022
+(2) 1023
+(3) 2046
+(a) 2047
+Question Number : 66 Question Id : 5330723741 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+In a token ring network the transmission speed is 10° bps and the propagation speed is 200 m/ js.
+: F PF props FP
+The 1-bit delay in this network is equivalent to j
+(1) 20m
+(2) 30m
+3) 50m
+(4) 40m
+Question Number : 66 Question Id : 5330723741 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+In a token ring network the transmission speed is 10" bps and the propagation speed is 200 m/ us.
+The 1-bit delay in this network is equivalent to j
+(1) 20m
+(2) 30m
+3) 50m
+(4) 40m
+Question Number : 67 Question Id : 5330723742 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider a CSMA/CD network that transmits data at the rate of 100 Mbps over a 1 Kilometre
+cable with no repeater. If the minimum frame size required for this network is 1250 bytes, what is
+the signal speed (km/sec) in the cable.
+(1) 8000
+(2) 16000
+(3) 12000
+(4) 20000
+Question Number : 67 Question Id : 5330723742 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 44/101
+
+
+--- OCR PAGE 45 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider a CSMA/CD network that transmits data at the rate of 100 Mbps over a 1 Kilometre
+cable with no repeater. If the minimum frame size required for this network is 1250 bytes, what is
+the signal speed (km/sec) in the cable.
+
+(1) 8000
+
+(2) 16000
+
+G) 12000
+
+(4) 20000
+
+Question Number : 68 Question Id : 5330723743 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Consider the following code :
+
+#include<stdio.h>
+
+void [1(char *x, char *y} |
+char *t; p= x=y; y=b
+
+void (2(char "x, char “y) [
+char ‘ty; tj ="x7 "x="y; “y= ty]
+
+int main{)
+
+|
+char ‘a= "ONE", *b= "TWO";
+fl(a, b); printi("%s Ss", a, b);
+Bléca, &b); printf(" ks Ms", a, b);
+return 0;
+
+|
+
+What will be the output of the above code?
+
+(1) ONE TWO TWO ONE
+
+(2) TWO ONE ONE TWO
+
+G) ONE TWO ONE TWO
+
+(44) TWO ONE TWO ONE
+
+Question Number : 68 Question Id : 5330723743 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 45/101
+
+
+--- OCR PAGE 46 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider the following code :
+#incdlude<stdio.h>
+void [1(char *x, char *y} |
+char *t; p= x=y; y=b
+void (2(char "x, char “y) [
+char ‘ty; tj ="x7 "x="y; “y= ty]
+int main{)
+|
+char ‘a="ONE", *b= "TWO";
+fl(a, b); printi("%s %s", a, b);
+Bléca, &b); printf(" ks Ms", a, b);
+return 0;
+|
+What will be the output of the above code?
+(1) ONE TWO TWO ONE
+(2) TWO ONE ONE TWO
+G) ONE TWO ONE TWO
+(44) TWO ONE TWO ONE
+Question Number : 69 Question Id : 5330723744 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider following C program :
+#include<stdio.h>
+int main()
+|
+int x[]={2, 4, 6, 8, 10};
+int a, b=0, *y=x+4;
+for(a= 0; a<5; at++)
+{
+b=b+(ty—a)—*(y—a};
+|
+printi(’ d\n", b);
+return 0);
+|
+What will be the output of the above C program ?
+(1) 4
+(2) 6
+(3) 68
+(4) 10
+Question Number : 69 Question Id : 5330723744 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 46/101
+
+
+--- OCR PAGE 47 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider following C program :
+#include<stdio.h>
+int main()
+|
+int x[]={2, 4, 6, 8, 10};
+int a, b=0, *y=x+4;
+for(a= 0; a<5; at++)
+{
+b=b+(ty—aj—*(y— a);
+printi(’ d\n", b);
+return @;
+|
+What will be the output of the above C program ?
+qa) 4
+(2) 6
+a) 8
+(4) 10
+Question Number : 70 Question Id : 5330723745 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following is correct way to declare a functional pointer in C ?
+(1) int “fune (int, int);
+(2) int (func) (int, int);
+(3) int (func*) (int, int);
+(4) int *func* (int, int);
+Question Number : 70 Question Id : 5330723745 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following is correct way to declare a functional pointer in C ?
+(1) int “fune (int, int);
+(2) int (func) (int, int);
+(3) int (func*) (int, int);
+(4) int *func* (int, int);
+Question Number : 71 Question Id : 5330723746 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 47/101
+
+
+--- OCR PAGE 48 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+What will be the output of the following C code?
+#include=stdio.h>
+void maint()
+|
+int arr[5]= (10, 20, 30, 40, 50}:
+int “p= (int?) (éarr+ 1);
+printh(" %d%d", *(arr+1), *(p— 1):
+1
+(1) 1050
+(2) 2050
+@) 3040
+(4) 2040
+Question Number : 71 Question Id : 5330723746 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What will be the output of the following C code?
+#include=stdio.h>
+void maint()
+|
+int arr[5]= (10, 20, 30, 40, 504}:
+int “p= (int?) (éarr+ 1);
+printh(" %d%d", *(arr+1), *(p— 1):
+1
+(1) 1050
+(2) 2050
+@) 3040
+(4) 2040
+Question Number : 72 Question Id : 5330723747 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 48/101
+
+
+--- OCR PAGE 49 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+What is the output of code given below :
+#include<iostream.h>
+using, namespace std;
+class Base |
+public:
+Base( )[
+cout<<"Base Const”;
+|
+virtual —Base/)
+|
+coult<"Base dest";
+}
+if
+class derived : public Base {
+public:
+Derived() [
+coul*<"Derived Const";
+i
+~Derived() |
+cout<<"Derived dest”;
+|
+I:
+int maint)
+{
+Base *b=new Derived();
+delete b;
+return
+}
+(1) Base Const Derived Const Derived dest Base dest
+(2) Base Const Derived Const Base dest Derived dest
+(3) Derived Const Base Const Base dest Derived dest
+(4) Base Const Derived Const Base dest
+Question Number : 72 Question Id : 5330723747 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 49/101
+
+
+--- OCR PAGE 50 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+What is the output of code given below :
+#include<iostream.h>
+using, namespace std;
+class Base |
+public:
+Base( )[
+cout<<"Base Const”;
+|
+virtual —Base/)
+|
+coult<"Base dest";
+|
+I;
+class derived : public Base {
+public:
+Derived() [
+coul*<"Derived Const";
+i
+-Derived() |
+cout*<"Derived dest”;
+|
+|:
+int maint)
+{
+Base *b=new Derived();
+delete b;
+return
+}
+(1) Base Const Derived Const Derived dest Base dest
+(2) Base Const Derived Const Base dest Derived dest
+(3) Derived Const Base Const Base dest Derived dest
+(4) Base Const Derived Const Base dest
+Question Number : 73 Question Id : 5330723748 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following C++ statements correctly declares an abstract class ?
+(1) class A | virtual void show() = 0; };
+(2) class A | void show()=0; |;
+(3) class A | void show() |}: }
+(4) class A | show()=0) J;
+Question Number : 73 Question Id : 5330723748 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 50/101
+
+
+--- OCR PAGE 51 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following C++ statements correctly declares an abstract class ?
+(1) class A | virtual void show() = 0; };
+
+(2) class A | void show()=0; |;
+(3) class A | void show() |}: }
+(4) class A | show()=0) J;
+Question Number : 74 Question Id : 5330723749 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Fifth normal form is concerned with :
+(1) Join Dependency
+(2) Domain-Key
+(3) Multivalued dependency
+(4) Functional dependency
+Question Number : 74 Question Id : 5330723749 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Fifth normal form is concerned with :
+(1) Join Dependency
+(2) Domain-Key
+(3) Multivalued dependency
+(4) Functional dependency
+Question Number : 75 Question Id : 5330723750 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+How does a relational database ensure data integrity ?
+(1) By encrypting all data stored
+(2) By enforcing rules defined in the schema
+(3) By compressing data for efficient storage
+(4) By allowing unrestricted access to all users
+Question Number : 75 Question Id : 5330723750 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+How does a relational database ensure data integrity ?
+(1) By encrypting all data stored
+(2) By enforcing rules defined in the schema
+(3) By compressing data for efficient storage
+(4) By allowing unrestricted access to all users
+Question Number : 76 Question Id : 5330723751 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is SOL primarily used for in the context of relational databases 7
+(1) To design user interfaces
+(2) To create and manipulate databases
+(3) To display data on web pages
+(4) To format printed reports
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 51/101
+
+
+--- OCR PAGE 52 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 76 Question Id : 5330723751 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+What is SOL primarily used for in the context of relational databases 7
+(1) To design user interfaces
+(2) To create and manipulate databases
+(3) To display data on web pages
+(4) To format printed reports
+Question Number : 77 Question Id : 5330723752 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following best describes the structure of a relational database ?
+(1) Data organized into tables with rows and columns
+(2) Data organized into files and folders
+(3) Data organized into a hierarchical tree structure
+(4) Data organized into a network of interconnected nodes
+Question Number : 77 Question Id : 5330723752 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following best describes the structure of a relational database ?
+(1) Data organized into tables with rows and columns
+(2) Data organized into files and folders
+(3) Data organized into a hierarchical tree structure
+(4) Data organized into a network of interconnected nodes
+Question Number : 78 Question Id : 5330723753 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider a schema R(P.Q,B,5) and the following functional dependencies P+Q, QR, R45, 50.
+Then decomposition of R, (P,Q), Rs (QR) amd Ry (0,5) is:
+(1) Dependency Preserving and lossless join
+(2) Lossless Join but not dependency preserving
+(3) Dependency preserving but not lossless Join
+(4) Not dependency preserving and not lossless join
+Question Number : 78 Question Id : 5330723753 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider a schema R(P.Q,B,5) and the following functional dependencies P+Q, QR, R45, 50.
+Then decomposition of R, (P,Q), Rs (QR) amd Ry (0,5) is:
+(1) Dependency Preserving and lossless join
+(2) Lossless Join but not dependency preserving
+(3) Dependency preserving but not lossless Join
+(4) Not dependency preserving and not lossless join
+Question Number : 79 Question Id : 5330723754 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 52/101
+
+
+--- OCR PAGE 53 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider a relation schema R=(U, V, W, %, ¥, 2), on which the following functional dependencies
+hold :
+(UV, VW—aXx, YW; XU}
+The candidate keys of RK are :
+() UY, VY
+(2) UY, VY¥,.XY
+(3) U¥4, V¥2, VW2
+(4) U¥2, VY¥2Z, XYZ
+Question Number : 79 Question Id : 5330723754 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider a relation schema R=(U, V, W, %, ¥, 2), on which the following functional dependencies
+hold :
+(UV, VW—aXx, YW; XU}
+The candidate keys of RK are :
+() UY, VY
+(2) UY, VY¥,.XY
+(3) U¥4, V¥2, VW2
+(4) U¥2, VY¥2Z, XYZ
+Question Number : 80 Question Id : 5330723755 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following relations can not be decomposed in to BCNF with a lossless join and
+dependency-preserving decomposition ?
+(1) RV, W, X, ¥, 4) (VW—4X, WX4V, VX4W, WY, ¥—2}
+(2) RV, W, X,Y) (VWW, XY}
+(3) R(V, W, X, ¥) VW-9Xx, X4VY]
+(4) RV, W,X, ¥, Z)IVWX, XSY, YZ, Z5¥}
+Question Number : 80 Question Id : 5330723755 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following relations can not be decomposed in to BCNF with a lossless join and
+dependency-preserving decomposition ?
+(1) RV, W, X, ¥, 4) (VW—4X, WX4V, VX4W, WY, ¥—2}
+(2) RV, W, X,Y) (VWW, XY}
+(3) R(V, W, X, ¥) VW-9Xx, X4VY]
+(4) RV, W,X, ¥, Z)IVWX, XSY, YZ, Z5¥}
+Question Number : 81 Question Id : 5330723756 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 53/101
+
+
+--- OCR PAGE 54 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Ina schema R(A, B,C, D, E, F,G, H), each field of RK contains only atomic values.
+F= (CH-+G, ABC, B-+CFH, EA, F-+EG} isa set of functional dependencies so that F + is exactly
+the set of FDs that holds R. The relation R is:
+(1) In INF, but not in 2NF
+(2) In 2NF, but notin ANF
+(3) In3NF, but not in BCNF
+(4) In BCNF
+Question Number : 81 Question Id : 5330723756 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+In a schema R(A, B, C, D, E, FG, H), each field of K contains only atomic values.
+F= (CH-+G, ABC, B-+CFH, EA, F-+EG} is a set of functional dependencies so that F + is exactly
+the set of PDs that holds R. The relation R is :
+(1) In UNF, but not in 2NF
+(2) In INF, but notin 3NF
+(3) In 3NF, but not in BCNF
+(4) In BCNF
+Question Number : 82 Question Id : 5330723757 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the transactions T,, T3, T, and the schedules 5, and S, given below.
+Ty rypixh: ny(z: wy lz)
+Ty 2 toy): Talz): woz)
+Ty: ralv) s(x); wally)
+Si tpiey taQy)s tabs oly) tol2h Wal¥h: wale):
+rye) wy ls): wylz)
+Sy ib: tly) rat) tab: ty(z)s mle: waly)s
+wy (x); Walz) Wyle)
+Which one of the following statements about the schedules is TRUE ?
+(1) Only 5, is conflict-serializable
+(2) Only 5, is conflict-serializable
+(3) Both S, and S, are conflict-serializable
+(4) Neither 5, nor 5, is conflict-serializable
+Question Number : 82 Question Id : 5330723757 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 54/101
+
+
+--- OCR PAGE 55 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Consider the transactions T,, T., T, and the schedules $, and 5, given below.
+
+Ty rypixh: mlz: wy lz)
+
+Ty: rly) tolz): wolz)
+
+T; 2 tay): ty(x); Waly)
+
+S, i rpixh raly)s tabs tol) tole): Waly): wale):
+
+ry(zie Wy ls): Wz)
+Sy: rylh)s ea(y)s Poly): Fads Hyla)s ele) Waly)
+w(x} Walz): wy, (z)
+
+Which one of the following statements about the schedules is TRUE ?
+
+(1) Only 5, is conflict-serializable
+
+(2) Only 5, is conflict-serializable
+
+(3) Both 5, and S, are conflict-serializable
+
+(4) Neither 5, nor 5, is conflict-serializable
+Question Number : 83 Question Id : 5330723758 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Let G(V, E) be an undirected graph with | edges. Then the sum of degree of all vertices is equal to
+(ly) 2!
+
+(2) Le
+
+3) FP
+
+@) vi
+Question Number : 83 Question Id : 5330723758 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Let G(V, E) be an undirected graph with | edges. Then the sum of degree of all vertices is equal to
+(ly) 2!
+
+(2) Le
+
+3) FP
+
+@) vi
+Question Number : 84 Question Id : 5330723759 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+40 software professionals were interviewed for a job. 25 knew PYTHON 20 knew JAVA and 7
+knew neither language. How many knew both languages ?
+
+(1) 20
+
+() 53
+
+G 10
+
+(4) 88
+Question Number : 84 Question Id : 5330723759 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 55/101
+
+
+--- OCR PAGE 56 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+40 software professionals were interviewed for a job. 25 knew PYTHON 20 knew JAVA and 7
+knew neither language. How many knew both languages ?
+
+() 20
+
+() 53
+
+3) 10
+
+(4) 88
+Question Number : 85 Question Id : 5330723760 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Let P be “Itis hot day” and q be “The temperature is 45°C", Write in simple sentences the meaning
+of —pa—q.
+
+(1) [tis bot day or temprature is 48°C
+
+(2) [tis cold day or temprature is 48°C
+
+(3) It is neither a hot day nor temperature is 46°C
+
+(4) [tis nota hot day
+Question Number : 85 Question Id : 5330723760 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Let P be “Itis hot day” and q be “The temperature is 45°C", Write in simple sentences the meaning
+of —pa—q.
+
+(1) [tis bot day or temprature is 48°C
+
+(2) [tis cold day or temprature is 48°C
+
+(3) It is neither a hot day nor temperature is 46°C
+
+(4) [tis nota hot day
+Question Number : 86 Question Id : 5330723761 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Let L (x, y) be the statement “x loves y" where the domain for both x and y consists of all people in
+the world. Use quantiliers to express “Joy is loved by everyone”.
+
+(1) vx Lis, Joy)
+
+(2) vy Liloy, y)
+
+(3) «= Sivx L{x, y)
+
+(4) 3x5 LiJoy, x)
+Question Number : 86 Question Id : 5330723761 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Let L (x, y) be the statement “x loves y" where the domain for both x and y consists of all people in
+the world. Use quantifiers to express “Joy is loved by everyone”.
+
+(1) ¥x La, Joy)
+
+(2) vy Liloy, wy)
+
+(3) Six Li, y)
+
+(4) 3x5 LiJoy, x)
+Question Number : 87 Question Id : 5330723762 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 56/101
+
+
+--- OCR PAGE 57 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Translate ¥WxSy(r<y) in English. Consider domain as a real number for both the variables.
+
+(1) For all real numbers x, there exists a real number y such that x is less than y
+
+(2) For every real numbers y, there exists a real mumber x such that x is less than y
+
+(3) For some real numbers x, there exists a real number y such that x is less than y
+
+(4) Por each and every real numbers x and y, x is less than
+
+Question Number : 87 Question Id : 5330723762 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Translate ¥WxSy(r<y) in English. Consider domain as a real number for both the variables.
+
+(1) For all real numbers x, there exists a real number y such that x is less than y
+
+(2) For every real numbers y, there exists a real mumber x such that x is less than y
+
+(3) For some real numbers x, there exists a real number y such that x is less than y
+
+(4) Por each and every real numbers x and y, x is less than
+
+Question Number : 88 Question Id : 5330723763 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+A multi processor system with 16 processors is used to execute a parallelizable task. Lf the serial
+
+portion of the task takes 200 clock cycles and the parallel portion take 800 clock cycles. When all 16
+
+processor are used how many total clock cycles are required to complete the task ?
+
+(1) 250
+
+(2) 300
+
+(3) 400
+
+(4) 450
+
+Question Number : 88 Question Id : 5330723763 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+A multi processor system with 16 processors is used to execute a parallelizable task. Lf the serial
+
+portion of the task takes 200 clock cycles and the parallel portion take 800 clock cycles. When all 16
+
+processor are used how many total clock cycles are required to complete the task ?
+
+(1) 250
+
+(2) 300
+
+(3) 400
+
+(4) 450
+
+Question Number : 89 Question Id : 5330723764 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+A CPU has a 5-stage pipeline with the following stages Fetch (F), Decode (D), Execute (E), Memory
+
+(M) and Write-back (W). Each stage takes one clock cycle to complete. Assume there are no pipeline
+
+stalls and the pipeline is initially empty. How many clock evcles are required to complete the
+
+execution of 10 instructions ?
+
+(1) 10
+
+(2) 14
+
+(3) 15
+
+(4) «19
+
+Question Number : 89 Question Id : 5330723764 Question Type : MCQ Option Shuffling : No
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 57/101
+
+
+--- OCR PAGE 58 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Correct Marks : 2 Wrong Marks : 0
+A CPU has a 5-stage pipeline with the following stages Fetch (F), Decode (D), Execute (E), Memory
+(M) and Write-back (W). Each stage takes one clock cycle to complete. Assume there are no pipeline
+stalls and the pipeline is initially empty. How many clock evcles are required to complete the
+execution of 10 instructions ?
+q) 10
+(2) 14
+(3) 15
+(4) 19
+Question Number : 90 Question Id : 5330723765 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+A vector processor with 16 lanes can perform an operation on 1024 elements with each operation
+taking 5 clack cycles. How many cycles are needed to complete the operation ?
+Ql) 64
+(2) 80
+(3) ©6100
+(4) 128
+Question Number : 90 Question Id : 5330723765 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+A vector processor with 16 lanes can perform an operation on 1024 elements with each operation
+taking 5 clack cycles. How many cycles are needed to complete the operation ?
+Ql) 64
+(2) 80
+(3) ©6100
+(4) 128
+Question Number : 91 Question Id : 5330723766 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following phases of database design in the correct order :
+(A) Physical Design
+(B) Conceptual Design
+(C) Logical Design
+(D) Requirement Analysis
+Choose the correct answer from the options given below :
+Q) @), (DA). ©
+(2) (C). (A). (BL (D)
+(3) (D). (By (C), (A)
+(4) (A), (D), (Ch (B)
+Question Number : 91 Question Id : 5330723766 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 58/101
+
+
+--- OCR PAGE 59 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Arrange the following phases of database design in the correct order :
+(A) Physical Design
+(B) Conceptual Design
+(C) Logical Design
+(D) Requirement Analysis
+Choose the correct answer from the options given below :
+(1) (B), (Dy, (A), ()
+(2) (€), (A), (B), (D)
+(8) (Dp (Bp. (C), (A)
+(4) (A). (D), (C). (Bh
+Question Number : 92 Question Id : 5330723767 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Out the following steps in the proper sequence for simplifying a Boolean function using a Karmaugh
+map (K-map).
+(A) Identify and group the largest possible cluster of 1's
+(B) Draw the K-map for the given Boolean function
+(C) Write the simplified Boolean expression from the grouped clusters
+(D) Transfer the truth table values to the K-map
+Choose the correct answer from the options given below :
+(1) (B), (Dp. (A). (CG
+(2) (D) (B) (A) (C)
+(3) (By. (A). (D), (Ch
+(4) (A), (By. (C), (D)
+Question Number : 92 Question Id : 5330723767 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Out the following steps in the proper sequence for simplifying a Boolean function using a Karmaugh
+map (K-map).
+(A) Identify and group the largest possible cluster of 1's
+(B) Draw the K-map for the given Boolean function
+(C) Write the simplified Boolean expression from the grouped clusters
+(D) Transfer the truth table values to the K-map
+Choose the correct answer from the options given below :
+(1) (B), (Dp. (A). (CG
+(2) (D) (B) (A) (C)
+(3) (By. (A). (D), (Ch
+(4) (A), (By. (C), (D)
+Question Number : 93 Question Id : 5330723768 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 59/101
+
+
+--- OCR PAGE 60 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Arrange the piven steps required for a Direct Memory Access (DMA) transfer in the correct order,
+(A) Initiate DMA transfer request
+(B) Transfer data directly between peripheral and memory
+(C) Processor grants DMA control over the system bus
+(D) DMA controller completes data transfer and signals completion
+Choose the correct answer from the options given below :
+
+(1) ©), (A), (B), (D)
+(2) (A) (C), (B), (D)
+(3) (A), (B). (©), (D)
+(4) (C), (B), (A), (D)
+Question Number : 93 Question Id : 5330723768 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the piven steps required for a Direct Memory Access (DMA) transfer in the correct order,
+(A) Initiate DMA transfer request
+(B) Transfer data directly between peripheral and memory
+(C) Processor grants DMA control over the system bus
+(D) DMA controller completes data transfer and signals completion
+Choose the correct answer from the options given below :
+(1) ©, (A). @), (D)
+(2) (A) (C). (B), (D)
+(3) (A), (B). (©) (D)
+(4) (C), (B), (A), (D)
+Question Number : 94 Question Id : 5330723769 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps of file handling in ‘C in the correct order :
+(A) Close the file
+(B) Read from or write to the file
+(C) Open the file
+(D) Check for error
+Choose the correct answer from the options given below :
+(1) (A), (Cp. (D), (B)
+(2) (DY, (BY, (Cy, (A)
+(3) (C), (D). (B), (A)
+(4) (B). (D). (A). ©
+Question Number : 94 Question Id : 5330723769 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 60/101
+
+
+--- OCR PAGE 61 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Arrange the following steps of file handling in ‘C in the correct order :
+(A) Close the file
+(B) Read from or write to the file
+(C) Open the file
+(D) Cheek for error
+Choose the correct answer from the options given below :
+(1) (AL ©, (), @)
+(2) (Dy. (By. (Cy, (A)
+(3) (C). (D). (Bi. (A)
+(4) (B), (D), (A). ©
+Question Number : 95 Question Id : 5330723770 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Find the correct sequence of the storage device in ascending onder based on their access time,
+(A) Registers
+(B) Magnetic Disk
+(C) Magnetic Tapes
+(D) Main memory
+(E) Optical Disk
+Choose the correct answer from the options given below :
+(1) (BY), (A). (D), (Ch, (E)
+(2) (By. (A) (E), (Dy (C)
+(3) (©), (B), (A). (E), (D)
+(4) (C), CE) (By (DB). (A)
+Question Number : 95 Question Id : 5330723770 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Find the correct sequence of the storage device in ascending onder based on their access time,
+(A) Registers
+(B) Magnetic Disk
+(C) Magnetic Tapes
+(D) Main memory
+(E) Optical Disk
+Choose the correct answer from the options given below :
+(1) (BY), (A). (D), (Ch, (E)
+(2) (By. (A) (E), (Dy (C)
+(3) (©), (B), (A). (E), (D)
+(4) (C), CE) (By (DB). (A)
+Question Number : 96 Question Id : 5330723771 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 61/101
+
+
+--- OCR PAGE 62 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Arrange the following phases of the Agile process in the correct sequence :
+(A) Design
+(B) Release
+(C) Testing
+(D) Development
+Choose the correct answer from the options given below :
+
+(1) (A) (B). (D), (E) (C)
+(2) (A) (D), (E). (Bh (C)
+(3) (BE). (A) (D). (C). (B)
+(4) {E). (D). (A). (Cy. (B)
+Question Number : 96 Question Id : 5330723771 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following phases of the Agile process in the correct sequence :
+(A) Design
+(B) Release
+(C) Testing
+(D) Development
+Choose the correct answer from the options given below :
+(1) (A). (B). (D). (E). (C)
+(2) (A), (D), (E), (BL (C)
+(3) (BE). (A) (D). (©), (B)
+(4) {E). (D). (A). (Cy. (B)
+Question Number : 97 Question Id : 5330723772 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps of Feature Drive Development (FDD) process in the correct sequence :
+(A) Develop an overall model
+(B) Build by feature
+(C) Plan by feature
+(D) Design by feature
+(BE) Build a feature list
+Choose the correct answer from the options given below :
+(1) (A) (C). (B), (E). (D)
+(2) (A). (E) (C), (Dy, (B)
+(3) (BY, (A). (Dy, (Ep. (CE)
+(4) (A) (B). (). (E). (D)
+Question Number : 97 Question Id : 5330723772 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 62/101
+
+
+--- OCR PAGE 63 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Arrange the following steps of Feature Drive Development (FDD) process in the correct sequence :
+(A) Develop an overall model
+(B) Build by feature
+(C) Plan by feature
+(D) Design by feature
+(E) Build a feature list
+Choose the correct answer from the options given below :
+(1) (A) (C), (8) (EB). (D)
+(2) (A) (E) (C). (DY, (B)
+(3) (BY), (A). (Dy, (Eh (CE)
+(4) (A) (B). (), (E). (D)
+Question Number : 98 Question Id : 5330723773 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps in the correct order to solve the Knapsack problem using Dynamic
+Programming.
+(A) Define the base case when the capacity is zero (0) or no items are left to consider
+(B) Compute the maximum value that can be obtained using items up to the i-th item and a
+knapsack capacity of 0
+(C) Identify subproblems and their dependencies based on items weights and values
+(D) Initialize a table to store results of subproblems
+(E)  Tterate through each item and each possible Capacity to fill the table
+Choose the correct answer from the options given below :
+(1) (C), (D). (A) (E). (B)
+(2) (D(C). (AL (E), (8)
+(3) (A). (C), (Dy, (E), (B)
+(4) (D). (A). (C). (ED. (B)
+Question Number : 98 Question Id : 5330723773 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps in the correct order to solve the Knapsack problem using Dynamic
+Programming.
+(A) Define the base case when the capacity is zero (0) or no items are left to consider
+(B) Compute the maximum value that can be obtained using items up to the i-th item and a
+knapsack capacity of 0
+(C) Identify subproblems and their dependencies based on items weights and values
+(D) Initialize a table to store results of subproblems
+(E)  Tterate through each item and each possible Capacity to fill the table
+Choose the correct answer from the options given below :
+(1) (C), (D). (A) (E). (B)
+(2) (D), (, (A), (E(B)
+(3) (A). (C), (Dy, (E), (B)
+(4) (D). (A). (C). (ED. (B)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 63/101
+
+
+--- OCR PAGE 64 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 99 Question Id : 5330723774 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following recurrence relations in increasing order of their time capacity.
+(A) Tinj=T(n/f2) +1
+(8) Tn)=27T(n/2)+n
+(C) Tin)=3T(n/3)+n
+(D) T(n)=2T(n/2)+ Jn
+(E) Tin)=T(n—1)41
+Choose the correct answer from the options piven below :
+(1) (BE). (A), (BY, (DY. ()
+(2) (A), (E). (Dy, (Bp. ()
+(3) (E). (A), (D), (Bp, (C)
+(4) (A), (B). (D), (Ep, (C)
+Question Number : 99 Question Id : 5330723774 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following recurrence relations in increasing order of their time capacity.
+(A) Tinj=T(n/f2) +1
+(B) T(n)=27(n/2)+n
+(C) Tin)=3T(n/3)+n
+(D) T(n)=2T(n/2)+ Jn
+(E) Tin)=T(n—1)41
+Choose the correct answer from the options piven below :
+(1) (BE). (A), (BY, (DY. ()
+(2) (A), (E). (Dy, (Bp. ()
+(3) (E). (A), (D), (Bp, (C)
+(4) (A), (B). (D), (Ep, (C)
+Question Number : 100 Question Id : 5330723775 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following stages of a Turing Machine (TM) operation in the correct order as they
+oocur during computation.
+(A) Whrting a symbol on the tape
+(B) Moving the tape head left to right
+(C) Reading a symbol from the tape
+(D) Transitioning to a new state based on the current state and symbol read
+(E) Halting and accepting or rejecting the input
+Choose the correct answer from the options given below :
+(1) ©. (A) @), D)
+(2) CB). (A), 0)
+(3) C), (D). (A), (B), (BE)
+(4) (C), (D), (B), (A), (B)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 64/101
+
+
+--- OCR PAGE 65 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 100 Question Id : 5330723775 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following stages of a Turing Machine (TM) operation in the correct order as they
+oocur during computation.
+(A) Whrting a symbol on the tape
+(B) Moving the tape head left to right
+(C) Reading a symbol from the tape
+(D) Transitioning to a new state based on the current state and symbol read
+(E) Halting and accepting or rejecting the input
+Choose the correct answer from the options given below :
+1) ©, (A). ®), O). ©)
+(2) (€), (B) (A), (D), (E)
+(3) (C). (D). (A). (BY (B)
+(4) (C), (D), (B), (A), (B)
+Question Number : 101 Question Id : 5330723776 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following stages of parsing inthe correct order as they typically occur in the compilation
+process.
+(A) Lexical Analysis
+(B) Sematic Analysis
+(C) Syntax Analysis
+(D) Intermediate Code Generation
+(E) Code Optimization
+Choose the correct answer from the options given below :
+(1) (A). (BY. C), ), E)
+2) (A) (CO). ®). O)
+(3) (A), (D), (B), (C), (E)
+(4) (A) (C), (D), (B), (E)
+Question Number : 101 Question Id : 5330723776 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following stages of parsing inthe correct order as they typically occur in the compilation
+process.
+(A) Lexical Analysis
+(B) Sematic Analysis
+(C) Syntax Analysis
+(D) Intermediate Code Generation
+(E) Code Optimization
+Choose the correct answer from the options given below :
+(1) (A). (BY. C), ), E)
+(2) (A). (C), (8), (D), (E)
+(3) (A), (D), (B). (C), (E)
+(4) (A) (C), (D), (B), (E)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 65/101
+
+
+--- OCR PAGE 66 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 102 Question Id : 5330723777 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Arrange the following Language Classes in ascending order according to their expressive power,
+as defined by Chomsky hierarchy :
+(A) Context-free languages
+(B) Context-sensitive languages
+(C) Regular languages
+(D) Unrestricted Grammars
+Choose the correct answer from the options given below :
+(1) (Cy, (A). (B), (D)
+(2) (C), (A). (D), (B)
+(3) (A), (C), (BY (D)
+(4) (A), (D), (B), (C)
+Question Number : 102 Question Id : 5330723777 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following Language Classes in ascending order according to their expressive power,
+as defined by Chomsky hierarchy :
+(A) Context-free languages
+(B) Context-sensitive languages
+(C) Regular languages
+(D) Unrestricted Grammars
+Choose the correct answer from the options given below :
+(1) (C), (A) (By (D)
+(2) (C), (A), (D), (B)
+(3) (A) (CE). (B). (D)
+(4) (A), (D), (B). (C)
+Question Number : 103 Question Id : 5330723778 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps inva proper sequence for the typical process of a DNS query :
+(A) Query authoritative DNS Server
+(B) Query local DNS Server
+(C) Local DNS Server Check Cache
+(D) Query root DNS Server
+(E) Query TLD DNS Server
+Choose the correct answer from the options given below :
+(1) (Ab (C). (E), (Bp, (D)
+(2) (E). (Ay (C) (EB) (D)
+(3) (A) (B). (C), (D). (EB)
+(4) (B). (C), (D). (E). (A)
+Question Number : 103 Question Id : 5330723778 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 66/101
+
+
+--- OCR PAGE 67 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Arrange the following steps inva proper sequence for the typical process of a DNS query :
+(A) Query authoritative DNS Server
+(B) Query local DNS Server
+(C) Local DNS Server Check Cache
+(D) Query root DNS Server
+(E)} Query TLD DNS Server
+Choose the correct answer from the options given below :
+
+(1) (A) (EC), (E) (B), (DB)
+(2) (BE). (A) (C). (8), (D)
+(3) (A) (By (C), (D) (E)
+(4) (B), (C), (D). (BE). (A)
+Question Number : 104 Question Id : 5330723779 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps ina proper sequence for the process of training a neural network,
+(A) Weight initialization
+(B) Feed forward
+(C) Back Propagation
+(D) Loss Calculation
+(E) Weight Update
+Choose the correct answer from the options given below ;
+(1) (A) (By. (Dp. (Ch. (E)
+(2) (©), (By (A) (C). (EB)
+(3) (Ad, (C),. (D). (B), (E)
+(4) (E), (C). (By. (D). (A)
+Question Number : 104 Question Id : 5330723779 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps ina proper sequence for the process of training a neural network,
+(A) Weight initialization
+(B) Feed forward
+(C) Back Propagation
+(D) Loss Calculation
+(E) Weight Update
+Choose the correct answer from the options given below ;
+(1) (A) (By. (Dp. (Ch. (E)
+(2) (©), (By (A) (C). (EB)
+(3) (Ad, (C),. (D). (B), (E)
+(4) (E), (C). (By. (D). (A)
+Question Number : 105 Question Id : 5330723780 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 67/101
+
+
+--- OCR PAGE 68 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Arrange the following steps in proper sequence involved in a Genetic Algorithm :
+(A) Selection
+(B) = Initialization
+(C) Crossover
+(D) Mutation
+(E) Evaluation
+Choose the correct answer from the options piven below :
+
+(1) (A) (By. (C), (Dy, (E)
+(2) (BE) (A) (B) (Dy (C)
+(3) (BY), (BE) (A) (C), (D)
+(4) (A) (C), (B). (D), (E)
+Question Number : 105 Question Id : 5330723780 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Arrange the following steps in proper sequence involved in a Genetic Algorithm :
+(A) Selection
+(B) = Initialization
+(C) Crossover
+(D) Mutation
+(BE) Evaluation
+Choose the correct answer from the options given below :
+(ty (A) (By. (C), (BD). (E)
+(2) (E), (A) (BL (Bk (OS)
+(3) (BY), (BE) (A) (€), (D)
+(4) (A) (C), (BY. (BD) (E)
+Question Number : 106 Question Id : 5330723781 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following are context free language ?
+(A) [wis y* zliek=j+l, where i,j k, [=]
+(B)  fwiady* 2! |i=j and k=/, where i, j, k, 1=0)
+(C) (wiad yk 2! |i=j=k and kel, where i, j, k, [20]
+(D) [wis y* z|imj= k+l, where i, j,k, [20]
+(E) twisty! 2! )i=j=l and kel, where i, j, k, [= 0)
+Choose the correct answer from the options given below :
+(1) (A), (B) Only
+(2) (B), (C) Only
+(3) (€), (D) Only
+(4) ©), (E) Only
+Question Number : 106 Question Id : 5330723781 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 68/101
+
+
+--- OCR PAGE 69 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following are context free language ?
+(A) [w'sl y* z|iek=j+l, where i,j k, 120]
+(B)  fwisd y* 2! |i=j and k=/, where i, j, k, 1=0)
+(C) (wid y* 2 |i=j=k and kel, where i, j, k, 1=0)
+(D) fwiddy* 2 fieje k+l, where i, j, k, 120]
+(E) fwisdy* 2! |i=j=l and kel, where i, j,k 120)
+Choose the correct answer from the options given below :
+(1) (A), (B) Only
+(2) (B). (C) Only
+(3) (€), (D) Only
+(4) (D), (E) Only
+Question Number : 107 Question Id : 5330723782 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+A coin is tossed successively three times. Find the Probability (P), Event (E), Sample space (5) of
+getting exactly one head or two heads, where n is number of occurrence.
+(A) nfS)=8 and n(E)=4
+(B) nfE)=6 and n(j=8
+Cc E 2
+(C) PE=5
+D) P(E}= a
+(0) PE=5
+Choose the correct answer from the options given below ;
+(1) (A), (By. (C) and (D)
+(2) (B) and (C) Only
+(3) (A) and (D) Only
+(4) (C) and (D) Only
+Question Number : 107 Question Id : 5330723782 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 69/101
+
+
+--- OCR PAGE 70 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+A coin is tossed successively three times. Find the Probability (P), Event (E), Sample space (5) of
+getting exactly one head or two heads, where n is number of occurrence.
+(A) nfS)=8 and n(E)=4
+(B) nfE)=6 and n(j=8
+Cc E g
+(C) PIE=5
+
+D) P(E}= iL
+(D) PE)=5
+Choose the correct answer from the options given below :
+(1) (A), (B), (©) and (D)
+(2) (B) and (C) Only
+(3) (A) ancl (D) Only
+(4) (Cy and (D) Only
+Question Number : 108 Question Id : 5330723783 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the given number (45), where y is the base of the number. Some of the possible values of
+y are given below.
+(A) 5
+(B) 6
+(c) 7
+(D) &
+Choose the correct answer from the options given below :
+(1) (A), (B) and (C) Only
+(2) (B), (C) and (D) Only
+(3) (A), (C) and (D) Only
+(4) (A). (B). (C) and (D)
+Question Number : 108 Question Id : 5330723783 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the given number (45), where v is the base of the number. Some of the possible values of
+y are given below.
+(A) 5
+(B) 4
+(Cc) 7
+(D) &
+Choose the correct answer from the options given below :
+(1) (A), (B) and (C) Only
+(2) (B), (C) and (D) Only
+(3) (A), (C) and (D) Only
+(4) (A). (B). (C) and (D)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 70/101
+
+
+--- OCR PAGE 71 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Question Number : 109 Question Id : 5330723784 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Consider the following statement regarding special purpose registers,
+
+(A) Program Counter (PC) keeps the track of next instruction executed
+
+(B) Instruction register holds the address of first instruction to be executed
+
+(C) Accumulator holds the output of ALU
+
+(D) Program Counter (PC) keeps the track of only first instruction of the program
+
+Choose the correct answer from the options given below :
+
+(1) (A) and (C) Only
+
+(2) (A) and (BD) Only
+
+(3) (B) and (D) Only
+
+(4) (A), (B) and (C) Only
+
+Question Number : 109 Question Id : 5330723784 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Consider the following statement regarding special purpose registers,
+
+(A) Program Counter (PC) keeps the track of next instruction executed
+
+(B) Instruction register holds the address of first instruction to be executed
+
+(C) Accumulator holds the output of ALU
+
+(D) Program Counter (PC) keeps the track of only first instruction of the program
+
+Choose the correct answer from the options given below :
+
+(1) (A) and (C) Only
+
+(2) (A) and (BD) Only
+
+(3) (B) and (D) Only
+
+(4) (A), (B) and (C) Only
+
+Question Number : 110 Question Id : 5330723785 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following statements are TRUE about Process Control Block (PCB)?
+
+(A) The PCB contains information about the process state, such as whether it is running, waiting
+or terminated
+
+(B) The PCB ineludes the program code and data segments of the process
+
+(C) The PCB stores the process's memory management information, such as page tables and
+segment tables
+
+(D) The PCB is used to track process scheduling information and CPU registers for process
+execution
+
+Choose the correct answer from the options given below :
+
+(1) (A), (B) and (C) Only
+
+(2) (B), (C) and (D) Only
+
+(3) (A), (C) and (D) Only
+
+(4) (A) and (B) Only
+
+Question Number : 110 Question Id : 5330723785 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 71/101
+
+
+--- OCR PAGE 72 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Which of the following statements are TRUE about Process Control Block (PCB)?
+
+(A) The PCB contains information about the process state, such as whether it is running, waiting
+or terminated
+
+(B) The PCB ineludes the program code and data segments of the process
+
+(C) The PCB stores the process's memory management information, such as page tables and
+segment tables
+
+(D) The PCB is used to track process scheduling information and CPU registers for process
+execution
+
+Choose the correct answer from the options given below :
+
+(1) (A), (B) and (C) Only
+
+(2) (B). (C) and (D) Only
+
+(3) (A), (C) and (D) Only
+
+(4) (A) amd (B) Only
+
+Question Number : 111 Question Id : 5330723786 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following statements are TRUE about Privileged Instructions ?
+
+(A) It can only be executed by the Operating System kernel and not by user applications.
+
+(B) [tis designed to perform operations that can directly affect the hardware or system state
+such as 1/O operations or changing memory management setting.
+
+(C) User applications can execute privileged instructions if they have to correct permissions, set
+by the Operating System.
+
+(D) It usually executed in user mode to ersure the safety and security of the system.
+
+Choose the correct answer from the options given below :
+
+(1) (A) and (B) Only
+
+(2) (A). (B) and (C) Only
+
+(3) (B) and (C) Only
+
+(4) (B), (C) and (D) Only
+
+Question Number : 111 Question Id : 5330723786 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following statements are TRUE about Privileged Instructions ?
+
+(A) It can only be executed by the Operating System kernel and not by user applications.
+
+(B) [tis designed to perform operations that can directly affect the hardware or system state
+such as [/O operations or changing memory management setting.
+
+(C) User applications can execute privileged instructions if they have to correct permissions, set
+by the Operating System.
+
+(D) It usually executed in user mode to ersure the safety and security of the system.
+
+Choose the correct answer from the options given below :
+
+(1) (A) and (B) Only
+
+(2) (A). (B) and (C) Only
+
+(3) (B) and (C) Only
+
+(4) (B), (C) and (D) Only
+
+Question Number : 112 Question Id : 5330723787 Question Type : MCQ Option Shuffling : No
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 72/101
+
+
+--- OCR PAGE 73 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following statements are TRUE about mutual exclusion in concurrent programming ?
+
+(A) Mutual exclusion ensures that only one process can be in a critical section at any given time.
+
+(B) Mutual exclusion are designed to prevent conflicts and ensure that only one process can
+access shared resources at a time.
+
+(C) Mutual exclusion can use various algorithms to ensure that processes do not enter the critical
+section simultaneously.
+
+(D) Mutual exclusion allows multiple processes to access the critical section simultaneously to
+improve performance.
+
+Choose the correct answer from the options given below :
+
+(1) (A), (B). (C) Only
+
+2) (8), (©, (D) Only
+
+(3) (B), (D). (A) Only
+
+(4) (A), ©, ©) Only
+
+Question Number : 112 Question Id : 5330723787 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following statements are TRUE about mutual exclusion in concurrent programming ?
+
+(A) Mutual exclusion ensures that only one process can be in a critical section at any given time.
+
+(B) Mutual exclusion are designed to prevent conflicts and ensure that only one process can
+access shared resources at a time.
+
+(C) Mutual exclusion can use various algorithms to ensure that processes do not enter the critical
+section simultaneously.
+
+(D) Mutual exclusion allows multiple processes to access the critical section simultaneously to
+improve performance,
+
+Choose the correct answer from the options given below :
+
+(1) (A). (BY. (C) Only
+
+(2) (8), (C), (D) Only
+
+(3) (B), (D), (A) Only
+
+(4) (A) (C), (D) Only
+
+Question Number : 113 Question Id : 5330723788 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following languages can be recognized by Non-Deterministic Finite Automata (NFA)
+
+but cannot be recognized by Deterministic Finite Automata (DFA) ?
+
+(A) Ly =fwe [0, 1)" | the length of w is even}
+
+(B) Ly=[we{, 1)" | the length of w is odd]
+
+(C) Ly=[we 0, 1)* [all 0's come before all 1's in w}
+
+(D) Ly={wel0, 1)" |w contains an equal number of 0's and 1's}
+
+(E) L,={we{0, 1}* [all 1's come before all 0's in w}
+
+Choose the correct answer from the options given below :
+
+(1) (A) amd (B) Only
+
+(2) B)and (©) Only
+
+(3) (C) and (D) Only
+
+(4) (D) and (E) Only
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 73/101
+
+
+--- OCR PAGE 74 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Question Number : 113 Question Id : 5330723788 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following languages can be recognized by Non-Deterministic Finite Automata (NFA)
+
+but cannot be recognized by Deterministic Finite Automata (DFA) ?
+
+(A) Ly =fwe [0, 1)" | the length of w is even}
+
+(B) Ly=[we{, 1)" | the length of w is odd]
+
+(C) Ly=[we 0, 1)* [all 0's come before all 1's in w}
+
+(D) Ly={wel0, 1)" |w contains an equal number of 0's and 1's}
+
+(E) L,={we{0, 1}* [all 1's come before all 0's in w}
+
+Choose the correct answer from the options given below :
+
+(1) (A) amd (B) Only
+
+(2) (B) and (C) Only
+
+(3) (C) and (D) Only
+
+(4) (D) and (E) Only
+
+Question Number : 114 Question Id : 5330723789 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+(A) In [Pv4 addressing, a block of address can be define as x.y.z.t/n in which x.y.2.t define one
+of the address and /'n define the mask
+
+(B) The first address in the block can be found by setting the rightmost 32-n bits to 0s
+
+(C) Address of class C is used for multicast communication
+
+(D) There are five classes in [Pv4 address
+
+(E) Supernetting combine several networks into one large network
+
+Choose the correct answer from the options given below :
+
+(1) (A) (B) and (C) Only
+
+(2) (A). (B). (DB) and (E) Only
+
+(3) (A), (C), (D) and (E) Only
+
+(4) (C), (D) and (E) Only
+
+Question Number : 114 Question Id : 5330723789 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+(A) In [Pv4 addressing, a block of address can be define as x.y.z.t/n in which x.y.2.t define one
+of the address and /'n define the mask
+
+(B) The first address in the block can be found by setting the rightmost 32-n bits to 0s
+
+(C) Address of class C is used for multicast communication
+
+(D) There are five classes in [Pv4 address
+
+(E) Supernetting combine several networks into one large network
+
+Choose the correct answer from the options given below :
+
+(1) (A) (B) and (C) Only
+
+(2) (A). (B). (DB) and (E) Only
+
+(3) (A), (C), (D) and (E) Only
+
+(4) (C), (D) and (E) Only
+
+Question Number : 115 Question Id : 5330723790 Question Type : MCQ Option Shuffling : No
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 74/101
+
+
+--- OCR PAGE 75 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Correct Marks : 2 Wrong Marks : 0
+Host A (on TCP/TPv4 Networks) send an [P Datagram D to host 8 (also on TCP/IPv4d network).
+Assume that no error occured during transmission of D, when D reaches B. Which of following
+header field may differ from that of original datagram D?
+(A) TTL
+(6) Checksum
+(C) Fragment offset
+(D) Source IP
+(E) Destination IP
+Choose the correct answer from the options given below :
+(1) (A) and (B) Only
+(2) (A) (B) and (C) Only
+(3) (A), (B), (©) and (D) Only
+(4) (A), (B), (C) and (E) Only
+Question Number : 115 Question Id : 5330723790 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Host A (on TCP/TPv4 Networks) send an IP Datagram D to host B (also on TCP/1TPv4 network).
+Assume that no error occured during transmission of D, when D reaches B. Which of following
+header field may differ from that of original datagram D?
+(A) TTL
+(B) Checksum
+(C) Fragment offset
+(D) Source IP
+(E) Destination IP
+Choose the correct answer from the options given below :
+(1) (A) and (B) Only
+(2) (A), (B) and (C) Only
+(3) (A), (B}, (©) and (D) Only
+(4) (A), (B), (C) and (E) Only
+Question Number : 116 Question Id : 5330723791 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 75/101
+
+
+--- OCR PAGE 76 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Which of the following properties correctly describe a Regular Grammar ?
+
+(A) All production rules are of the form A—xB or Ax, where A and B are non terminal symbols
+and ~ is a terminal symbol.
+
+(B) Regular grammars are more powerful than context-free grammars and can express any type
+of language.
+
+(C) There is a direct correspondence between regular grammar and finite automata.
+
+(D) Regular grammars can generate languages that are not recognised by any type of automata.
+
+Choose the correct answer from the options given below :
+
+(1) (A) and (B) Only
+
+(2) (B) and (C) Only
+
+(3) (C) and (D) Only
+
+(4) (A) and (C) Only
+
+Question Number : 116 Question Id : 5330723791 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following properties correctly describe a Regular Grammar ?
+
+(A) All production rules are of the form A—xB or Ax, where A and B are non terminal symbols
+and ~ is a terminal symbol.
+
+(B) Regular grammars are more powerful than context-free grammars and can express any type
+of language.
+
+(C) There is a direct correspondence between regular grammar and finite automata.
+
+(D) Regular grammars can generate languages that are not recognised by any type of automata.
+
+Choose the correct answer from the options given below :
+
+(1) (A) and (B) Only
+
+(2) (B) and (C) Only
+
+(3) (C) and (D) Only
+
+(4) (A) and (C) Only
+
+Question Number : 117 Question Id : 5330723792 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Which of the following tasks could be attained using syntax trees in compiler design ?
+
+(A) Type Checking
+
+(B) Code Generation
+
+(C) Cede Optimization
+
+(D) Error Handling
+
+Choose the correct answer from the options given below :
+
+(1) (A), (B), (C) Only
+
+(2) (B). (©), (D) Only
+
+(3) (A). (C). (D) Only
+
+(4) (A), (B). (D) Only
+
+Question Number : 117 Question Id : 5330723792 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 76/101
+
+
+--- OCR PAGE 77 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following tasks could be attained using syntax trees in compiler design ?
+(A) Type Checking
+(B) Code Generation
+(C) Cede Optimization
+(D) Error Handling
+Choose the correct answer from the options given below :
+
+(1) (A), (8), © Only
+(2) (B), (C), (D) Only
+(3) (A), (©), (D) Only
+(4) (A), (B), (D) Only
+Question Number : 118 Question Id : 5330723793 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Select the Sorting Algorithms that are stable,
+(A) Quick Sort
+(B) Bubble Sort
+(C) Insertion Sort
+(D) Merge Sort
+(E) Shell Sort
+Choose the correct answer from the options given below :
+(1) (A), (B). (C) and (E) Only
+(2) (A), (D) and (E) Only
+(3) (B) and (C) Only
+(4) (Bi, (C) and (E) Only
+Question Number : 118 Question Id : 5330723793 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Select the Sorting Algorithms that are stable,
+(A) Quick Sort
+(B) Bubble Sort
+(C) Insertion Sort
+(D) Merge Sort
+(E) Shell Sort
+Choose the correct answer from the options given below :
+(1) (A), (B). (C) and (E) Only
+(2) (A), (D) and (E) Only
+(3) (B) and (C) Only
+(4) (Bi, (C) and (E) Only
+Question Number : 119 Question Id : 5330723794 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 77/101
+
+
+--- OCR PAGE 78 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following are typical activities in the software process lifecycle ?
+(A) Requirement Analysis
+(B) System Design
+(C) Code Refactoring
+(D) Deployment
+(E) Substructure
+Choose the correct answer from the options given below :
+
+(1) (A) (By (C) Only
+(2) (B), (C), (D) Only
+(3) (A), (B) (D) Only
+(4) (A) (BD), (E) Only
+Question Number : 119 Question Id : 5330723794 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following are typical activities in the software process lifecycle ?
+(A) Requirement Analysis
+(B) System Design
+(C) Code Refactoring
+(D) Deployment
+(E) Substructure
+Choose the correct answer from the options given below :
+(ty (A) (BL (C) Only
+(2) (B), (C),{D) Only
+(3) (A). (B) (D) Only
+(4) (A) (D), (E) Only
+Question Number : 120 Question Id : 5330723795 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following are Agile Process Models ?
+(A) Extreme Programming (XP)
+(B) Waterfall
+(C) Scrum
+(D) Spiral
+(E) Incremental
+Choose the correct answer from the options given below :
+(1) (A)and (C) Only
+(2) (B) and (C) Only
+(3) (A) and (D) Only
+(4) (B) and (E) Only
+Question Number : 120 Question Id : 5330723795 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 78/101
+
+
+--- OCR PAGE 79 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following are Agile Process Models ?
+(A) Extreme Programming (XP)
+(B) Waterfall
+(C) Serum
+(D) Spiral
+(E) Incremental
+Choose the correct answer from the options given below :
+(1) (Aj and (C) Only
+(2) (B) and (C) Only
+(3) (A) and (D) Only
+(4) (B) and (E) Only
+Question Number : 121 Question Id : 5330723796 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following statements about pointers in C are TRUE,
+(A) Pointers can be used to access array elements
+(B) Pointers can store the address of another pointer
+(C) Pointers are automatically deferenced in expression
+(D) Pointers cannot be used to access structure members
+Choose the correct answer from the options given below :
+(1) (Ajand (C) Only
+(2) (A) and (B) Only
+(3) (B) and (C) Only
+(4) (©) and (D) Only
+Question Number : 121 Question Id : 5330723796 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following statements about pointers in C are TRUE,
+(A) Pointers can be used to access array elements
+(B) Pointers can store the address of another pointer
+(C) Pointers are automatically deferenced in expression
+(D) Pointers cannot be used to access structure members
+Choose the correct answer from the options given below :
+(1) (Ajand (C) Only
+(2) (A) and (B) Only
+(3) (B) and (C) Only
+(4) (©) and (D) Only
+Question Number : 122 Question Id : 5330723797 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 79/101
+
+
+--- OCR PAGE 80 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following are TRUE about constructors in C++ ?
+(A) A constructor can be overloaded.
+(B) A constructor does not have a return type.
+(C) A-constructor must be declared as a friend function.
+(D) A constructor is called when an object is destroyed.
+Choose the correct answer from the options given below :
+(1) (B), (©, (D) Only
+(2) (BY, (C) Only
+(3) (A), (B), (C) Only
+(4) (A), (B) Only
+Question Number : 122 Question Id : 5330723797 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following are TRUE about constructors in C++?
+(A) A-cconstructor can be overloaded,
+(B) A constructor does not have a return type.
+(C) A constructor must be declared as a friend function.
+(D) A constructor is called when an object is destroyed.
+Choose the correct answer from the options given below :
+(1) (B), (©, (D) Only
+(2) (B), (C) Only
+(3) (A). (B). (C) Only
+(4) (A), (B) Only
+Question Number : 123 Question Id : 5330723798 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the following statements regarding combinational and sequential circuits,
+(A) Output of combinational circuits depends on the only current input.
+(B) Output of combinational circuit depends on the both current input and previous output.
+(C) Output of sequential circuit depends on the current input.
+(D) Output of sequential circuit depends on both current input and previous output.
+Choose the correct answer from the options given below ;
+(1) (A) and (C) Only
+(2) (A) and (D) Only
+(3) (B) and (D) Only
+(4) (B) and (C) Only
+Question Number : 123 Question Id : 5330723798 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 80/101
+
+
+--- OCR PAGE 81 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider the following statements regarding combinational and sequential circuits,
+(A) Output of combinational circuits depends on the only current input.
+(B) Output of combinational circuit depends on the both current input and previous output.
+(C) Output of sequential circuit depends on the current input.
+(D) Output of sequential circuit depends on both current input and previous output.
+Choose the correct answer from the options given below ;
+(1) (A) and (C) Only
+(2) (A) and (D) Only
+(3) (B) and (D) Only
+(4) (B) and (C) Only
+Question Number : 124 Question Id : 5330723799 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the following relations on [1, 2, 3,4). Which of the following relations are reflexive ?
+(A) Rye {(l 1 CL, 2). (2 1). (2. 2), (3, 4). (4, 1, 4, 4)
+(B) Ry={(L. 1). (L 2) (2 1)
+(C) Ry={C1, 1, (1, 2), (1, 4), @ 1), (2 2, (3, 3), (4D) (4 ))
+(D) Ryw{@ UG Te (3. 2) (dT). 4 2). Ge Sy
+(E) Re={(l, 1). (1. 2), (1. 3) i 4). (2, 2) (2. a (2 4h (8, 3) (4
+Choose the correct answer from the options given below :
+(1) (A), (B) and (Cy Only
+(2) (A), (D) and (E) Only
+G3) (D) and (E) Only
+(4) (C) and (E) Only
+Question Number : 124 Question Id : 5330723799 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the following relations on [1, 2, 3,4). Which of the following relations are reflexive ?
+(A) Rye {(l 1 CL, 2). (2 1). (2. 2), (3, 4). (4, 1, 4, 4)
+(B) Ry={(L. 1). (L 2) (2 1)
+(C) Ry={C1, 1, (1, 2), (1, 4), @ 1), (2 2, (3, 3), (4D) (4 ))
+(D) Ryw{@ UG Te (3. 2) (dT). 4 2). Ge Sy
+(E) Re={(l, 1). (1. 2), (1. 3) i 4). (2, 2) (2. a (2 4h (8, 3) (4
+Choose the correct answer from the options given below :
+(1) (A), (B) and (Cy Only
+(2) (A), (D) and (E) Only
+G3) (D) and (E) Only
+(4) (C) and (E) Only
+Question Number : 125 Question Id : 5330723800 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 81/101
+
+
+--- OCR PAGE 82 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Consider the following if p and q are two statements.
+(A) ~(phq) = -pv-q
+(B) ~(p’q@)= =pi-q
+(©) pAé-paT
+(D) ~(p=a)= pi-q
+(E) p¥q==pi¥=q
+Choose the correct answer from the options given below :
+(1) (A), (B) and (D) Only
+(2) (A), (C) and (D) Only
+(3) (C). (D) and (E) Only
+(4) (A), (B) and (C) Only
+Question Number : 125 Question Id : 5330723800 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Consider the following if p and q are two statements.
+(A) ~(p'q) = -pV-q
+(B) =(pYq)=—pinq
+(C) prepel
+(D) ~(p~q) = pi-q
+(E) p¥q==pi=q
+Choose the correct answer from the options given below :
+(1) (A), (B) and (D) Only
+(2) (A), (C) and (D) Only
+(3) (C), (D) and (E) Only
+(4) (A), (B) and (C) Only
+Question Number : 126 Question Id : 5330723801 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 82/101
+
+
+--- OCR PAGE 83 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Match List - I with List - IL
+List - I List - I
+(Queries) (Probability)
+
+(A) A bag contains 6 white and 4 red balls. Two balls are (I) 3/68
+drawn at random. What is the chance, they will be the
+same colour ?
+
+(B) Ina pack of 52 cards, one card is drawn at random, (I) 14,68
+what is the probability that it is either a king or a queen ?
+
+(C) A bag contains 6 red, 4 white and 8 blue balls. [f three balls are (I) 2/3
+drawn at random, find the probability of 1 red and 2 white balls ?
+
+(D) A bag contains 6 red, 4 white and 8 blue balls. Li three balls are (IV) 7/15
+drawn at random. Find the probability of 2 blue and 1 red balls ?
+
+Choose the correct answer from the options given below :
+
+(1) (A)-(L), (B)-{1V), (C}-(1), (D(H)
+
+(2) (AHI). (BIV). (CCID, (D)-()
+
+(3) (AAV), (B(IID), (Q(t, (D)-(1)
+
+(4) (A)-(IV), (B)4N, (C0), (D)-(U)
+
+Question Number : 126 Question Id : 5330723801 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Match List - I with List - IL
+List - I List - I
+(Queries) (Probability)
+
+(A) A bag contains 6 white and 4 red balls. Two balls are (I) 3/68
+drawn at random. What is the chance, they will be the
+same colour ?
+
+(B) Ina pack of 52 cards, one card is drawn at random, (I) 14,68
+what is the probability that it is either a king or a queen ?
+
+(C) A bag contains 6 red, 4 white and 8 blue balls. [f three balls are (I) 2/3
+drawn at random, find the probability of 1 red and 2 white balls ?
+
+(D) A bag contains 6 red, 4 white and 8 blue balls. Li three balls are (IV) 7/15
+drawn at random. Find the probability of 2 blue and 1 red balls ?
+
+Choose the correct answer from the options given below :
+
+(1) (A)-(L), (B)-{1V), (C}-(1), (D(H)
+
+(2) (AHI). (BIV). (CCID, (D)-()
+
+(3) (AAV), (B(IID), (Q(t, (D)-(1)
+
+(4) (A)-(IV), (B)4N, (C0), (D)-(U)
+
+Question Number : 127 Question Id : 5330723802 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 83/101
+
+
+--- OCR PAGE 84 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+A graph G with number of vertices greater and equal than three ie. (m= 3) is a Hamiltonian graph,
+if the degree of each vertex is greater and equal to....
+
+(1) Equal to number of vertices
+(2) Double of number of vertices
+(3) Half of number of vertices
+(4) Four times of number of vertices
+Question Number : 127 Question Id : 5330723802 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+A graph G with number of vertices greater and equal than three ie. (m= 3) is a Hamiltonian graph,
+if the degree of each vertex is greater and equal to....
+(1) Equal to number of vertices
+(2) Double of number of vertices
+(3) Half of number of vertices
+(4) Four times of number of vertices
+Question Number : 128 Question Id : 5330723803 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - IL.
+List - I List - II
+(Recurrence Relations) (Complexity)
+(A) T(n)=2T(n/2)+n () T(n)=@(0 logn) [exact solution)
+(By) T(n)=T(n/2)+1 (I) O(n?)
+(Cc) T(n)@2T(n/2) +1 (I) T(n)=4(n) [exact solution]
+(D) TWnj=T(n-1)41 (IV) Ofn)
+Choose the correct answer from the options given below :
+() (AHD) (BHI), (CCH), (DFU)
+(2) (AHIV), (B)-(D. (C)-(), (DIN
+(3) (AD. (BCD. (CU), (D}-(I)
+(4) (A)(IH). (B)(D, (CIV), (DCI)
+Question Number : 128 Question Id : 5330723803 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 84/101
+
+
+--- OCR PAGE 85 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Match List - I with List - IL.
+List - I List - I
+(Recurrence Relations) (Complexity)
+(A) T(n)=2T(n/2)+n () T(n)=@(0 logn) [exact solution)
+(B)  T(n)=T(nf2)+1 dt) O(n)
+(Cc) T(n)@2T(n/2) +1 (I) T(n)=4(n) [exact solution]
+(D) T(nj=T(n-1)+1 (Iv) O(n)
+Choose the correct answer from the options given below :
+(1) (AMD, (B-(IV), (CHC, (DY-(ID
+(2) (AHIV), (B)-(D. (C)-(), (DIN
+() (AME). (B)-(D. (C(I), (D-(ID
+(4) (A)(IH). (B)(D, (CIV), (DCI)
+Question Number : 129 Question Id : 5330723804 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - 01.
+List - I List - 1
+(IP Address) (Class)
+(A) 10.20.30.40 (f) Class E
+(B) = 210.20.50.3 (I) Class B
+(C) 180.30.100.10 (III) Class A
+(D) 252.5.15.11 (IV) Class C
+Choose the correct answer from the options given below :
+(1) (AED, (B)-(ID), (C)-(0). (D-(IV)
+(2) (A}(, (B)-(IV), (CH), (D)-(111)
+(3) (A}(1), (B)-(11), (C)-(1V), (D)-(Itl)
+(4) (APTI), (B)qIV), (C)-(0), (D)-(1)
+Question Number : 129 Question Id : 5330723804 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - 01.
+List - I List - 1
+(IP Address) (Class)
+(A) 10.20.30.40 (f) Class E
+(B) = 210.20.50.3 (I) Class B
+(C) 180.30.100.10 (III) Class A
+(D) 252.5.15.11 (IV) Class C
+Choose the correct answer from the options given below :
+(1) (AED, (B)-(ID), (C)-(0). (D-(IV)
+(2) (AMD. (BV) (CHD, (DID
+(3) (AbD). (By), (C)-(EV). (D)-(I)
+(4) (APTI), (B)qIV), (C)-(0), (D)-(1)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 85/101
+
+
+--- OCR PAGE 86 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 130 Question Id : 5330723805 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - IL.
+List - I List - I
+(Counter) (uses/working)
+(A) N-bit Ring Counter (0) Uses universal clock
+(B) Synchronous Counter (Il) Counts exactly N states
+(C) Asynchronous Counter (U1) Counts 0 to 9
+(D) Decimal Counter (IV) Main clock is applied to first flip-Hlop only
+Choose the correct answer from the oplions given below :
+(1) (AMID, (BUY), (C)-(1), (DIX)
+(2) (AHI), (B)-(D. (C)}-(1), (D)-()
+(3) (AMID. (Bil), (CEM). (D)-(ID)
+(4) (A)(IV), (B)-(, (C(I), (D)(1I)
+Question Number : 130 Question Id : 5330723805 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - IL.
+List - I List - I
+(Counter) (uses/working)
+(A) N-bit Ring Counter (0) Uses universal clock
+(B) Synchronous Counter (Il) Counts exactly N states
+(C) Asynchronous Counter (U1) Counts 0 to 9
+(D) Decimal Counter (IV) Main clock is applied to first flip-Hlop only
+Choose the correct answer from the oplions given below :
+(1) (AMID, (BUY), (C)-(1), (DIX)
+(2) (AHI), (B)-(D. (C)}-(1), (D)-()
+(3) (AMID. (Bil), (CEM). (D)-(ID)
+(4) (A)(IV), (B)-(, (C(I), (D)(1I)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 86/101
+
+
+--- OCR PAGE 87 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 131 Question Id : 5330723806 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+
+Match List - L with List - I.
+List - I List - I
+(computing systems) (working/output)
+(A) Half Adder () Has n input and 2" output
+(B) Decoder (I) CPU Storage Unit
+(C) Register (I) Used to store program at runtime
+(D) Main memory (IV) 2-bit addition circuit
+Choose the correct answer from the options given below :
+@) (AHH), (B)-(H, (C(I), (D)-()
+(2) (AMIEV), (BID, (C)-(0, (D)-()
+(3) (A)(IV), (B)-(1), (C)-(H), (D)-{I)
+4) (AID, (BV), (C-(10, (D)-
+Question Number : 131 Question Id : 5330723806 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - L with List - I.
+List - I List - I
+(computing systems) (working/output)
+(A) Half Adder () Has n input and 2" output
+(B) Decoder (I) CPU Storage Unit
+(C) Register (I) Used to store program at runtime
+(D) Main memory (IV) 2-bit addition circuit
+Choose the correct answer from the options given below :
+@) (AHH), (B)-(H, (C(I), (D)-()
+(2) (AMIEV), (BID, (C)-(0, (D)-()
+(3) (A)(IV), (B)-(1), (C)-(H), (D)-{I)
+4) (AID, (BV), (C-(10, (D)-
+Question Number : 132 Question Id : 5330723807 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 87/101
+
+
+--- OCR PAGE 88 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+
+Match List - I with List - IL.
+
+List - I List - I
+
+(A) The activation functon ([) is called the delta rule.
+
+(B) The learning method of perceptron {II} isone of the key components of the perceptron
+as in the most common neural network
+architecture.
+
+(C) Areas of application of artificial neural (II) is always boolean like a switch.
+
+network include
+
+(D) The output of the perceptron (IV) system identification and control.
+
+Choose the correct answer from the options piven below :
+
+(1) (AUD. (BV), (C)-C1L, (D)-(1)
+
+(2) (ATV), (BY-(IID), (C)-(1)), (Di)
+
+(3) (ACID, (B)-(1), (CIV), (DUN
+
+(4) (A)(ID), (B)-{IV), (CU), (D)-(1)
+
+Question Number : 132 Question Id : 5330723807 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Match List - I with List - IL.
+
+List - I List - I
+
+(A) The activation functon ([) is called the delta rule.
+
+(B) The learning method of perceptron {II} isone of the key components of the perceptron
+as in the most common neural network
+architecture.
+
+(C) Areas of application of artificial neural (II) is always boolean like a switch.
+
+network include
+
+(D) The output of the perceptron (IV) system identification and control.
+
+Choose the correct answer from the options piven below :
+
+(1) (AUD. (BV), (C)-C1L, (D)-(1)
+
+(2) (ATV), (BY-(IID), (C)-(1)), (Di)
+
+GB) (AM, (BRC) (OHIY), (DMD
+
+(4) (A)-(IED), (B)(IV), (C)-(U), (D)-()
+
+Question Number : 133 Question Id : 5330723808 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 88/101
+
+
+--- OCR PAGE 89 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Match List - I with List - I.
+List - I List -
+
+(A) Natural language processing (0) = Amethod of training algorithm by rewarding desired
+behaviour and/or punishing undesired one.
+
+(B) Reinforcement learning (1) System designed to emulate the decision making
+abilities of a human expert.
+
+(C) Support vector machine (I) A branch of Al focused on understanding and
+generating human language.
+
+(D) Expert system (IV) A machine leaming technique that finds the hyper
+plane that best separates different class in a feature
+Space.
+
+Choose the correct answer from the options given below :
+
+(1) (ART) (BRU, (HIV), (DTD
+
+(2) (AHH), (BY{E), (C)-(), (D)-AV)
+
+(3) (A}(IIL), (B}{1), (Q-(1V), (D)-{11)
+
+(4) (AID, (B)-(V), (C)-(LD, (D)-(1)
+
+Question Number : 133 Question Id : 5330723808 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+Match List - I with List - I.
+
+List - I List -
+
+(A) Natural language processing (0) = Amethod of training algorithm by rewarding desired
+behaviour and/or punishing undesired one.
+
+(B) Reinforcement learning (1) System designed to emulate the decision making
+abilities of a human expert.
+
+(C) Support vector machine (I) A branch of Al focused on understanding and
+generating human language.
+
+(D) Expert system (IV) A machine leaming technique that finds the hyper
+plane that best separates different class in a feature
+Space.
+
+Choose the correct answer from the options given below :
+
+(1) (ART) (BRU, (HIV), (DTD
+
+(2) (AHH), (BY{E), (C)-(), (D)-AV)
+
+(3) (A}(IIL), (B}{1), (Q-(1V), (D)-{11)
+
+(4) (AID, (B)-(V), (C)-(LD, (D)-(1)
+
+Question Number : 134 Question Id : 5330723809 Question Type : MCQ Option Shuffling : No
+
+Correct Marks : 2 Wrong Marks : 0
+
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 89/101
+
+
+--- OCR PAGE 90 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Match List - I with List - IL.
+List - I List - II
+(A) Representation of bits (I) Transport layer
+(B) Physical Address (0) Physical layer
+(C) Logical Address (I) Network layer
+(D) Segmentation and reassembly (IV) Data link layer
+Choose the correct anewer from the options given below :
+(1) (AME. (BCI), (C(I), (D)-(LV)
+2) (AMD. (CV), (C)-00), (D)-)
+(3) (A)(II1), (B)-(I1), (C)-(LV), (D)-)
+@) (AD. (BUY), (CUD, (DFID
+Question Number : 134 Question Id : 5330723809 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - IL.
+List - I List - I
+(A) Representation of bits (0) Transport layer
+(B) Physical Address (I) Physical layer
+(C) Logical Address (I) Network layer
+(D) Segmentation and reassembly (IV) Data link layer
+Choose the correct answer from the options given below :
+(1) (AD. (B)-(II), (C)-(I), (D)-(IV)
+(2) (A)(ID, (B}-(V), (C)-(1UD, (D)-(0)
+(3) (A)-(II1), (B)-(I1), (C)-(LV), (D)-)
+4) (AUD. (BUY), (CUD), (DCI)
+Question Number : 135 Question Id : 5330723810 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - 1.
+List - I List - I
+(A) Dijkstra’s Algorithms (0) Find the shortest path bebween all pairs of vertices
+ina graph with positive or negative edge weights.
+(B)  Floyd-Warshall Algorithms (I) Finds the shortest path in a weighted graph with
+non-negative edge weights.
+(C) Bellman-fred Algorithms (I) Serts elements by repeatedly moving them post
+neighboring elements that are smaller.
+(D) Prim’s Algorithms (IV) Determines the strongest connected components in
+a directed graph.
+Choose the correct answer from the options given below :
+QQ) (Ab, (BD), (C(I, (D)-(IV)
+(2) (AMID, (Bed), (CIV), (DI)
+() (AME, (BCID, (C)-(IIE), (D)-(IV)
+(4) (A)-(1I). (B)-(1E), (C)}-(7V}, (B)-(1)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 90/101
+
+
+--- OCR PAGE 91 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 135 Question Id : 5330723810 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - 1.
+List ~ I List - I
+(A) Dijkstra’s Algorithms (I) Find the shortest path between all pairs of vertices
+ina graph with positive or negative edge weights.
+(B)  Floyd-Warshall Algorithms (I) Finds the shortest path in a weighted graph with
+non-negative edge weights.
+(C) Bellman-fred Algorithms (I) Serts elements by repeatedly moving them post
+neighboring elements that are smaller.
+(D) Prim’s Algorithms (IV) Determines the strongest connected components in
+a directed graph.
+Choose the correct answer from the options given below :
+QQ) (Ab, (BD), (C(I, (D)-(IV)
+(2) (AH), (BD), (CIV), (DIT)
+() (AME) (BCID), (C)-(UI), (D)-(IV)
+(4) (A)-(1I). (B)-(1E), (C)}-(7V}, (B)-(1)
+Question Number : 136 Question Id : 5330723811 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - [with List - 1.
+List - I List - II
+(software design principles) (Definition)
+(A) Cohesion () Degree te which one module relies on another
+module,
+(B) Coupling (I) Dividing a software system into distinct modules.
+(C) Abstration (I) Degree to which elements of a module belong
+together.
+(D) Modularity (IV) Simplifying complex reality by modeling classes
+appropriate to the problem,
+Choose the correct answer from the options given below :
+(1) (ACE. (B)(ID, (C)-(II, (D)-(LV)
+(2) (AHH), (BCE, (C}-(V), (D)-(D
+(3) (AIH), (BD, (CIV), (D)-()
+(4) (A)-(1I), (B)-(1V), (C)-(1D), (B)-(1)
+Question Number : 136 Question Id : 5330723811 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 91/101
+
+
+--- OCR PAGE 92 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Match List - I with List - I.
+List - I List - I
+(software design principles) (Definition)
+(A) Cohesion () Degree te which one module relies on another
+module,
+(B) Coupling (I) Dividing a software system into distinct modules.
+(C) Abstration (I) Degree to which elements of a module belong
+together.
+(D) Modularity (IV) Simplifying complex reality by modeling classes
+appropriate to the problem,
+Choose the correct answer from the options given below :
+(1) (ACE. (B)(ID, (C)-(II, (D)-(LV)
+(2) (AHH), (BCE, (C}-(V), (D)-(D
+(3) (A)-(ID), (By). (Ci(IV). (D}-(ID)
+(4) (A), (B)-(EV), (C)-(1), (D)-()
+Question Number : 137 Question Id : 5330723812 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - I.
+List - I List - Il
+(Testing Type) (Description)
+(A) Unit testing ()} Testing individual components of the software.
+(B) Integrating testing (I) Testing the interaction between integrated components.
+(C) System. testing (II) Testing to verify the system meets business needs.
+(D) Acceptance testing (IV) Testing the complete system to ensure it meets
+requirements.
+Choose the correct answer from the options given below :
+QQ) (AHD), (BRI, (C-(NN), (D)-(IV)
+(2) (AKT (BHUID, (OHIV), (DMD
+(3) (A)-(1), (B}(IID), (C}-(IL), (D)-(I'V)
+@) (APD. (B)(IV), (C(I), (D)-(T1)
+Question Number : 137 Question Id : 5330723812 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 92/101
+
+
+--- OCR PAGE 93 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Match List - [with List - IL.
+List - I List - I
+(Testing Type) (Description)
+(A) Unit testing ()} Testing individual components of the software.
+(B) Integrating testing (I) Testing the interaction between integrated components.
+(C) System. testing (II) Testing to verify the system meets business needs.
+(D) Acceptance testing (IV) Testing the complete system to ensure it meets
+requirements.
+Choose the correct answer from the options given below :
+(1) (AD. (BCI), (C(I), (D)-(EV)
+(2) (A}-(1), (BHU, (CIV), (D)-{111)
+(3) (A)-(), (BUI), (Q-(), (D)}-(EV)
+@) (APD. (B)(IV), (C(I), (D)-(T1)
+Question Number : 138 Question Id : 5330723813 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - with List - If.
+List - I List - I
+(operating system concepts) (characteristics)
+(A) Paging (I) Evicts least recently used process
+(B) LRU (Least Recently Used) (I) Extends physical memory
+(Cc) C-SCAN (Il) Logical to physical mapping
+(D) Virtual Memory (IV) Circular disk access
+Choose the correet answer from the options given below :
+(1) (AID), (BI). (CC, (D)-(1D
+(2) (AID). (BHO. (CHV), (D)-(D
+(F) (ADE. (BYR (ID. (C}UIV), (D)-(H)
+(4) (ART) (BRUIV), (C(I), (D)-(I1)
+Question Number : 138 Question Id : 5330723813 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - with List - If.
+List - I List - I
+(operating system concepts) (characteristics)
+(A) Paging (I) Evicts least recently used process
+(B) LRU (Least Recently Used) (I) Extends physical memory
+(Cc) C-SCAN (Il) Logical to physical mapping
+(D) Virtual Memory (IV) Circular disk access
+Choose the correct answer from the options given below :
+(1) (ACU), (BIYIV). (C)-(1, (D)-(ID
+(2) (AH), (B)-(1), (CCV), (D)-(1D)
+(3) (A), (BRAIN, (C)-(IV), (D)-(IN)
+(4) (AT) (BRUIY), (C(I), (D)-(I1)
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 93/101
+
+
+--- OCR PAGE 94 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Question Number : 139 Question Id : 5330723814 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - 11.
+List ~ I List - II
+(A) HTML () Allow for dynamic and interactive web pages.
+(B) DHTML (I) Defines the structure of web pages.
+(Cc) XML (I) Object-oriented programming language for web applications.
+(D) JAVA (IV) Used for data storage and transport.
+Choose the correct answer from the options given below :
+(1) (AD), (B)-(HED, (C)-(IL), ()-(IV)
+(2) (AAU, (B)-CID. (CCV), (D)-()
+(3) (AD, (B)-@), (C)-(V), (DU)
+(4) (AIH), (BN), (C(I), (DAU)
+Question Number : 139 Question Id : 5330723814 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - 11.
+List - I List - II
+(A) HTML ()) Allow for dynamic and interactive web pages.
+(B) DHTML (I) Defines the structure of web pages.
+(Cc) XML (II) Object-oriented programming language for web applications.
+(D) JAVA (IV) Used for data storage and transport.
+Choose the correct arewer from the options given below :
+@) (AD), (B)-(IED, (C}-(1), (D)-(IV)
+(2) (AHI), (B)-(I), (C-(V), (D)-(1)
+(3) (AP{), (B(), (C)-(IV), (D)-<I1)
+(4) (AT), (B)-(0, (C-(IV), (D)-(1)
+Question Number : 140 Question Id : 5330723815 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 94/101
+
+
+--- OCR PAGE 95 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Match List - I with List - I.
+List ~ I List - I
+(Algorithms) (Characteristics)
+(A) First Come First Served (FCFS) ([) Each process is assigned a priority.
+(B)} Shortest Job First (S|F) (I) Ensures fair allocation of CPU time by assigning time
+slice.
+(C) Round Robin (RE) (I) Processes are executed in the order they arrive.
+(D) Priority Scheduling (IV) Select the process for execution with smallest next
+Burst time.
+Choose the correct answer from the options given below :
+(1) (A)-(1), (B)-(EE), (C)-(IV}, (B)-(1)
+(2) (AH{(HD), (B)-€@V). (C)-(UU, (D)-()
+(3) (A){IIN), (B)-(LV), (C(I, (D)-)
+(4) (A)-(II), (B)-(IV), (C)-(1), (D}-(I)
+Question Number : 140 Question Id : 5330723815 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Match List - I with List - I.
+List ~ I List - I
+(Algorithms) (Characteristics)
+(A) First Come First Served (FCFS) ([) Each process is assigned a priority.
+(B)} Shortest Job First (S|F) (I) Ensures fair allocation of CPU time by assigning time
+slice.
+(C) Round Robin (RE) (I) Processes are executed in the order they arrive.
+(D) Priority Scheduling (IV) Select the process for execution with smallest next
+Burst time.
+Choose the correct answer from the options given below :
+(1) (A)-(1), (B)-(EE), (C)-(IV}, (B)-(1)
+(2) (AH{(HD), (B)-€@V). (C)-(UU, (D)-()
+(3) (A){IIN), (B)-(LV), (C(I, (D)-)
+(4) (A)-(II), (B)-(IV), (C)-(1), (D}-(I)
+Sub-Section Number : 2
+Sub-Section Id : 533072153
+Question Shuffling Allowed : No
+Question Id : 5330723816 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+Questions : No Question Pattern Type : NonMatrix
+Question Numbers : (141 to 145)
+Question Label : Comprehension
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 95/101
+
+
+--- OCR PAGE 96 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Read the below passage and answer the questions ,
+Artificial Neural Networks (ANNs) are computational models inspired by the human brain's neural
+networks. They consist of inter-connected nodes, or neurons, organized into layers : an input
+layers, one or more hidden layers and an output layers, Each connection between neurons has a
+weight that adjusts as learning progresses allowing the network to adopt and improve its
+performance. ANNs are particularly effective in recognizing patterns making them valuable for
+tasks such as image and speech recognition, Natural language processing and predictive analytics.
+Learning in ANNs typically involves training algorithms like back propagation, which minimize
+the error by adjusting the weights. As a subset of machine learning, ANNs have revolutionized the
+field of Artificial Intelligence by providing solutions to complex problems that traditional algorithms
+struggle with.
+Sub questions
+Question Number : 141 Question Id : 5330723817 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the role of Back Propagation Algorithm ?
+(1) To reduce error
+(2) To secure network
+(3) To control speed of data
+(4) To add different layers
+Question Number : 142 Question Id : 5330723818 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Artificial Neural Networks (ANNs) are inspired by :
+(1) Quantum mechanics
+(2) Human brain's neural network
+(3) Computer Hardware architecture
+(4) Genetic algorithm
+Question Number : 143 Question Id : 5330723819 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following layers may be more than one in number ?
+(1) Input layer
+(2) Hidden layer
+(3) Output layer
+(4) Physical laver
+Question Number : 144 Question Id : 5330723820 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the role of weights in an ANN ?
+(1) To store data
+(2). To adjust and improve network performance
+(3) To control the speed
+(4) To secure the network
+Question Number : 145 Question Id : 5330723821 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 96/101
+
+
+--- OCR PAGE 97 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following is/are the application area(s) of ANN ?
+(A) Natural Language Processing
+(B) Image Processing
+(C) Pattern Recognition
+(D) Speech Recopnition
+Choose the correct answer from the options given below :
+(1) (A) and (B) Only
+(2) (B) and (C) Only
+(3) (A). (B) and (C) Only
+(4) (A), (B), (©) and (D)
+Question Id : 5330723816 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+Questions : No Question Pattern Type : NonMatrix
+Question Numbers : (141 to 145)
+Question Label : Comprehension
+Read the below passage and answer the questions ,
+Artificial Neural Networks (ANNs) are computational models inspired by the human brain's neural
+networks. They consist of inter-connected nodes, or neurons, organized into layers : an input
+layers, one or more hidden layers and an output layers, Each connection between neurons has a
+weight that adjusts as learning progresses allowing the network to adopt and improve its
+performance. ANNs are particularly effective in recognizing patterns making them valuable for
+tasks such as image and speech recognition, Natural language processing and predictive analytics.
+Learning in ANNs typically involves training algorithms like back propagation, which minimize
+the error by adjusting the weights. As a subset of machine learning, ANNs have revolutionized the
+field of Artificial Intelligence by providing solutions to complex problems that traditional algorithms
+struggle with.
+Sub questions
+Question Number : 141 Question Id : 5330723817 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the role of Back Propagation Algorithm ?
+(1) To reduce error
+(2) To secure network
+(3) To control speed of data
+(4) To add different layers
+Question Number : 142 Question Id : 5330723818 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Artificial Neural Networks (ANNs) are inspired by :
+QQ) Quantum mechanics
+(2) Human brain's neural network
+(3) Computer Hardware architecture
+(4) Genetic algorithm
+Question Number : 143 Question Id : 5330723819 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 97/101
+
+
+--- OCR PAGE 98 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which of the following layers may be more than one in number ?
+(1) Input layer
+(2) Hidden layer
+(3) Output layer
+(4) Physical laver
+Question Number : 144 Question Id : 5330723820 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the role of weights in an ANN ?
+(1) To store data
+(2) To adjust and improve network performance
+(3) To control the speed
+(4) To secure the network
+Question Number : 145 Question Id : 5330723821 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following is/are the application area(s) of ANN ?
+(A) Natural Language Processing
+(B) Image Processing
+(C) Pattern Recognition
+(D) Speech Recopnition
+Choose the correct answer from the options given below :
+(1) (A) and (B) Only
+(2) (B) and (C) Only
+(3) (A). (By) and (C) Only
+(4) (A), (B), (©) and (D)
+Sub-Section Number : 3
+Sub-Section Id : 533072154
+Question Shuffling Allowed : No
+Question Id : 5330723822 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+Questions : No Question Pattern Type : NonMatrix
+Question Numbers : (146 to 150)
+Question Label : Comprehension
+Read the below passage and answer the questions ,
+The Banker's Algorithm is a critical deadlock avoidance method in operating systems, designed to
+facilitate resource allocation without causing deadlock. [t operates by maintaining information
+about the maximum resources. Each process may require, the current allocated resources and the
+available resources in the system. The algorithm checks each resource request to determine, if
+granting it would leave the system in a safe state, meaning that there is always a sequence in
+which all processes can complete their execution without getting stuck due to resource unavailability.
+Each process must specify its maximum demand for each resource type belore it starts execution.
+When a process requests additional resources, the algorithm checks if granting the request will
+keep the system in a safe state. If so, the resources are allocated otherwise the process must wait
+until its request can be safely fulfilled,
+Sub questions
+Question Number : 146 Question Id : 5330723823 Question Type : MCQ Option Shuffling : No
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 98/101
+
+
+--- OCR PAGE 99 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Correct Marks : 2 Wrong Marks : 0
+What information is used to determine if a resource request can be granted ?
+(1) Available resources and current allocation of each process
+(2) CPU utilization of each process
+(3) Number of processes waiting for resources
+(4) Arrival time of each process
+Question Number : 147 Question Id : 5330723824 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the primary goal of the Banker's Algorithm ?
+(1) To allocate resources optimally
+(2) To prevent processes from requesting resources:
+(3) To detect and recover from deadlocks
+(4) To maximise CPU utilization
+Question Number : 148 Question Id : 5330723825 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following is NOT a requirement for Banker's algorithm to prant a resource request ?
+(1) The requested resources must be available.
+(2) The system must be ina safe state after granting the request,
+(3) The request must not exceed the maximum resources the process can request,
+(4) The process must be the only one requesting resources.
+Question Number : 149 Question Id : 5330723826 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the significance of the Banker's algorithm in terms of resource management ?
+(1) It enures that all processes can finish their execution without deadlock.
+(2) [t eliminates the need for processes to request resources.
+(3) [t-accelerates the execution of critical sections in processes.
+(4) it minimizes the number of context switches between processes.
+Question Number : 150 Question Id : 5330723827 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which data structure does the Banker's Algorithm use to maintain the state of available, maximum
+and allocated resources ?
+(1) Priority Queue
+(2) Hash table
+(3) Wait-for-Graph
+(4) Matrices and Vectors
+Question Id : 5330723822 Question Type : COMPREHENSION Sub Question Shuffling Allowed : Yes Group Comprehension
+Questions : No Question Pattern Type : NonMatrix
+Question Numbers : (146 to 150)
+Question Label : Comprehension
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 99/101
+
+
+--- OCR PAGE 100 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Read the below passage and answer the questions ,
+The Banker's Algorithm is a critical deadlock avoidance method in operating systems, designed to
+facilitate resource allocation without causing deadlock. [t operates by maintaining information
+about the maximum resources. Each process may require, the current allocated resources and the
+available resources in the system. The algorithm checks each resource request to determine, if
+granting it would leave the system in a safe state, meaning that there is always a sequence in
+which all processes can complete their execution without getting stuck due to resource unavailability.
+Each process must specify its maximum demand for each resource type belore it starts execution.
+When a process requests additional resources, the algorithm checks if granting the request will
+keep the system in a safe state. If so, the resources are allocated otherwise the process must wait
+until its request can be safely fulfilled,
+Sub questions
+Question Number : 146 Question Id : 5330723823 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What information is used to determine if a resource request can be granted ?
+(1) Available resources and current allocation of each process
+(2) CPU utilization of each process
+(3) Number of processes waiting for resources
+(4) Arrival time of each process
+Question Number : 147 Question Id : 5330723824 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the primary goal of the Banker's Algorithm ?
+(1) To allocate resources optimally
+(2) To prevent processes from requesting resources:
+(3) To detect and recover from deadlocks
+(4) To maximise CPU utilization
+Question Number : 148 Question Id : 5330723825 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+Which of the following is NOT a requirement for Banker's algorithm to prant a resource request ?
+(1) The requested resources must be available.
+(2) The system must be ina safe state after granting the request,
+(3) The request must not exceed the maximum resources the process can request,
+(4) The process must be the only one requesting resources.
+Question Number : 149 Question Id : 5330723826 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+What is the significance of the Banker's algorithm in terms of resource management ?
+(1) [t enures that all processes can finish their execution without deadlock.
+(2) [t eliminates the need for processes to request resources.
+(3) [t-accelerates the execution of critical sections in processes.
+(4) it minimizes the number of context switches between processes.
+Question Number : 150 Question Id : 5330723827 Question Type : MCQ Option Shuffling : No
+Correct Marks : 2 Wrong Marks : 0
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 100/101
+
+
+--- OCR PAGE 101 ---
+8/23/24, 9:45 PM g28.digialm.com/CAE/viewHtmIPDFAction.action
+Which data structure does the Banker's Algorithm use to maintain the state of available, maximum
+and allocated resources ?
+(1) Priority Queue
+(2) Hash table
+(3) Wait-for-Graph
+(4) Matrices and Vectors
+https://g28.digialm.com/CAE/viewHtmIPDFAction.action 101/101

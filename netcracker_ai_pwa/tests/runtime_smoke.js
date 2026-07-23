@@ -1,0 +1,30 @@
+const fs=require('fs'),vm=require('vm');
+function cls(){return {add(){},remove(){},toggle(){},contains(){return false}}}
+const elements=new Map();
+function el(){return {classList:cls(),style:{},dataset:{},hidden:false,value:'',checked:false,textContent:'',innerHTML:'',onclick:null,onchange:null,oninput:null,onkeydown:null,focus(){},appendChild(){},insertAdjacentHTML(){},scrollTop:0,scrollHeight:0,closest(){return this},setAttribute(){}}}
+const docEl=el();docEl.dataset={};
+const document={documentElement:docEl,querySelector(sel){if(!elements.has(sel))elements.set(sel,el());return elements.get(sel)},querySelectorAll(){return []},createElement(){return el()}};
+const localStore=new Map(),sessionStore=new Map();
+const storage=m=>({getItem:k=>m.has(k)?m.get(k):null,setItem:(k,v)=>m.set(k,String(v)),removeItem:k=>m.delete(k)});
+const location={hash:'',protocol:'http:'};
+const handlers={};
+const window={document,location,addEventListener(type,fn){handlers[type]=fn},matchMedia(){return {matches:false}},crypto:global.crypto,URLSearchParams,NETCRACKER_DATA:null,NETCRACKER_PYQ_PAPERS:null,NETCRACKER_INTERACTIVE_PYQS:null,NETCRACKER_INTERACTIVE_PYQS_2024:null,NETCRACKER_INTERACTIVE_PYQS_2023:null,NETCRACKER_INTERACTIVE_PYQS_2022:null,NETCRACKER_INTERACTIVE_PYQS_2021:null,NETCRACKER_INTERACTIVE_PYQS_2020:null,NETCRACKER_INTERACTIVE_PYQS_2019:null,NETCRACKER_INTERACTIVE_PYQS_2018:null,NETCRACKER_INTERACTIVE_PYQS_2017:null,NETCRACKER_INTERACTIVE_PYQS_2016:null,NETCRACKER_INTERACTIVE_PYQS_2015:null,NETCRACKER_LESSONS:null};
+const context={window,document,location,navigator:{},localStorage:storage(localStore),sessionStorage:storage(sessionStore),matchMedia:window.matchMedia,URLSearchParams,Date,Math,JSON,console,setTimeout(){return 0},clearTimeout(){},setInterval(){return 0},clearInterval(){},confirm(){return true},crypto:global.crypto,fetch:async()=>{throw new Error('not used')},Blob,URL};
+context.globalThis=context;
+vm.createContext(context);
+for(const f of ['data/bundle.js','data/pyq-papers.js','data/interactive-pyqs.js','data/interactive-pyqs-2024.js','data/interactive-pyqs-2023.js','data/interactive-pyqs-2022.js','data/interactive-pyqs-2021.js','data/interactive-pyqs-2020.js','data/interactive-pyqs-2019.js','data/interactive-pyqs-2018.js','data/interactive-pyqs-2017.js','data/interactive-pyqs-2016.js','data/interactive-pyqs-2015.js','data/lessons.js','app.js'])vm.runInContext(fs.readFileSync(__dirname+'/../'+f,'utf8'),context,{filename:f});
+const html=elements.get('#main').innerHTML;
+if(!html.includes('Welcome')||!html.includes('Today'))throw new Error('Dashboard did not render');
+if(!window.NETCRACKER_DATA||window.NETCRACKER_DATA.questions.length<900)throw new Error('Certified scored question corpus missing or incomplete');
+if(!Array.isArray(window.NETCRACKER_PYQ_PAPERS)||window.NETCRACKER_PYQ_PAPERS.length<10)throw new Error('PYQ paper directory missing or incomplete');
+if(!Array.isArray(window.NETCRACKER_INTERACTIVE_PYQS_2021?.questions)||window.NETCRACKER_INTERACTIVE_PYQS_2021.questions.length!==150)throw new Error('2021 official-key interactive PYQ import missing or incomplete');
+if(!window.NETCRACKER_INTERACTIVE_PYQS_2021.questions.some(q=>q.answers?.length>1)||!window.NETCRACKER_INTERACTIVE_PYQS_2021.questions.some(q=>q.dropped))throw new Error('2021 final-key exceptions were not retained');
+if(!Array.isArray(window.NETCRACKER_INTERACTIVE_PYQS_2024?.questions)||window.NETCRACKER_INTERACTIVE_PYQS_2024.questions.length!==150)throw new Error('2024 OCR interactive PYQ import missing or incomplete');
+if(new Set(window.NETCRACKER_INTERACTIVE_PYQS_2024.questions.map(q=>q.questionId)).size!==150)throw new Error('2024 OCR import must contain all 150 unique official question IDs');
+if(!Array.isArray(window.NETCRACKER_INTERACTIVE_PYQS_2023?.questions)||window.NETCRACKER_INTERACTIVE_PYQS_2023.questions.length!==150)throw new Error('2023 interactive PYQ import missing or incomplete');
+location.hash='#papers';
+handlers.hashchange();
+if(!elements.get('#main').innerHTML.includes('Previous-year question papers'))throw new Error('Previous-year papers view did not render');
+if(!elements.get('#main').innerHTML.includes('start-verified-2021')||!elements.get('#main').innerHTML.includes('start-verified-2023'))throw new Error('Certified paper start actions did not render');
+if(!elements.get('#main').innerHTML.includes('Interactive answer-key audit in progress'))throw new Error('Unverified paper audit state did not render');
+console.log('Runtime smoke passed:',html.length,'rendered characters');

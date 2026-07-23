@@ -1,0 +1,912 @@
+{
+  "metadata": {
+    "authority": "National Testing Agency (NTA)",
+    "examCycle": "UGC-NET Merged Cycle (Dec 2021 / June 2022, Oct 8, 2022 Shift 2)",
+    "subject": "87 - Computer Science and Applications & General Paper",
+    "sourceUrl": "https://ugcnet.nta.ac.in/FinalAnswerKey_Merged2022.pdf",
+    "retrievedAt": "2026-07-23T09:59:00Z",
+    "verificationMethod": "Official NTA Final Answer Key Question ID Option ID Matching"
+  },
+  "keyMapping": {
+    "316": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "317": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "318": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "319": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "320": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "321": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "322": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "323": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "324": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "325": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "326": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "327": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "328": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "329": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "330": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "331": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "332": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "333": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "334": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "335": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "336": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "337": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "338": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "339": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "340": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "341": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "342": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "343": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "344": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "345": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "346": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "347": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "348": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "349": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "350": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "351": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "352": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "353": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "354": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "355": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "356": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "357": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "358": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "359": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "360": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "361": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "362": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "363": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "364": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "365": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "366": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "367": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "368": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "369": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "370": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "371": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "372": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "373": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "374": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "375": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "376": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "377": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "378": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "379": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "380": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "381": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "382": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "383": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "384": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "385": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "386": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "387": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "388": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "389": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "390": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "391": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "392": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "393": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "394": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "395": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "396": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "397": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "398": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "399": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "400": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "401": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "402": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "403": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "404": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "405": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "406": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "407": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "408": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "409": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "410": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "411": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "412": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "413": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "414": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "415": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "416": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "417": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "418": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "419": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "420": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "421": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "422": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "423": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "424": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "425": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "426": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "427": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "428": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "429": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "430": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "431": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "432": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "433": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "434": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "435": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "436": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "437": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "438": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "439": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "440": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "441": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "442": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "443": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "444": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "445": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "446": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "447": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "448": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "449": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "450": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "451": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "452": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "453": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "454": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "455": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "456": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "457": {
+      "correctOption": "4",
+      "correctOptionId": "4",
+      "optionIndex": 3,
+      "dropped": false
+    },
+    "458": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    },
+    "459": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "460": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "461": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "462": {
+      "correctOption": "2",
+      "correctOptionId": "2",
+      "optionIndex": 1,
+      "dropped": false
+    },
+    "463": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "464": {
+      "correctOption": "1",
+      "correctOptionId": "1",
+      "optionIndex": 0,
+      "dropped": false
+    },
+    "465": {
+      "correctOption": "3",
+      "correctOptionId": "3",
+      "optionIndex": 2,
+      "dropped": false
+    }
+  }
+}

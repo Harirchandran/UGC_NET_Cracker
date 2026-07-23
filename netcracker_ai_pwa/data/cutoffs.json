@@ -1,0 +1,53 @@
+{
+  "cycle": "December 2025",
+  "subjectCode": "087",
+  "source": "Official NTA subject/category-wise cutoff PDF",
+  "sourceUrl": "https://cdnbbsr.s3waas.gov.in/s301eee509ee2f68dc6014898c309e86bf/uploads/2026/02/202602041762035910.pdf",
+  "categories": {
+    "UNRESERVED": {
+      "jrf": 192,
+      "assistantProfessor": 162,
+      "phdOnly": 144
+    },
+    "OBC(NCL)": {
+      "jrf": 176,
+      "assistantProfessor": 146,
+      "phdOnly": 132
+    },
+    "EWS": {
+      "jrf": 182,
+      "assistantProfessor": 148,
+      "phdOnly": 134
+    },
+    "SC": {
+      "jrf": 168,
+      "assistantProfessor": 140,
+      "phdOnly": 126
+    },
+    "ST": {
+      "jrf": 166,
+      "assistantProfessor": 138,
+      "phdOnly": 124
+    },
+    "PWD-VI-UR": {
+      "jrf": 152,
+      "assistantProfessor": 128,
+      "phdOnly": 108
+    },
+    "PWD-HI-UR": {
+      "jrf": 152,
+      "assistantProfessor": 114,
+      "phdOnly": 106
+    },
+    "PWD-LM-UR": {
+      "jrf": 160,
+      "assistantProfessor": 136,
+      "phdOnly": 118
+    },
+    "PWD-OD&AO-UR": {
+      "jrf": 160,
+      "assistantProfessor": 132,
+      "phdOnly": 112
+    }
+  }
+}
