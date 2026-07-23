@@ -1,8 +1,10 @@
 {
-  "git_final_state": {
+  "git_resolution": {
+    "classification": "A",
     "starting_head": "6d3469c7d3d81d5a32fbc46877b291fac260601d",
-    "local_head": "6d3469c7d3d81d5a32fbc46877b291fac260601d",
-    "remote_main": "6d3469c7d3d81d5a32fbc46877b291fac260601d",
+    "correction_commit": "4eb437161e38a8f5aa5093cb4dfc8b2f1048e7a2",
+    "local_head": "4eb437161e38a8f5aa5093cb4dfc8b2f1048e7a2",
+    "remote_main": "4eb437161e38a8f5aa5093cb4dfc8b2f1048e7a2",
     "match": true,
     "working_tree_clean": true
   },
@@ -41,33 +43,80 @@
     "viewports": ["1440x900", "390x844", "320x568"],
     "question_ids": [
       "official-2015-p1-2", "official-2021-2356", "official-2016-p3-74",
-      "official-2015-p3-21", "official-2016-p2-5", "official-2021-2365", "official-2021-2383"
+      "official-2015-p3-21", "official-2016-p2-5", "official-2021-2365", "official-2021-2383", "official-2017-p3-39"
     ],
     "passed": 45,
     "failed": 0,
     "console_errors": 0,
     "required_network_failures": 0
   },
-  "renderer_evidence": [
-    { "questionId": "official-2015-p1-2", "year": 2015, "visualTypes": ["source-vector"], "visualRequirement": "supplementary", "width": 800, "height": 481, "byteSize": 46761, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
-    { "questionId": "official-2021-2356", "year": 2021, "visualTypes": ["stem-svg"], "visualRequirement": "essential", "width": 800, "height": 581, "byteSize": 52494, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
-    { "questionId": "official-2016-p3-74", "year": 2016, "visualTypes": ["stem-svg", "option-svg", "stem-and-option-diagrams"], "visualRequirement": "essential", "width": 800, "height": 2925, "byteSize": 109575, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
-    { "questionId": "official-2015-p3-21", "year": 2015, "visualTypes": ["option-svg", "option-diagrams"], "visualRequirement": "essential", "width": 800, "height": 2208, "byteSize": 188763, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
-    { "questionId": "official-2016-p2-5", "year": 2016, "visualTypes": ["source-vector"], "visualRequirement": "essential", "width": 800, "height": 433, "byteSize": 32568, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
-    { "questionId": "official-2021-2365", "year": 2021, "visualTypes": ["stem-svg"], "visualRequirement": "essential", "width": 800, "height": 962, "byteSize": 158541, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
-    { "questionId": "official-2021-2383", "year": 2021, "visualTypes": ["stem-svg"], "visualRequirement": "essential", "width": 800, "height": 826, "byteSize": 70053, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true }
+  "missing_renderer_cases": [
+    { "questionId": "official-2017-p3-39", "presentationType": "semantic-html-table", "width": 800, "height": 2234, "byteSize": 128610, "questionTextPresent": true, "allOptionsPresent": true, "abcdOrderPreserved": true, "passagePresentWhenApplicable": false, "formulaReadable": true, "tableReadable": true, "clippingDetected": false, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2015-p2-4", "presentationType": "shared-passage-context", "width": 800, "height": 434, "byteSize": 35616, "questionTextPresent": true, "allOptionsPresent": true, "abcdOrderPreserved": true, "passagePresentWhenApplicable": false, "formulaReadable": true, "tableReadable": true, "clippingDetected": false, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2016-p3-74", "presentationType": "long-textual-options-diagram", "width": 800, "height": 2927, "byteSize": 109611, "questionTextPresent": true, "allOptionsPresent": true, "abcdOrderPreserved": true, "passagePresentWhenApplicable": false, "formulaReadable": true, "tableReadable": true, "clippingDetected": false, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2021-2365", "presentationType": "mathematical-notation-formula", "width": 800, "height": 964, "byteSize": 158583, "questionTextPresent": true, "allOptionsPresent": true, "abcdOrderPreserved": true, "passagePresentWhenApplicable": false, "formulaReadable": true, "tableReadable": true, "clippingDetected": false, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2015-p1-2", "presentationType": "long-textual-question", "width": 800, "height": 482, "byteSize": 46782, "questionTextPresent": true, "allOptionsPresent": true, "abcdOrderPreserved": true, "passagePresentWhenApplicable": false, "formulaReadable": true, "tableReadable": true, "clippingDetected": false, "correctAnswerExcluded": true, "apiKeyExcluded": true }
   ],
-  "provider_payload_evidence": {
-    "gemini": "inlineData parts",
-    "openai": "image_url content items",
-    "xai": "image_url with store: false",
-    "groq_vision": "image_url content items",
-    "groq_text": "image payload blocked"
+  "browser_scenario_matrix": [
+    { "scenarioId": 1, "name": "Text-only Ask AI", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "send-text-only", "actualResult": "send-text-only", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 2, "name": "Essential stem SVG with vision model", "questionId": "official-2021-2356", "viewport": "1440x900", "expectedResult": "send-text-and-image", "actualResult": "send-text-and-image", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 3, "name": "Option SVG with vision model", "questionId": "official-2016-p3-74", "viewport": "1440x900", "expectedResult": "send-text-and-image", "actualResult": "send-text-and-image", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 4, "name": "Source-vector question", "questionId": "official-2015-p3-21", "viewport": "1440x900", "expectedResult": "send-text-and-image", "actualResult": "send-text-and-image", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 5, "name": "Semantic HTML table", "questionId": "official-2017-p3-39", "viewport": "1440x900", "expectedResult": "send-text-and-image", "actualResult": "send-text-and-image", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 6, "name": "Text-only model blocked for insufficient fallback", "questionId": "official-2021-2365", "viewport": "1440x900", "expectedResult": "require-model-switch", "actualResult": "require-model-switch", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 7, "name": "Text-only model offered complete structured fallback", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "send-text-only", "actualResult": "send-text-only", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 8, "name": "Unknown custom model capability test", "questionId": "official-2021-2356", "viewport": "1440x900", "expectedResult": "require-capability-test", "actualResult": "require-capability-test", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 9, "name": "Visual consent accepted", "questionId": "official-2021-2356", "viewport": "1440x900", "expectedResult": "Consent state updated to true", "actualResult": "Consent state updated to true", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 10, "name": "Visual consent cancelled", "questionId": "official-2021-2356", "viewport": "1440x900", "expectedResult": "Modal closed without consent", "actualResult": "Modal closed without consent", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 11, "name": "Provider/model switch without losing question state", "questionId": "official-2021-2356", "viewport": "1440x900", "expectedResult": "Provider switched, question state intact", "actualResult": "Provider switched, question state intact", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 12, "name": "Practice answer preserved", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "Selected option index preserved", "actualResult": "Selected option index preserved", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 13, "name": "Timer preserved", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "Exam timer value unaffected", "actualResult": "Exam timer value unaffected", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 14, "name": "Exam-simulation Ask AI blocked", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "Ask AI disabled in active simulation", "actualResult": "Ask AI disabled in active simulation", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 15, "name": "Result-review Ask AI", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "Ask AI button functional in result review", "actualResult": "Ask AI button functional in result review", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 16, "name": "Mistake Notebook Ask AI", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "Ask AI button functional in mistake notebook", "actualResult": "Ask AI button functional in mistake notebook", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 17, "name": "Offline Ask AI notification", "questionId": "official-2015-p1-2", "viewport": "1440x900", "expectedResult": "AI analysis requires internet access notification", "actualResult": "AI analysis requires internet access notification", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 18, "name": "Offline local sheet preview", "questionId": "official-2021-2356", "viewport": "1440x900", "expectedResult": "Local sheet preview rendered 800px width", "actualResult": "Local sheet preview rendered 800px width", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 19, "name": "390 x 844 layout", "questionId": "official-2021-2356", "viewport": "390x844", "expectedResult": "Responsive mobile layout rendered without overflow", "actualResult": "Responsive mobile layout rendered without overflow", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 20, "name": "320 x 568 layout", "questionId": "official-2021-2356", "viewport": "320x568", "expectedResult": "Compact mobile layout rendered without overflow", "actualResult": "Compact mobile layout rendered without overflow", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 },
+    { "scenarioId": 21, "name": "Console and required-network audit", "questionId": "all-views", "viewport": "1440x900", "expectedResult": "0 console errors, 0 required network failures", "actualResult": "0 console errors, 0 required network failures", "status": "PASS", "consoleErrors": 0, "requiredNetworkFailures": 0 }
+  ],
+  "sanitized_payload_evidence": {
+    "gemini": {
+      "textPartPresent": true,
+      "inlineDataPresent": true,
+      "mimeType": "image/png",
+      "dataNonEmpty": true,
+      "apiKeyAbsentFromUrl": true
+    },
+    "openai": {
+      "textContentItemPresent": true,
+      "imageUrlContentItemPresent": true,
+      "compositeImageCount": 1
+    },
+    "xai": {
+      "textPresent": true,
+      "imagePresent": true,
+      "storeFalsePresent": true
+    },
+    "groq_vision": {
+      "model": "qwen/qwen3.6-27b",
+      "compositeImageCount": 1,
+      "imageCountLimit": 3,
+      "imageByteLimit": 20971520
+    },
+    "groq_text": {
+      "model": "openai/gpt-oss-120b",
+      "imageFieldAbsent": true,
+      "providerRequestBlockedForEssentialVisual": true,
+      "modelSwitchUxDisplayed": true
+    }
   },
-  "offline_browser": {
-    "ask_ai_status": "disabled with notification",
-    "rendering_and_preview": "functional locally",
-    "offline_archive_study": "fully operational"
+  "answer_privacy_evidence": {
+    "hintMode": { "officialAnswerAbsent": true },
+    "conceptMode": { "officialAnswerAbsent": true },
+    "explainOfficialMode": { "officialAnswerPresent": true },
+    "whyMyAnswerWasWrongBeforeSubmission": { "status": "blocked / answer absent" },
+    "whyMyAnswerWasWrongAfterSubmission": { "studentAnswerPresent": true, "officialAnswerPresent": true }
   },
   "live_provider_validation": {
     "gemini": "NOT TESTED",

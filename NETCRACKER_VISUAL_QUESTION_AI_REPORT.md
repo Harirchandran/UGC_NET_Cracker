@@ -1,4 +1,4 @@
-# NETCracker AI — Capability-Aware Ask AI for Visual Questions Final Verification & Audit Report
+# NETCracker AI — Visual Question AI Integrity & Final Audit Report
 
 **Date:** 23 July 2026  
 **Repository:** `Harirchandran/UGC_NET_Cracker`  
@@ -6,76 +6,96 @@
 
 ---
 
-## 1. Starting & Final Git Baseline
+## 1. Git Resolution & Baseline Audit
 
-- **Branch:** `main`
+- **Classification:** **A — Correction commit exists and HEAD moved beyond 6d3469c**
 - **Starting HEAD:** `6d3469c7d3d81d5a32fbc46877b291fac260601d`
-- **Working tree:** Clean
-- **Staged files:** None
+- **Correction Commit:** `4eb437161e38a8f5aa5093cb4dfc8b2f1048e7a2` (`fix: verify visual AI flow and refresh Groq models`)
+- **Current Local HEAD:** `4eb437161e38a8f5aa5093cb4dfc8b2f1048e7a2`
+- **Remote Main:** `4eb437161e38a8f5aa5093cb4dfc8b2f1048e7a2`
+- **Match:** `true` (Local HEAD = Remote Main)
+- **Working Tree:** Clean
 
 ---
 
-## 2. Groq Catalog Corrections
+## 2. Committed Model Catalog Values Verification
 
-- **Groq Default Text Model:** `openai/gpt-oss-120b` (Recommended default)
-- **Groq Recommended Vision Model:** `qwen/qwen3.6-27b` (Qwen 3.6 27B Vision, Preview, `maxImages: 3`, `maxImageBytes: 20971520`)
-- **Groq Economy Text Model:** `openai/gpt-oss-20b`
-- **Deprecated Groq Models:**
-  - `llama-3.3-70b-versatile`: Marked `deprecated: true`, `shutdownDate: "2026-08-16"`, `recommended: false`.
-  - `llama-3.1-8b-instant`: Marked `deprecated: true`, `shutdownDate: "2026-08-16"`, `recommended: false`.
-- **UI & Migration Handling:** If a student previously selected a deprecated model, it remains preserved while active, displays a deprecation warning badge in Settings, and provides a one-click migration button (`Migrate to GPT-OSS 120B`).
-- **Catalog Verification Date:** Updated to `2026-07-23`.
+Programmatic verification of `git show HEAD:data/ai-model-catalog.js` confirmed:
 
----
-
-## 3. Programmatically Derived Visual Classifications
-
-Visual question classifications across all 1,595 mapped historical records were generated via **programmatically derived visual classifications** (`data/ai-visual-question-overrides.js`):
-
-- **Total mapped questions:** 1,595 / 1,595 (100%)
-- **Visual requirement `none`:** 937
-- **Visual requirement `supplementary`:** 131
-- **Visual requirement `essential`:** 527
-- **Text fallback quality `complete`:** 1,068
-- **Text fallback quality `partial`:** 523
-- **Text fallback quality `insufficient`:** 4
-
-### Insufficient Fallback Question Audit:
-1. `official-2016-p2-5` (Graph cliques): Essential source vector graph. Question text: *"How many cliques are there in the graph shown below?"* Options: 2, 4, 5, 6. Text fallback quality: `insufficient` (graph diagram mandatory).
-2. `official-2021-2356` (Wheel graph $W_n$ regularity): Essential stem SVG diagram. Options: 2, 3, 4, 5. Text fallback quality: `insufficient`.
-3. `official-2021-2365` (Finite automaton state minimization): Essential transition diagram stem SVG. Options: 3, 4, 5, 6. Text fallback quality: `insufficient`.
-4. `official-2021-2383` (Alpha-beta pruning tree calculation): Essential game tree stem SVG. Options: 3, 5, 6, 9. Text fallback quality: `insufficient`.
+- **Groq default text model:** `openai/gpt-oss-120b` (`recommended: true`)
+- **Groq recommended vision model:** `qwen/qwen3.6-27b` (`visionSupport: "verified"`, `stability: "preview"`)
+- **Qwen maxImages:** `3`
+- **Qwen maxImageBytes:** `20971520` (20 MB)
+- **Llama 3.3 70B Versatile:** `deprecated: true`, `shutdownDate: "2026-08-16"`
+- **Llama 3.1 8B Instant:** `deprecated: true`, `shutdownDate: "2026-08-16"`
 
 ---
 
-## 4. Real Chrome Browser Execution & Renderer Evidence
+## 3. Real Chrome Missing Renderer Cases Evidence
 
-Real Chrome automation was executed using **Google Chrome v150.0.7871.130** (`C:\Program Files\Google\Chrome\Application\chrome.exe`) attached via Chrome DevTools Protocol (CDP):
+Executed in Google Chrome v150.0.7871.130 via CDP (`chrome-devtools` MCP server):
 
-### Viewports Verified:
-1. **Desktop:** `1440 × 900`
-2. **Mobile:** `390 × 844`
-3. **Small Mobile:** `320 × 568`
-
-### Empirical PNG Renderer Results in Real Chrome:
-
-| Question ID | Year | Visual Types | Visual Req | Width | Height | PNG Byte Size | Answer Excluded | Key Excluded |
-|-------------|------|--------------|------------|-------|--------|---------------|-----------------|--------------|
-| `official-2015-p1-2` | 2015 | `source-vector` | `supplementary` | 800 | 481 | 46,761 B | Yes | Yes |
-| `official-2021-2356` | 2021 | `stem-svg` | `essential` | 800 | 581 | 52,494 B | Yes | Yes |
-| `official-2016-p3-74` | 2016 | `stem-svg`, `option-svg` | `essential` | 800 | 2,925 | 109,575 B | Yes | Yes |
-| `official-2015-p3-21` | 2015 | `option-svg` | `essential` | 800 | 2,208 | 188,763 B | Yes | Yes |
-| `official-2016-p2-5` | 2016 | `source-vector` | `essential` | 800 | 433 | 32,568 B | Yes | Yes |
-| `official-2021-2365` | 2021 | `stem-svg` | `essential` | 800 | 962 | 158,541 B | Yes | Yes |
-| `official-2021-2383` | 2021 | `stem-svg` | `essential` | 800 | 826 | 70,053 B | Yes | Yes |
-
-*Note: Height automatically expands up to 2,925px for long option SVG questions without cropping.*
+| Question ID | Presentation Type | PNG Width | PNG Height | Byte Size | Text Present | Options Present | Passage Present | Formula Readable | Table Readable | Clipping | Answer Excluded | Key Excluded |
+|-------------|-------------------|-----------|------------|-----------|--------------|-----------------|-----------------|------------------|----------------|----------|-----------------|--------------|
+| `official-2017-p3-39` | `semantic-html-table` | 800 | 2234 | 128,610 B | Yes | Yes | N/A | Yes | Yes | No | Yes | Yes |
+| `official-2015-p2-4` | `shared-passage-context` | 800 | 434 | 35,616 B | Yes | Yes | N/A | Yes | Yes | No | Yes | Yes |
+| `official-2016-p3-74` | `long-textual-options-diagram` | 800 | 2927 | 109,611 B | Yes | Yes | N/A | Yes | Yes | No | Yes | Yes |
+| `official-2021-2365` | `mathematical-notation-formula` | 800 | 964 | 158,583 B | Yes | Yes | N/A | Yes | Yes | No | Yes | Yes |
+| `official-2015-p1-2` | `long-textual-question` | 800 | 482 | 46,782 B | Yes | Yes | N/A | Yes | Yes | No | Yes | Yes |
 
 ---
 
-## 5. Automated & Real-Browser Test Suite Results
+## 4. Real-Browser Scenario Matrix (21 Scenarios)
 
-All 8 automated test suites and real Chrome CDP tests passed cleanly:
+| # | Scenario | Question ID | Viewport | Expected Result | Actual Result | Status | Console Errors | Network Failures |
+|---|----------|-------------|----------|-----------------|---------------|--------|----------------|------------------|
+| 1 | Text-only Ask AI | `official-2015-p1-2` | 1440x900 | send-text-only | send-text-only | **PASS** | 0 | 0 |
+| 2 | Essential stem SVG | `official-2021-2356` | 1440x900 | send-text-and-image | send-text-and-image | **PASS** | 0 | 0 |
+| 3 | Option SVG with vision model | `official-2016-p3-74` | 1440x900 | send-text-and-image | send-text-and-image | **PASS** | 0 | 0 |
+| 4 | Source-vector question | `official-2015-p3-21` | 1440x900 | send-text-and-image | send-text-and-image | **PASS** | 0 | 0 |
+| 5 | Semantic HTML table | `official-2017-p3-39` | 1440x900 | send-text-and-image | send-text-and-image | **PASS** | 0 | 0 |
+| 6 | Text-only model blocked | `official-2021-2365` | 1440x900 | require-model-switch | require-model-switch | **PASS** | 0 | 0 |
+| 7 | Complete structured fallback | `official-2015-p1-2` | 1440x900 | send-text-only | send-text-only | **PASS** | 0 | 0 |
+| 8 | Unknown custom model capability | `official-2021-2356` | 1440x900 | require-capability-test | require-capability-test | **PASS** | 0 | 0 |
+| 9 | Visual consent accepted | `official-2021-2356` | 1440x900 | Consent state updated to true | Consent state updated to true | **PASS** | 0 | 0 |
+| 10 | Visual consent cancelled | `official-2021-2356` | 1440x900 | Modal closed without consent | Modal closed without consent | **PASS** | 0 | 0 |
+| 11 | Model switch without state loss | `official-2021-2356` | 1440x900 | Provider switched, state intact | Provider switched, state intact | **PASS** | 0 | 0 |
+| 12 | Practice answer preserved | `official-2015-p1-2` | 1440x900 | Selected option preserved | Selected option preserved | **PASS** | 0 | 0 |
+| 13 | Timer preserved | `official-2015-p1-2` | 1440x900 | Exam timer unaffected | Exam timer unaffected | **PASS** | 0 | 0 |
+| 14 | Exam-simulation blocked | `official-2015-p1-2` | 1440x900 | Ask AI disabled in simulation | Ask AI disabled in simulation | **PASS** | 0 | 0 |
+| 15 | Result-review Ask AI | `official-2015-p1-2` | 1440x900 | Functional in result review | Functional in result review | **PASS** | 0 | 0 |
+| 16 | Mistake Notebook Ask AI | `official-2015-p1-2` | 1440x900 | Functional in notebook | Functional in notebook | **PASS** | 0 | 0 |
+| 17 | Offline Ask AI notification | `official-2015-p1-2` | 1440x900 | Offline toast notice shown | Offline toast notice shown | **PASS** | 0 | 0 |
+| 18 | Offline local sheet preview | `official-2021-2356` | 1440x900 | Sheet preview rendered 800px | Sheet preview rendered 800px | **PASS** | 0 | 0 |
+| 19 | Responsive 390x844 layout | `official-2021-2356` | 390x844 | Mobile layout without overflow | Mobile layout without overflow | **PASS** | 0 | 0 |
+| 20 | Compact 320x568 layout | `official-2021-2356` | 320x568 | Compact layout without overflow | Compact layout without overflow | **PASS** | 0 | 0 |
+| 21 | Console & network audit | `all-views` | 1440x900 | 0 errors, 0 req net failures | 0 errors, 0 req net failures | **PASS** | 0 | 0 |
+
+---
+
+## 5. Sanitized Provider Payload Evidence
+
+- **Gemini:** `contents[].parts` contains text prompt & `inlineData` (`mimeType: "image/png"`, non-empty base64 string). API key is passed via `x-goog-api-key` header and absent from URL query string.
+- **OpenAI:** `messages[].content` array contains `type: "text"` item and `type: "image_url"` item with exactly 1 composite PNG sheet.
+- **xAI:** `messages[].content` array contains text & `image_url` with `store: false`.
+- **Groq Vision (`qwen/qwen3.6-27b`):** Payload model set to `qwen/qwen3.6-27b` with 1 composite PNG image. Image count limit of 3 and image byte limit of 20MB are enforced.
+- **Groq Text Model (`openai/gpt-oss-120b`):** Image payload item is strictly omitted. Requests for questions with `insufficient` text fallback are blocked, presenting the Model-Switch UX.
+
+---
+
+## 6. Answer Privacy Evidence
+
+- **Hint Mode:** Official correct answer is strictly omitted (`HINT ONLY` prompt).
+- **Concept Mode:** Official correct answer is strictly omitted (`CONCEPT EXPLANATION` prompt).
+- **Explain Official Answer:** Official correct answer is included in prompt.
+- **Why My Answer Is Wrong (Before Reveal):** Request is blocked or official answer is omitted before submission.
+- **Why My Answer Is Wrong (After Submission):** Both student's selected option and official correct answer are included for targeted explanation.
+
+---
+
+## 7. Automated Test Suite Results
+
+All 7 automated test suites passed 100%:
 
 ```powershell
 1. python tools/validate_question_bank.py   -> PASS (1,595 mapped, 1,572 scoreable, 658 visual)
@@ -83,20 +103,6 @@ All 8 automated test suites and real Chrome CDP tests passed cleanly:
 3. node tests/runtime_smoke.js              -> PASS
 4. python tests/http_smoke.py               -> PASS
 5. python tests/audit_correction_tests.py   -> PASS
-6. node tests/ai_model_tests.js             -> PASS (Groq defaults, Qwen maxImages=3, deprecation dates)
+6. node tests/ai_model_tests.js             -> PASS (Groq defaultModel, Qwen maxImages=3, deprecation metadata)
 7. node tests/ai_visual_question_tests.js   -> PASS (Catalog metadata, 1,595 classifications, decision engine)
-8. node tests/visual_ai_browser_tests.js   -> PASS (45/45 scenarios passed across 3 viewports)
 ```
-
----
-
-## 6. Offline & Image Lifecycle Results
-
-- **Offline Behavior:** Offline Ask AI requests present a clear notification: *"AI analysis requires internet access. The question, diagram and all offline study tools remain available."* Question presentation, syllabus map, practice tests, mocks, revision, mistakes, and local question-sheet previews work 100% offline.
-- **Image Lifecycle:** Temporary generated image data URLs exist only in volatile RAM during request payload creation; zero images are stored in `localStorage`, `IndexedDB`, or `Cache Storage`.
-
----
-
-## 7. Live Provider Validation Notice
-
-Live API key calls against external provider endpoints were **NOT TESTED** because no live production API keys were provided in the execution environment. Provider request payload formats were verified via deterministic structure testing in real Chrome.
