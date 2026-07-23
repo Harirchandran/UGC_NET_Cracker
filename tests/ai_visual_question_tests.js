@@ -120,7 +120,7 @@ const qwen = groq.models.find(m => m.id === 'qwen/qwen3.6-27b');
 assert(Boolean(qwen), 'Groq must contain qwen/qwen3.6-27b');
 assert(qwen.visionSupport === 'verified', 'Qwen 3.6 27B Vision must be visionSupport: verified');
 assert(qwen.stability === 'preview', 'Qwen 3.6 27B Vision stability must be preview');
-assert(qwen.maxImages === 5, 'Qwen 3.6 27B Vision maxImages must be 5');
+assert(qwen.maxImages === 3, 'Qwen 3.6 27B Vision maxImages must be 3');
 
 const groqTextModels = groq.models.filter(m => m.id !== 'qwen/qwen3.6-27b');
 for (const m of groqTextModels) {

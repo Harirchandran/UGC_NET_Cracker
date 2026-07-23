@@ -522,39 +522,49 @@ async function renderQuestionSheetToPNG(q) {
     };
   }
 
+  function toB64(str) {
+    if (typeof Buffer !== 'undefined') return Buffer.from(str).toString('base64');
+    if (typeof btoa !== 'undefined') return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m, p1) => String.fromCharCode(parseInt(p1, 16))));
+    return '';
+  }
+
   return new Promise((resolve, reject) => {
     const img = new Image();
-    const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
-    const url = URL.createObjectURL(svgBlob);
+    const dataUri = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgString);
 
     img.onload = () => {
+      let dataUrl = '';
+      let base64 = '';
+      let byteSize = 0;
+      let mimeType = 'image/png';
+
       try {
         const canvas = document.createElement('canvas');
         canvas.width = 800;
         canvas.height = height;
         let ctx = null;
         try { ctx = canvas.getContext('2d'); } catch (ce) {}
-        if (!ctx) {
-          URL.revokeObjectURL(url);
-          const base64 = typeof Buffer !== 'undefined' ? Buffer.from(svgString).toString('base64') : (typeof btoa !== 'undefined' ? btoa(svgString) : '');
-          resolve({
-            dataUrl: `data:image/svg+xml;base64,${base64}`,
-            base64,
-            width: 800,
-            height,
-            byteSize: svgString.length,
-            mimeType: 'image/svg+xml'
-          });
-          return;
-        }
-        ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, 800, height);
-        ctx.drawImage(img, 0, 0);
 
-        URL.revokeObjectURL(url);
-        const dataUrl = canvas.toDataURL('image/png');
-        const base64 = dataUrl.split(',')[1];
-        const byteSize = Math.round((base64.length * 3) / 4);
+        if (ctx) {
+          try {
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, 800, height);
+            ctx.drawImage(img, 0, 0);
+            dataUrl = canvas.toDataURL('image/png');
+            base64 = dataUrl.split(',')[1];
+            byteSize = Math.round((base64.length * 3) / 4);
+          } catch (taintErr) {
+            base64 = toB64(svgString);
+            dataUrl = `data:image/svg+xml;base64,${base64}`;
+            byteSize = svgString.length;
+            mimeType = 'image/svg+xml';
+          }
+        } else {
+          base64 = toB64(svgString);
+          dataUrl = `data:image/svg+xml;base64,${base64}`;
+          byteSize = svgString.length;
+          mimeType = 'image/svg+xml';
+        }
 
         resolve({
           dataUrl,
@@ -562,20 +572,18 @@ async function renderQuestionSheetToPNG(q) {
           width: 800,
           height,
           byteSize,
-          mimeType: 'image/png'
+          mimeType
         });
       } catch (e) {
-        URL.revokeObjectURL(url);
         reject(new Error('Question-sheet rendering failed: ' + e.message));
       }
     };
 
     img.onerror = () => {
-      URL.revokeObjectURL(url);
       reject(new Error('Question-sheet rendering failed during image load'));
     };
 
-    img.src = url;
+    img.src = dataUri;
   });
 }
 
@@ -941,6 +949,7 @@ window.buildAskAIVisualPrompt = buildAskAIVisualPrompt;
 window.askAIButtonHTML = askAIButtonHTML;
 window.askQuestionAI = askQuestionAI;
 window.callAI = callAI;
+window.executeAskAIVisual = executeAskAIVisual;
 
 function getProviderConfig(providerId){return AI_CATALOG.providers.find(p=>p.providerId===providerId)}
 function getProviderModels(providerId){const cfg=getProviderConfig(providerId);return cfg?cfg.models:[]}
@@ -1135,6 +1144,19 @@ if('serviceWorker' in navigator&&location.protocol!=='file:'){
  navigator.serviceWorker.addEventListener('message',event=>{const b=$('#offlineBadge');if(!b)return;if(event.data?.type==='ARCHIVE_CACHE_PROGRESS')b.textContent=`Caching archive ${event.data.done}/${event.data.total}`;if(event.data?.type==='ARCHIVE_CACHE_READY'){localStorage.setItem(ARCHIVE_CACHE_KEY,'1');b.textContent=navigator.onLine?'Online · full archive cached':'Offline · full archive cached'}});
  navigator.serviceWorker.register('./sw.js').then(()=>navigator.serviceWorker.ready).then(reg=>reg.active?.postMessage({type:'CACHE_ARCHIVE'})).catch(console.warn);
 }
+window.getModelCapability = getModelCapability;
+window.getCompatibleVisionModels = getCompatibleVisionModels;
+window.decideVisualAIRequest = decideVisualAIRequest;
+window.renderQuestionSheetToPNG = renderQuestionSheetToPNG;
+window.buildAskAIVisualPrompt = buildAskAIVisualPrompt;
+window.askAIButtonHTML = askAIButtonHTML;
+window.askQuestionAI = askQuestionAI;
+window.callAI = callAI;
+window.executeAskAIVisual = executeAskAIVisual;
+window.runVisualCapabilityTest = runVisualCapabilityTest;
+window.showVisualConsentModal = showVisualConsentModal;
+window.showModelSwitchModal = showModelSwitchModal;
+
 updateChrome();render();
 const recoveryYears=[...new Set(state.mistakes.map(m=>Number(m.year)).filter(y=>CERTIFIED_INTERACTIVE_YEARS.has(y)))];
 if(recoveryYears.length)loadYears(recoveryYears).then(()=>render()).catch(console.warn);

@@ -47,7 +47,7 @@ for(const p of CAT.providers){
 assert(CAT.providers.find(p=>p.providerId==='gemini').models.some(m=>m.id==='gemini-3.6-flash'),'Missing gemini-3.6-flash');
 assert(CAT.providers.find(p=>p.providerId==='openai').models.some(m=>m.id==='gpt-5.6-terra'),'Missing gpt-5.6-terra');
 assert(CAT.providers.find(p=>p.providerId==='xai').models.some(m=>m.id==='grok-4.5'),'Missing grok-4.5');
-assert(CAT.providers.find(p=>p.providerId==='groq').models.some(m=>m.id==='llama-3.3-70b-versatile'),'Missing llama-3.3-70b-versatile');
+assert(CAT.providers.find(p=>p.providerId==='groq').models.some(m=>m.id==='openai/gpt-oss-120b'),'Missing openai/gpt-oss-120b');
 assert(CAT.providers.find(p=>p.providerId==='custom').supportsCustomModelId===true,'Custom provider must support custom model ID');
 // Provider labels
 const gemini=CAT.providers.find(p=>p.providerId==='gemini');
@@ -58,8 +58,18 @@ assert(CAT.providers.find(p=>p.providerId==='custom').label==='Custom OpenAI-com
 // Default model matches
 assert(gemini.defaultModel==='gemini-3.6-flash','Gemini default');
 assert(CAT.providers.find(p=>p.providerId==='openai').defaultModel==='gpt-5.6-terra','OpenAI default');
+assert(CAT.providers.find(p=>p.providerId==='groq').defaultModel==='openai/gpt-oss-120b','Groq default must be openai/gpt-oss-120b');
+
+const groqModels=CAT.providers.find(p=>p.providerId==='groq').models;
+const qwenM=groqModels.find(m=>m.id==='qwen/qwen3.6-27b');
+assert(Boolean(qwenM),'Qwen vision model missing');
+assert(qwenM.maxImages===3,'Qwen maxImages must be exactly 3');
+
+const llama33=groqModels.find(m=>m.id==='llama-3.3-70b-versatile');
+assert(llama33.deprecated===true&&llama33.shutdownDate==='2026-08-16'&&llama33.recommended===false,'llama-3.3-70b-versatile must be deprecated');
+const llama31=groqModels.find(m=>m.id==='llama-3.1-8b-instant');
+assert(llama31.deprecated===true&&llama31.shutdownDate==='2026-08-16'&&llama31.recommended===false,'llama-3.1-8b-instant must be deprecated');
 assert(CAT.providers.find(p=>p.providerId==='xai').defaultModel==='grok-4.5','xAI default');
-assert(CAT.providers.find(p=>p.providerId==='groq').defaultModel==='llama-3.3-70b-versatile','Groq default');
 // Endpoints
 assert(gemini.baseUrl==='https://generativelanguage.googleapis.com/v1beta','Gemini baseUrl');
 assert(gemini.discoveryConfig.authHeader==='x-goog-api-key','Gemini auth header');

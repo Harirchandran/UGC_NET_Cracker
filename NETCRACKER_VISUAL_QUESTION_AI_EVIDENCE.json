@@ -1,108 +1,73 @@
 {
-  "starting_head": "3cd7b21818522b6a2d0023145245080b58144b40",
-  "current_head": "3cd7b21818522b6a2d0023145245080b58144b40",
-  "providers": {
-    "gemini": {
-      "label": "Google Gemini",
-      "defaultModel": "gemini-3.6-flash",
-      "visionModels": ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.5-flash-lite"]
-    },
-    "openai": {
-      "label": "OpenAI",
-      "defaultModel": "gpt-5.6-terra",
-      "visionModels": ["gpt-5.6-terra", "gpt-5.6-sol", "gpt-5.6-luna"]
-    },
-    "xai": {
-      "label": "xAI Grok",
-      "defaultModel": "grok-4.5",
-      "visionModels": ["grok-4.5", "grok-4.5-latest"]
-    },
-    "groq": {
-      "label": "GroqCloud",
-      "defaultModel": "llama-3.3-70b-versatile",
-      "visionModels": ["qwen/qwen3.6-27b"],
-      "textModels": ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant"]
-    },
-    "custom": {
-      "label": "Custom OpenAI-compatible",
-      "defaultCapability": "unknown"
-    }
+  "git_final_state": {
+    "starting_head": "6d3469c7d3d81d5a32fbc46877b291fac260601d",
+    "local_head": "6d3469c7d3d81d5a32fbc46877b291fac260601d",
+    "remote_main": "6d3469c7d3d81d5a32fbc46877b291fac260601d",
+    "match": true,
+    "working_tree_clean": true
   },
-  "model_capabilities": {
-    "gemini-3.6-flash": {
-      "visionSupport": "verified",
-      "inputModalities": ["text", "image"],
-      "capabilitySource": "curated-official"
-    },
-    "gpt-5.6-terra": {
-      "visionSupport": "verified",
-      "inputModalities": ["text", "image"],
-      "capabilitySource": "curated-official"
-    },
-    "grok-4.5": {
-      "visionSupport": "verified",
-      "inputModalities": ["text", "image"],
-      "capabilitySource": "curated-official"
-    },
-    "qwen/qwen3.6-27b": {
-      "visionSupport": "verified",
-      "inputModalities": ["text", "image"],
-      "capabilitySource": "curated-official",
-      "maxImages": 5,
-      "maxImageBytes": 20971520
-    },
-    "llama-3.3-70b-versatile": {
-      "visionSupport": "unsupported",
-      "inputModalities": ["text"],
-      "capabilitySource": "curated-official"
-    }
+  "groq_catalog": {
+    "default_text_model": "openai/gpt-oss-120b",
+    "recommended_vision_model": "qwen/qwen3.6-27b",
+    "qwen_max_images": 3,
+    "qwen_max_image_bytes": 20971520,
+    "deprecated_models": ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"]
   },
-  "question_classification": {
-    "total": 1595,
-    "none": 937,
-    "supplementary": 131,
-    "essential": 527,
-    "fallback_complete": 1068,
-    "fallback_partial": 523,
-    "fallback_insufficient": 4
+  "classification_review": {
+    "method": "programmatically-derived-with-manual-sampling",
+    "insufficient_ids": ["official-2016-p2-5", "official-2021-2356", "official-2021-2365", "official-2021-2383"],
+    "partial_sample_ids": [
+      "official-2015-p3-21", "official-2016-p3-74", "official-2017-p3-39", "official-2018-p2-59",
+      "official-2019-64635021740", "official-2019-64635021748", "official-2019-64635021742",
+      "official-2019-64635021747", "official-2019-64635021741", "official-2019-64635021746",
+      "official-2019-64635021745", "official-2019-64635021749", "official-2019-64635021743",
+      "official-2019-64635021744", "official-2019-64635021755", "official-2019-64635021753",
+      "official-2019-64635021752", "official-2019-64635021751", "official-2019-64635021754",
+      "official-2019-64635021758", "official-2019-64635021769", "official-2019-64635021762",
+      "official-2019-64635021768", "official-2019-64635021765", "official-2019-64635021761"
+    ],
+    "supplementary_sample_ids": [
+      "official-2015-p1-2", "official-2015-p1-3", "official-2015-p1-6", "official-2015-p1-10",
+      "official-2015-p1-15", "official-2015-p1-34", "official-2015-p1-44", "official-2015-p2-2",
+      "official-2015-p2-4", "official-2015-p2-9"
+    ],
+    "overrides_added": []
   },
-  "renderer_tests": {
-    "width": 800,
-    "height": 800,
-    "byteSize": 8175,
-    "format": "image/png",
-    "labels_preserved": true,
-    "correct_answer_excluded": true
+  "real_browser": {
+    "executed": true,
+    "browser": "Google Chrome",
+    "version": "150.0.7871.130",
+    "cdp_or_automation_method": "Chrome DevTools Protocol (chrome-devtools MCP)",
+    "viewports": ["1440x900", "390x844", "320x568"],
+    "question_ids": [
+      "official-2015-p1-2", "official-2021-2356", "official-2016-p3-74",
+      "official-2015-p3-21", "official-2016-p2-5", "official-2021-2365", "official-2021-2383"
+    ],
+    "passed": 45,
+    "failed": 0,
+    "console_errors": 0,
+    "required_network_failures": 0
   },
-  "decision_tests": {
-    "text_only": "send-text-only",
-    "essential_vision": "send-text-and-image",
-    "essential_text_model": "require-model-switch",
-    "unknown_capability": "require-capability-test"
-  },
-  "provider_payload_tests": {
+  "renderer_evidence": [
+    { "questionId": "official-2015-p1-2", "year": 2015, "visualTypes": ["source-vector"], "visualRequirement": "supplementary", "width": 800, "height": 481, "byteSize": 46761, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2021-2356", "year": 2021, "visualTypes": ["stem-svg"], "visualRequirement": "essential", "width": 800, "height": 581, "byteSize": 52494, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2016-p3-74", "year": 2016, "visualTypes": ["stem-svg", "option-svg", "stem-and-option-diagrams"], "visualRequirement": "essential", "width": 800, "height": 2925, "byteSize": 109575, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2015-p3-21", "year": 2015, "visualTypes": ["option-svg", "option-diagrams"], "visualRequirement": "essential", "width": 800, "height": 2208, "byteSize": 188763, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2016-p2-5", "year": 2016, "visualTypes": ["source-vector"], "visualRequirement": "essential", "width": 800, "height": 433, "byteSize": 32568, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2021-2365", "year": 2021, "visualTypes": ["stem-svg"], "visualRequirement": "essential", "width": 800, "height": 962, "byteSize": 158541, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true },
+    { "questionId": "official-2021-2383", "year": 2021, "visualTypes": ["stem-svg"], "visualRequirement": "essential", "width": 800, "height": 826, "byteSize": 70053, "format": "image/png", "labelsPreserved": true, "correctAnswerExcluded": true, "apiKeyExcluded": true }
+  ],
+  "provider_payload_evidence": {
     "gemini": "inlineData parts",
     "openai": "image_url content items",
     "xai": "image_url with store: false",
     "groq_vision": "image_url content items",
     "groq_text": "image payload blocked"
   },
-  "browser": {
-    "total_scenarios": 45,
-    "passed": 45,
-    "failed": 0,
-    "viewports_tested": ["1440x900", "390x844", "320x568"]
-  },
-  "offline": {
+  "offline_browser": {
     "ask_ai_status": "disabled with notification",
     "rendering_and_preview": "functional locally",
     "offline_archive_study": "fully operational"
-  },
-  "security": {
-    "keys_in_images": false,
-    "keys_in_urls": false,
-    "image_caching": false,
-    "temporary_url_revocation": true
   },
   "live_provider_validation": {
     "gemini": "NOT TESTED",
