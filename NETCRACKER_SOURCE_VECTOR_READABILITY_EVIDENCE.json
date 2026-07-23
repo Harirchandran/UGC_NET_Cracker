@@ -1,0 +1,107 @@
+{
+  "reported_question": {
+    "id": "official-2019-64635021744",
+    "native_question_field": "Which among the following best describes the Emotional Intelligence of learners?\n(a) Understand the emotion of other people and your own\n(b) Express oneself very strongly\n(c) Being rational in thinking\n(d) Adjusting one’s emotion as per situation\n(e) Being creative and open to criticism\n(f) Accepting other people as they are\nChoose your answer from the options given below :",
+    "native_option_fields": {
+      "options": [
+        "(a), (d) and (f)",
+        "(d), (e) and (f)",
+        "(a), (d) and (e)",
+        "(b), (c) and (d)"
+      ]
+    },
+    "resolver_mode_before": "native-stem-with-source-options",
+    "resolver_mode_after": "native-text",
+    "options_selectable": true,
+    "desktop_readability_before": 1,
+    "desktop_readability_after": 5,
+    "mobile_readability_after": 5
+  },
+  "vector_primary_inventory": {
+    "total": 345,
+    "native_complete": 187,
+    "stem_complete_options_incomplete": 152,
+    "stem_incomplete_options_complete": 0,
+    "essential_diagram": 6,
+    "source_fallback_required": 0,
+    "manual_review_required": 0
+  },
+  "browser_results": [
+    {
+      "viewport": "1440x900",
+      "questionId": "64635021744",
+      "presentationMode": "native-text",
+      "stemVisible": true,
+      "optionsVisible": true,
+      "optionsSelectable": true,
+      "sourceViewerButtonVisible": true,
+      "readabilityScore": 5,
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "390x844",
+      "questionId": "64635021744",
+      "presentationMode": "native-text",
+      "stemVisible": true,
+      "optionsVisible": true,
+      "optionsSelectable": true,
+      "sourceViewerButtonVisible": true,
+      "readabilityScore": 5,
+      "consoleErrors": 0
+    },
+    {
+      "viewport": "320x568",
+      "questionId": "64635021744",
+      "presentationMode": "native-text",
+      "stemVisible": true,
+      "optionsVisible": true,
+      "optionsSelectable": true,
+      "sourceViewerButtonVisible": true,
+      "readabilityScore": 5,
+      "consoleErrors": 0
+    }
+  ],
+  "viewer_results": {
+    "modalOpened": true,
+    "modalClosed": true,
+    "zoomIn": "125%",
+    "zoomOut": "75%",
+    "reset": "100%",
+    "fitWidth": "102%",
+    "currentColorContrast": "rgb(15, 23, 42)",
+    "timerPreserved": true,
+    "selectedAnswerPreserved": true
+  },
+  "ask_ai_alignment": {
+    "resolverModeUsed": "native-text",
+    "promptTextContainsStem": true,
+    "promptTextContainsOptions": true,
+    "imageAttachmentRequirement": "none"
+  },
+  "metadata_changes": [
+    {
+      "id": "official-2019-64635021744",
+      "field": "options",
+      "old_value": [
+        "Option A — select from exact vector reconstruction",
+        "Option B — select from exact vector reconstruction",
+        "Option C — select from exact vector reconstruction",
+        "Option D — select from exact vector reconstruction"
+      ],
+      "new_value": [
+        "(a), (d) and (f)",
+        "(d), (e) and (f)",
+        "(a), (d) and (e)",
+        "(b), (c) and (d)"
+      ],
+      "evidence": "NTA UGC-NET Dec 2019 official response sheet and answer key table"
+    },
+    {
+      "id": "official-2019-64635021744",
+      "field": "transcriptionStatus",
+      "old_value": "vector-primary",
+      "new_value": "verified-text",
+      "evidence": "Clean native transcription of stem and options verified from NTA official question paper"
+    }
+  ]
+}

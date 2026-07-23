@@ -4,7 +4,7 @@ function cls(){return {add(){},remove(){},toggle(){},contains(){return false}}}
 const elements=new Map(),docHandlers={};
 function el(){return {classList:cls(),style:{},dataset:{},hidden:false,value:'',checked:false,textContent:'',innerHTML:'',onclick:null,onchange:null,oninput:null,onkeydown:null,focus(){},appendChild(node){if(node.onload)node.onload()},insertAdjacentHTML(pos,x){this.innerHTML+=x},scrollTop:0,scrollHeight:0,closest(){return this},setAttribute(){},click(){if(this.onclick)return this.onclick()}}}
 const docEl=el();docEl.dataset={};
-const document={documentElement:docEl,head:el(),querySelector(sel){if(!elements.has(sel))elements.set(sel,el());return elements.get(sel)},querySelectorAll(){return []},createElement(){return el()},addEventListener(type,fn){docHandlers[type]=fn}};
+const document={documentElement:docEl,head:el(),querySelector(sel){if(!elements.has(sel))elements.set(sel,el());return elements.get(sel)},querySelectorAll(){return []},createElement(){return el()},addEventListener(type,fn){docHandlers[type]=docHandlers[type]||[];docHandlers[type].push(fn)}};
 const localStore=new Map(),sessionStore=new Map();const storage=m=>({getItem:k=>m.has(k)?m.get(k):null,setItem:(k,v)=>m.set(k,String(v)),removeItem:k=>m.delete(k)});
 const location={hash:'',protocol:'http:'};const handlers={};
 const window={document,location,addEventListener(type,fn){handlers[type]=fn},matchMedia(){return {matches:false}},crypto:global.crypto,URLSearchParams,NETCRACKER_DATA:null,NETCRACKER_PYQ_INDEX:null,NETCRACKER_LESSONS:null};
@@ -17,7 +17,7 @@ const years=Array.from({length:10},(_,i)=>2015+i);const total=years.reduce((n,y)
 if(window.NETCRACKER_DATA.questions.length!==201)throw new Error('Year archives were eagerly merged at startup');
 location.hash='#papers';handlers.hashchange();html=elements.get('#main').innerHTML;if(!html.includes('Previous-year interactive archive')||!html.includes('1595 locally stored questions'))throw new Error('Interactive archive did not render from index metadata');
 if(!html.includes('start-verified-2015')||!html.includes('start-verified-2024'))throw new Error('Year start actions did not render');if(/<img\b/i.test(html))throw new Error('Archive rendered a raster image tag');
-const button={dataset:{action:'start-verified-2022'}};await docHandlers.click({target:{closest(){return button}}});location.hash='#practice';handlers.hashchange();html=elements.get('#main').innerHTML;
+const button={dataset:{action:'start-verified-2022'}};for(const fn of (docHandlers.click||[]))await fn({target:{closest(){return button}}});await new Promise(resolve=>setTimeout(resolve,50));location.hash='#practice';handlers.hashchange();html=elements.get('#main').innerHTML;
 if(!html.includes('Test position 1 of 149'))throw new Error('2022 scoreable interactive paper did not start');if(!html.includes('vector-sheet')||!html.includes('<svg'))throw new Error('Vector-backed question did not render');if(/<img\b|data:image|<image\b/i.test(html))throw new Error('Interactive question rendered raster content');
 if(window.NETCRACKER_DATA.questions.filter(q=>q.isPyq&&q.year===2022).length!==149)throw new Error('Loaded year was not merged correctly');
 // Question bank browser must lazy-load, show provenance, diagrams and answer reveal controls.

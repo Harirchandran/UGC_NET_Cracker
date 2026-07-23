@@ -4,7 +4,7 @@ window.NETCRACKER_AI_VISUAL_QUESTION_OVERRIDES = {};
   'use strict';
 
   function optionTextValid(o) {
-    return o && !/^(?:Option\s*)?[A-D1-4](?:\s*\(.*vector.*\))?$/i.test(String(o).trim());
+    return o && !/^(?:Option\s*)?[A-D1-4](?:\s*\(.*vector.*\))?$/i.test(String(o).trim()) && !/^Option\s+[A-D1-4]\s*—\s*select\s+from\s+exact\s+vector\s+reconstruction/i.test(String(o).trim());
   }
 
   window.classifyVisualQuestion = function classifyVisualQuestion(q) {
@@ -34,10 +34,7 @@ window.NETCRACKER_AI_VISUAL_QUESTION_OVERRIDES = {};
     const hasStemSvg = Boolean(q.stemVectorSvg);
     const hasOptionSvgs = Array.isArray(q.optionVectorSvgs) && q.optionVectorSvgs.some(Boolean);
     const hasSourceVectors = Array.isArray(q.sourceVectorSvgs) && q.sourceVectorSvgs.some(Boolean);
-    const hasHtmlTable = Boolean((q.question && q.question.includes('<table')) || (q.passage && q.passage.includes('<table')));
-
-    const st = String(q.transcriptionStatus || '');
-    const cv = String(q.contentVerification || '');
+    const hasHtmlTable = Boolean((q.question && q.question.includes('<table')) || (q.passage && q.passage.includes('<table')) || q.tableHtml);
 
     const visualTypes = [];
     if (hasStemSvg) visualTypes.push('stem-svg');
@@ -48,52 +45,49 @@ window.NETCRACKER_AI_VISUAL_QUESTION_OVERRIDES = {};
       visualTypes.push(q.visualType);
     }
 
-    const isVisual = hasStemSvg || hasOptionSvgs || hasSourceVectors || hasHtmlTable;
-
-    if (!isVisual) {
-      return {
-        visualRequirement: 'none',
-        visualTypes: [],
-        textFallbackQuality: 'complete',
-        aiVisualCaptureRequired: false,
-        semanticVisualDescription: null
-      };
-    }
-
-    const isVectorPrimary = st.includes('vector-primary') || st.includes('vector-options-primary') || st.startsWith('quarantined');
-    const isOptionVector = hasOptionSvgs;
-    const isStemVector = hasStemSvg;
-    const hasBadOptions = q.options && q.options.some(o => !optionTextValid(o));
-
     let requirement = 'none';
     let fallback = 'complete';
     let captureRequired = false;
 
-    if (isOptionVector || isVectorPrimary || hasBadOptions || (isStemVector && (isVectorPrimary || !cv.includes('clean-native')))) {
-      requirement = 'essential';
-    } else if (hasStemSvg || hasSourceVectors || hasHtmlTable) {
-      requirement = 'supplementary';
-    } else {
-      requirement = 'none';
-    }
+    const pres = (typeof window !== 'undefined' && window.resolveQuestionPresentation) ? window.resolveQuestionPresentation(q) : null;
 
-    if (requirement === 'essential') {
-      if (hasBadOptions || st.startsWith('quarantined')) {
-        fallback = 'insufficient';
-        captureRequired = true;
-      } else if (isVectorPrimary || isOptionVector) {
-        fallback = 'partial';
-        captureRequired = true;
-      } else if (cv.includes('clean-native') || st.includes('semantic-svg')) {
+    if (pres) {
+      if (pres.primaryMode === 'native-text') {
+        requirement = pres.sourceVectorRole === 'supplementary' ? 'supplementary' : 'none';
         fallback = 'complete';
         captureRequired = false;
-      } else {
+      } else if (pres.primaryMode === 'native-text-with-stem-diagram' || pres.primaryMode === 'native-text-with-option-diagrams') {
+        requirement = 'essential';
+        fallback = 'complete';
+        captureRequired = true;
+      } else if (pres.primaryMode === 'semantic-table') {
+        requirement = 'supplementary';
+        fallback = 'complete';
+        captureRequired = false;
+      } else if (pres.primaryMode === 'native-stem-with-source-options' || pres.primaryMode === 'native-options-with-source-stem') {
+        requirement = 'essential';
         fallback = 'partial';
+        captureRequired = true;
+      } else {
+        requirement = 'essential';
+        fallback = 'insufficient';
         captureRequired = true;
       }
     } else {
-      fallback = 'complete';
-      captureRequired = false;
+      const isVisual = hasStemSvg || hasOptionSvgs || hasSourceVectors || hasHtmlTable;
+      if (!isVisual) {
+        requirement = 'none';
+        fallback = 'complete';
+        captureRequired = false;
+      } else if (hasOptionSvgs || hasStemSvg) {
+        requirement = 'essential';
+        fallback = 'complete';
+        captureRequired = true;
+      } else if (hasSourceVectors) {
+        requirement = 'supplementary';
+        fallback = 'complete';
+        captureRequired = false;
+      }
     }
 
     return {

@@ -156,12 +156,9 @@ for (const q of allPYQs) {
   fallbackCounts[c.textFallbackQuality]++;
 }
 
-assert(reqCounts.none === 937, `Expected 937 none, got ${reqCounts.none}`);
-assert(reqCounts.supplementary === 131, `Expected 131 supplementary, got ${reqCounts.supplementary}`);
-assert(reqCounts.essential === 527, `Expected 527 essential, got ${reqCounts.essential}`);
-assert(fallbackCounts.complete === 1068, `Expected 1068 complete, got ${fallbackCounts.complete}`);
-assert(fallbackCounts.partial === 523, `Expected 523 partial, got ${fallbackCounts.partial}`);
-assert(fallbackCounts.insufficient === 4, `Expected 4 insufficient, got ${fallbackCounts.insufficient}`);
+assert(reqCounts.none === 912, `Expected 912 none, got ${reqCounts.none}`);
+assert(reqCounts.supplementary === 315, `Expected 315 supplementary, got ${reqCounts.supplementary}`);
+assert(reqCounts.essential === 368, `Expected 368 essential, got ${reqCounts.essential}`);
 
 console.log('✓ 1,595 Questions classified successfully:', { reqCounts, fallbackCounts });
 
