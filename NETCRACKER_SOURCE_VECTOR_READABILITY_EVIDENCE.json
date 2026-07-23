@@ -1,124 +1,84 @@
 {
-  "reported_question": {
-    "id": "official-2019-64635021744",
-    "native_question_field": "Which among the following best describes the Emotional Intelligence of learners?\n(a) Understand the emotion of other people and your own\n(b) Express oneself very strongly\n(c) Being rational in thinking\n(d) Adjusting one’s emotion as per situation\n(e) Being creative and open to criticism\n(f) Accepting other people as they are\nChoose your answer from the options given below :",
-    "native_option_fields": {
-      "options": [
-        "(a), (d) and (f)",
-        "(d), (e) and (f)",
-        "(a), (b) and (c)",
-        "(b), (c) and (d)"
-      ]
-    },
-    "resolver_mode_before": "native-stem-with-source-options",
-    "resolver_mode_after": "native-text",
-    "options_selectable": true,
-    "desktop_readability_before": 1,
-    "desktop_readability_after": 5,
-    "mobile_readability_after": 5
+  "git_final_state": {
+    "local_head": "c8d5d198b44777834d58073f7cd6bbdee865c325",
+    "remote_main": "c8d5d198b44777834d58073f7cd6bbdee865c325",
+    "match": true,
+    "working_tree_clean": true,
+    "staged_files": false
   },
-  "remaining_record_resolution": [
+  "authoritative_presentation_counts": {
+    "native-text": 1227,
+    "native-text-with-stem-diagram": 110,
+    "native-text-with-option-diagrams": 74,
+    "native-stem-with-source-options": 156,
+    "native-options-with-source-stem": 0,
+    "semantic-table": 0,
+    "source-vector-fallback": 28,
+    "sum": 1595
+  },
+  "hybrid_definition": "A record where the resolver mode is native-stem-with-source-options: the native stem text is complete but native option text is incomplete, and source-vector SVGs exist as a primary-fallback for option viewing.",
+  "hybrid_total": 156,
+  "hybrid_by_year": {
+    "2016": 1,
+    "2019": 70,
+    "2023": 75,
+    "2024": 10
+  },
+  "hybrid_152_vs_156_explanation": "The previous evidence value of 152 was computed during an earlier audit session before the mergeQuestions function was fixed to overwrite stale bundle entries with freshly-loaded year data. The authoritative runtime count, computed by loading all 10 year archives and running the resolver on all 1,595 records, is 156.",
+  "records_with_sourceVectorSvgs": 471,
+  "records_with_transcriptionStatus_vector_primary": 344,
+  "records_with_needsTranscriptionReview_true_data_field": 3,
+  "manual_review_required": 3,
+  "remaining_readability_failures": 3,
+  "unassigned_readability_failures": 0,
+  "flagged_and_safely_fallback_presented": 3,
+  "three_record_runtime_modes": [
     {
       "id": "official-2023-29201002",
-      "determination": "C",
-      "readability_before": 3,
-      "readability_after": 3,
-      "resolved": false,
-      "needs_transcription_review": true,
-      "note": "Garbled Hindi/English OCR stem text; primary source-vector fallback viewer enabled with warning notice."
+      "resolver_mode": "native-stem-with-source-options",
+      "source_vector_role": "primary-fallback",
+      "needs_transcription_review_resolver": true,
+      "needs_transcription_review_data": true,
+      "native_stem_shown": true,
+      "warning_shown": true,
+      "source_viewer_shown": true,
+      "options_selectable": true,
+      "ask_ai_behavior": "Text prompt uses garbled OCR stem; visual attachment recommended by resolver due to needsTranscriptionReview"
     },
     {
       "id": "official-2023-29201005",
-      "determination": "C",
-      "readability_before": 3,
-      "readability_after": 3,
-      "resolved": false,
-      "needs_transcription_review": true,
-      "note": "Garbled Hindi/English OCR stem text; primary source-vector fallback viewer enabled with warning notice."
+      "resolver_mode": "native-stem-with-source-options",
+      "source_vector_role": "primary-fallback",
+      "needs_transcription_review_resolver": true,
+      "needs_transcription_review_data": true,
+      "native_stem_shown": true,
+      "warning_shown": true,
+      "source_viewer_shown": true,
+      "options_selectable": true,
+      "ask_ai_behavior": "Text prompt uses garbled OCR stem; visual attachment recommended by resolver due to needsTranscriptionReview"
     },
     {
       "id": "official-2023-29201006",
-      "determination": "C",
-      "readability_before": 3,
-      "readability_after": 3,
-      "resolved": false,
-      "needs_transcription_review": true,
-      "note": "Garbled Hindi/English OCR stem text; primary source-vector fallback viewer enabled with warning notice."
+      "resolver_mode": "native-stem-with-source-options",
+      "source_vector_role": "primary-fallback",
+      "needs_transcription_review_resolver": true,
+      "needs_transcription_review_data": true,
+      "native_stem_shown": true,
+      "warning_shown": true,
+      "source_viewer_shown": true,
+      "options_selectable": true,
+      "ask_ai_behavior": "Text prompt uses garbled OCR stem; visual attachment recommended by resolver due to needsTranscriptionReview"
     }
   ],
-  "hybrid_year_coverage": {
-    "2016": { "total_hybrid": 1, "sampled": 1, "pass": 1, "fail": 0 },
-    "2019": { "total_hybrid": 70, "sampled": 10, "pass": 10, "fail": 0 },
-    "2023": { "total_hybrid": 75, "sampled": 10, "pass": 7, "fail": 3 },
-    "2024": { "total_hybrid": 10, "sampled": 4, "pass": 4, "fail": 0 }
-  },
-  "manual_review_required": 3,
-  "remaining_readability_failures": 0,
-  "remaining_hybrid_limitations": 3,
-  "flagged_ids": [
-    "official-2023-29201002",
-    "official-2023-29201005",
-    "official-2023-29201006"
-  ],
-  "vector_primary_inventory": {
-    "total": 345,
-    "native_complete": 187,
-    "stem_complete_options_incomplete": 152,
-    "stem_incomplete_options_complete": 0,
-    "essential_diagram": 6,
-    "source_fallback_required": 0,
-    "manual_review_required": 3
-  },
-  "browser_results": [
-    {
-      "viewport": "1440x900",
-      "questionId": "64635021744",
-      "presentationMode": "native-text",
-      "stemVisible": true,
-      "optionsVisible": true,
-      "optionsSelectable": true,
-      "sourceViewerButtonVisible": true,
-      "readabilityScore": 5,
-      "consoleErrors": 0
-    },
-    {
-      "viewport": "390x844",
-      "questionId": "64635021744",
-      "presentationMode": "native-text",
-      "stemVisible": true,
-      "optionsVisible": true,
-      "optionsSelectable": true,
-      "sourceViewerButtonVisible": true,
-      "readabilityScore": 5,
-      "consoleErrors": 0
-    },
-    {
-      "viewport": "320x568",
-      "questionId": "64635021744",
-      "presentationMode": "native-text",
-      "stemVisible": true,
-      "optionsVisible": true,
-      "optionsSelectable": true,
-      "sourceViewerButtonVisible": true,
-      "readabilityScore": 5,
-      "consoleErrors": 0
-    }
-  ],
-  "viewer_results": {
-    "modalOpened": true,
-    "modalClosed": true,
-    "zoomIn": "125%",
-    "zoomOut": "75%",
-    "reset": "100%",
-    "fitWidth": "102%",
-    "currentColorContrast": "rgb(15, 23, 42)",
-    "timerPreserved": true,
-    "selectedAnswerPreserved": true
-  },
-  "ask_ai_alignment": {
-    "resolverModeUsed": "native-text",
-    "promptTextContainsStem": true,
-    "promptTextContainsOptions": true,
-    "imageAttachmentRequirement": "none"
+  "reported_question": {
+    "id": "official-2019-64635021744",
+    "resolver_mode": "native-text",
+    "options": [
+      "(a), (d) and (f)",
+      "(d), (e) and (f)",
+      "(a), (b) and (c)",
+      "(b), (c) and (d)"
+    ],
+    "readability": 5
   }
 }
