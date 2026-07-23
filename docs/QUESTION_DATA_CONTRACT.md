@@ -72,21 +72,24 @@ The validator rejects:
 
 ## Raster and external dependency safety
 
-The validator rejects raster or external content dependencies in all text and presentation fields (`question`, `passage`, `explanation`, `options`, `sharedContext`, `topic`, `reviewNotes`, `source`, `answerVerification`, `importMethod`, `contentVerification`).
+The validator rejects raster, SVG, PDF, or external content dependencies in all text and presentation fields (`question`, `passage`, `explanation`, `options`, `sharedContext`, `topic`, `reviewNotes`, `source`, `answerVerification`, `importMethod`, `contentVerification`).
 
 Rejected patterns:
 
-- `<img>`, `<picture>`, `<source>`, `<object>`, `<embed>`, or `<iframe>` tags with `src`, `srcset`, `href`, or `data` attributes referencing `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.bmp`, `.tiff`, or `.pdf` files
+- `<img>`, `<picture>`, `<source>`, `<object>`, `<embed>`, or `<iframe>` tags with `src`, `srcset`, `href`, or `data` attributes referencing `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.bmp`, `.tiff`, `.pdf`, or `.svg` files
+- `<iframe>` with any `src` attribute (always an external content dependency)
 - `data:image/` embedded base64 raster URLs
-- CSS `url()` references to raster or PDF assets
-- `src` or `href` attributes referencing raster or PDF files
+- CSS `url()` references to raster, PDF, or SVG assets
+- `src` or `href` attributes referencing raster, PDF, or SVG files
 - Extraction delimiters such as `-o0o-` in option text
 
 Not rejected (educational text mentions are permitted):
 
 - "PNG uses lossless compression."
 - "Which statement about JPEG is correct?"
+- "SVG files are scalable vector graphics."
 - The `<img>` tag is used in HTML.
+- A harmless textual URL (e.g. `https://example.com/`) shown as question content
 - Safe mathematical or HTML table content
 
 Prefer semantic SVG with text labels, lines, paths, shapes and accessible `optionAlt` descriptions.

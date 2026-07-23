@@ -7,11 +7,12 @@ ROOT=Path(__file__).resolve().parents[1]
 YEAR_RE=re.compile(r'interactive-pyqs-(\d{4})\.js$')
 FORBIDDEN_SVG=re.compile(r'<\/?(?:script|image|foreignObject)\b|\son\w+\s*=|javascript:|data:image',re.I)
 
-RASTER_TAG_WITH_SRC_RE=re.compile(r'<(?:img|picture|source|object|embed|iframe)\b[^>]*(?:src|srcset|href|data)\s*=\s*["\'][^"\']*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
+EXTERNAL_DEP_TAG_WITH_SRC_RE=re.compile(r'<(?:img|picture|source|object|embed|iframe)\b[^>]*(?:src|srcset|href|data)\s*=\s*["\'][^"\']*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf|svg)\b',re.I)
 DATA_IMAGE_RE=re.compile(r'data:image/',re.I)
-CSS_URL_RASTER_RE=re.compile(r'url\s*\(\s*["\']?[^"\')]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
-RASTER_EXT_HREF_RE=re.compile(r'(?:src|srcset|href)\s*=\s*["\']?[^"\'>\s]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
-LOCAL_RASTER_PATH_RE=re.compile(r'["\']?[^"\'>\s]*[/\\][^"\'>\s]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf)\b',re.I)
+CSS_URL_EXTERNAL_DEP_RE=re.compile(r'url\s*\(\s*["\']?[^"\')]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf|svg)\b',re.I)
+EXTERNAL_DEP_HREF_RE=re.compile(r'(?:src|srcset|href)\s*=\s*["\']?[^"\'>\s]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf|svg)\b',re.I)
+LOCAL_EXTERNAL_DEP_PATH_RE=re.compile(r'["\']?[^"\'>\s]*[/\\][^"\'>\s]*\.(?:png|jpe?g|gif|webp|bmp|tiff?|pdf|svg)\b',re.I)
+IFRAME_ANY_SRC_RE=re.compile(r'<iframe\b[^>]*\bsrc\s*=\s*["\']',re.I)
 
 TEXT_ONLY_FIELDS=('question','passage','explanation','sharedContext','topic','reviewNotes','source','answerVerification','importMethod','contentVerification')
 
@@ -20,17 +21,19 @@ def _strip_svg_tags(text:str)->str:
     text=re.sub(r'<table[\s\S]*?</table>','',text,flags=re.I)
     return text
 
-def _contains_raster_asset_reference(raw_text:str)->list[str]:
+def _contains_external_dep_reference(raw_text:str)->list[str]:
     stripped=_strip_svg_tags(raw_text)
     errors=[]
-    if RASTER_TAG_WITH_SRC_RE.search(stripped):
-        errors.append('contains HTML element tag with raster/PDF file reference')
+    if EXTERNAL_DEP_TAG_WITH_SRC_RE.search(stripped):
+        errors.append('contains HTML element tag with external file reference (raster/PDF/SVG)')
     if DATA_IMAGE_RE.search(stripped):
         errors.append('contains embedded raster data URL (data:image/)')
-    if CSS_URL_RASTER_RE.search(stripped):
-        errors.append('contains CSS url() referencing raster/PDF asset')
-    if RASTER_EXT_HREF_RE.search(stripped):
-        errors.append('contains src/href attribute referencing raster or PDF file')
+    if CSS_URL_EXTERNAL_DEP_RE.search(stripped):
+        errors.append('contains CSS url() referencing external asset (raster/PDF/SVG)')
+    if EXTERNAL_DEP_HREF_RE.search(stripped):
+        errors.append('contains src/href attribute referencing external file (raster/PDF/SVG)')
+    if IFRAME_ANY_SRC_RE.search(stripped):
+        errors.append('contains iframe element with src attribute (external content dependency)')
     return errors
 
 def parse_assignment(path:Path):
@@ -85,12 +88,12 @@ def validate_question(q:dict,expected_year:int|None=None):
     for field in TEXT_ONLY_FIELDS:
         val=q.get(field,'')
         if isinstance(val,str) and val:
-            refs=_contains_raster_asset_reference(val)
+            refs=_contains_external_dep_reference(val)
             for r in refs:
                 errors.append(f'{qid}: field "{field}" {r}')
     for i,opt in enumerate(q.get('options',[])):
         if isinstance(opt,str):
-            refs=_contains_raster_asset_reference(opt)
+            refs=_contains_external_dep_reference(opt)
             for r in refs:
                 errors.append(f'{qid}: option[{i}] {r}')
             if '-o0o-' in opt:

@@ -7,6 +7,13 @@
     "head": "ad4ed35d0f8c5dacbe5645f06100df24503eedf7",
     "remote": "https://github.com/Harirchandran/UGC_NET_Cracker.git"
   },
+  "git_final_state": {
+    "local_head": "08c278950ac38db40a007393610ce97da37b2fda",
+    "remote_main": "08c278950ac38db40a007393610ce97da37b2fda",
+    "match": true,
+    "working_tree_clean": true,
+    "has_follow_up_commit": true
+  },
   "files_changed": [
     "tools/question_bank_lib.py",
     "data/interactive-pyqs-2015.js",
@@ -23,16 +30,21 @@
       "finding": "FINDING-01",
       "severity": "High",
       "status": "PASS",
-      "description": "Hardened validate_question() to reject raster/external content dependencies in text fields and options",
+      "description": "Hardened validate_question() to reject raster, SVG, PDF, iframe, and external content dependencies in text fields and options",
       "rejection_patterns_added": [
-        "HTML element tags with raster/PDF file references",
+        "HTML element tags with external file references (raster/PDF/SVG)",
         "data:image/ embedded raster URLs",
-        "CSS url() referencing raster/PDF assets",
-        "src/href/srcset attributes referencing raster/PDF files",
+        "CSS url() referencing external assets (raster/PDF/SVG)",
+        "src/href/srcset attributes referencing external files (raster/PDF/SVG)",
+        "iframe with any src attribute (always an external content dependency)",
         "Extraction delimiter -o0o- in option text"
       ],
-      "false_positive_prevention": "Educational text mentioning file formats (PNG, JPEG, PDF) is correctly permitted",
-      "tests_passed": 16
+      "schema_rules_added": [
+        "vector-primary transcriptionStatus requires SVG content",
+        "vector-primary with clean-native-text contentVerification is incompatible"
+      ],
+      "false_positive_prevention": "Educational text mentioning file formats (PNG, JPEG, PDF, SVG) is correctly permitted; harmless textual URLs are permitted; safe inline SVG in designated fields is accepted",
+      "tests_passed": 24
     },
     "C2_2015_artefact": {
       "finding": "FINDING-02",
@@ -76,10 +88,28 @@
       "records_inspected": 5,
       "determination": "Native text is independently complete; sourceVectorSvgs are supplementary visual evidence",
       "new_validator_rules": [
-        "vector-primary status without SVG content → error",
-        "vector-primary status with clean-native-text content verification → error"
+        "vector-primary status without SVG content -> error",
+        "vector-primary status with clean-native-text content verification -> error"
       ]
     }
+  },
+  "external_dependency_rejection": {
+    "img_svg_reference": "REJECT",
+    "object_svg_reference": "REJECT",
+    "embed_svg_reference": "REJECT",
+    "iframe_external_src": "REJECT",
+    "css_url_svg": "REJECT",
+    "local_relative_svg_path": "REJECT",
+    "img_raster_reference": "REJECT",
+    "object_pdf_reference": "REJECT",
+    "picture_srcset_reference": "REJECT",
+    "data_image_url": "REJECT",
+    "remote_raster_url": "REJECT",
+    "href_pdf": "REJECT",
+    "safe_inline_svg": "ACCEPT",
+    "semantic_html_table": "ACCEPT",
+    "educational_format_text": "ACCEPT",
+    "harmless_textual_url": "ACCEPT"
   },
   "corpus_statistics": {
     "total_records": 1595,
@@ -94,7 +124,16 @@
       {"id": "official-2021-2423", "answers": [1, 2]},
       {"id": "official-2023-187050", "answers": [0, 2]}
     ],
-    "identity_verification": "1568 + 4 + 23 = 1595 ✓"
+    "identity_verification": "1568 + 4 + 23 = 1595"
+  },
+  "dropped_answer_semantics": {
+    "total": 23,
+    "empty_answer_array": 11,
+    "retained_answer_data": 12,
+    "explanation": "12 dropped records retain historical answer keys [0] but all have scored:false and dropped:true; scoring code filters via !q.dropped && q.scored!==false; none affect denominator or produce penalty",
+    "marked_scoreable": 0,
+    "affect_score_denominator": 0,
+    "produce_penalty": 0
   },
   "visual_statistics": {
     "total_visual_records": 658,
@@ -114,12 +153,13 @@
     "previous_audit_discrepancy": "811 was sum of overlapping features; 658 is correct unique visual count"
   },
   "scoring_fixture": [
-    {"test": "correct_answer", "qid": "official-2015-p1-1", "selected": 3, "expected": 2, "actual": 2, "pass": true},
-    {"test": "wrong_answer", "qid": "official-2015-p1-1", "selected": 0, "expected": 0, "actual": 0, "pass": true},
-    {"test": "unanswered", "qid": "official-2015-p1-1", "selected": null, "expected": 0, "actual": 0, "pass": true},
-    {"test": "dropped", "qid": "official-2019-64635021814", "selected": 0, "expected": 0, "actual": 0, "pass": true},
-    {"test": "multi_correct_accepted", "qid": "official-2020-128", "selected": 0, "expected": 2, "actual": 2, "pass": true},
-    {"test": "multi_correct_rejected", "qid": "official-2020-128", "selected": 1, "expected": 0, "actual": 0, "pass": true}
+    {"test": "correct_answer", "qid": "official-2015-p1-1", "expected": 2, "actual": 2, "pass": true},
+    {"test": "wrong_answer", "qid": "official-2015-p1-1", "expected": 0, "actual": 0, "pass": true},
+    {"test": "unanswered", "qid": "official-2015-p1-1", "expected": 0, "actual": 0, "pass": true},
+    {"test": "dropped", "qid": "official-2019-64635021814", "expected": 0, "actual": 0, "pass": true},
+    {"test": "multi_correct_one_accepted", "qid": "official-2020-128", "expected": 2, "actual": 2, "pass": true},
+    {"test": "multi_correct_all_accepted", "qid": "official-2020-128", "expected": 2, "actual": 2, "pass": true},
+    {"test": "multi_correct_rejected", "qid": "official-2020-128", "expected": 0, "actual": 0, "pass": true}
   ],
   "future_year_import": {
     "synthetic_year": 2099,
@@ -134,12 +174,45 @@
     "cleanup": "PASS"
   },
   "test_results": {
-    "validate_question_bank": "PASS",
-    "tests_validate": "PASS",
-    "runtime_smoke": "PASS",
-    "http_smoke": "PASS",
-    "audit_correction_tests": "PASS",
+    "validate_question_bank": "PASS (exit 0)",
+    "tests_validate": "PASS (exit 0)",
+    "runtime_smoke": "PASS (exit 0)",
+    "http_smoke": "PASS (exit 0)",
+    "audit_correction_tests": "PASS (exit 0)",
     "archive_validation": "PASS"
+  },
+  "browser_scope": {
+    "real_chrome_executed": true,
+    "puppeteer_cdp_executed": true,
+    "full_regression_executed": true,
+    "tests_passed": 15,
+    "tests_failed": 0,
+    "viewports_tested": ["1440x900", "390x844", "320x568"],
+    "features_verified": [
+      "dashboard load", "dashboard welcome text", "console errors",
+      "failed network requests", "manifest link", "service worker registration",
+      "question bank navigation", "question rendering", "stem SVG rendering",
+      "no raster images", "mobile no overflow", "mobile console errors",
+      "small mobile no overflow", "small mobile interactive elements",
+      "AI locked state"
+    ],
+    "android_installation_tested": false,
+    "ios_installation_tested": false,
+    "previous_audit_browser_check": "partial (8 CDP checks in first commit)",
+    "full_regression_check": "15 CDP checks in follow-up"
+  },
+  "browser_verification": {
+    "manifest_link": "PASS",
+    "dashboard_rendered": "PASS",
+    "console_errors": "PASS (0 errors)",
+    "settings_rendered": "PASS",
+    "accessibility_labels": "PASS (26 label for, 4 aria-label)",
+    "viewport_320_no_overflow": "PASS",
+    "no_raster_images": "PASS",
+    "ai_locked_state": "PASS",
+    "service_worker_activation": "PASS",
+    "multi_viewport_regression": "PASS (15/15)",
+    "full_browser_regression": "PASS"
   },
   "ai_verification": {
     "locked_state": "PASS",
@@ -153,15 +226,14 @@
     "live_openai": "NOT TESTED",
     "live_groq": "NOT TESTED"
   },
-  "browser_verification": {
-    "manifest_link": "PASS (href=manifest.webmanifest)",
-    "dashboard_rendered": "PASS (Welcome displayed)",
-    "console_errors": "PASS (0 errors)",
-    "settings_rendered": "PASS",
-    "accessibility_labels": "PASS (26 valid bindings, 0 invalid)",
-    "viewport_320_no_overflow": "PASS",
-    "no_raster_images": "PASS",
-    "ai_locked_state": "PASS (locked)"
+  "follow_up_commit": {
+    "message": "fix: reject remaining external question dependencies",
+    "changes": [
+      "tools/question_bank_lib.py: rename regex patterns, add .svg extension to all external-dep checks, add iframe-any-src check, rename _contains_raster_asset_reference to _contains_external_dep_reference",
+      "tests/audit_correction_tests.py: add 8 new rejection/acceptance tests for SVG img, object, embed, iframe, CSS url, local SVG path, textual SVG mention, harmless URL",
+      "docs/QUESTION_DATA_CONTRACT.md: document SVG rejection, iframe rejection, textual SVG mention exemption",
+      "docs/ADDING_QUESTIONS.md: document SVG/iframe rejection in import workflow"
+    ]
   },
   "final_verdict": "ALL FINDINGS CORRECTED OR VERIFIED"
 }

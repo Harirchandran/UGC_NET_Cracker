@@ -35,7 +35,7 @@ Use:
 
 Do not use page screenshots. Do not embed an image inside an SVG.
 
-Do not include raster image references (`<img src="...">`, `data:image/`, CSS `url()` to raster files) in any text field. The validator rejects `<img>`, `<picture>`, `<source>`, `<object>`, `<embed>`, and `<iframe>` tags with raster/PDF file references. Ordinary educational text mentioning file formats (e.g., "PNG uses lossless compression") is permitted.
+Do not include raster, SVG, or PDF file references (`<img src="...">`, `<object>`, `<embed>`, `<iframe>`, `data:image/`, CSS `url()` to any external format) in any text field. The validator rejects `<img>`, `<picture>`, `<source>`, `<object>`, `<embed>`, and `<iframe>` tags with external file references including `.svg`. Any `<iframe>` with a `src` attribute is always rejected as an external content dependency. Ordinary educational text mentioning file formats (e.g., "PNG uses lossless compression", "SVG files are scalable vector graphics") is permitted.
 
 ## 4. Verify option ordering and answers separately
 

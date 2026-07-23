@@ -20,15 +20,15 @@ Correction verification of NETCracker AI v2.0 audit findings.
 
 | File | Change |
 |------|--------|
-| `tools/question_bank_lib.py` | Hardened validator: raster/external dependency rejection, extraction delimiter regression |
+| `tools/question_bank_lib.py` | Hardened validator: external dependency rejection (raster, SVG, PDF, iframe), extraction delimiter regression, transcription status consistency checks |
 | `data/interactive-pyqs-2015.js` | Removed `-o0o-` delimiter from 3 options |
 | `data/interactive-pyqs-2017.js` | Removed `-o0o-` delimiter from 2 options |
 | `data/interactive-pyqs-2018.js` | Removed `-o0o-` delimiter from 1 option |
 | `app.js` | Added 26 `for`/`id` label associations, 4 `aria-label` attributes |
 | `index.html` | Added `mobile-web-app-capable` standard meta tag |
-| `docs/QUESTION_DATA_CONTRACT.md` | Documented raster safety rules |
-| `docs/ADDING_QUESTIONS.md` | Documented raster content rejection |
-| `tests/audit_correction_tests.py` | New test suite for all corrections |
+| `docs/QUESTION_DATA_CONTRACT.md` | Documented SVG, iframe, and external dependency safety rules |
+| `docs/ADDING_QUESTIONS.md` | Documented SVG/iframe/external dependency rejection in import workflow |
+| `tests/audit_correction_tests.py` | New test suite for all corrections (24 tests) |
 
 ---
 
@@ -36,18 +36,19 @@ Correction verification of NETCracker AI v2.0 audit findings.
 
 **Finding**: FINDING-01 (High) — Developer import pipeline validation gap for `<img>` tags in stem/option text.
 
-**Correction**: Added raster/external dependency detection to `validate_question()` in `tools/question_bank_lib.py`.
+**Correction**: Added external dependency detection to `validate_question()` in `tools/question_bank_lib.py`. The initial correction pass rejected raster/PDF references only. A follow-up code change added `.svg` extension to all external-file regex patterns and an `<iframe>` with any `src` rejection check, closing 5 remaining validation gaps.
 
 **New rejection rules**:
-- `<img>`, `<picture>`, `<source>`, `<object>`, `<embed>`, `<iframe>` tags with `src`, `srcset`, `href`, or `data` attributes referencing `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.bmp`, `.tiff`, or `.pdf` files
+- `<img>`, `<picture>`, `<source>`, `<object>`, `<embed>`, `<iframe>` tags with `src`, `srcset`, `href`, or `data` attributes referencing `.png`, `.jpg`, `.jpeg`, `.gif`, `.webp`, `.bmp`, `.tiff`, `.pdf`, or `.svg` files
+- `<iframe>` with any `src` attribute (always an external content dependency)
 - `data:image/` embedded base64 raster URLs
-- CSS `url()` references to raster or PDF assets
-- `src`/`href`/`srcset` attributes referencing raster or PDF files
+- CSS `url()` references to raster, PDF, or SVG assets
+- `src`/`href`/`srcset` attributes referencing raster, PDF, or SVG files
 - Extraction delimiters (`-o0o-`) in option text
 
-**False positive prevention**: Ordinary educational text mentioning file formats (e.g., "PNG uses lossless compression", "The `<img>` tag is used in HTML") is correctly permitted.
+**False positive prevention**: Ordinary educational text mentioning file formats (e.g., "PNG uses lossless compression", "SVG files are scalable vector graphics", "The `<img>` tag is used in HTML") is correctly permitted. A harmless textual URL shown as question content is also permitted.
 
-**Test results**: 16 raster rejection tests passed. Existing archive passes hardened validator.
+**Test results**: 24 external dependency acceptance/rejection tests passed. Existing archive passes hardened validator.
 
 ---
 
@@ -134,7 +135,16 @@ Since the native text IS complete in these 2018 records, `verified-text` is the 
 | Dropped/cancelled records | 23 |
 | Single-answer scoreable | 1,568 |
 | Multi-correct scoreable | 4 |
-| No accepted answer | 0 |
+| No accepted answer (among scoreable) | 0 |
+
+**Dropped record answer semantics**:
+- 23 dropped records, all with `scored: false`
+- 11 have empty answer arrays (no answer data)
+- 12 retain historical answer keys [0] for provenance, but `scored: false` and `dropped: true` exclude them from all scoring operations
+- 0 affect the score denominator
+- 0 produce a penalty when answered incorrectly
+
+The scoring code filters dropped records via `!q.dropped && q.scored!==false`, so the retained answer data in 12 records is inert.
 
 **Identity verification**: 1,568 + 4 + 23 = 1,595 ✓
 
@@ -237,33 +247,28 @@ The previous audit reported 811 visual features but 658 visual records. The 811 
 
 ## 11. Browser and PWA results
 
+### Full Chrome/CDP regression (15/15 tests passed)
+
+| Viewport | Tests | Result |
+|----------|-------|--------|
+| 1440×900 | Dashboard, QB navigation, text question, stem SVG, console errors, network requests, manifest, service worker, no raster images | 10/10 PASS |
+| 390×844 | Mobile no overflow, no console errors | 2/2 PASS |
+| 320×568 | Small mobile no overflow, interactive elements, AI locked state | 3/3 PASS |
+
+### Desktop PWA criteria
+
 | Test | Result |
 |------|--------|
-| Dashboard renders | ✓ |
-| Question Bank loads | ✓ |
-| Text question renders | ✓ |
-| Stem SVG renders | ✓ |
-| Option SVG renders | ✓ |
-| Source-vector sheet renders | ✓ |
-| HTML table renders | ✓ |
-| Dropped question shows "Not scored" | ✓ |
-| Multi-correct question works | ✓ |
-| Filtered test creation works | ✓ |
-| Result metadata correct | ✓ |
-| Mistake metadata correct | ✓ |
-| Manifest loads | ✓ |
-| Service worker registers | ✓ |
-| 320px viewport no overflow | ✓ |
+| Manifest link present | PASS |
+| Service worker registration | PASS |
+| Offline-capable architecture | PASS |
+| Mobile-web-app-capable meta | PASS |
+| Apple-mobile-web-app-capable meta | PASS |
+| 320px viewport no overflow | PASS |
 
-**Browser CDP verification results** (Puppeteer/Chrome):
-- Manifest link: PRESENT (href="manifest.webmanifest") ✓
-- Dashboard JS-rendered content: "Welcome" ✓
-- Console errors during load: 0 ✓
-- Settings page renders with form controls: ✓
-- Accessibility label bindings: 26 valid `for`/`id` associations, 0 invalid ✓
-- 320×568 viewport overflow: NONE ✓
-- No `<img>` raster tags in rendered HTML: ✓
-- AI tutor lock state: "locked" ✓
+### Previous verification (partial — 8 CDP checks in first commit)
+
+The initial correction pass executed 8 static CDP checks. The follow-up pass expanded this to a full 15-test regression with three viewports, service-worker verification, and network-request validation.
 
 ---
 
@@ -290,24 +295,22 @@ The previous audit reported 811 visual features but 658 visual records. The 811 
 
 | Command | Result |
 |---------|--------|
-| `python tools/validate_question_bank.py` | PASSED |
-| `python tests/validate.py` | PASSED |
-| `node tests/runtime_smoke.js` | PASSED |
-| `python tests/http_smoke.py` | PASSED |
-| `python tests/audit_correction_tests.py` | PASSED (all 7 test groups) |
+| `python tools/validate_question_bank.py` | PASSED (exit 0) |
+| `python tests/validate.py` | PASSED (exit 0) |
+| `node tests/runtime_smoke.js` | PASSED (exit 0) |
+| `python tests/http_smoke.py` | PASSED (exit 0) |
+| `python tests/audit_correction_tests.py` | PASSED (exit 0, all 24 tests) |
 | `python tools/question_bank_lib.py` (archive validation) | PASSED |
 
 ---
 
 ## 14. Remaining limitations
 
-1. **Browser PWA verification**: Full browser CDP testing was not re-executed in this correction pass. The runtime smoke test validates core rendering and scoring logic. Full browser PWA verification should be performed before release.
+1. **AI provider live validation**: No real API keys were available for live provider testing. All AI boundary tests were performed without real keys.
 
-2. **AI provider live validation**: No real API keys were available for live provider testing. All AI boundary tests were performed without real keys.
+2. **Mobile installation**: Android/iOS native PWA installation was not tested. Desktop installability criteria are met via manifest validation. Full browser CDP regression (15/15 tests) was executed with real Chrome.
 
-3. **Mobile installation**: Android/iOS native PWA installation was not tested. Desktop installability criteria are met via manifest validation.
-
-4. **Related delimiters**: `___` found in 2 records (`official-2016-p2-50`, `official-2016-p3-75`) as content-appropriate underscores — not extraction artifacts.
+3. **Related delimiters**: `___` found in 2 records (`official-2016-p2-50`, `official-2016-p3-75`) as content-appropriate underscores — not extraction artifacts.
 
 ---
 
@@ -315,9 +318,11 @@ The previous audit reported 811 visual features but 658 visual records. The 811 
 
 All four confirmed audit findings have been addressed:
 
-- **C1**: Import validator hardened against raster/external content dependencies
+- **C1**: Import validator hardened against raster, SVG, PDF, and iframe external content dependencies
 - **C2**: 2015 PDF extraction artifact cleaned from 6 options
 - **C3**: 26+ accessibility label associations added, modern mobile meta tag added
 - **C4**: 2018 transcription status determined correct (no change needed)
 
-The application is safe for personal study use. The hardened validator prevents future raster content contamination. The scoring logic, offline PWA, and data persistence remain fully functional.
+A follow-up code commit (`fix: reject remaining external question dependencies`) was created and pushed to close 5 SVG/iframe validation gaps identified during final verification.
+
+The application is safe for personal study use. The hardened validator prevents future external content contamination. The scoring logic, offline PWA, and data persistence remain fully functional.
