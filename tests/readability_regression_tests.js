@@ -65,7 +65,7 @@ context.globalThis = context;
 vm.createContext(context);
 
 // Load bundle and files
-for (const f of ['data/bundle.js', 'data/pyq-index.js', 'data/interactive-pyqs-2019.js', 'data/ai-visual-question-overrides.js', 'app.js']) {
+for (const f of ['data/bundle.js', 'data/pyq-index.js', 'data/interactive-pyqs-2019.js', 'data/interactive-pyqs-2023.js', 'data/ai-visual-question-overrides.js', 'app.js']) {
   vm.runInContext(fs.readFileSync(__dirname + '/../' + f, 'utf8'), context, { filename: f });
 }
 
@@ -153,4 +153,19 @@ const pyqs2019 = context.window.NETCRACKER_INTERACTIVE_PYQS_2019.questions;
 const vectorPrimaryIn2019 = pyqs2019.filter(q => String(q.transcriptionStatus || '').includes('vector-primary'));
 assert.strictEqual(vectorPrimaryIn2019.length, 149, 'Test 13 Failed: Bulk status change must NOT occur; 149 vector-primary status records preserved in 2019 file');
 
-console.log('✓ ALL 13 READABILITY REGRESSION TESTS PASSED!');
+// Test 14: Unresolved garbled OCR records 29201002, 29201005, 29201006 are flagged for review and show warning notice
+const pyqs2023 = context.window.NETCRACKER_INTERACTIVE_PYQS_2023.questions;
+const reviewIds = ['official-2023-29201002', 'official-2023-29201005', 'official-2023-29201006'];
+
+for (const id of reviewIds) {
+  const q = pyqs2023.find(x => x.id === id);
+  assert(q, `Record ${id} must exist in 2023 archive`);
+  assert.strictEqual(q.needsTranscriptionReview, true, `Record ${id} must have needsTranscriptionReview: true`);
+  const pres = context.window.resolveQuestionPresentation(q);
+  assert.strictEqual(pres.needsTranscriptionReview, true, `Resolver for ${id} must require transcription review`);
+  const html = context.window.questionDisplay(q);
+  assert(html.includes('Needs native transcription review'), `HTML for ${id} must contain review warning notice`);
+  assert(html.includes('data-action="open-source-viewer"'), `HTML for ${id} must provide source viewer button`);
+}
+
+console.log('✓ ALL 14 READABILITY REGRESSION TESTS PASSED!');

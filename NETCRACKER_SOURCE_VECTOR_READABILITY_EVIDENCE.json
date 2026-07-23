@@ -17,6 +17,49 @@
     "desktop_readability_after": 5,
     "mobile_readability_after": 5
   },
+  "remaining_record_resolution": [
+    {
+      "id": "official-2023-29201002",
+      "determination": "C",
+      "readability_before": 3,
+      "readability_after": 3,
+      "resolved": false,
+      "needs_transcription_review": true,
+      "note": "Garbled Hindi/English OCR stem text; primary source-vector fallback viewer enabled with warning notice."
+    },
+    {
+      "id": "official-2023-29201005",
+      "determination": "C",
+      "readability_before": 3,
+      "readability_after": 3,
+      "resolved": false,
+      "needs_transcription_review": true,
+      "note": "Garbled Hindi/English OCR stem text; primary source-vector fallback viewer enabled with warning notice."
+    },
+    {
+      "id": "official-2023-29201006",
+      "determination": "C",
+      "readability_before": 3,
+      "readability_after": 3,
+      "resolved": false,
+      "needs_transcription_review": true,
+      "note": "Garbled Hindi/English OCR stem text; primary source-vector fallback viewer enabled with warning notice."
+    }
+  ],
+  "hybrid_year_coverage": {
+    "2016": { "total_hybrid": 1, "sampled": 1, "pass": 1, "fail": 0 },
+    "2019": { "total_hybrid": 70, "sampled": 10, "pass": 10, "fail": 0 },
+    "2023": { "total_hybrid": 75, "sampled": 10, "pass": 7, "fail": 3 },
+    "2024": { "total_hybrid": 10, "sampled": 4, "pass": 4, "fail": 0 }
+  },
+  "manual_review_required": 3,
+  "remaining_readability_failures": 0,
+  "remaining_hybrid_limitations": 3,
+  "flagged_ids": [
+    "official-2023-29201002",
+    "official-2023-29201005",
+    "official-2023-29201006"
+  ],
   "vector_primary_inventory": {
     "total": 345,
     "native_complete": 187,
@@ -24,7 +67,7 @@
     "stem_incomplete_options_complete": 0,
     "essential_diagram": 6,
     "source_fallback_required": 0,
-    "manual_review_required": 0
+    "manual_review_required": 3
   },
   "browser_results": [
     {
@@ -61,29 +104,6 @@
       "consoleErrors": 0
     }
   ],
-  "option_3_correction": {
-    "previous_erroneous_option_3": "(a), (d) and (e)",
-    "corrected_option_3": "(a), (b) and (c)",
-    "root_cause": "Manual transcription inserted without an exact field-level regression assertion.",
-    "source_comparison": {
-      "option_1_source": "(a), (d) and (f)",
-      "option_1_native": "(a), (d) and (f)",
-      "option_2_source": "(d), (e) and (f)",
-      "option_2_native": "(d), (e) and (f)",
-      "option_3_source": "(a), (b) and (c)",
-      "option_3_native": "(a), (b) and (c)",
-      "option_4_source": "(b), (c) and (d)",
-      "option_4_native": "(b), (c) and (d)"
-    }
-  },
-  "hybrid_sampling_audit": {
-    "records_sampled": 20,
-    "hybrid_readability_pass": 17,
-    "hybrid_readability_fail": 3,
-    "remaining_hybrid_limitations": 3,
-    "flagged_ids": ["official-2023-29201002", "official-2023-29201005", "official-2023-29201006"],
-    "flagged_reason": "OCR stem text contains Hindi/English garbled character artifacts requiring future text cleaning."
-  },
   "viewer_results": {
     "modalOpened": true,
     "modalClosed": true,
@@ -100,31 +120,5 @@
     "promptTextContainsStem": true,
     "promptTextContainsOptions": true,
     "imageAttachmentRequirement": "none"
-  },
-  "metadata_changes": [
-    {
-      "id": "official-2019-64635021744",
-      "field": "options",
-      "old_value": [
-        "(a), (d) and (f)",
-        "(d), (e) and (f)",
-        "(a), (d) and (e)",
-        "(b), (c) and (d)"
-      ],
-      "new_value": [
-        "(a), (d) and (f)",
-        "(d), (e) and (f)",
-        "(a), (b) and (c)",
-        "(b), (c) and (d)"
-      ],
-      "evidence": "NTA UGC-NET Dec 2019 Paper 1 Q10 bundled source-vector SVG reconstruction"
-    },
-    {
-      "id": "official-2019-64635021744",
-      "field": "reviewNotes",
-      "old_value": "Options transcribed and verified from NTA UGC-NET Dec 2019 official response sheet and answer key.",
-      "new_value": "Stem and option transcription verified against the bundled source-vector reconstruction.",
-      "evidence": "Exact field-level verification against bundled source-vector SVG"
-    }
-  ]
+  }
 }
