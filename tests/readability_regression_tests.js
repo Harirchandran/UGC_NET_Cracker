@@ -110,12 +110,21 @@ const pres4 = context.window.resolveQuestionPresentation(fallbackQ);
 assert.strictEqual(pres4.primaryMode, 'source-vector-fallback', 'Test 4 Failed: Should use source-vector-fallback');
 assert.strictEqual(pres4.needsTranscriptionReview, true, 'Test 4 Failed: Should require review');
 
-// Test 5 & 6: Reported 2019 record 64635021744 remains answerable and readable
+// Test 5 & 6: Reported 2019 record 64635021744 exact option transcription & presentation assertions
 const q2019 = context.window.NETCRACKER_INTERACTIVE_PYQS_2019.questions.find(q => String(q.id).includes('64635021744'));
 assert(q2019, 'Reported 2019 question must exist');
+assert.strictEqual(q2019.options[0], '(a), (d) and (f)', 'Option 1 must be (a), (d) and (f)');
+assert.strictEqual(q2019.options[1], '(d), (e) and (f)', 'Option 2 must be (d), (e) and (f)');
+assert.strictEqual(q2019.options[2], '(a), (b) and (c)', 'Option 3 must be (a), (b) and (c)');
+assert.strictEqual(q2019.options[3], '(b), (c) and (d)', 'Option 4 must be (b), (c) and (d)');
+
 const presReported = context.window.resolveQuestionPresentation(q2019);
 assert.strictEqual(presReported.primaryMode, 'native-text', 'Test 5/6 Failed: Transcribed 2019 record should use native-text');
 assert.strictEqual(context.window.hasCompleteNativeOptions(q2019), true, 'Test 5 Failed: Transcribed 2019 record options must be complete');
+
+const promptText = context.window.buildAskAIVisualPrompt(q2019);
+assert(promptText.includes('(a), (b) and (c)'), 'Ask AI prompt must contain corrected Option 3: (a), (b) and (c)');
+assert(!promptText.includes('[AN ATTACHED IMAGE IS PROVIDED'), 'Ask AI image attachment not required by default for native-text');
 
 // Test 7: Original source viewer button generated when supplementary source vector exists
 const qHTML = context.window.questionDisplay(q2019);
@@ -136,8 +145,8 @@ assert.strictEqual(selectedChoice, initialAnswer, 'Test 10 Failed: Selected choi
 assert.strictEqual(timerSeconds, 120, 'Test 11 Failed: Timer must survive modal open/close');
 
 // Test 12: Ask AI representation matches presentation resolver
-const promptText = context.window.buildAskAIVisualPrompt(q2019);
-assert(promptText.includes(context.window.nativeQuestion(q2019)), 'Test 12 Failed: Ask AI prompt must use native question stem');
+const promptText12 = context.window.buildAskAIVisualPrompt(q2019);
+assert(promptText12.includes(context.window.nativeQuestion(q2019)), 'Test 12 Failed: Ask AI prompt must use native question stem');
 
 // Test 13: Confirm no bulk mutation occurred
 const pyqs2019 = context.window.NETCRACKER_INTERACTIVE_PYQS_2019.questions;

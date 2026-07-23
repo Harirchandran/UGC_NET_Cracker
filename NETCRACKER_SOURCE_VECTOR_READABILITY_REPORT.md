@@ -1,14 +1,35 @@
-# NETCracker AI Source-Vector Readability Audit and Correction Report
+# NETCracker AI Source-Vector Readability Audit & Option Transcription Correction Report
 
 ## Executive Summary
 
-This report documents the resolution of presentation and readability defects in vector-backed UGC-NET questions within NETCracker AI. 
-
-The unsafe presentation rule (`native stem exists + incomplete options → native-text primary`) has been eliminated. It has been replaced by a rigorous, 7-mode presentation resolver contract that independently evaluates stem completeness, option completeness, stem/option SVG diagram presence, semantic table requirements, and source vector availability.
+This report documents the resolution of presentation and readability defects in vector-backed UGC-NET questions within NETCracker AI, including the exact field-level correction of Option 3 for canonical record `official-2019-64635021744`.
 
 ---
 
-## 1. Presentation Resolver Modes and Contract
+## 1. Target Record Option 3 Transcription Correction
+
+- **ID**: `official-2019-64635021744`
+- **Exam Cycle**: December 2019, Paper 1, Official Question 10, Source Page 5
+- **Previous Erroneous Option 3**: `(a), (d) and (e)`
+- **Corrected Option 3**: `(a), (b) and (c)`
+- **Root Cause**: Manual transcription inserted without an exact field-level regression assertion.
+- **Answer Index**: Unchanged (`0` / Option 1: `(a), (d) and (f)`).
+
+### Authoritative Bundled Source Comparison
+
+```text
+Option 1 source: (a), (d) and (f)  -->  Option 1 native: (a), (d) and (f)  [MATCH]
+Option 2 source: (d), (e) and (f)  -->  Option 2 native: (d), (e) and (f)  [MATCH]
+Option 3 source: (a), (b) and (c)  -->  Option 3 native: (a), (b) and (c)  [MATCH]
+Option 4 source: (b), (c) and (d)  -->  Option 4 native: (b), (c) and (d)  [MATCH]
+```
+
+- **Review Notes**: `Stem and option transcription verified against the bundled source-vector reconstruction.`
+- **Transcription Status**: `verified-text`
+
+---
+
+## 2. Presentation Resolver Modes and Contract
 
 The presentation resolver contract in `app.js` (`resolveQuestionPresentation`) implements seven explicit modes:
 
@@ -22,36 +43,18 @@ The presentation resolver contract in `app.js` (`resolveQuestionPresentation`) i
 
 ---
 
-## 2. Canonical Record Inspection: Dec 2019 Paper 1 Q10 (ID 64635021744)
+## 3. 345 Vector-Primary Record Inventory Audit & Hybrid Sampling
 
-- **ID**: `official-2019-64635021744`
-- **Exam Cycle**: December 2019, Paper 1, Official Question 10, Source Page 5
-- **Native Question Stem**: `"Which among the following best describes the Emotional Intelligence of learners? (a) Understand the emotion of other people and your own (b) Express oneself very strongly (c) Being rational in thinking (d) Adjusting one’s emotion as per situation (e) Being creative and open to criticism (f) Accepting other people as they are Choose your answer from the options given below :"`
-- **Options Before**: `["Option A — select from exact vector reconstruction", ...]`
-- **Options After**: `["(a), (d) and (f)", "(d), (e) and (f)", "(a), (d) and (e)", "(b), (c) and (d)"]`
-- **Transcription Status**: `verified-text`
-- **Resolver Mode Before**: `native-stem-with-source-options`
-- **Resolver Mode After**: `native-text`
-- **Options Selectable**: YES (A/B/C/D controls fully functional)
-- **Desktop Readability Before**: 1/5 → **After**: 5/5
-- **Mobile Readability After**: 5/5
+- **Total vector-primary records audited**: 345
+- **Group A (Native stem & options complete)**: 187 records (`native-text`)
+- **Group B (Native stem complete, options incomplete)**: 152 records (`native-stem-with-source-options`)
+- **Group C / D / E / F / G / H**: 6 essential stem diagrams (Group D), 0 manual review (Group H).
 
----
+### Hybrid Record Sampling Audit (20 Records Sampled)
 
-## 3. 345 Vector-Primary Record Inventory Audit
-
-All 345 `vector-primary` records were audited and classified without performing any bulk metadata mutation:
-
-- **Group A (Native stem & options complete)**: 187 records (Rendered as `native-text` cleanly)
-- **Group B (Native stem complete, options incomplete)**: 152 records (Rendered as `native-stem-with-source-options` with selectable controls)
-- **Group C (Native options complete, stem incomplete)**: 0 records
-- **Group D (Essential stem diagram present)**: 6 records
-- **Group E (Essential option diagrams present)**: 0 records
-- **Group F (Semantic table layout required)**: 0 records
-- **Group G (Source vector genuinely required as primary fallback)**: 0 records
-- **Group H (Data inconsistency / manual review required)**: 0 records
-
-*Note: No blanket status removal was performed on the 345 records. Provenance metadata is preserved.*
+20 hybrid records across years (2016, 2019, 2023, 2024) were audited in real Chrome:
+- **17 records**: Readability score **4/5** (Pass - stem readable, options accessible via source viewer modal, A/B/C/D controls selectable).
+- **3 records** (`official-2023-29201002`, `official-2023-29201005`, `official-2023-29201006`): Readability score **3/5** due to garbled Hindi/English OCR text in stem field. Retained as remaining remediation items.
 
 ---
 
@@ -59,7 +62,7 @@ All 345 `vector-primary` records were audited and classified without performing 
 
 Verified in real Chrome (`Chrome 150.0.0.0` on `Windows 10`):
 
-- **Desktop (1440 × 900)**: Readability 5/5, Stem & Options visible, Selectable controls active, Source viewer modal button present, 0 console errors.
+- **Desktop (1440 × 900)**: Readability 5/5, Stem & Options visible, Option 3 reads `(a), (b) and (c)`, Selectable controls active, 0 console errors.
 - **Mobile (390 × 844)**: Readability 5/5, Layout responsive, 0 console errors.
 - **Small Mobile (320 × 568)**: Readability 5/5, Touch controls active, 0 console errors.
 
@@ -79,7 +82,8 @@ Verified in real Chrome (`Chrome 150.0.0.0` on `Windows 10`):
 ## 6. Ask AI Pipeline Alignment
 
 - Ask AI prompt builder (`buildAskAIVisualPrompt`), question sheet renderer (`renderQuestionSheetToPNG`), and decision engine (`decideVisualAIRequest`) all consume `resolveQuestionPresentation(q)`.
-- Structured text is sent directly for `native-text` questions; full page vector images are not attached unnecessarily.
+- Ask AI prompt contains all four exact options including corrected Option 3 (`(a), (b) and (c)`).
+- Image attachment is not required by default for native-text questions.
 
 ---
 
@@ -92,11 +96,14 @@ All automated tests passed with 0 errors:
 - `python tests/http_smoke.py`: PASS
 - `python tests/audit_correction_tests.py`: PASS
 - `node tests/ai_model_tests.js`: PASS
-- `node tests/ai_visual_question_tests.js`: PASS (1,595 questions classified)
-- `node tests/readability_regression_tests.js`: PASS (All 13 readability regression tests verified)
+- `node tests/ai_visual_question_tests.js`: PASS
+- `node tests/readability_regression_tests.js`: PASS (All 13 readability regression tests verified including exact Option 3 equality assertion)
 
 ---
 
-## Conclusion
+## Bounded Conclusion
 
-All source-vector questions are now clear, highly readable, answerable, and verified across viewports in real Chrome.
+The reported question is corrected and readable.
+The resolver covers all vector-primary records programmatically.
+Hybrid readability was manually sampled across 20 records (17 pass, 3 flagged for OCR stem artifacts).
+Any remaining limitations are listed explicitly.

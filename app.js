@@ -7,7 +7,7 @@ const CERTIFIED_INTERACTIVE_YEARS = new Set(Object.keys(PYQ_INDEX.years||{}).map
 const loadedYears = new Set();
 const AI_CATALOG = window.NETCRACKER_AI_MODEL_CATALOG || {providers:[]};
 const AI_MODEL_MEMORY_KEY = 'netcracker_ai_model_per_provider';
-const mergeQuestions=questions=>{const existingIds=new Set(DATA.questions.map(q=>q.id));for(const q of questions){if(q.scored!==false&&!q.dropped&&!existingIds.has(q.id)){DATA.questions.push(q);existingIds.add(q.id)}}};
+const mergeQuestions=questions=>{const existingMap=new Map(DATA.questions.map((q,i)=>[q.id,i]));for(const q of questions){if(q.scored!==false&&!q.dropped){if(existingMap.has(q.id)){DATA.questions[existingMap.get(q.id)]=q}else{DATA.questions.push(q);existingMap.set(q.id,DATA.questions.length-1)}}}};
 async function loadYear(year){
  year=Number(year);if(loadedYears.has(year))return ALL_YEAR_MAP[year]||[];
  const globalName=`NETCRACKER_INTERACTIVE_PYQS_${year}`;

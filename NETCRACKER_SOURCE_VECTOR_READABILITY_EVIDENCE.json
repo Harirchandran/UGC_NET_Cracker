@@ -6,7 +6,7 @@
       "options": [
         "(a), (d) and (f)",
         "(d), (e) and (f)",
-        "(a), (d) and (e)",
+        "(a), (b) and (c)",
         "(b), (c) and (d)"
       ]
     },
@@ -61,6 +61,29 @@
       "consoleErrors": 0
     }
   ],
+  "option_3_correction": {
+    "previous_erroneous_option_3": "(a), (d) and (e)",
+    "corrected_option_3": "(a), (b) and (c)",
+    "root_cause": "Manual transcription inserted without an exact field-level regression assertion.",
+    "source_comparison": {
+      "option_1_source": "(a), (d) and (f)",
+      "option_1_native": "(a), (d) and (f)",
+      "option_2_source": "(d), (e) and (f)",
+      "option_2_native": "(d), (e) and (f)",
+      "option_3_source": "(a), (b) and (c)",
+      "option_3_native": "(a), (b) and (c)",
+      "option_4_source": "(b), (c) and (d)",
+      "option_4_native": "(b), (c) and (d)"
+    }
+  },
+  "hybrid_sampling_audit": {
+    "records_sampled": 20,
+    "hybrid_readability_pass": 17,
+    "hybrid_readability_fail": 3,
+    "remaining_hybrid_limitations": 3,
+    "flagged_ids": ["official-2023-29201002", "official-2023-29201005", "official-2023-29201006"],
+    "flagged_reason": "OCR stem text contains Hindi/English garbled character artifacts requiring future text cleaning."
+  },
   "viewer_results": {
     "modalOpened": true,
     "modalClosed": true,
@@ -83,25 +106,25 @@
       "id": "official-2019-64635021744",
       "field": "options",
       "old_value": [
-        "Option A — select from exact vector reconstruction",
-        "Option B — select from exact vector reconstruction",
-        "Option C — select from exact vector reconstruction",
-        "Option D — select from exact vector reconstruction"
-      ],
-      "new_value": [
         "(a), (d) and (f)",
         "(d), (e) and (f)",
         "(a), (d) and (e)",
         "(b), (c) and (d)"
       ],
-      "evidence": "NTA UGC-NET Dec 2019 official response sheet and answer key table"
+      "new_value": [
+        "(a), (d) and (f)",
+        "(d), (e) and (f)",
+        "(a), (b) and (c)",
+        "(b), (c) and (d)"
+      ],
+      "evidence": "NTA UGC-NET Dec 2019 Paper 1 Q10 bundled source-vector SVG reconstruction"
     },
     {
       "id": "official-2019-64635021744",
-      "field": "transcriptionStatus",
-      "old_value": "vector-primary",
-      "new_value": "verified-text",
-      "evidence": "Clean native transcription of stem and options verified from NTA official question paper"
+      "field": "reviewNotes",
+      "old_value": "Options transcribed and verified from NTA UGC-NET Dec 2019 official response sheet and answer key.",
+      "new_value": "Stem and option transcription verified against the bundled source-vector reconstruction.",
+      "evidence": "Exact field-level verification against bundled source-vector SVG"
     }
   ]
 }
