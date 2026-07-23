@@ -1,0 +1,124 @@
+{
+  "report": "NETCRACKER_AI_MODEL_SELECTION_REPORT.md",
+  "starting_head": "68cb01ee2d00ab8b73b537646bf27acfc0d3a4fd",
+  "current_head": null,
+  "providers": [
+    {
+      "providerId": "gemini",
+      "label": "Google Gemini",
+      "apiFamily": "gemini",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "defaultModel": "gemini-3.6-flash",
+      "authHeader": "x-goog-api-key",
+      "discoveryEndpoint": "GET /v1beta/models",
+      "curatedModels": ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.5-flash-lite"]
+    },
+    {
+      "providerId": "openai",
+      "label": "OpenAI",
+      "apiFamily": "openai",
+      "baseUrl": "https://api.openai.com/v1",
+      "defaultModel": "gpt-5.6-terra",
+      "authHeader": "Authorization: Bearer",
+      "discoveryEndpoint": "GET /v1/models",
+      "curatedModels": ["gpt-5.6-terra", "gpt-5.6-sol", "gpt-5.6-luna"]
+    },
+    {
+      "providerId": "xai",
+      "label": "xAI Grok",
+      "apiFamily": "openai",
+      "baseUrl": "https://api.x.ai/v1",
+      "defaultModel": "grok-4.5",
+      "authHeader": "Authorization: Bearer",
+      "discoveryEndpoint": "GET /v1/models",
+      "curatedModels": ["grok-4.5", "grok-4.5-latest"],
+      "reasoningSupported": ["low", "medium", "high"]
+    },
+    {
+      "providerId": "groq",
+      "label": "GroqCloud",
+      "apiFamily": "openai",
+      "baseUrl": "https://api.groq.com/openai/v1",
+      "defaultModel": "llama-3.3-70b-versatile",
+      "authHeader": "Authorization: Bearer",
+      "discoveryEndpoint": "GET /openai/v1/models",
+      "curatedModels": ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant"]
+    },
+    {
+      "providerId": "custom",
+      "label": "Custom OpenAI-compatible",
+      "apiFamily": "openai",
+      "baseUrl": "user-configured",
+      "defaultModel": "user-configured",
+      "authHeader": "Authorization: Bearer",
+      "supportsCustomModelId": true,
+      "curatedModels": []
+    }
+  ],
+  "curated_models": {
+    "gemini": ["gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.5-flash-lite"],
+    "openai": ["gpt-5.6-terra", "gpt-5.6-sol", "gpt-5.6-luna"],
+    "xai": ["grok-4.5", "grok-4.5-latest"],
+    "groq": ["llama-3.3-70b-versatile", "openai/gpt-oss-120b", "openai/gpt-oss-20b", "llama-3.1-8b-instant"],
+    "custom": []
+  },
+  "defaults": {
+    "gemini": "gemini-3.6-flash",
+    "openai": "gpt-5.6-terra",
+    "xai": "grok-4.5",
+    "groq": "llama-3.3-70b-versatile",
+    "custom": ""
+  },
+  "discovery_endpoints": {
+    "gemini": "https://generativelanguage.googleapis.com/v1beta/models",
+    "openai": "https://api.openai.com/v1/models",
+    "xai": "https://api.x.ai/v1/models",
+    "groq": "https://api.groq.com/openai/v1/models",
+    "custom": "{baseUrl}/models"
+  },
+  "excluded_model_prefixes": {
+    "gemini": ["embedding", "text-embedding", "aqa", "imagen", "videogen", "speech", "realtime"],
+    "openai": ["embedding", "tts", "whisper", "dall-e", "moderation", "gpt-4o-audio"],
+    "xai": ["embedding", "imagen", "dall-e", "image", "video", "audio", "speech", "moderation"],
+    "groq": ["whisper", "embedding", "guard", "speech", "image", "video", "audio", "moderation", "prompt-guard", "safety"]
+  },
+  "tests": {
+    "ai_model_catalog": "PASS",
+    "runtime_smoke": "PASS",
+    "validate_py": "PASS",
+    "http_smoke": "PASS",
+    "audit_correction": "PASS"
+  },
+  "browser": {
+    "desktop_1440x900": "NOT TESTED",
+    "mobile_390x844": "NOT TESTED",
+    "mobile_320x568": "NOT TESTED",
+    "offline_cached": "NOT TESTED"
+  },
+  "offline": {
+    "model_catalog_in_shell_cache": true,
+    "provider_selector_offline": true,
+    "model_selector_offline": true,
+    "custom_model_edit_offline": true,
+    "ai_locked_offline": true,
+    "non_ai_features_offline": true
+  },
+  "security": {
+    "key_session_only_by_default": true,
+    "remember_key_opt_in": true,
+    "clear_key_removes_all": true,
+    "key_not_in_url": true,
+    "key_not_in_logs": true,
+    "key_not_in_backup_export": true,
+    "key_sent_only_to_selected_provider": true,
+    "gemini_key_in_header_not_query": true
+  },
+  "live_provider_validation": {
+    "gemini": "NOT TESTED",
+    "openai": "NOT TESTED",
+    "xai": "NOT TESTED",
+    "groq": "NOT TESTED"
+  },
+  "catalog_checked_date": "2026-07-23",
+  "catalog_version": "1.0.0"
+}

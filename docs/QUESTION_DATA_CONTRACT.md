@@ -4,6 +4,8 @@ Schema version: **1.0**
 
 The canonical schema is `data/question-schema.json`. Runtime year archives are published as `data/interactive-pyqs-YYYY.js`; the reviewed staging input is ordinary JSON.
 
+The AI model catalog (`data/ai-model-catalog.js`) is a separate static data file that defines supported providers, their API endpoints, and curated model presets. It is not part of the question data schema.
+
 ## Required provenance
 
 Every record must identify:

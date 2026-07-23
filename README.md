@@ -6,7 +6,9 @@ A single-student, installable UGC-NET Paper 1 and Computer Science & Application
 
 After the first successful load, the service worker caches the application and the full 2015–2024 archive in the background. Planning, study, question browsing, practice, mocks, revision, mistakes, analytics, notes, backup and restore work without a server or internet connection.
 
-The optional AI tutor is the only online feature. It remains locked until the student supplies and validates a Gemini, OpenAI, Groq or OpenAI-compatible API key.
+The optional AI tutor is the only online feature. It remains locked until the student supplies and validates an API key for one of the five supported providers: Google Gemini, OpenAI, xAI Grok, GroqCloud or a custom OpenAI-compatible endpoint.
+
+The built-in model catalog (`data/ai-model-catalog.js`, last verified 23 July 2026) provides curated model presets per provider. The settings screen dynamically populates provider-specific model dropdowns and supports live model discovery after key validation. Custom model IDs are also supported.
 
 ## Question bank
 

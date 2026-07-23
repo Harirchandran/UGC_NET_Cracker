@@ -3,7 +3,8 @@ const CACHE='netcracker-text-vector-v4';
 const SHELL=[
   './','./index.html','./styles.css','./app.js','./manifest.webmanifest',
   './icons/icon-192.png','./icons/icon-512.png',
-  './data/bundle.js','./data/pyq-index.js','./data/pyq-index.json','./data/lessons.js','./data/question-schema.json'
+  './data/bundle.js','./data/pyq-index.js','./data/pyq-index.json','./data/lessons.js','./data/question-schema.json',
+  './data/ai-model-catalog.js'
 ];
 async function archiveFiles(){const response=await fetch('./data/pyq-index.json',{cache:'no-store'});if(!response.ok)throw new Error('Question archive index unavailable');const index=await response.json();return Object.values(index.years||{}).map(meta=>'./'+String(meta.file||'').replace(/^\.\//,''));}
 async function cacheArchive(){
